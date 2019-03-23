@@ -3,7 +3,7 @@ import '../App.css'
 import { Link } from "react-router-dom";
 import * as $ from 'axios';
 
-class Login extends React.Component {
+class Home extends React.Component {
     state = {
         reguser: '',
         regpw: '',
@@ -19,10 +19,14 @@ class Login extends React.Component {
     render() {
         return (
             <div >
-                Login Page Placeholder
+                <h1>HomePage Placeholder</h1>
+                <h2>New Game</h2>
+                <h2>Load Game</h2>
+
+                <Link to="/World">World</Link>
             </div>
         );
     }
 }
 
-export default Login;
+export default Home;

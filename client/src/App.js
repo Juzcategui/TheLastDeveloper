@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 import Login from './components/Login';
+import Homepage from './components/Homepage';
 import Town from './components/Town';
 import Forest from './components/Forest';
 import HTMLHouse from './components/Houses/HTMLHouse';
@@ -13,14 +14,15 @@ import World from './Features/World';
 const App = () => (
   <BrowserRouter>
     <div>
-      <Route exact path="/" component={Login} />
+      <Route exact path="/" component={Homepage} />
+      <Route exact path="/Login" component={Login} />
       <Route exact path="/Town" component={Town} />
       <Route exact path="/Forest" component={Forest} />
       <Route exact path="/HTMLHouse" component={HTMLHouse} />
       <Route exact path="/CSSHouse" component={CSSHouse} />
       <Route exact path="/JavascriptHouse" component={JavascriptHouse} />
       <Route exact path="/ReactHouse" component={ReactHouse} />
-      <Route exact path="/world" component={World} />
+      <Route exact path="/World" component={World} />
     </div>
   </BrowserRouter>
 )
