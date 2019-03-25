@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
-const db = require("../models");
+const db = require('../models');
+
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/thelastdeveloper");
+    process.env.MONGODB_URI || "mongodb://localhost/thelastdeveloper", { useNewUrlParser: true });
 
-const gameDB = [
+const gamedb = [
     {
         npcName: "HTML",
         dialogue: ["All HTML documents must start with a document type declaration: <!DOCTYPE html>",
@@ -19,7 +20,7 @@ const gameDB = [
         npcName: "CSS",
         dialogue: ["CSS describes how HTML elements are to be displayed",
             "CSS is used to define styles, including the design, layout and variations in display from different devices",
-            "CSS saves immense time by being able to control the layout of multiple web pages in one single external file",
+            "CSS saves immense time by being able to control the layout and style of multiple web pages in one single external file",
             "The basic rule-set for styling consists of a selector, such as a tag or class, and a declaration block",
             "The 'color' property can be used to change the font color",
             "HTML would be plain and boring without our style"],
@@ -78,12 +79,12 @@ const gameDB = [
     },
     {
         npcName: "Erwins",
-        dialogue: ["You know what is awful? Jquery is awful. React is so much better. Hmph. It uses a virtual dom, so everything renders faster...a lot faster. It's great!"],
+        dialogue: ["You know what is awful? Jquery is awful. React is so much better. Hmph. It uses a virtual dom, so everything renders faster...so much faster than Jquery. It's great!"],
         passedTrialDialogue: []
     },
     {
         npcName: "Paige",
-        dialogue: ["I'm so tired. My neighbor's devil dogs woke me up so early today! *Yawn*. The only thing I remember from studying last night was that everything in a React App is a component."],
+        dialogue: ["I'm so tired. My neighbor's devil dogs woke me up so early today! *Yawn*. The only thing I remember from studying last night was that everything in a React application is a component."],
         passedTrialDialogue: []
     },
     {
@@ -93,7 +94,7 @@ const gameDB = [
     },
     {
         npcName: "Lin",
-        dialogue: ["I was looking for my grandma's missing flip flop yesterday but instead I found a treasure chest! ...But it was empty.. *sad face* I brought it home to style it. I added a border, color, and adjusted the width."],
+        dialogue: ["I was looking for my grandma's missing flip flop yesterday but instead I found a treasure chest! ...Unfortunately, it was empty.. *sad face* I brought it home to style it. I added a border, color, and adjusted the width."],
         passedTrialDialogue: []
     },
     {
@@ -109,13 +110,15 @@ const gameDB = [
 
 ]
 
-db.GameDatabase.remove({})
-    .then(() => db.GameDatabase.collection.insertMany(gameDB))
+db.Gamedatabase.deleteMany({})
+    .then(() => db.Gamedatabase.collection.insertMany(gamedb))
     .then(data => {
         console.log(data.insertedCount + " records inserted!");
+        mongoose.connection.close();
     })
     .catch(err => {
         console.error(err);
+        mongoose.connection.close();
     });
 
 
