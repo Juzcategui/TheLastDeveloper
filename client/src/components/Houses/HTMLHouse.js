@@ -13,7 +13,7 @@ class HTMLHouse extends React.Component {
 
             <div>
                 <p>HTML House</p>
-                <Link to="/WorldMap">World Map</Link>
+                <Link to="/Town">Town</Link>
             </div>
         )
     }

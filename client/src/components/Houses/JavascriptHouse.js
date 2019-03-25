@@ -13,7 +13,7 @@ class JavascriptHouse extends React.Component {
 
             <div>
                 <p>Javascript House</p>
-                <Link to="/WorldMap">World Map</Link>
+                <Link to="/Town">Town</Link>
             </div>
         )
     }

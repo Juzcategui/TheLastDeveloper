@@ -13,7 +13,7 @@ class CSSHouse extends React.Component {
 
             <div>
                 <p>CSS House</p>
-                <Link to="/WorldMap">World Map</Link>
+                <Link to="/Town">Town</Link>
             </div>
         )
     }

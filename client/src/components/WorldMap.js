@@ -12,13 +12,8 @@ class WorldMap extends React.Component {
         return (
             <div>
                 <p>World map</p>
-                <Link to="/CSSHouse">CSS School</Link>
-                <br />
-                <Link to="/HTMLHouse">HTML School</Link>
-                <br />
-                <Link to="/JavascriptHouse">JavaScript School</Link>
-                <br />
-                <Link to="/ReactHouse">React School</Link>
+
+                <Link to="/Town">Town</Link>
                 <br />
                 <Link to="/OuterTown">Forest</Link>
 
