@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-var GameDatabaseSchema = new Schema({
+var GamedatabaseSchema = new Schema({
     npcName: {
         type: String,
         trim: true
@@ -13,9 +13,9 @@ var GameDatabaseSchema = new Schema({
     passedTrialDialogue: {
         type: Array,
         trim: true
-    },
+    }
 });
 
-const GameDatabase = mongoose.model("GameDatabase", GameDatabaseSchema);
+const Gamedatabase = mongoose.model("Gamedatabase", GamedatabaseSchema);
 
-module.exports = GameDatabase;
+module.exports = Gamedatabase;
