@@ -12,6 +12,7 @@ class HTMLHouse extends React.Component {
         return (
 
             <div>
+                <img class="HouseBG" s src="https://userscontent2.emaze.com/images/26d1c133-376b-442b-b8ac-0a07cea44c7c/cab00413219d05d80ed5085542996d8d.png" alt="HTMLHouse" />
                 <p>HTML House</p>
                 <Link to="/Town">Town</Link>
             </div>

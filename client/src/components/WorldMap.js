@@ -11,6 +11,7 @@ class WorldMap extends React.Component {
     render() {
         return (
             <div>
+
                 <p>World map</p>
 
                 <Link to="/Town">Town</Link>
