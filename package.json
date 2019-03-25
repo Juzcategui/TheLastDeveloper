@@ -7,13 +7,7 @@
     "axios": "^0.16.2",
     "express": "^4.16.4",
     "if-env": "^1.0.4",
-    "mongoose": "^5.4.16",
-    "react": "^16.8.5",
-    "path": "^0.12.7",
-    "react-router-dom": "^4.3.1",
-    "react-redux": "^6.0.1",
-    "react-scripts": "2.1.8",
-    "redux": "^4.0.1"
+    "mongoose": "^5.4.16"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
@@ -24,7 +18,8 @@
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
-    "seed": "node seeds/seed-db.js"
+    "seed": "node seeds/seed-db.js",
+    "install": "cd client && npm install"
   },
   "repository": {
     "type": "git",
