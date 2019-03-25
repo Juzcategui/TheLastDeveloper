@@ -28,7 +28,7 @@ class HTMLHouse extends React.Component {
                     <p>Ya noob</p>
 
                 </div>
-                <Link to="/Town">Town</Link>
+                <Link to="/World">World</Link>
             </div>
         )
     }

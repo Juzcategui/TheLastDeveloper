@@ -12,7 +12,8 @@ import ReactHouse from './components/Houses/ReactHouse';
 import CSSHouse from './components/Houses/CSSHouse';
 import World from './Features/World';
 import DialogueBox from './components/DialogueBox';
-import Register from './components/Register'
+import Register from './components/Register';
+import WillBucks from './components/Houses/WillBucks'
 
 
 const App = () => (
@@ -31,6 +32,7 @@ const App = () => (
       <Route exact path="/World" component={World} />
       <Route exact path="/DialogueBox" component={DialogueBox} />
       <Route exact path="/Register" component={Register} />
+      <Route exact path="/WillBucks" component={WillBucks} />
     </div>
   </BrowserRouter>
 )

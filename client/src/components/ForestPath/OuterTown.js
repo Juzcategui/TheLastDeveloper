@@ -15,7 +15,7 @@ class OuterTown extends React.Component {
                 <p>OuterTown</p>
                 <Link to="/OuterForest">Continue to forest</Link>
                 <br />
-                <Link to="/WorldMap">World Map</Link>
+                <Link to="/World">World Map</Link>
             </div>
         )
     }

@@ -14,7 +14,10 @@ class Town extends React.Component {
         return (
             <div >
                 <img class="BG" src={townBG} alt="background" />
-                <button class="btn-sm btn-success" id="coffeeShop">WillBucks</button>
+                <button class="btn-sm btn-success" id="coffeeShop">
+                <Link to ="/WillBucks">WillBucks</Link></button>
+
+                <Link to="/World">World</Link>
 
             </div>
         );

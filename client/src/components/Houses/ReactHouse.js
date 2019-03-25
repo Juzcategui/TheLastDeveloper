@@ -31,7 +31,7 @@ class ReactHouse extends React.Component {
                 </div>
             </div>
 
-                <Link to="/Town">Town</Link>
+                <Link to="/World">World</Link>
             </div>
         )
     }

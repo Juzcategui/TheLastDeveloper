@@ -28,7 +28,7 @@ class CSSHouse extends React.Component {
                     <p>Dave Chapelle lookin ahh</p>
 
                 </div>
-                <Link to="/Town">Town</Link>
+                <Link to="/World">World</Link>
             </div>
         )
     }
