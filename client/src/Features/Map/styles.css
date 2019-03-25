@@ -1,10 +1,10 @@
 .tile {
     display: inline-flex;
-    background-color: #42B842;
+    background-color: transparent;
 }
 
 .grass {
-    background-color: #42B842;
+    background-color: transparent;
 }
 
 .rock {

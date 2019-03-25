@@ -2,6 +2,7 @@ import React from 'react';
 import Map from '../Map';
 import Player from '../Player';
 import { Link } from "react-router-dom";
+import NPC from '../NPCs';
 
 import { tiles } from '../../Data/Maps/1'
 import store from '../../config/store'
@@ -15,13 +16,15 @@ function World(props) {
         <div
             style={{
                 position: 'relative',
-                width: '800px',
-                height: '400px',
+                width: '1000px',
+                height: '800px',
                 margin: '20px auto',
+                backgroundImage: `url('https://i.imgur.com/Gi96eDg.png')`
             }}>
             <Link to="/Town">Town Link</Link>
             <Map tiles={tiles} />
             <Player />
+            <NPC />
 
         </div>
     )
