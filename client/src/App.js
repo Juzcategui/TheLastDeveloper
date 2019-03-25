@@ -13,6 +13,7 @@ import CSSHouse from './components/Houses/CSSHouse';
 import World from './Features/World';
 import DialogueBox from './components/DialogueBox';
 import WorldMap from './components/WorldMap'
+import Register from './components/Register'
 
 
 const App = () => (
@@ -31,6 +32,7 @@ const App = () => (
       <Route exact path="/World" component={World} />
       <Route exact path="/DialogueBox" component={DialogueBox} />
       <Route exact path="/WorldMap" component={WorldMap} />
+      <Route exact path="/Register" component={Register} />
     </div>
   </BrowserRouter>
 )
