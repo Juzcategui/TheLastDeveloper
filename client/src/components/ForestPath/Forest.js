@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-class ReactHouse extends React.Component {
+class Forest extends React.Component {
     state = {
         npcName: ''
     }
@@ -12,7 +12,7 @@ class ReactHouse extends React.Component {
         return (
 
             <div>
-                <p>React House</p>
+                <p>Forest (where mongoose is located)</p>
                 <Link to="/WorldMap">World Map</Link>
             </div>
         )
@@ -20,4 +20,4 @@ class ReactHouse extends React.Component {
 
 }
 
-export default ReactHouse;
+export default Forest;
