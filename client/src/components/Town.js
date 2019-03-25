@@ -13,7 +13,9 @@ class Town extends React.Component {
     render() {
         return (
             <div >
-                <img src={townBG} alt="background" />
+                <img class="BG" src={townBG} alt="background" />
+                <button class="btn-sm btn-success" id="coffeeShop">WillBucks</button>
+
             </div>
         );
     }

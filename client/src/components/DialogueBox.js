@@ -1,4 +1,7 @@
 import React from "react";
+import '../App.css'
+import { Link } from "react-router-dom";
+
 
 
 
@@ -7,8 +10,30 @@ class DialogueBox extends React.Component {
         npcName: ''
     }
 
+    render() {
+        return (
+            <div>
 
+                <div id="characterBox">
+                <p>Insert picture here</p>
 
+                    <div id="characterName">
+                        <p>Insert character name here</p>
+                    </div>
+                </div>
+
+                <div id="textBox">
+                    <h1>Welcome to ya doom...</h1>
+                    <p>Alexander</p>
+
+                </div>
+
+                <Link to="/World">World map</Link>
+
+            </div>
+
+        )
+    }
 
 }
 
