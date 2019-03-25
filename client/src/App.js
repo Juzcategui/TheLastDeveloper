@@ -9,6 +9,7 @@ import JavascriptHouse from './components/Houses/JavascriptHouse';
 import ReactHouse from './components/Houses/ReactHouse';
 import CSSHouse from './components/Houses/CSSHouse';
 import World from './Features/World';
+import DialogueBox from './components/DialogueBox';
 
 
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
       <Route exact path="/JavascriptHouse" component={JavascriptHouse} />
       <Route exact path="/ReactHouse" component={ReactHouse} />
       <Route exact path="/World" component={World} />
+      <Route exact path="/DialogueBox" compinent={DialogueBox} />
     </div>
   </BrowserRouter>
 )

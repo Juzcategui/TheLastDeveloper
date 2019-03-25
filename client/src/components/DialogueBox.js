@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 
 
 
@@ -7,8 +8,16 @@ class DialogueBox extends React.Component {
         npcName: ''
     }
 
+    render() {
+        return (
 
+            <div id="#gameTextBox">
+                <h1>Text</h1>
+                <p>Welcome Alex! ...</p>
+            </div>
 
+        )
+    }   
 
 }
 
