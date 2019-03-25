@@ -1,6 +1,7 @@
 import React from 'react';
 import Map from '../Map';
 import Player from '../Player';
+import { Link } from "react-router-dom";
 
 import { tiles } from '../../Data/Maps/1'
 import store from '../../config/store'
@@ -18,8 +19,10 @@ function World(props) {
                 height: '400px',
                 margin: '20px auto',
             }}>
-            <Map />
+            <Link to="/Town">Town Link</Link>
+            <Map tiles={tiles} />
             <Player />
+
         </div>
     )
 }

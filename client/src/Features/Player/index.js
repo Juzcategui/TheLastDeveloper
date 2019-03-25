@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import walkSprite from './walkSprite.png';
+import walkSprite from './Walk_animation_2.png';
 import handleMovement from './movement';
 
 function Player(props) {
@@ -12,8 +12,8 @@ function Player(props) {
                 left: props.position[0],
                 backgroundImage: `url('${walkSprite}')`,
                 backgroundPosition: props.spriteLocation,
-                width: '40px',
-                height: '52px',
+                width: '65px',
+                height: '65px',
             }}
 
         />
