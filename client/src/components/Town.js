@@ -19,7 +19,7 @@ class Town extends React.Component {
                 <button id="gym2">React GROUP</button>
                 <button id="gym3">HTML GROUP</button>
                 <button id="gym4">CSS GROUP</button>
-                <button id="gym5">WillBucks</button>
+                <button id="coffeeShop">WillBucks</button>
 
             </div>
         );

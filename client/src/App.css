@@ -11,5 +11,29 @@
   z-index: -1;
 }
 
-
+#gym1{
+    position:absolute;
+    left: 21%;
+    margin-top:30%;
+}
+#gym2{
+    position: absolute;;
+    right: 25%;
+    margin-top:32%;
+}
+#gym3{
+    position:absolute;
+    left: 20%;
+    margin-top:47%;
+}
+#gym4{
+    position:absolute;
+    right: 18%;
+    margin-top:37%;
+}
+#coffeeShop{
+    position: absolute;;
+    left: 36%;
+    margin-top:23%;
+}
 /* --------------------------------------------------------- */
