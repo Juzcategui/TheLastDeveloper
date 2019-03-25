@@ -28,7 +28,7 @@ class DialogueBox extends React.Component {
 
                 </div>
 
-                <Link to="/WorldMap">World map</Link>
+                <Link to="/World">World map</Link>
 
             </div>
 
