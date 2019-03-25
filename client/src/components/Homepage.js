@@ -19,7 +19,7 @@ class Home extends React.Component {
     render() {
         return (
             <div id="homeBackground">
-
+                    <img class="BG" s src="http://i.imgur.com/QGetQ.png" alt="LoginPage" />
                 <h1 className="gameTitle">The LAST Developer</h1>
 
                 <div id="homePageStyle">

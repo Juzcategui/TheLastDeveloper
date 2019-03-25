@@ -8,19 +8,35 @@ import { tiles } from '../../Data/Maps/1'
 function World(props) {
     return (
         <div>
-        <img class="BG" src="https://i.imgur.com/Gi96eDg.png" alt="background" />
+            <img class="BG" src="https://i.imgur.com/Gi96eDg.png" alt="background" />
             <Link to="/Town">Town Link</Link>
             {/* <Map tiles={tiles}/> */}
             <Player />
 
-                <img id="JS" src="http://i.imgur.com/hgvDp.gif"></img>
-                <img id="REACT" src="http://i.imgur.com/hgvDp.gif"></img>
-                <img id="HTML" src="http://i.imgur.com/hgvDp.gif"></img>
-                <img id="CSS" src="http://i.imgur.com/hgvDp.gif"></img>
-                                
+            <Link to="/JavascriptHouse">
+            <img id="JS" src="http://i.imgur.com/hgvDp.gif"></img>
+            </Link>
 
-                <img id="tForest" src="http://i.imgur.com/hgvDp.gif"></img>
-                <img id="tTown" src="http://i.imgur.com/hgvDp.gif"></img>
+            <Link to="/ReactHouse">
+                <img id="REACT" src="http://i.imgur.com/hgvDp.gif"></img>
+            </Link>
+
+            <Link to="/HTMLHouse">
+            <img id="HTML" src="http://i.imgur.com/hgvDp.gif"></img>
+            </Link>
+
+            <Link to="/CSSHouse">
+            <img id="CSS" src="http://i.imgur.com/hgvDp.gif"></img>
+            </Link>
+
+
+            <Link to="/OuterTown">
+            <img id="tForest" src="http://i.imgur.com/hgvDp.gif"></img>
+            </Link>
+
+            <Link to="/Town">
+            <img id="tTown" src="http://i.imgur.com/hgvDp.gif"></img>
+            </Link>
 
         </div>
     )
