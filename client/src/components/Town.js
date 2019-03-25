@@ -13,13 +13,8 @@ class Town extends React.Component {
     render() {
         return (
             <div >
-                <img id="worldMap" src={townBG} alt="background" />
-
-                <button id="gym1">JS GROUP</button>
-                <button id="gym2">React GROUP</button>
-                <button id="gym3">HTML GROUP</button>
-                <button id="gym4">CSS GROUP</button>
-                <button id="coffeeShop">WillBucks</button>
+                <img class="BG" src={townBG} alt="background" />
+                <button class="btn-sm btn-success" id="coffeeShop">WillBucks</button>
 
             </div>
         );
