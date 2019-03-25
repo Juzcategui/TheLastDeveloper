@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// require("./routing/api-routes.js")(app);
+require("./routing/api-routes.js")(app);
 
 if (process.env.NODE_ENV === "production") {
   app.get("*", function (req, res) {
