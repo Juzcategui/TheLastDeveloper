@@ -10,13 +10,13 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-require("./routing/api-routes.js")(app);
+require('./routing/api-routes')(app);
 
-if (process.env.NODE_ENV === "production") {
-  app.get("*", function (req, res) {
-    res.sendFile(__dirname + "/client/build/index.html");
-  });
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.get("*", function (req, res) {
+//     res.sendFile(__dirname + "/client/build/index.html");
+//   });
+// }
 
 const MONGODB_URI =
   process.env.MONGODB_URI || "mongodb://localhost/thelastdeveloper";
