@@ -13,30 +13,31 @@ class CSSHouse extends React.Component {
         return (
 
             <div>
-                
+
                 <img class="BG" src={CSSHouseImg} alt="CSSHouse" />
                 <h1>CSS House</h1>
 
-                <div>
                     <div id="characterBox">
-                        <p>Insert picture here</p>
+                        <button class="btn btn-danger">Action 1</button>
+                        <button class="btn btn-danger">Action 2</button>
+                    </div>
 
+                    <div>
                         <div id="characterName">
-                            <p>Insert character name here</p>
+                            <p>Insert character name</p>
+                        </div>
+
+                        <div id="textBox">
+                            <h1>Welcome to the CSS house</h1>
+                            <p>Dave Chapelle lookin ahh</p>
+
                         </div>
                     </div>
-
-                    <div id="textBox">
-                        <h1>Welcome to the CSS house</h1>
-                        <p>Dave Chapelle lookin ahh</p>
-
-                    </div>
+                    <Link to="/CSSTown">Back</Link>
                 </div>
-                <Link to="/CSSTown">Back</Link>
-            </div>
-        )
-    }
-
-}
-
+                )
+            }
+        
+        }
+        
 export default CSSHouse;

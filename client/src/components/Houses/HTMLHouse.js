@@ -17,17 +17,19 @@ class HTMLHouse extends React.Component {
                 <h1>HTML House</h1>
 
                 <div id="characterBox">
-                    <p>Insert picture here</p>
-
-                    <div id="characterName">
-                        <p>Insert character name here</p>
-                    </div>
+                    <button class="btn btn-danger">Action 1</button>
+                    <button class="btn btn-danger">Action 2</button>
                 </div>
 
-                <div id="textBox">
-                    <h1>Welcome to the HTML house</h1>
-                    <p>Ya noob</p>
+                <div>
+                    <div id="characterName">
+                        <p>Insert character name</p>
+                    </div>
 
+                    <div id="textBox">
+                        <h1>Welcome to the HTML house</h1>
+                        <p>Ya noob</p>
+                    </div>
                 </div>
                 <Link to="/HTMLTown">Back</Link>
             </div>
