@@ -1,6 +1,6 @@
 import React from 'react';
 import Map from '../Map';
-// import Player from '../Player';
+import Player from '../Player';
 import { Link } from "react-router-dom";
 
 import { tiles } from '../../Data/Maps/1'
@@ -12,6 +12,7 @@ function World(props) {
     }})
     
     return (
+
         <div
         style={{
             position: 'relative',
@@ -20,8 +21,8 @@ function World(props) {
             margin: '20px auto',
             backgroundImage: `url('https://i.imgur.com/Gi96eDg.png')`
         }}>
-        <Map tiles={tiles}/>
-        <Player />
+        {/* <Map tiles={tiles}/>
+        <Player /> */}
 
             <Link to="/JavascriptHouse">
                 <img id="JS" src="http://i.imgur.com/hgvDp.gif"></img>

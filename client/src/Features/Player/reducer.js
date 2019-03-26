@@ -3,7 +3,6 @@ const initialState = {
     spriteLocation: '0px 0px',
     direction: 'EAST',
     walkIndex: 0,
-    // canInteract: false
     
 }
 
@@ -13,10 +12,7 @@ const playerReducer = (state=initialState, action) => {
             return {
             ...action.payload
             }
-        case 'INTERACT_NPC':
-            return {
 
-            }
         default: 
             return state
     }
