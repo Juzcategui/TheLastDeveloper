@@ -92,7 +92,7 @@
 
 #characterName {
   position: absolute;
-  bottom: 14%;
+  top: 79%;
   left: 2%;
 }
 /* ---------------World Map-------------------------------- */
@@ -447,6 +447,16 @@ left: 50%;
   padding: 10px 10px 0 0;
   }
 /* --------------------------------------------------------- */
+
+ /* ---------------- World Map styling ---------------- */
+ #OuterTownTitle,
+ #OuterForestTitle,
+ #ForestTitle {
+  font-family: 'Press Start 2P', cursive;
+  float: right;
+  padding: 10px 10px;
+  color: white;
+ }
 
 
 
