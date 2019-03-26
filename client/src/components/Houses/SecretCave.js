@@ -14,7 +14,7 @@ class SecretCave extends React.Component {
         return (
 
             <div>
-                <img class="BG" src={cave} alt="cave"></img>
+                <img className= "BG" src={cave} alt="cave"></img>
                 <h1 id="REACTTitle">Cody's Super Secret Can't let the Bad Guys Know Hidden Cave</h1>
 
                 <img id="Cody" src={Cody} alt="Cody"></img>
@@ -30,7 +30,7 @@ class SecretCave extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                    <button class="btn btn-success"><Link to="/WorldMap">World Map</Link></button>
+                    <button className= "btn btn-success"><Link to="/WorldMap">World Map</Link></button>
                 </div>
 
             </div>

@@ -15,7 +15,7 @@ class CSSHouse extends React.Component {
 
             <div>
 
-                <img class="BG" src={CSSHouseImg} alt="CSSHouse" />
+                <img className= "BG" src={CSSHouseImg} alt="CSSHouse" />
                 <h1>CSS House</h1>
                     
                     <img id="adam" src={Adam} alt="Adam"></img>
@@ -32,7 +32,7 @@ class CSSHouse extends React.Component {
                     </div>
 
                 <div id="actionBox">
-                    <button class="btn btn-success"><Link to="/CSSTown">Back</Link></button>
+                    <button className= "btn btn-success"><Link to="/CSSTown">Back</Link></button>
                 </div>
 
             </div>

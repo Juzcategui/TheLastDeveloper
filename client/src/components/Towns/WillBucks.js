@@ -13,7 +13,7 @@ class WillBucks extends React.Component {
         return (
 
             <div>
-                <img class="BG" src={willBucks} alt="WillBucks"></img>
+                <img className= "BG" src={willBucks} alt="WillBucks"></img>
 
                 <h1 id="WillBucksTitle">Welcome to WillBucks!</h1>
                 <div>
@@ -27,7 +27,7 @@ class WillBucks extends React.Component {
                         </div>
                     </div>
                     <div id="actionBox">
-                        <button class="btn btn-success"><Link to="/WorldMap">World Map</Link></button>
+                        <button className= "btn btn-success"><Link to="/WorldMap">World Map</Link></button>
                     </div>
                 </div>
             </div>

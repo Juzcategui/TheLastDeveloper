@@ -13,7 +13,7 @@ class ReactTown extends React.Component {
 
             <div>
                 
-                <img class="BG" src={REACTBG} alt="REACTBG" />
+                <img className= "BG" src={REACTBG} alt="REACTBG" />
                 <h1 id="REACTTitle">RIVER OF REACT</h1>
                 <Link to="/ReactHouse">
                     <img id="REACT" src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>

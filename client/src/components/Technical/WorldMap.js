@@ -18,39 +18,39 @@ class WorldMap extends React.Component {
         return (
             <div>
                 <h1 id="WorldMapTitle">WORLD MAP</h1>
-                <img class="BG" src={worldMap} alt="WorldMap" />
+                <img className= "BG" src={worldMap} alt="WorldMap" />
 
-                {/* <h3 class="JSWorldTitle">Javascript Junkies</h3> */}
+                {/* <h3 className= "JSWorldTitle">Javascript Junkies</h3> */}
                 <Link to="/JavascriptTown">
                     <img id="JavascriptJunkies" src={JSSVG} alt="JSVG"></img>
                 </Link>
 
-                {/* <h3 class="ReactWorldTitle">Rivers of React</h3> */}
+                {/* <h3 className= "ReactWorldTitle">Rivers of React</h3> */}
                 <Link to="/ReactTown">
                 <img id="RiversOfReact" src={ReactSVG} alt="ReactSVG"></img>
                 </Link>
 
-                {/* <h3 class="HTMLWorldTitle">House of HTML</h3> */}
+                {/* <h3 className= "HTMLWorldTitle">House of HTML</h3> */}
                 <Link to="/HTMLTown">
                 <img id="HouseOfHTML" src={HTMLSVG} alt="HTMLSVG"></img>
                 </Link>
 
-                {/* <h3 class="CSSWorldTitle">CSS Cult</h3> */}
+                {/* <h3 className= "CSSWorldTitle">CSS Cult</h3> */}
                 <Link to="/CSSTown">
                     <img id="CSSCult" src={CSSSVG} alt="CSSSVG"></img>
                 </Link>
 
-                {/* <h3 class="ForestWorldTitle">Forest</h3> */}
+                {/* <h3 className= "ForestWorldTitle">Forest</h3> */}
                 <Link to="/OuterTown">
                     <img id="ForestWorldMap" src={mongoSVG} alt="mongoSVG"></img>
                 </Link>
 
-                <h3 class="SecretCaveWorldTitle">???</h3>
+                <h3 className= "SecretCaveWorldTitle">???</h3>
                 <Link to="/SecretCave">
                     <img id="SecretCaveWorldMap" src="http://i.imgur.com/hgvDp.gif"></img>
                 </Link>
 
-                {/* <h3 class="WillBucksWorldTitle">WillBucks</h3> */}
+                {/* <h3 className= "WillBucksWorldTitle">WillBucks</h3> */}
                 <Link to="/WillBucks">
                     <img id="WillBucksWorldMap" src="http://i.imgur.com/hgvDp.gif"></img>
                 </Link>
