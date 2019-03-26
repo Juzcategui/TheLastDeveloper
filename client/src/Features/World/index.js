@@ -21,8 +21,8 @@ function World(props) {
             margin: '20px auto',
             backgroundImage: `url('https://i.imgur.com/Gi96eDg.png')`
         }}>
-        {/* <Map tiles={tiles}/>
-        <Player /> */}
+        <Map tiles={tiles}/>
+        <Player />
 
             <Link to="/JavascriptHouse">
                 <img id="JS" src="http://i.imgur.com/hgvDp.gif"></img>
