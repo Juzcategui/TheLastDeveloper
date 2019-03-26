@@ -17,24 +17,18 @@ class WillBucks extends React.Component {
 
                 <h1 id="WillBucksTitle">Welcome to WillBucks!</h1>
                 <div>
-
-                    <div id="characterBox">
-                        <button class="btn btn-danger">Action 1</button>
-                        <button class="btn btn-danger">Action 2</button>
-                    </div>
-
-                    <div>
+                    <div id='DialogContainer'>
                         <div id="characterName">
-                            <p>Insert character name</p>
+                            <p>Insert character name here</p>
                         </div>
-
                         <div id="textBox">
-                            <h1>Welcome WillBucks, how can I help?</h1>
+                            <h3>Welcome to WillBucks, how can I help?</h3>
                             <p>Alexander</p>
                         </div>
                     </div>
-
-                    <Link to="/WorldMap">World Map</Link>
+                    <div id="actionBox">
+                        <button class="btn btn-success"><Link to="/WorldMap">World Map</Link></button>
+                    </div>
                 </div>
             </div>
         )

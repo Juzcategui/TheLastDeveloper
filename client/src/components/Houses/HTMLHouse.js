@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HTMLHouseImg from "../../Backgrounds/HTMLHouse.jpg"
+import Jorge from "../../Sprites/Jorge.png"
 
 
 
@@ -15,11 +16,12 @@ class HTMLHouse extends React.Component {
             <div>
                 <img class="BG" src={HTMLHouseImg} alt="HTMLHouse" />
                 <h1>HTML House</h1>
+                <img id="Gabe" src={Jorge} alt="Gabe"></img>
 
                 <div id='DialogContainer'>
 
                     <div id="characterName">
-                        <p>Insert character name here</p>
+                        <p class="namePlate">Jorge the HTML Hotshot</p>
                     </div>
 
                     <div id="textBox">

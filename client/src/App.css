@@ -10,7 +10,7 @@
   border-radius: 20px;
   height: 30%;
   width: 45%;
-  background:rgba(255,255,255,0.5);
+  background:rgba(255,255,255,1.0);
 }
 
 #backImg {
@@ -104,6 +104,11 @@ width: 73%;
 
 /* ---------------World Map-------------------------------- */
 
+.namePlate{
+  font-weight: bolder;
+
+}
+
 .BG{
   position: absolute;
   top: 0;
@@ -116,6 +121,11 @@ width: 73%;
 /* ---------------------------------------------------------- */
 
 /* ----------------------JS---------------------------------- */
+#Vu{
+    top: 18.5%;
+    left: 50%;
+    position: absolute;  
+}
 
 #JS{
   position:absolute;
@@ -182,6 +192,12 @@ left: 52%;
 
 
 /* ---------------------------REACT--------------------------- */
+#Gabe{
+  top: 18.5%;
+  left: 50%;
+  position: absolute;
+}
+
 #REACT{
   position: absolute;;
   left: 42%;
@@ -247,6 +263,12 @@ left: 80%;
 
 /* --------------------------------------------------------------- */
 /* ---------------- HTML Town/House styling ---------------- */
+#Jorge{
+  top: 18.5%;
+  left: 50%;
+  position: absolute;
+}
+
 #HTML {
   position:absolute;
   left: 37%;
@@ -300,6 +322,12 @@ left: 75%;
 
 /* ---------------------------------------------------------- */
 /* ---------------- CSS Town/House styling ---------------- */
+#adam{
+  top: 18.5%;
+  left: 50%;
+  position: absolute;
+}
+
 #CSS{
   position:absolute;
   left: 52%;
@@ -379,24 +407,34 @@ left: 50%;
   position: absolute;
 }
 #JavascriptJunkies {
-  top: 70%;
+  top: 66%;
   left: 68%;
+  width: 80px;
+  height: 100px;
 }
 #RiversOfReact {
-  top: 14%;
-  left: 28%;
+  top: 18%;
+  left: 27%;
+  width: 100px;
+  height: 100px;
 }
 #HouseOfHTML {
-  top: 53%;
-  left: 89%;
+  top: 45%;
+  left: 88%;
+  width: 70px;
+  height: 90px;
 }
 #CSSCult {
-  top: 68%;
-  left: 23%;
+  top: 65%;
+  left: 18%;
+  width: 70px;
+  height: 90px;
 }
 #ForestWorldMap {
-  top: 15%;
-  left: 72%;
+  top: 13%;
+  left: 70%;
+  width: 100px;
+  height: 80px;
 }
 #SecretCaveWorldMap {
   top: 34%;
@@ -465,6 +503,14 @@ left: 50%;
   color: white;
  }
 
+
+ /* --------------------------Secret Lair------------------- */
+ #Cody{
+    top: 18.5%;
+    left: 50%;
+    position: absolute;
+  }
+ 
 
 
 

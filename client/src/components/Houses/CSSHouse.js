@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CSSHouseImg from "../../Backgrounds/CSSHouse.jpg"
+import Adam from "../../Sprites/Adam.png"
 
 
 
@@ -16,8 +17,9 @@ class CSSHouse extends React.Component {
 
                 <img class="BG" src={CSSHouseImg} alt="CSSHouse" />
                 <h1>CSS House</h1>
-
-                <div id='DialogContainer'>
+                    
+                    <img id="adam" src={Adam} alt="Adam"></img>
+                    <div id='DialogContainer'>
 
                     <div id="characterName">
                         <p>Insert character name here</p>
@@ -27,7 +29,7 @@ class CSSHouse extends React.Component {
                         <h3>Welcome to the CSS house</h3>
                         <p>Dave Chapelle lookin ahh</p>
                     </div>
-                </div>
+                    </div>
 
                 <div id="actionBox">
                     <button class="btn btn-success"><Link to="/CSSTown">Back</Link></button>

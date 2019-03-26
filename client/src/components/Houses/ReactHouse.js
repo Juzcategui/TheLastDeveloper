@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import REACTHouse from "../../Backgrounds/REACTHouse.jpeg"
+import Gabe from "../../Sprites/Gabe.png"
 
 
 
@@ -15,6 +16,7 @@ class ReactHouse extends React.Component {
             <div>
                 <img class="BG" src={REACTHouse} alt="ReactHouse" />
                 <h1>React House</h1>
+                <img id="Gabe" src={Gabe} alt="Gabe"></img>
 
                 <div id='DialogContainer'>
 
