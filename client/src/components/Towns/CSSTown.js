@@ -13,7 +13,7 @@ class CSSTown extends React.Component {
 
             <div>
                 <div>
-                    <img class="BG" src={CSSBG} alt="CSSBG" />
+                    <img className="BG" src={CSSBG} alt="CSSBG" />
                     <h1 id="CSSTitle">CSS CULT</h1>
                 </div>
 

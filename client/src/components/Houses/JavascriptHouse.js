@@ -14,14 +14,14 @@ class JavascriptHouse extends React.Component {
         return (
 
             <div>
-                <img class="BG" src={JSHouse} alt="JSHouse" />
+                <img className="BG" src={JSHouse} alt="JSHouse" />
                 <h1>Javascript House</h1>
                 <img id="Vu" src={Vu} alt="Vu"></img>
 
                 <div id='DialogContainer'>
 
                     <div id="characterName">
-                        <p>Vu the Javascript Jaeger</p>
+                        <p className="namePlate">Vu the Javascript Jaeger</p>
                     </div>
 
                     <div id="textBox">
@@ -31,7 +31,7 @@ class JavascriptHouse extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                    <button class="btn btn-success"><Link to="/JavascriptTown">Back</Link></button>
+                    <button className="btn btn-success"><Link to="/JavascriptTown">Back</Link></button>
                 </div>
                 
             </div>
