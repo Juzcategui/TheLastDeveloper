@@ -18,6 +18,8 @@ export default function handleMovement(player) {
 
             case 'SOUTH': 
                 return [ oldPos[0], oldPos[1]+SPRITE_SIZE ]
+            default: 
+                return;
         }
     }
 
@@ -31,6 +33,8 @@ export default function handleMovement(player) {
                 return `${SPRITE_SIZE * walkIndex}px ${SPRITE_SIZE*2}px`
             case 'NORTH':
                 return `${SPRITE_SIZE * walkIndex}px ${SPRITE_SIZE*3}px`
+            default:
+                return;
         }
     }
 
@@ -75,11 +79,11 @@ export default function handleMovement(player) {
     }
 
     function talkNPC (direction, newPos) {
-
+        console.log("Hark, the ride through the mist of dawn!")
     }
 
     function attemptMove(direction) {
-        const oldPos = store.getState().player.position
+        const oldPos = store.getState().player.position;
         const newPos = getNewPosition(oldPos, direction)
 
         if(observeBoundaries(oldPos, newPos) && observeGeometry(oldPos, newPos))
@@ -87,11 +91,13 @@ export default function handleMovement(player) {
 
     }
 
-    function attemptTalkNPC(direction) {
-        const oldPos = store.getState().player.position
-        const newPos = getNewPosition(oldPos, direction)
+    function attemptTalkNPC() {
+        const {position: oldPos, direction} = store.getState().player;
+        const newPos = getNewPosition(oldPos, direction);
 
-        if(observeBoundaries(oldPos, newPos) && observeGeometry(oldPos, newPos) && observeNPC(oldPos, newPos))
+        console.log(observeNPC(oldPos, newPos), oldPos, newPos)
+
+        if(observeNPC(oldPos, newPos))
             talkNPC()
     }
 
@@ -111,8 +117,8 @@ export default function handleMovement(player) {
             case 40: 
                 return attemptMove('SOUTH')
 
-            // case enterKey: 
-            //     return attemptTalkNPC('NPC_ID')
+            case 32: 
+                return attemptTalkNPC()
 
             default:
                 console.log(e.keyCode)

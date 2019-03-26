@@ -12,7 +12,7 @@
 }
 
 .rock {
-    /* background-image: url('/Tiles/Rocks.png'); */
+    background-image: url('/Tiles/Rocks.png');
 }
 
 .tree {

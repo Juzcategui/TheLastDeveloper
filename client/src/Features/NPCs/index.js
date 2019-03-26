@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import NPCSprite from './NPC_Sprite_Stand.png';
 
 function NPC(props) {
