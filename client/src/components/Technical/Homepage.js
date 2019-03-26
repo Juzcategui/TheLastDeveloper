@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../App.css'
+import '../../App.css'
 import { Link } from "react-router-dom";
 import * as $ from 'axios';
 
@@ -19,7 +19,7 @@ class Home extends React.Component {
     render() {
         return (
             <div id="homeBackground">
-                    <img class="BG" s src="http://i.imgur.com/QGetQ.png" alt="LoginPage" />
+                    <img class="BG" src="http://i.imgur.com/QGetQ.png" alt="LoginPage" />
                 <h1 className="gameTitle">The LAST Developer</h1>
 
                 <div id="homePageStyle">
@@ -48,7 +48,7 @@ class Home extends React.Component {
 
 
                 </div>
-                <Link to="/World">World</Link>
+                <Link to="/WorldMap">World</Link>
 
             </div>
 

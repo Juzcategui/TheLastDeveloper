@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-class OuterTown extends React.Component {
+class ReactTown extends React.Component {
     state = {
         npcName: ''
     }
@@ -12,8 +12,8 @@ class OuterTown extends React.Component {
         return (
 
             <div>
-                <p>OuterTown</p>
-                <Link to="/OuterForest">Continue to forest</Link>
+                <h1></h1>
+                <Link to="/ReactHouse">Rivers of React</Link>
                 <br />
                 <Link to="/WorldMap">World Map</Link>
             </div>
@@ -22,4 +22,4 @@ class OuterTown extends React.Component {
 
 }
 
-export default OuterTown;
+export default ReactTown;
