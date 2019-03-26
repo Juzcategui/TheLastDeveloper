@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import * as $ from 'axios';
 import codeGIF from "../../Backgrounds/code.gif"
 
+
 class Homepage extends React.Component {
     state = {
         username: '',
@@ -18,13 +19,10 @@ class Homepage extends React.Component {
 
     handleLogin = (event) => {
         event.preventDefault();
-        // $.get('/api/user').then(
-        //     this.props.history.push("/WorldMap")
-        // )
         $.post('/api/authenticate', { username: this.state.username, password: this.state.password })
             .then((data) => {
-                console.log("hello")
-                sessionStorage.setItem('userId', data.data._id);
+                console.log(data)
+                sessionStorage.setItem('userId', data.data.id);
                 this.props.history.push("/WorldMap")
             }).catch(err => {
                 console.log(err);
