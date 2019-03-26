@@ -28,11 +28,11 @@ class CSSTown extends React.Component {
                 {/* ------------------------------------ */}
 
                 <Link to="/CSSHouse">
-                    <img id="CSS"src="http://i.imgur.com/hgvDp.gif"></img>
+                    <img id="CSS"src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
                 </Link>
                 <br />
                 <Link to="/WorldMap">
-                    <img id="CSSWorld"src="http://i.imgur.com/hgvDp.gif"></img>
+                    <img id="CSSWorld"src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
                 </Link>
 
             </div>
