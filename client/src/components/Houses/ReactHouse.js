@@ -14,14 +14,14 @@ class ReactHouse extends React.Component {
         return (
 
             <div>
-                <img className= "BG" src={REACTHouse} alt="ReactHouse" />
+                <img className="BG" src={REACTHouse} alt="ReactHouse" />
                 <h1>React House</h1>
                 <img id="Gabe" src={Gabe} alt="Gabe"></img>
 
                 <div id='DialogContainer'>
 
                     <div id="characterName">
-                        <p>Insert character name here</p>
+                        <p className="namePlate">Gabe the React Rabid</p>
                     </div>
 
                     <div id="textBox">
@@ -31,7 +31,7 @@ class ReactHouse extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                    <button className= "btn btn-success"><Link to="/ReactTown">Back</Link></button>
+                    <button className="btn btn-success"><Link to="/ReactTown">Back</Link></button>
                 </div>
 
             </div>

@@ -1,4 +1,6 @@
 /* ---------------- Log in / register styling ---------------- */
+
+
 #homePageStyle {
   border-style: solid;
   border-color: lightslategrey;
@@ -106,6 +108,7 @@ width: 73%;
 
 .namePlate{
   font-weight: bolder;
+  font-size: 20px;
 
 }
 
@@ -415,7 +418,7 @@ left: 50%;
 #RiversOfReact {
   top: 18%;
   left: 27%;
-  width: 100px;
+  width: 90px;
   height: 100px;
 }
 #HouseOfHTML {
@@ -437,12 +440,15 @@ left: 50%;
   height: 80px;
 }
 #SecretCaveWorldMap {
-  top: 34%;
-  left: 85%;
+  top: 35%;
+  left: 84%;
+  width: 60px;
+  height: 60px;
 }
 #WillBucksWorldMap {
-  top: 40%;
-  left: 48%;
+  top: 33%;
+  left: 44%;
+  width: 160px;
 }
 .JSWorldTitle,
 .ReactWorldTitle,
@@ -485,6 +491,24 @@ left: 50%;
   top: 36%;
   left: 45%;
 }
+
+#Will{
+    top: 12.5%;
+    left: 60%;
+    position: absolute;
+    height: 600px;
+    width: 400px;
+    transform: rotate()
+}
+#Will2{
+  top: 35%;
+  left: 26%;
+  position: absolute;
+  height: 270px;
+  width: 170px;
+  transform: rotate(-16deg);
+}
+
 
 #WillBucksTitle{
   font-family: 'Press Start 2P', cursive;

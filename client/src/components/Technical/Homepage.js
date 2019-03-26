@@ -33,8 +33,8 @@ class Homepage extends React.Component {
     render() {
         return (
             <div id="homeBackground">
-                <img className= "BG" src={codeGIF} alt="LoginPage" />
-                <h1 className ="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
+                <img className="BG" src={codeGIF} alt="LoginPage" />
+                <h1 className="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
 
                 <div id="homePageStyle">
 

@@ -14,7 +14,7 @@ class OuterTown extends React.Component {
 
             <div>
                 <h1 id="OuterTownTitle">Outer Town</h1>
-                <img className= "BG" src={OuterTownBG} alt="OuterTown" />
+                <img className="BG" src={OuterTownBG} alt="OuterTown" />
 
                     <div id='DialogContainer'>
 
@@ -29,8 +29,8 @@ class OuterTown extends React.Component {
                     </div>
 
                     <div id="actionBox">
-                        <button className= "btn btn-success"><Link to="/OuterForest">Continue to forest</Link></button>
-                        <button className= "btn btn-secondary"><Link to="/WorldMap">World Map</Link></button>
+                        <button className="btn btn-success"><Link to="/OuterForest">Continue to forest</Link></button>
+                        <button className="btn btn-secondary"><Link to="/WorldMap">World Map</Link></button>
                     </div>
 
             </div>
