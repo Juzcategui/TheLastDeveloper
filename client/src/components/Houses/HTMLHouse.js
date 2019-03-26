@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HTMLHouseImg from "../../Backgrounds/HTMLHouse.jpg"
 
 
 
@@ -12,7 +13,7 @@ class HTMLHouse extends React.Component {
         return (
 
             <div>
-                <img class="BG" src="https://userscontent2.emaze.com/images/26d1c133-376b-442b-b8ac-0a07cea44c7c/cab00413219d05d80ed5085542996d8d.png" alt="HTMLHouse" />
+                <img class="BG" src={HTMLHouseImg} alt="HTMLHouse" />
                 <h1>HTML House</h1>
 
                 <div id="characterBox">
