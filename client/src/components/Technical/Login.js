@@ -1,5 +1,7 @@
-import React from "react";
-import '../App.css'
+import React, { Component } from "react";
+import '../../App.css'
+import { Link } from "react-router-dom";
+import * as $ from 'axios';
 
 class Login extends React.Component {
     state = {

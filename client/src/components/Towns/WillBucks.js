@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CSSHouseImg from "../../Backgrounds/CSSHouse.jpg"
+import willBucks from "../../Backgrounds/WillBucks.jpg"
 
 
 
-class CSSHouse extends React.Component {
+class WillBucks extends React.Component {
     state = {
         npcName: ''
     }
@@ -13,9 +13,10 @@ class CSSHouse extends React.Component {
         return (
 
             <div>
+                <img class="BG" src={willBucks} alt="WillBucks"></img>
 
-                <img class="BG" src={CSSHouseImg} alt="CSSHouse" />
-                <h1>CSS House</h1>
+                <h1 id="WillBucksTitle">Welcome to WillBucks!</h1>
+                <div>
 
                     <div id="characterBox">
                         <button class="btn btn-danger">Action 1</button>
@@ -28,16 +29,17 @@ class CSSHouse extends React.Component {
                         </div>
 
                         <div id="textBox">
-                            <h1>Welcome to the CSS house</h1>
-                            <p>Dave Chapelle lookin ahh</p>
-
+                            <h1>Welcome WillBucks, how can I help?</h1>
+                            <p>Alexander</p>
                         </div>
                     </div>
-                    <Link to="/CSSTown">Back</Link>
+
+                    <Link to="/WorldMap">World Map</Link>
                 </div>
-                )
-            }
-        
-        }
-        
-export default CSSHouse;
+            </div>
+        )
+    }
+
+}
+
+export default WillBucks;

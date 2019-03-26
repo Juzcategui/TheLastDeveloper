@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css'
+import '../../App.css'
 import { Link } from "react-router-dom";
 
 
@@ -14,21 +14,23 @@ class DialogueBox extends React.Component {
         return (
             <div>
 
-                <div id="characterBox">
-                <p>Insert picture here</p>
+                <div>
+                    <div id="characterBox">
+                        <p>Insert buttons here</p>
+                    </div>
 
                     <div id="characterName">
                         <p>Insert character name here</p>
                     </div>
+
+                    <div id="textBox">
+                        <h3>Placeholder text</h3>
+                        <p>Text 1</p>
+
+                    </div>
                 </div>
 
-                <div id="textBox">
-                    <h1>Welcome to ya doom...</h1>
-                    <p>Alexander</p>
-
-                </div>
-
-                <Link to="/World">World map</Link>
+                <Link to="/WorldMap">World map</Link>
 
             </div>
 

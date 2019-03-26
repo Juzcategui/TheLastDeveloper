@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import OuterForestBG from '../../Backgrounds/OuterForest.jpg'
 
 
 
@@ -12,10 +13,27 @@ class OuterForest extends React.Component {
         return (
 
             <div>
-                <p>Outer Forest</p>
-                <Link to="/Forest">Continue deeper</Link>
-                <br />
-                <Link to="/WorldMap">World Map</Link>
+                <h1 id="OuterForestTitle">Outer Forest</h1>
+                <img class="BG" src={OuterForestBG} alt="OuterForest" />
+
+
+                <div>
+                    <div id="characterBox">
+                    <button class="btn btn-success"><Link to="/Forest">Continue deeper</Link></button>
+                        <button class="btn btn-secondary"><Link to="/WorldMap">World Map</Link></button>
+                    </div>
+
+                    <div id="characterName">
+                            <p>Insert character name here</p>
+                        </div>
+
+                    <div id="textBox">
+                        <h3>Get ready for a beatdown</h3>
+                        <p>Lil boi</p>
+
+                    </div>
+                </div>
+
             </div>
         )
     }
