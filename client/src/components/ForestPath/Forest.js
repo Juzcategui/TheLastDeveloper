@@ -14,21 +14,22 @@ class Forest extends React.Component {
                 <h1 id="ForestTitle">Forest</h1>
                 <img class="BG" src={ForestBG} alt="Forest" />
 
-                <div>
-                    <div id="characterBox">
-                        <button class="btn btn-secondary"><Link to="/WorldMap">World Map</Link></button>
-                    </div>
+                <div id='DialogContainer'>
 
                     <div id="characterName">
-                            <p>Insert character name here</p>
-                        </div>
+                        <p>Insert character name here</p>
+                    </div>
 
                     <div id="textBox">
-                        <h1>Welcome to ya doom...</h1>
-                        <p>Alexander</p>
-
+                        <h3>You be lookin like a snacc</h3>
+                        <p>The snacc that smiles back ;)</p>
                     </div>
                 </div>
+
+                <div id="actionBox">
+                    <button class="btn btn-secondary"><Link to="/WorldMap">World Map</Link></button>
+                </div>
+
             </div>
         )
     }
