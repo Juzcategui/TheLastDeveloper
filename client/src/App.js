@@ -8,7 +8,6 @@ import World from './Features/World';
 import Homepage from './components/Technical/Homepage';
 import Login from './components/Technical/Login';
 import Register from './components/Technical/Register';
-import DialogueBox from './components/Technical/DialogueBox';
 import WorldMap from './components/Technical/WorldMap';
 
 /*------------------ Forest Path Folder ------------------*/
@@ -42,7 +41,6 @@ const App = () => (
       <Route exact path="/" component={Homepage} />
       <Route exact path="/Login" component={Login} />
       <Route exact path="/Register" component={Register} />
-      <Route exact path="/DialogueBox" component={DialogueBox} />
       <Route exact path="/WorldMap" component={WorldMap} />
 
       {/* ------------------ Forest Path Folder ------------------ */}
