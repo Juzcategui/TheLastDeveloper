@@ -16,7 +16,7 @@ class CSSHouse extends React.Component {
             <div>
 
                 <img className="BG" src={CSSHouseImg} alt="CSSHouse" />
-                <h1>CSS House</h1>
+                <h1 className="HouseTitles">CSS House</h1>
                     
                     <img id="adam" src={Adam} alt="Adam"></img>
                     <div id='DialogContainer'>

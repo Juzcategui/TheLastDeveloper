@@ -1,65 +1,122 @@
-import store from '../../config/store'
-import {  SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from '../../config/constants'
+import store from "../../config/store";
+import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from "../../config/constants";
 
+function getNewPosition(oldPos, direction) {
+  switch (direction) {
+    case "WEST":
+      return [oldPos[0] - SPRITE_SIZE, oldPos[1]];
 
-export default function handleMovement(player) {
+    case "EAST":
+      return [oldPos[0] + SPRITE_SIZE, oldPos[1]];
 
-    function getNewPosition(direction) {
-        const oldPos = store.getState().player.position
-        switch(direction) {
-            case 'WEST': 
-                return [ oldPos[0]-SPRITE_SIZE, oldPos[1] ]
+    case "NORTH":
+      return [oldPos[0], oldPos[1] - SPRITE_SIZE];
 
-            case 'EAST': 
-                return [ oldPos[0]+SPRITE_SIZE, oldPos[1] ]
+    case "SOUTH":
+      return [oldPos[0], oldPos[1] + SPRITE_SIZE];
+    default:
+      return;
+  }
+}
 
-            case 'NORTH': 
-                return [ oldPos[0], oldPos[1]-SPRITE_SIZE ]
+function getSpriteLocation(direction, walkIndex) {
+  switch (direction) {
+    case "SOUTH":
+      return `${SPRITE_SIZE * walkIndex}px ${SPRITE_SIZE * 0}px`;
+    case "EAST":
+      return `${SPRITE_SIZE * walkIndex}px ${SPRITE_SIZE * 1}px`;
+    case "WEST":
+      return `${SPRITE_SIZE * walkIndex}px ${SPRITE_SIZE * 2}px`;
+    case "NORTH":
+      return `${SPRITE_SIZE * walkIndex}px ${SPRITE_SIZE * 3}px`;
+    default:
+      return;
+  }
+}
 
-            case 'SOUTH': 
-                return [ oldPos[0], oldPos[1]+SPRITE_SIZE ]
-        }
+function getWalkIndex() {
+  const walkIndex = store.getState().player.walkIndex;
+  return walkIndex >= 8 ? 0 : walkIndex + 1;
+}
+//X and Y axis checks//
+function observeBoundaries(oldPos, newPos) {
+  return (
+    newPos[0] >= 0 &&
+    newPos[0] <= MAP_WIDTH - SPRITE_SIZE &&
+    (newPos[1] >= 0 && newPos[1] <= MAP_HEIGHT - SPRITE_SIZE)
+  );
+}
+//determines what tiles can and cannot be walked through.
+function observeGeometry(oldPos, newPos) {
+  const tiles = store.getState().map.tiles;
+  const y = newPos[1] / SPRITE_SIZE;
+  const x = newPos[0] / SPRITE_SIZE;
+  const nextTile = tiles[y][x];
+  return nextTile < 5;
+}
+
+function observeNPC(oldPos, newPos) {
+  const tiles = store.getState().map.tiles;
+  const y = newPos[1] / SPRITE_SIZE;
+  const x = newPos[0] / SPRITE_SIZE;
+  const nextTile = tiles[y][x];
+  return nextTile === 9;
+}
+
+function dispatchMove(direction, newPos) {
+  const walkIndex = getWalkIndex();
+  store.dispatch({
+    type: "MOVE_PLAYER",
+    payload: {
+      position: newPos,
+      direction,
+      walkIndex,
+      spriteLocation: getSpriteLocation(direction, walkIndex)
     }
-    //X and Y axis checks//
-    function observeBoundaries (oldPos, newPos) {
-        return (newPos[0] >= 0 && newPos[0] <= MAP_WIDTH - SPRITE_SIZE) &&
-               (newPos[1] >= 0 && newPos[1] <= MAP_HEIGHT - SPRITE_SIZE)
-               ? newPos : oldPos
-    }
+  });
+}
 
-    function dispatchMove(direction) {
-        const oldPos = store.getState().player.position
-        store.dispatch({
-            type: 'MOVE_PLAYER',
-            payload: {
-                position: observeBoundaries(oldPos, getNewPosition(direction))
-            }
-        })
-    }
+function talkNPC(direction, newPos) {
+  console.log("Hark, the ride through the mist of dawn!");
+}
 
-    function handleKeyDown(e) {
-        e.preventDefault()
+function attemptMove(direction) {
+  const oldPos = store.getState().player.position;
+  const newPos = getNewPosition(oldPos, direction);
 
-        switch(e.keyCode) {
-            case 37: 
-               return dispatchMove('WEST')
+  if (observeBoundaries(oldPos, newPos) && observeGeometry(oldPos, newPos))
+    dispatchMove(direction, newPos);
+}
 
-            case 38: 
-                return dispatchMove('NORTH')
+function attemptTalkNPC() {
+  const { position: oldPos, direction } = store.getState().player;
+  const newPos = getNewPosition(oldPos, direction);
 
-            case 39: 
-                return dispatchMove('EAST')
+  console.log(observeNPC(oldPos, newPos), oldPos, newPos);
 
-            case 40: 
-                return dispatchMove('SOUTH')
+  if (observeNPC(oldPos, newPos)) talkNPC();
+}
 
-            default:
-                console.log(e.keyCode)
-        }
-    }
+export function handleKeyDown(e) {
+  e.preventDefault();
 
-    window.addEventListener('keydown', (e) => {
-        handleKeyDown(e)
-    })
-    return player
+  switch (e.keyCode) {
+    case 37:
+      return attemptMove("WEST");
+
+    case 38:
+      return attemptMove("NORTH");
+
+    case 39:
+      return attemptMove("EAST");
+
+    case 40:
+      return attemptMove("SOUTH");
+
+    case 32:
+      return attemptTalkNPC();
+
+    default:
+      console.log(e.keyCode);
+  }
 }

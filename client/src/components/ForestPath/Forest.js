@@ -11,7 +11,7 @@ class Forest extends React.Component {
     render() {
         return (
             <div>
-                <h1 id="ForestTitle">Forest</h1>
+                <h1 className="ForestTitles">Forest</h1>
                 <img className="BG" src={ForestBG} alt="Forest" />
 
                 <div id='DialogContainer'>

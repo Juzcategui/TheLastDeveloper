@@ -1,4 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux'
+import { SPRITE_SIZE } from '../../config/constants'
+
+import './styles.css'
 
 function getTileSprite(type) {
     switch(type) {
@@ -8,16 +12,27 @@ function getTileSprite(type) {
             return 'rock'
         case 7: 
             return 'tree'
+        case 9: 
+            return 'NPC'
+        default:
+            return;
     }
 }
+
 function MapTile(props) {
-    return <div className="tile">{props.tile}</div>
+    return <div 
+    className={`tile ${getTileSprite(props.tile)}`}
+    style={{
+        height: SPRITE_SIZE,
+        width: SPRITE_SIZE,
+        }}
+    />
 }
 
 function MapRow(props) {
     return <div className="row">
     {
-        props.tiles.map( tile => <MapTile tile={tile} /> )
+        props.tiles.map( (tile, i) => <MapTile key={i} tile={tile} /> )
     }
     </div>
 }
@@ -29,19 +44,25 @@ function Map(props) {
                 position: 'relative',
                 top: '0px',
                 left: '0px',
-                width: '800px',
-                height: '400px',
-                backgroundColor: 'green',
+                width: '1000px',
+                height: '800px',
+                backgroundColor: 'transparent',
                 border: '4px solid white',
             }}
         >
 
             {
-                props.tiles.map( row => <MapRow tiles={row} />)
+                props.tiles.map( (row, i) => <MapRow key={i} tiles={row} />)
             }         
 
         </div>
     )
 }
 
-export default Map
+function mapStateToProps(state) {
+    return {
+        tiles: state.map.tiles
+    }
+}
+
+export default connect(mapStateToProps)(Map)

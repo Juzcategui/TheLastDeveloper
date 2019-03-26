@@ -1,0 +1,25 @@
+.tile {
+    display: inline-flex;
+    background-color: transparent;
+}
+
+.row {
+    margin-left: 0px;
+}
+
+.grass {
+    background-color: transparent;
+}
+
+.rock {
+    background-image: url('/Tiles/Rocks.png');
+}
+
+.tree {
+    background-image: url('/Tiles/Tree1.png');
+}
+
+.NPC {
+    background-image: url('../NPCs/NPC_Sprite_Stand.png');
+    background-position: 0 40
+}

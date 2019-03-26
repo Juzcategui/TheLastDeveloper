@@ -1,9 +1,12 @@
 import { createStore, combineReducers } from 'redux';
 import playerReducer from '../Features/Player/reducer';
+import mapReducer from '../Features/Map/reducer';
+
 
 //javascript object with key/value pairs; value of player is whatever reducer returns//
 const rootReducer = combineReducers({
     player: playerReducer,
+    map: mapReducer
 
 })
 
