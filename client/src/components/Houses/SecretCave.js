@@ -20,7 +20,7 @@ class SecretCave extends React.Component {
                 <img id="Cody" src={Cody} alt="Cody"></img>
                 <div id='DialogContainer'>
                     <div id="characterName">
-                        <p className="namePlate">Cody the Conqueror</p>
+                        <p className="namePlate">Charismatic Cody</p>
                     </div>
 
                     <div id="textBox">
