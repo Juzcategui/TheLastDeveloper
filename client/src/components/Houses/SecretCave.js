@@ -16,25 +16,22 @@ class SecretCave extends React.Component {
                 <img class="BG" src={cave} alt="cave"></img>
                 <h1 id="REACTTitle">Cody's Super Secret Can't let the Bad Guys Know Hidden Cave</h1>
 
-                <div id="characterBox">
-                    <button class="btn btn-danger">Action 1</button>
-                    <button class="btn btn-danger">Action 2</button>
-                </div>
+                <div id='DialogContainer'>
 
-                <div>
                     <div id="characterName">
-                        <p>Insert character name</p>
+                        <p>Insert character name here</p>
                     </div>
 
                     <div id="textBox">
-                        <h1>Welcome to ya doom...</h1>
+                        <h3>Welcome to ya doom...</h3>
                         <p>Alexander</p>
-
                     </div>
-
-                    <Link to="/WorldMap">World map</Link>
-
                 </div>
+
+                <div id="actionBox">
+                    <button class="btn btn-success"><Link to="/WorldMap">World Map</Link></button>
+                </div>
+
             </div>
         )
     }
