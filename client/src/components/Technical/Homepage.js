@@ -37,7 +37,7 @@ class Home extends React.Component {
                     <input></input>
                     <div id="signIn">
                         <button type="button" id="signInBtnStyle" className="btn btn-dark" onClick="/DialogueBox">
-                            <Link to="/DialogueBox">Log in</Link>
+                            <Link to="/WorldMap">Log in</Link>
                         </button>
                     </div>
 
