@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-class OuterTown extends React.Component {
+class SecretCave extends React.Component {
     state = {
         npcName: ''
     }
@@ -12,9 +12,7 @@ class OuterTown extends React.Component {
         return (
 
             <div>
-                <p>OuterTown</p>
-                <Link to="/OuterForest">Continue to forest</Link>
-                <br />
+                <p>Cody's man cave</p>
                 <Link to="/WorldMap">World Map</Link>
             </div>
         )
@@ -22,4 +20,4 @@ class OuterTown extends React.Component {
 
 }
 
-export default OuterTown;
+export default SecretCave;

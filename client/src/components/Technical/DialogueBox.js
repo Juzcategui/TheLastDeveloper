@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css'
+import '../../App.css'
 import { Link } from "react-router-dom";
 
 
@@ -28,7 +28,7 @@ class DialogueBox extends React.Component {
 
                 </div>
 
-                <Link to="/World">World map</Link>
+                <Link to="/WorldMap">World map</Link>
 
             </div>
 

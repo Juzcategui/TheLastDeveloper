@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import '../App.css'
+import '../../App.css'
 import { Link } from "react-router-dom";
 import * as $ from 'axios';
 
-class Register extends React.Component {
+class Login extends React.Component {
     state = {
         reguser: '',
         regpw: '',
@@ -19,11 +19,10 @@ class Register extends React.Component {
     render() {
         return (
             <div >
-                <p> Register page placeholder </p>
-                <Link to ="/">HomePage</Link>
+                Login Page Placeholder
             </div>
         );
     }
 }
 
-export default Register;
+export default Login;

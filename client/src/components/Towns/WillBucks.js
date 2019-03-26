@@ -12,7 +12,7 @@ class WillBucks extends React.Component {
         return (
 
             <div>
-                <Link to="/Town">Town</Link>
+                <Link to="/WorldMap">World Map</Link>
             </div>
         )
     }

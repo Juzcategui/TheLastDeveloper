@@ -28,7 +28,7 @@ class JavascriptHouse extends React.Component {
                     <p>Unable to do 2+2 lookin ahh</p>
 
                 </div>
-                <Link to="/World">World</Link>
+                <Link to="/JavascriptTown">Back</Link>
             </div>
         )
     }
