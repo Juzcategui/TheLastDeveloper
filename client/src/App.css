@@ -65,36 +65,43 @@
 
 
 /* ---------------- Text box styling ---------------- */
-#textBox,
-#characterBox,
-#characterName {
-  border-style: solid;
-  border-color: lightgray;
-  position: absolute;
-  border-radius: 10px;
+#DialogContainer {
+bottom: 3%;
+position: absolute;
+right: 3%;
+width: 73%;
+}
+
+#characterName,
+#textBox {
   background:rgba(255,255,255,0.8);
-  color: black;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightslategrey;
+  padding-top: 10px;
+}
+
+#characterName {
+  margin-bottom: 10px;
+  width: 25%;
   text-align: center;
-  padding: 10px;
 }
 
 #textBox {
-  width: 78%;
-  left: 2%;
-  bottom: 0;
+  padding-left: 15px;
 }
 
-#characterBox {
-  width: 15%;
-  right: 2%;
-  bottom: 0;
-}
-
-#characterName {
+#actionBox {
+  background:rgba(255,255,255,0.8);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightslategrey;
   position: absolute;
-  top: 79%;
-  left: 2%;
+  bottom: 3%;
+  left: 3%;
+  padding: 10px;
 }
+
 /* ---------------World Map-------------------------------- */
 
 .namePlate{
@@ -116,7 +123,7 @@
 /* ----------------------JS---------------------------------- */
 #Vu{
     top: 18.5%;
-    left: 35%;
+    left: 50%;
     position: absolute;  
 }
 
@@ -187,7 +194,7 @@ left: 52%;
 /* ---------------------------REACT--------------------------- */
 #Gabe{
   top: 18.5%;
-  left: 35%;
+  left: 50%;
   position: absolute;
 }
 
@@ -258,7 +265,7 @@ left: 80%;
 /* ---------------- HTML Town/House styling ---------------- */
 #Jorge{
   top: 18.5%;
-  left: 35%;
+  left: 50%;
   position: absolute;
 }
 
@@ -317,7 +324,7 @@ left: 75%;
 /* ---------------- CSS Town/House styling ---------------- */
 #adam{
   top: 18.5%;
-  left: 35%;
+  left: 50%;
   position: absolute;
 }
 
@@ -500,7 +507,7 @@ left: 50%;
  /* --------------------------Secret Lair------------------- */
  #Cody{
     top: 18.5%;
-    left: 35%;
+    left: 50%;
     position: absolute;
   }
  

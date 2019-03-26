@@ -6,6 +6,7 @@ mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/thelastdeveloper", { useNewUrlParser: true });
 
 const gamedb = [
+    // Scrolls in the houses
     {
         npcName: "HTML",
         dialogue: ["All HTML documents must start with a document type declaration: <!DOCTYPE html>",
@@ -50,6 +51,7 @@ const gamedb = [
         position: [0, 0],
         passedTrialDialogue: []
     },
+    // Master NPC in each towm
     {
         npcName: "Vu the Javascript Jaeger",
         dialogue: ["I am the master of the House of Javascript. Are you willing to take on my trial?",],
@@ -75,7 +77,7 @@ const gamedb = [
         position: [0, 0],
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
     },
-
+    // Javascript town NPC
     {
         npcName: "Peter J",
         dialogue: ["Aaron, what are you doing?! That's not the right declaration to create a constant variable. Why are you using var?? Const is used when you don't want the variable to be redefined!"],
@@ -104,7 +106,7 @@ const gamedb = [
         passedTrialDialogue: []
     },
 
-
+    // Reach town NPC
     {
         npcName: "Erwins",
         dialogue: ["You know what is awful? Jquery is awful. React is so much better. Hmph. It uses a virtual dom and gets rid of 'spaghetti code.' It's great!"],
@@ -134,8 +136,7 @@ const gamedb = [
         passedTrialDialogue: []
     },
 
-
-
+    // CSS town NPC
     {
         npcName: "Barry",
         dialogue: ["No more tall boys for me. I am exhausted. Cascading down the town's hill was tiring. Do you know what else cascades? CSS!"],
@@ -166,7 +167,7 @@ const gamedb = [
     },
 
 
-
+    // HTML town NPC
     {
         npcName: "Harrison",
         dialogue: ["What does HTML mean again..? I forgot.. Hmm.. Hopper..Hipper..Hold on. *drinks coffee* Hyper Text Markup Language, that's it!"],
