@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import ForestBG from '../../Backgrounds/Forest.png'
 
 
 class Forest extends React.Component {
@@ -12,7 +12,7 @@ class Forest extends React.Component {
         return (
             <div>
                 <h1 id="ForestTitle">Forest</h1>
-                <img class="BG" src="http://i.imgur.com/QdrYiag.png" alt="Forest" />
+                <img class="BG" src={ForestBG} alt="Forest" />
 
                 <div>
                     <div id="characterBox">

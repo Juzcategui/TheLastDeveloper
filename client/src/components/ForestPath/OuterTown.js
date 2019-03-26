@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import OuterTownBG from '../../Backgrounds/OuterTown.jpg'
 
 
 
@@ -13,7 +14,7 @@ class OuterTown extends React.Component {
 
             <div>
                 <h1 id="OuterTownTitle">Outer Town</h1>
-                <img class="BG" src="https://www.worldanvil.com/uploads/images/9838c98639a93b36c7a844678ce882c6.jpg" alt="OuterTown" />
+                <img class="BG" src={OuterTownBG} alt="OuterTown" />
 
                 <div>
                     <div id="characterBox">
