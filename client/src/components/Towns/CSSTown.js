@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CSSBG from '../../Backgrounds/CeruleanCity.png'
+import portal from "../../SVG/portal.gif"
 
 
 class CSSTown extends React.Component {
@@ -28,11 +29,11 @@ class CSSTown extends React.Component {
                 {/* ------------------------------------ */}
 
                 <Link to="/CSSHouse">
-                    <img id="CSS"src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
+                    <img id="CSS"src={portal} alt="portal"></img>
                 </Link>
                 <br />
                 <Link to="/WorldMap">
-                    <img id="CSSWorld"src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
+                    <img id="CSSWorld"src={portal} alt="portal"></img>
                 </Link>
 
             </div>
