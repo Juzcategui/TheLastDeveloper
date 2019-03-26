@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import JSBG from '../../Backgrounds/PewterCity.png'
+import portal from "../../SVG/portal.gif"
 
 
 class HTMLTown extends React.Component {
@@ -28,11 +29,11 @@ class HTMLTown extends React.Component {
                 {/* ------------------------------------ */}
 
                 <Link to="/HTMLHouse">
-                    <img id="HTML" src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
+                    <img id="HTML"src={portal} alt="portal"></img>
                 </Link>
                 <br />
                 <Link to="/WorldMap">
-                    <img id="HTMLWorld" src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
+                    <img id="HTMLWorld"src={portal} alt="portal"></img>
                 </Link>
 
             </div>
