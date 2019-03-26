@@ -104,7 +104,6 @@ width: 73%;
   padding: 10px;
 }
 
-/* ---------------World Map-------------------------------- */
 
 .namePlate{
   font-weight: bolder;
@@ -121,7 +120,6 @@ width: 73%;
   z-index: -2;
 }
 
-/* ---------------------------------------------------------- */
 
 /* ----------------------JS---------------------------------- */
 #Vu{
@@ -148,12 +146,6 @@ position:absolute;
   width: 50px;
   height: 50px;
   z-index: -1;
-}
-
-#JSTitle{
-font-family: 'Press Start 2P', cursive;
-float: right;
-padding: 10px 10px 0 0;
 }
 
 #JSSprite1,
@@ -191,8 +183,6 @@ top: 58%;
 left: 54%;
 }
 
-/* ---------------------------------------------------------- */
-
 
 /* ---------------------------REACT--------------------------- */
 #Gabe{
@@ -219,12 +209,6 @@ font-size:10px;
 width: 50px;
 height: 50px;
 z-index: -1;
-}
-
-#REACTTitle{
-font-family: 'Press Start 2P', cursive;
-float: right;
-padding: 10px 10px 0 0;
 }
 
 #REACTSprite1,
@@ -263,8 +247,6 @@ left: 80%;
 }
 
 
-
-/* --------------------------------------------------------------- */
 /* ---------------- HTML Town/House styling ---------------- */
 #Jorge{
   top: 18.5%;
@@ -290,11 +272,7 @@ left: 80%;
   height: 50px;
   z-index: -1;
 }
-#HTMLTitle {
-  font-family: 'Press Start 2P', cursive;
-  float: right;
-  padding: 10px 10px 0 0;
-  }
+
 #HTMLSprite1, #HTMLSprite2,
 #HTMLSprite3, #HTMLSprite4,
 #HTMLSprite5 {
@@ -323,7 +301,7 @@ top: 50%;
 left: 75%;
 }
 
-/* ---------------------------------------------------------- */
+
 /* ---------------- CSS Town/House styling ---------------- */
 #adam{
   top: 18.5%;
@@ -349,11 +327,8 @@ left: 75%;
   height:50px;
   z-index: -1;
 }
-#CSSTitle {
-  font-family: 'Press Start 2P', cursive;
-  float: left;
-  padding: 10px 10px;
-  }
+
+
 #CSSSprite1, #CSSSprite2,
 #CSSSprite3, #CSSSprite4,
 #CSSSprite5 {
@@ -383,6 +358,8 @@ left: 50%;
 }
 
 /* ---------------------------------------------------------- */
+
+
 #WORLD{
   position:absolute;
   left: 0%;
@@ -392,6 +369,7 @@ left: 50%;
   height:30px;
   z-index: -1;
 }
+
 
  /* ---------------- World Map styling ---------------- */
  #WorldMapTitle {
@@ -486,6 +464,7 @@ left: 50%;
   left: 85%;
 }
 
+
 /* -----------------------WillBucks------------------------ */
 .WillBucksWorldTitle {
   top: 36%;
@@ -509,35 +488,35 @@ left: 50%;
   transform: rotate(-16deg);
 }
 
-
-#WillBucksTitle{
-  font-family: 'Press Start 2P', cursive;
-  float: left;
-  padding: 10px 10px 0 0;
-  }
-/* --------------------------------------------------------- */
-
- /* ---------------- World Map styling ---------------- */
- #OuterTownTitle,
- #OuterForestTitle,
- #ForestTitle {
-  font-family: 'Press Start 2P', cursive;
-  float: right;
-  padding: 10px 10px;
-  color: white;
- }
-
-
- /* --------------------------Secret Lair------------------- */
+/* --------------------------Secret Lair------------------- */
  #Cody{
     top: 18.5%;
     left: 50%;
     position: absolute;
   }
- 
 
 
+/* ---------------- House Font styling ---------------- */
+.HouseTitles,
+.CSSTownTitle,
+.ForestTitles{
+  font-family: 'Press Start 2P', cursive;
+  left: 0;
+  padding: 10px 15px;
+  top: 1%;
+  position: absolute;
+  color: black;
+  background:rgba(255,255,255,0.8);
+  border-radius: 5px;
+  }
 
-
-
-
+  .TownTitles {
+    font-family: 'Press Start 2P', cursive;
+    right: 0;
+    padding: 10px 15px;
+    top: 1%;
+    position: absolute;
+    color: black;
+    background:rgba(255,255,255,0.8);
+    border-radius: 5px;
+  }

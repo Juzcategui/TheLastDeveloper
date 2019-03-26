@@ -14,7 +14,7 @@ class HTMLTown extends React.Component {
             <div>
                 <div>
                     <img className="BG" src={JSBG} alt="CSSBG" />
-                    <h1 id="HTMLTitle">HOUSE OF HTML</h1>
+                    <h1 className="TownTitles">HOUSE OF HTML</h1>
                 </div>
 
                 {/* Character filler sprite */}

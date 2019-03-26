@@ -17,7 +17,7 @@ class WillBucks extends React.Component {
             <div>
                 <img className="BG" src={willBucks} alt="WillBucks"></img>
 
-                <h1 id="WillBucksTitle">Welcome to WillBucks!</h1>
+                <h1 className="HouseTitles">Welcome to WillBucks!</h1>
                 <img id="Will" src={Will} alt="Will"></img>
                 <img id="Will2" src={Will2} alt="Will2"></img>
                 <div>
