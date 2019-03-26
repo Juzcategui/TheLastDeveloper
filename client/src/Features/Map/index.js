@@ -40,8 +40,8 @@ function Map(props) {
                 position: 'relative',
                 top: '0px',
                 left: '0px',
-                width: '1320px',
-                height: '660px',
+                width: '1000px',
+                height: '800px',
                 backgroundColor: 'transparent',
                 border: '4px solid white',
             }}
