@@ -41,6 +41,7 @@ class Home extends React.Component {
                         </button>
                     </div>
 
+
                     <div id="register">
                     <h4>New player?
                     <button type="button" id="registerBtnStyle" className="btn btn-warning">

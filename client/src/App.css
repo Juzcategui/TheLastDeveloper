@@ -1,119 +1,109 @@
 /* ---------------- Log in / register styling ---------------- */
 #homePageStyle {
-    border-style: solid;
-    border-color: lightslategrey;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 50px;
-    border-radius: 20px;
-    height: 30%;
-    width: 45%;
-    background:rgba(255,255,255,0.5);
-  }
-  
-  #backImg {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-  }
-  
-  #signIn {
-    margin-bottom: 5%;
-  }
-  
-  #signIn, #register {
-    text-align: center;
-  }
-  
-  
-  .homeInput {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-  
-  .gameTitle {
-    position: absolute;
-    top: 20%;
-    left: 57.5%;
-    transform: translate(-50%, -50%);
-    font-family: 'Press Start 2P', cursive;
-    font-size: 48px;
-    font-weight: bold;
-  }
-  
-  .homeHeader {
-    font-family: 'Allerta Stencil', sans-serif;
-    font-size: 36px;
-  }
+  border-style: solid;
+  border-color: lightslategrey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  border-radius: 20px;
+  height: 30%;
+  width: 45%;
+  background:rgba(255,255,255,0.5);
+}
 
-  #word1{
-    color: #9932CC;
-  }
+#backImg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
 
-  #word2{
-    color: #BDB76B;
-  }
+#signIn {
+  margin-bottom: 5%;
+}
 
-  #word3{
-    color: cadetblue;
-  }
-  
+#signIn, #register {
+  text-align: center;
+}
 
-  /* ---------------- Text box styling ---------------- */
-  #textBox,
-  #characterBox,
-  #characterName {
-    border-style: solid;
-    border-color: lightgray;
-    position: absolute;
-    border-radius: 10px;
-    background:rgba(255,255,255,0.8);
-    color: black;
-    text-align: center;
-    padding: 10px;
-  }
 
-  #textBox {
-    width: 78%;
-    left: 2%;
-    bottom: 0;
-  }
+.homeInput {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
 
-  #characterBox {
-    width: 15%;
-    right: 2%;
-    bottom: 0;
-  }
+.gameTitle {
+  position: absolute;
+  top: 20%;
+  left: 57.5%;
+  transform: translate(-50%, -50%);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 48px;
+  font-weight: bold;
+}
 
-  #characterName {
-    position: absolute;
-    bottom: 14%;
-    left: 2%;
-  }
+.homeHeader {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 36px;
+}
 
-  /* ---------------- CSS House styling ---------------- */
-  .BG {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: -1;
-  }
+#word1{
+  color: #9932CC;
+}
+
+#word2{
+  color: #BDB76B;
+}
+
+#word3{
+  color: cadetblue;
+}
+
+
+/* ---------------- Text box styling ---------------- */
+#textBox,
+#characterBox,
+#characterName {
+  border-style: solid;
+  border-color: lightgray;
+  position: absolute;
+  border-radius: 10px;
+  background:rgba(255,255,255,0.8);
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+#textBox {
+  width: 78%;
+  left: 2%;
+  bottom: 0;
+}
+
+#characterBox {
+  width: 15%;
+  right: 2%;
+  bottom: 0;
+}
+
+#characterName {
+  position: absolute;
+  bottom: 14%;
+  left: 2%;
+}
 /* ---------------World Map-------------------------------- */
 
 .BG{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: -2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -2;
 }
 
 /* ---------------------------------------------------------- */
@@ -121,29 +111,29 @@
 /* ----------------------JS---------------------------------- */
 
 #JS{
-    position:absolute;
-    left: 48.5%;
-    top: 60%;
-    font-size:10px;
-    width: 60px;
-    height:35px;
-    z-index: -1;
+  position:absolute;
+  left: 48.5%;
+  top: 60%;
+  font-size:10px;
+  width: 60px;
+  height:35px;
+  z-index: -1;
 }
 
 #JSWorld{
-  position:absolute;
-    left: 36.5%;
-    top: 87%;
-    font-size:10px;
-    width: 60px;
-    height:40px;
-    z-index: -1;
+position:absolute;
+  left: 36.5%;
+  top: 87%;
+  font-size:10px;
+  width: 60px;
+  height:40px;
+  z-index: -1;
 }
 
 #JSTitle{
-  font-family: 'Press Start 2P', cursive;
-  float: right;
-  padding: 10px 10px 0 0;
+font-family: 'Press Start 2P', cursive;
+float: right;
+padding: 10px 10px 0 0;
 }
 
 #JSSprite1,
@@ -151,34 +141,34 @@
 #JSSprite3,
 #JSSprite4,
 #JSSprite5{
-  position: absolute;
-  width: 8%;
-  z-index: -1;
+position: absolute;
+width: 8%;
+z-index: -1;
 }
 
 #JSSprite1{
-  top: 25%;
-  left: 12%;
+top: 25%;
+left: 12%;
 }
 
 #JSSprite2{
-  top: 19%;
-  left: 65%;
+top: 19%;
+left: 65%;
 }
 
 #JSSprite3{
-  top: 63%;
-  left: 8%;
+top: 63%;
+left: 8%;
 }
 
 #JSSprite4{
-  top: 35%;
-  left: 61%;
+top: 35%;
+left: 61%;
 }
 
 #JSSprite5{
-  top: 53%;
-  left: 52%;
+top: 53%;
+left: 52%;
 }
 
 /* ---------------------------------------------------------- */
@@ -186,29 +176,29 @@
 
 /* ---------------------------REACT--------------------------- */
 #REACT{
-    position: absolute;;
-    left: 42%;
-    top:  78%;
-    font-size:10px;
-    width: 55px;
-    height:40px;
-    z-index: -1;
-}
-
-#REACTWorld{
-  position:absolute;
-  left: 37%;
-  top: 5%;
+  position: absolute;;
+  left: 42%;
+  top:  78%;
   font-size:10px;
-  width: 60px;
+  width: 55px;
   height:40px;
   z-index: -1;
 }
 
+#REACTWorld{
+position:absolute;
+left: 37%;
+top: 5%;
+font-size:10px;
+width: 60px;
+height:40px;
+z-index: -1;
+}
+
 #REACTTitle{
-  font-family: 'Press Start 2P', cursive;
-  float: right;
-  padding: 10px 10px 0 0;
+font-family: 'Press Start 2P', cursive;
+float: right;
+padding: 10px 10px 0 0;
 }
 
 #REACTSprite1,
@@ -216,81 +206,243 @@
 #REACTSprite3,
 #REACTSprite4,
 #REACTSprite5{
-  position: absolute;
-  width: 8%;
-  z-index: -1;
+position: absolute;
+width: 8%;
+z-index: -1;
 }
 
 #REACTSprite1{
-  top: 15%;
-  left: 30%;
+top: 15%;
+left: 30%;
 }
 
 #REACTSprite2{
-  top: 15%;
-  left: 54%;
+top: 15%;
+left: 54%;
 }
 
 #REACTSprite3{
-  top: 35%;
-  left: 26%;
+top: 35%;
+left: 26%;
 }
 
 #REACTSprite4{
-  top: 18%;
-  left: 85%;
+top: 18%;
+left: 85%;
 }
 
 #REACTSprite5{
-  top: 50%;
-  left: 80%;
+top: 50%;
+left: 80%;
 }
 
 
 
 /* --------------------------------------------------------------- */
-#HTML{
-    position:absolute;
-    left: 44.5%;
-    margin-top:39%;
-    font-size:10px;
-    width: 50px;
-    height:30px;
-    z-index: -1;
+/* ---------------- HTML Town/House styling ---------------- */
+#HTML {
+  position:absolute;
+  left: 37%;
+  margin-top:8%;
+  font-size:10px;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
 }
+#HTMLWorld {
+  position:absolute;
+  left: 26%;
+  margin-top:45%;
+  font-size:10px;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+}
+#HTMLTitle {
+font-family: 'Press Start 2P', cursive;
+float: right;
+padding: 10px 10px;
+}
+#HTMLSprite1, #HTMLSprite2,
+#HTMLSprite3, #HTMLSprite4,
+#HTMLSprite5 {
+position: absolute;
+width: 8%;
+z-index: -1;
+}
+#HTMLSprite1 {
+top: 10%;
+left: 75%;
+}
+#HTMLSprite2 {
+top: 16%;
+left: 30%;
+}
+#HTMLSprite3 {
+top: 40%;
+left: 36.5%;
+}
+#HTMLSprite4 {
+top: 65%;
+left: 48.5%;
+}
+#HTMLSprite5 {
+top: 45%;
+left: 75%;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------- CSS Town/House styling ---------------- */
 #CSS{
-    position:absolute;
-    right: 27%;
-    margin-top:40%;
-    font-size:10px;
-    width: 50px;
-    height:30px;
-    z-index: -1;
+  position:absolute;
+  left: 52%;
+  top: 58%;
+  font-size:10px;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
 }
+#CSSWorld {
+  position:absolute;
+  left: 66%;
+  top: 8%;
+  font-size:10px;
+  width: 50px;
+  height:50px;
+  z-index: -1;
+}
+#CSSTitle {
+font-family: 'Press Start 2P', cursive;
+float: right;
+padding: 10px 10px;
+}
+#CSSSprite1, #CSSSprite2,
+#CSSSprite3, #CSSSprite4,
+#CSSSprite5 {
+position: absolute;
+width: 8%;
+z-index: -1;
+}
+#CSSSprite1 {
+top: 10%;
+left: 50%;
+}
+#CSSSprite2 {
+top: 33%;
+left: 48%;
+}
+#CSSSprite3 {
+top: 45%;
+left: 20%;
+}
+#CSSSprite4 {
+top: 35%;
+left: 70%;
+}
+#CSSSprite5 {
+top: 64%;
+left: 50%;
+}
+
+/* ---------------------------------------------------------- */
 #WORLD{
-    position:absolute;
-    left: 0%;
-    margin-top:19%;
-    font-size:10px;
-    width: 30px;
-    height:30px;
-    z-index: -1;
+  position:absolute;
+  left: 0%;
+  margin-top:19%;
+  font-size:10px;
+  width: 30px;
+  height:30px;
+  z-index: -1;
 }
 
-#tForest{
-    position:absolute;
-    left: 0%;
-    margin-top:35%;
-    font-size:0px;
-    width: 30px;
-    height:30px;
-    border-radius: 10px;
-    z-index: -1;
+ /* ---------------- World Map styling ---------------- */
+ #WorldMapTitle {
+  font-family: 'Press Start 2P', cursive;
+  float: right;
+  padding: 10px 10px;
 }
-
-#coffeeShop{
-    position: absolute;;
-    left: 36%;
-    margin-top:23%;
+#JavascriptJunkies,
+#RiversOfReact,
+#HouseOfHTML,
+#CSSCult,
+#ForestWorldMap,
+#SecretCaveWorldMap,
+#WillBucksWorldMap {
+  width: 3%;
+  position: absolute;
+}
+#JavascriptJunkies {
+  top: 70%;
+  left: 68%;
+}
+#RiversOfReact {
+  top: 14%;
+  left: 28%;
+}
+#HouseOfHTML {
+  top: 53%;
+  left: 89%;
+}
+#CSSCult {
+  top: 68%;
+  left: 23%;
+}
+#ForestWorldMap {
+  top: 15%;
+  left: 72%;
+}
+#SecretCaveWorldMap {
+  top: 34%;
+  left: 85%;
+}
+#WillBucksWorldMap {
+  top: 40%;
+  left: 48%;
+}
+.JSWorldTitle,
+.ReactWorldTitle,
+.HTMLWorldTitle,
+.CSSWorldTitle,
+.ForestWorldTitle,
+.SecretCaveWorldTitle,
+.WillBucksWorldTitle {
+  position: absolute;
+  background-color: black;
+  color: white;
+}
+.JSWorldTitle {
+  top: 66%;
+  left: 62%;
+}
+.ReactWorldTitle {
+  top: 10%;
+  left: 23%;
+}
+.HTMLWorldTitle {
+  top: 49%;
+  left: 84%;
+}
+.CSSWorldTitle {
+  top: 64%;
+  left: 21%;
+}
+.ForestWorldTitle {
+  top: 11%;
+  left: 71%;
+}
+.SecretCaveWorldTitle {
+  top: 30%;
+  left: 85%;
+}
+.WillBucksWorldTitle {
+  top: 36%;
+  left: 45%;
 }
 /* --------------------------------------------------------- */
+
+
+
+
+
+
+

@@ -8,8 +8,7 @@ import { tiles } from '../../Data/Maps/1'
 function World(props) {
     return (
         <div>
-            <img class="BG" src="../../src/Backgrounds/WorldMap.png" alt="background" />
-            <Link to="/Town">Town Link</Link>
+            <img class="BG" src="https://i.imgur.com/Gi96eDg.png" alt="background" />
             {/* <Map tiles={tiles}/> */}
             <Player />
 
