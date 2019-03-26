@@ -11,9 +11,24 @@ class Forest extends React.Component {
     render() {
         return (
             <div>
-                            <img class="BG" src="https://i.pinimg.com/originals/aa/46/be/aa46beaee67d41a7e5fb027b1ffca0f1.png" alt="Forest" />
-                <p>Forest (where mongoose is located)</p>
-                <Link to="/WorldMap">World Map</Link>
+                <h1 id="ForestTitle">Forest</h1>
+                <img class="BG" src="http://i.imgur.com/QdrYiag.png" alt="Forest" />
+
+                <div>
+                    <div id="characterBox">
+                        <button class="btn btn-secondary"><Link to="/WorldMap">World Map</Link></button>
+                    </div>
+
+                    <div id="characterName">
+                            <p>Insert character name here</p>
+                        </div>
+
+                    <div id="textBox">
+                        <h1>Welcome to ya doom...</h1>
+                        <p>Alexander</p>
+
+                    </div>
+                </div>
             </div>
         )
     }
