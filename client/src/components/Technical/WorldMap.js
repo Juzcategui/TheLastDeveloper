@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import worldMap from "../../Backgrounds/WorldMap.png"
 
 
 
@@ -12,7 +13,7 @@ class WorldMap extends React.Component {
         return (
             <div>
                 <h1 id="WorldMapTitle">WORLD MAP</h1>
-                <img class="BG" src="https://www.creativeuncut.com/gallery-17/art/com-world-map.jpg" alt="WorldMap" />
+                <img class="BG" src={worldMap} alt="WorldMap" />
 
                 <h3 class="JSWorldTitle">Javascript Junkies</h3>
                 <Link to="/JavascriptTown">

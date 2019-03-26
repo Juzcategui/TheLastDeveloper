@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import '../../App.css'
 import { Link } from "react-router-dom";
 import * as $ from 'axios';
+import codeGIF from "../../Backgrounds/code.gif"
 
 class Home extends React.Component {
     state = {
@@ -19,8 +20,8 @@ class Home extends React.Component {
     render() {
         return (
             <div id="homeBackground">
-                    <img class="BG" src="http://i.imgur.com/QGetQ.png" alt="LoginPage" />
-                <h1 className="gameTitle">The LAST Developer</h1>
+                    <img class="BG" src = {codeGIF} alt="LoginPage" />
+                <h1 className="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
 
                 <div id="homePageStyle">
 
@@ -40,17 +41,16 @@ class Home extends React.Component {
                         </button>
                     </div>
 
+
                     <div id="register">
-                        <h4>New player?
-                            <button type="button" id="registerBtnStyle" className="btn btn-warning">
-                                <Link to="/Register">Register</Link>
-                            </button>
-                        </h4>
+                    <h4>New player?
+                    <button type="button" id="registerBtnStyle" className="btn btn-warning">
+                        <Link to="/Register">Register</Link></button>
+                    </h4>
                     </div>
 
 
                 </div>
-                <Link to="/WorldMap">World</Link>
 
             </div>
 
