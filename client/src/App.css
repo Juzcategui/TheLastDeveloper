@@ -259,10 +259,10 @@ left: 80%;
   z-index: -1;
 }
 #HTMLTitle {
-font-family: 'Press Start 2P', cursive;
-float: right;
-padding: 10px 10px;
-}
+  font-family: 'Press Start 2P', cursive;
+  float: right;
+  padding: 10px 10px 0 0;
+  }
 #HTMLSprite1, #HTMLSprite2,
 #HTMLSprite3, #HTMLSprite4,
 #HTMLSprite5 {
@@ -312,10 +312,10 @@ left: 75%;
   z-index: -1;
 }
 #CSSTitle {
-font-family: 'Press Start 2P', cursive;
-float: right;
-padding: 10px 10px;
-}
+  font-family: 'Press Start 2P', cursive;
+  float: left;
+  padding: 10px 10px;
+  }
 #CSSSprite1, #CSSSprite2,
 #CSSSprite3, #CSSSprite4,
 #CSSSprite5 {
@@ -434,10 +434,18 @@ left: 50%;
   top: 30%;
   left: 85%;
 }
+
+/* -----------------------WillBucks------------------------ */
 .WillBucksWorldTitle {
   top: 36%;
   left: 45%;
 }
+
+#WillBucksTitle{
+  font-family: 'Press Start 2P', cursive;
+  float: left;
+  padding: 10px 10px 0 0;
+  }
 /* --------------------------------------------------------- */
 
 

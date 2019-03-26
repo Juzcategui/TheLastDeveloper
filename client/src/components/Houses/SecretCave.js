@@ -14,7 +14,7 @@ class SecretCave extends React.Component {
 
             <div>
                 <img class="BG" src={cave} alt="cave"></img>
-                <p>Cody's Super Secret Can't let the Bad Guys Know Hidden Cave</p>
+                <h1 id="REACTTitle">Cody's Super Secret Can't let the Bad Guys Know Hidden Cave</h1>
 
                 <div>
 
