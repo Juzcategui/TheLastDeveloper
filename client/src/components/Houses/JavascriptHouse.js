@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import JSHouse from "../../Backgrounds/JSHouse.jpg"
+import Vu from "../../Sprites/Vu.png"
 
 
 
@@ -15,6 +16,7 @@ class JavascriptHouse extends React.Component {
             <div>
                 <img class="BG" src={JSHouse} alt="JSHouse" />
                 <h1>Javascript House</h1>
+                <img id="Vu" src={Vu} alt="Vu"></img>
 
                 <div id="characterBox">
                     <button class="btn btn-danger">Action 1</button>
@@ -22,7 +24,7 @@ class JavascriptHouse extends React.Component {
                 </div>
                 <div>
                     <div id="characterName">
-                        <p>Insert character name</p>
+                        <p>Vu the Javascript Jaeger</p>
                     </div>
 
                     <div id="textBox">
