@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 import World from './Features/World';
 
+
 /*------------------ Technical Folder ------------------*/
 import Homepage from './components/Technical/Homepage';
 import Login from './components/Technical/Login';
@@ -30,11 +31,12 @@ import WillBucks from './components/Towns/WillBucks';
 
 
 const App = () => (
+  
   <BrowserRouter>
     <div>
       {/* ------------------ *** ------------------ */}
-      <Route exact path="/World" component={World} />
-
+      
+      
       {/* ------------------ Technical Folder ------------------ */}
       <Route exact path="/" component={Homepage} />
       <Route exact path="/Login" component={Login} />
@@ -54,6 +56,7 @@ const App = () => (
       <Route exact path="/SecretCave" component={SecretCave} />
 
       {/* ------------------ Town Folder ------------------ */}
+      <Route exact path="/World" component={World} />
       <Route exact path="/CSSTown" component={CSSTown} />
       <Route exact path="/HTMLTown" component={HTMLTown} />
       <Route exact path="/JavascriptTown" component={JavascriptTown} />
