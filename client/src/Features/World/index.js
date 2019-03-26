@@ -9,7 +9,6 @@ function World(props) {
     return (
         <div>
             <img class="BG" src="https://i.imgur.com/Gi96eDg.png" alt="background" />
-            <Link to="/Town">Town Link</Link>
             {/* <Map tiles={tiles}/> */}
             <Player />
 
