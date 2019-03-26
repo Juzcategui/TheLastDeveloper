@@ -15,7 +15,7 @@ class JavascriptHouse extends React.Component {
 
             <div>
                 <img className="BG" src={JSHouse} alt="JSHouse" />
-                <h1>Javascript House</h1>
+                <h1 className="HouseTitles">Javascript House</h1>
                 <img id="Vu" src={Vu} alt="Vu"></img>
 
                 <div id='DialogContainer'>

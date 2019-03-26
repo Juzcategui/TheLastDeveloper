@@ -15,7 +15,7 @@ class HTMLHouse extends React.Component {
 
             <div>
                 <img className="BG" src={HTMLHouseImg} alt="HTMLHouse" />
-                <h1>HTML House</h1>
+                <h1 className="HouseTitles">HTML House</h1>
                 <img id="Gabe" src={Jorge} alt="Gabe"></img>
 
                 <div id='DialogContainer'>

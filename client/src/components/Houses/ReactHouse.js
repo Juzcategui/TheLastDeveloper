@@ -15,7 +15,7 @@ class ReactHouse extends React.Component {
 
             <div>
                 <img className="BG" src={REACTHouse} alt="ReactHouse" />
-                <h1>React House</h1>
+                <h1 className="HouseTitles">React House</h1>
                 <img id="Gabe" src={Gabe} alt="Gabe"></img>
 
                 <div id='DialogContainer'>
