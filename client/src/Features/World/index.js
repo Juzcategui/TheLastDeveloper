@@ -33,7 +33,6 @@ function World(props) {
             }}>
             <Map tiles={tiles}/>
             <Player />
-            <NPC />
 
                 
 

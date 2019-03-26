@@ -3,16 +3,20 @@ const initialState = {
     spriteLocation: '0px 0px',
     direction: 'EAST',
     walkIndex: 0,
-    //canHaveAction: true/flase
+    // canInteract: false
     
 }
 
 const playerReducer = (state=initialState, action) => {
     switch(action.type) {
         case 'MOVE_PLAYER':
-        return {
+            return {
             ...action.payload
-        }
+            }
+        case 'INTERACT_NPC':
+            return {
+
+            }
         default: 
             return state
     }

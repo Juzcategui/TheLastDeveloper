@@ -18,3 +18,8 @@
 .tree {
     background-image: url('/Tiles/Tree1.png');
 }
+
+.NPC {
+    background-image: url('../NPCs/NPC_Sprite_Stand.png');
+    background-position: 0 40
+}
