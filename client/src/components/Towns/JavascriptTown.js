@@ -13,7 +13,7 @@ class JavascriptTown extends React.Component {
         return (
 
             <div>
-                <img class="BG" src={JSBG} alt="JSBG" />
+                <img className="BG" src={JSBG} alt="JSBG" />
                 <h1 id="JSTitle">Javascript Junkies</h1>
                 <Link to="/JavascriptHouse">
                     <img id="JS" src="http://i.imgur.com/hgvDp.gif"></img>
