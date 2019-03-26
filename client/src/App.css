@@ -129,21 +129,21 @@ width: 73%;
 
 #JS{
   position:absolute;
-  left: 48.5%;
-  top: 60%;
+  left: 49%;
+  top: 59%;
   font-size:10px;
-  width: 60px;
-  height:35px;
+  width: 50px;
+  height: 50px;
   z-index: -1;
 }
 
 #JSWorld{
 position:absolute;
-  left: 36.5%;
+  left: 37%;
   top: 87%;
   font-size:10px;
-  width: 60px;
-  height:40px;
+  width: 50px;
+  height: 50px;
   z-index: -1;
 }
 
@@ -159,33 +159,33 @@ padding: 10px 10px 0 0;
 #JSSprite4,
 #JSSprite5{
 position: absolute;
-width: 8%;
+width: 5%;
 z-index: -1;
 }
 
 #JSSprite1{
 top: 25%;
-left: 12%;
+left: 15%;
 }
 
 #JSSprite2{
-top: 19%;
+top: 20%;
 left: 65%;
 }
 
 #JSSprite3{
-top: 63%;
-left: 8%;
+top: 65%;
+left: 14%;
 }
 
 #JSSprite4{
-top: 35%;
+top: 44%;
 left: 61%;
 }
 
 #JSSprite5{
-top: 53%;
-left: 52%;
+top: 58%;
+left: 54%;
 }
 
 /* ---------------------------------------------------------- */
@@ -203,18 +203,18 @@ left: 52%;
   left: 42%;
   top:  78%;
   font-size:10px;
-  width: 55px;
-  height:40px;
+  width: 50px;
+  height: 50px;
   z-index: -1;
 }
 
 #REACTWorld{
 position:absolute;
-left: 37%;
+left: 38%;
 top: 5%;
 font-size:10px;
-width: 60px;
-height:40px;
+width: 50px;
+height: 50px;
 z-index: -1;
 }
 
@@ -230,12 +230,12 @@ padding: 10px 10px 0 0;
 #REACTSprite4,
 #REACTSprite5{
 position: absolute;
-width: 8%;
+width: 5%;
 z-index: -1;
 }
 
 #REACTSprite1{
-top: 15%;
+top: 9%;
 left: 30%;
 }
 
@@ -246,7 +246,7 @@ left: 54%;
 
 #REACTSprite3{
 top: 35%;
-left: 26%;
+left: 27%;
 }
 
 #REACTSprite4{
@@ -272,7 +272,7 @@ left: 80%;
 #HTML {
   position:absolute;
   left: 37%;
-  margin-top:8%;
+  margin-top: 12%;
   font-size:10px;
   width: 50px;
   height: 50px;
@@ -280,8 +280,8 @@ left: 80%;
 }
 #HTMLWorld {
   position:absolute;
-  left: 26%;
-  margin-top:45%;
+  left: 25.5%;
+  margin-top: 47%;
   font-size:10px;
   width: 50px;
   height: 50px;
@@ -296,27 +296,27 @@ left: 80%;
 #HTMLSprite3, #HTMLSprite4,
 #HTMLSprite5 {
 position: absolute;
-width: 8%;
+width: 5%;
 z-index: -1;
 }
 #HTMLSprite1 {
-top: 10%;
+top: 15%;
 left: 75%;
 }
 #HTMLSprite2 {
-top: 16%;
+top: 20%;
 left: 30%;
 }
 #HTMLSprite3 {
-top: 40%;
-left: 36.5%;
+top: 44%;
+left: 38%;
 }
 #HTMLSprite4 {
-top: 65%;
-left: 48.5%;
+top: 64%;
+left: 50%;
 }
 #HTMLSprite5 {
-top: 45%;
+top: 50%;
 left: 75%;
 }
 
@@ -355,7 +355,7 @@ left: 75%;
 #CSSSprite3, #CSSSprite4,
 #CSSSprite5 {
 position: absolute;
-width: 8%;
+width: 7%;
 z-index: -1;
 }
 #CSSSprite1 {
