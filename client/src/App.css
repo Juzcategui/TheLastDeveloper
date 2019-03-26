@@ -29,6 +29,7 @@
 
 #signIn, #register {
   text-align: center;
+  position: relative;
 }
 
 
@@ -130,21 +131,21 @@ width: 73%;
 
 #JS{
   position:absolute;
-  left: 49%;
-  top: 59%;
+  left: 47%;
+  top: 53%;
   font-size:10px;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   z-index: -1;
 }
 
 #JSWorld{
 position:absolute;
-  left: 37%;
-  top: 87%;
+  left: 35.5%;
+  top: 81%;
   font-size:10px;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   z-index: -1;
 }
 
@@ -193,21 +194,21 @@ left: 54%;
 
 #REACT{
   position: absolute;;
-  left: 42%;
-  top:  78%;
+  left: 40.5%;
+  top:  72%;
   font-size:10px;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   z-index: -1;
 }
 
 #REACTWorld{
 position:absolute;
-left: 38%;
-top: 5%;
+left: 36%;
+top: 1%;
 font-size:10px;
-width: 50px;
-height: 50px;
+width: 100px;
+height: 100px;
 z-index: -1;
 }
 
@@ -256,20 +257,20 @@ left: 80%;
 
 #HTML {
   position:absolute;
-  left: 37%;
-  margin-top: 12%;
+  left: 35%;
+  top: 13%;
   font-size:10px;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   z-index: -1;
 }
 #HTMLWorld {
   position:absolute;
-  left: 25.5%;
-  margin-top: 47%;
+  left: 24%;
+  top: 88%;
   font-size:10px;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   z-index: -1;
 }
 
@@ -311,20 +312,20 @@ left: 75%;
 
 #CSS{
   position:absolute;
-  left: 52%;
-  top: 58%;
+  left: 50.5%;
+  top: 52%;
   font-size:10px;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   z-index: -1;
 }
 #CSSWorld {
   position:absolute;
-  left: 66%;
-  top: 8%;
+  left: 64%;
+  top: 1%;
   font-size:10px;
-  width: 50px;
-  height:50px;
+  width: 100px;
+  height:100px;
   z-index: -1;
 }
 

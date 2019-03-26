@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import REACTBG from "../../Backgrounds/VermillionCity.png"
+import portal from "../../SVG/portal.gif"
 
 
 class ReactTown extends React.Component {
@@ -16,10 +17,10 @@ class ReactTown extends React.Component {
                 <img className="BG" src={REACTBG} alt="REACTBG" />
                 <h1 className="TownTitles">RIVER OF REACT</h1>
                 <Link to="/ReactHouse">
-                    <img id="REACT" src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
+                    <img id="REACT"src={portal} alt="portal"></img>
                 </Link>
                 <Link to="/WorldMap">
-                    <img id="REACTWorld" src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
+                    <img id="REACTWorld"src={portal} alt="portal"></img>
                 </Link>
 
                 <img id="REACTSprite1" src="https://clipartmagic.com/wp-content/uploads/2018/01/gif-clipart-shark-clipart-gif-animation-5.jpg" onclick=""></img>

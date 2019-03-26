@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import '../../App.css'
 import { Link } from "react-router-dom";
-import * as $ from 'axios';
 
 class Register extends React.Component {
     state = {

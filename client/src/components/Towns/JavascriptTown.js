@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import JSBG from "../../Backgrounds/SaffronCity.png"
+import portal from "../../SVG/portal.gif"
 
 
 
@@ -16,10 +17,10 @@ class JavascriptTown extends React.Component {
                 <img className="BG" src={JSBG} alt="JSBG" />
                 <h1 className="TownTitles">Javascript Junkies</h1>
                 <Link to="/JavascriptHouse">
-                    <img id="JS" src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
+                    <img id="JS"src={portal} alt="portal"></img>
                 </Link>
                 <Link to="/WorldMap">
-                    <img id="JSWorld" src="https://www.mellowms.co.uk/images/utilities/upload/loading.gif"></img>
+                    <img id="JSWorld"src={portal} alt="portal"></img>
                 </Link>
 
                 <img id="JSSprite1" src="https://media2.giphy.com/media/11SkwxAbmyArra/giphy.gif" onclick=""></img>
