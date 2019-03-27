@@ -20,6 +20,6 @@
 }
 
 .NPCOldMan {
-    background-image: url('../NPCs/NPC_Sprite_Stand.png');
-    background-position: 0 40
+    background-image: url('../Player/A1.png');
+    background-position: 0px 120px;
 }
