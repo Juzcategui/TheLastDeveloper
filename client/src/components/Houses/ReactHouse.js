@@ -2,13 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import REACTHouse from "../../Backgrounds/REACTHouse.jpeg"
 import Gabe from "../../Sprites/Gabe.png"
-
+import imgscroll from "../../Backgrounds/scroll.png"
 
 
 class ReactHouse extends React.Component {
     state = {
-        npcName: ''
+        npcName: 'Gabe the React Rabid',
+        scroll: "React"
     }
+
+    scrollClick = (event) => {
+        event.preventDefault();
+        sessionStorage.setItem('class', this.state.scroll);
+        this.props.history.push("/Scroll")
+    };
 
     render() {
         return (
@@ -16,6 +23,7 @@ class ReactHouse extends React.Component {
             <div>
                 <img className="BG" src={REACTHouse} alt="ReactHouse" />
                 <h1 className="HouseTitles">React House</h1>
+                <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />
                 <img id="Gabe" src={Gabe} alt="Gabe"></img>
 
                 <div id='DialogContainer'>

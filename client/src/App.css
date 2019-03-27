@@ -521,3 +521,65 @@ left: 50%;
     background:rgba(255,255,255,0.8);
     border-radius: 5px;
   }
+
+  .scrollList {
+    list-style-type: none;
+  }
+
+  li{
+    padding-top:25px;
+  }
+
+  .houseScroll{
+    position: absolute;
+    top: 3%;
+    left: 91%;
+  }
+
+  .scrollInfoCSS{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    text-align:center;
+    font-size:17px;
+    color:cadetblue;
+    font-weight:bold;
+  }
+
+  .scrollInfoJavascript{
+    position: absolute;
+    top: 15%;
+    left: 24%;
+    text-align:center;
+    font-size:17px;
+    color:cadetblue;
+    font-weight:bold;
+  }
+
+  .scrollInfoHTML{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    text-align:center;
+    font-size:17px;
+    color:cadetblue;
+    font-weight:bold;
+  }
+
+  .scrollInfoReact{
+    position: absolute;
+    top: 15%;
+    left: 24%;
+    text-align:center;
+    font-size:17px;
+    color:cadetblue;
+    font-weight:bold;
+  }
+
+  .xButton{
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    font-size:45px;
+
+  }
