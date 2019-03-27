@@ -11,9 +11,9 @@
     background-color: transparent;
 }
 
-.rock {
+/* .rock {
     background-image: url('/Tiles/Rocks.png');
-}
+} */
 
 .worldMapPortal {
     background-image: url('../../SVG/portal.png');
