@@ -39,10 +39,10 @@ class HTMLHouse extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                    <button className="btn btn-success"><Link to="/HTMLTown">Back</Link></button>
+                    <Link to="/HTMLTown">
+                        <button className="btn btn-success">Back</button>
+                    </Link>
                 </div>
-
-                <Link to="/HTMLTown">Back</Link>
             </div>
         )
     }

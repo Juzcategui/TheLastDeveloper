@@ -578,8 +578,12 @@ left: 50%;
 
   .xButton{
     position: absolute;
-    top: 15%;
+    top: 14%;
     left: 75%;
     font-size:45px;
 
+  }
+
+  .confirm{
+    margin-bottom:5px;
   }

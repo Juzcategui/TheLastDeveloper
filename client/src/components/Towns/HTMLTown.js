@@ -6,7 +6,7 @@ import portal from "../../SVG/portal.gif"
 
 class HTMLTown extends React.Component {
     state = {
-        npcName: ''
+        abilities: []
     }
 
     render() {
@@ -29,11 +29,11 @@ class HTMLTown extends React.Component {
                 {/* ------------------------------------ */}
 
                 <Link to="/HTMLHouse">
-                    <img id="HTML"src={portal} alt="portal"></img>
+                    <img id="HTML" src={portal} alt="portal"></img>
                 </Link>
                 <br />
                 <Link to="/WorldMap">
-                    <img id="HTMLWorld"src={portal} alt="portal"></img>
+                    <img id="HTMLWorld" src={portal} alt="portal"></img>
                 </Link>
 
             </div>

@@ -38,7 +38,9 @@ class CSSHouse extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                    <button className="btn btn-success"><Link to="/CSSTown">Back</Link></button>
+                    <Link to="/CSSTown">
+                        <button className="btn btn-success">Back</button>
+                    </Link>
                 </div>
 
             </div>
