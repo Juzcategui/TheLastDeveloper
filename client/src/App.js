@@ -5,9 +5,9 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 /*------------------ Technical Folder ------------------*/
 import Homepage from './components/Technical/Homepage';
-import Login from './components/Technical/Login';
 import Register from './components/Technical/Register';
 import WorldMap from './components/Technical/WorldMap';
+import Scroll from './components/Technical/Scroll';
 
 /*------------------ Forest Path Folder ------------------*/
 import OuterTown from './components/ForestPath/OuterTown'
@@ -30,17 +30,17 @@ import WillBucks from './components/Towns/WillBucks';
 
 
 const App = () => (
-  
+
   <BrowserRouter>
     <div>
       {/* ------------------ *** ------------------ */}
-      
-      
+
+
       {/* ------------------ Technical Folder ------------------ */}
       <Route exact path="/" component={Homepage} />
-      <Route exact path="/Login" component={Login} />
       <Route exact path="/Register" component={Register} />
       <Route exact path="/WorldMap" component={WorldMap} />
+      <Route exact path="/Scroll" component={Scroll} />
 
       {/* ------------------ Forest Path Folder ------------------ */}
       <Route exact path="/OuterTown" component={OuterTown} />

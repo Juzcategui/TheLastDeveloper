@@ -14,6 +14,10 @@ var GamedatabaseSchema = new Schema({
         type: Array,
         trim: true
     },
+    correctAnswer: {
+        type: Array,
+        trim: true
+    },
     passedTrialDialogue: {
         type: Array,
         trim: true

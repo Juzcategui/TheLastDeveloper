@@ -18,19 +18,31 @@ var UserSchema = new Schema({
         type: Array,
         default: [
             {
-                HTML: false
+                class: "HTML",
+                passed: false
             },
             {
-                Javascript: false
+                class: "Javascript",
+                passed: false
             },
             {
-                CSS: false
+                class: "CSS",
+                passed: false
             },
             {
-                React: false
+                class: "React",
+                passed: false
             },
 
         ]
+    },
+    trialsPassed: {
+        type: Number,
+        default: 0
+    },
+    abilities: {
+        type: Array,
+        default: []
     }
 });
 

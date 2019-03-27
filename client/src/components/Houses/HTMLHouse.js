@@ -2,13 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HTMLHouseImg from "../../Backgrounds/HTMLHouse.jpg"
 import Jorge from "../../Sprites/Jorge.png"
-
+import imgscroll from "../../Backgrounds/scroll.png"
 
 
 class HTMLHouse extends React.Component {
     state = {
-        npcName: ''
+        npcName: 'Jorge the HTML Hotshot',
+        scroll: "HTML"
     }
+
+    scrollClick = (event) => {
+        event.preventDefault();
+        sessionStorage.setItem('class', this.state.scroll);
+        this.props.history.push("/Scroll")
+    };
 
     render() {
         return (
@@ -16,7 +23,8 @@ class HTMLHouse extends React.Component {
             <div>
                 <img className="BG" src={HTMLHouseImg} alt="HTMLHouse" />
                 <h1 className="HouseTitles">HTML House</h1>
-                <img id="Gabe" src={Jorge} alt="Gabe"></img>
+                <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />
+                <img id="Jorge" src={Jorge} alt="Jorge"></img>
 
                 <div id='DialogContainer'>
 
@@ -31,10 +39,10 @@ class HTMLHouse extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                    <button className="btn btn-success"><Link to="/HTMLTown">Back</Link></button>
+                    <Link to="/HTMLTown">
+                        <button className="btn btn-success">Back</button>
+                    </Link>
                 </div>
-
-                <Link to="/HTMLTown">Back</Link>
             </div>
         )
     }
