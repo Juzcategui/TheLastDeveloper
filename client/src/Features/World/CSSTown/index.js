@@ -3,6 +3,7 @@ import Map from '../../Map'
 import Player from '../../Player/';
 import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/CeruleanCity.png'
+import './CSSTownStyle.css'
 
 import { CSSTiles } from './CSSTiles'
 import store from '../../../config/store'
@@ -14,12 +15,11 @@ function CSSTown(props) {
     }})
     
     return (
-
-        <div
+        <div 
         style={{
             position: 'relative',
-            width: '1920px',
-            height: '1080px',
+            width: '1280px',
+            height: '720px',
             margin: '20px auto',
             backgroundImage: `url('${worldBG}')`
         }}>

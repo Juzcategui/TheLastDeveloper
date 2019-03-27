@@ -60,8 +60,9 @@ function observeNPC(oldPos, newPos) {
   const y = newPos[1] / SPRITE_SIZE;
   const x = newPos[0] / SPRITE_SIZE;
   const nextTile = tiles[y][x];
-  return nextTile === 9;
-}
+  return nextTile === 10;
+  }
+
 
 function dispatchMove(direction, newPos) {
   const walkIndex = getWalkIndex();

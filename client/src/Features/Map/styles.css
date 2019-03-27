@@ -15,8 +15,8 @@
     background-image: url('/Tiles/Rocks.png');
 }
 
-.tree {
-    background-image: url('/Tiles/Tree1.png');
+.worldMapPortal {
+    background-image: url('../../SVG/portal.png');
 }
 
 .NPCOldMan {
