@@ -5,6 +5,16 @@ const config = require("../config.json");
 
 
 module.exports = function (app) {
+    app.get("/api/user/:id", function (req, res) {
+        User.findOne({ _id: req.params.id })
+            .then(function (data) {
+                res.json(data);
+            })
+            .catch(function (err) {
+                res.json(err);
+            });
+    });
+
     app.post('/api/signup', function (req, res) {
         const userData = {
             username: req.body.username,

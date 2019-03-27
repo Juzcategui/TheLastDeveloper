@@ -39,7 +39,9 @@ class JavascriptHouse extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                    <button className="btn btn-success"><Link to="/JavascriptTown">Back</Link></button>
+                    <Link to="/JavascriptTown">
+                        <button className="btn btn-success">Back</button>
+                    </Link>
                 </div>
 
             </div>
