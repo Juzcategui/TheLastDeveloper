@@ -1,7 +1,6 @@
 /*------------------ Important stuff ------------------*/
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
-import World from './Features/World';
 
 
 /*------------------ Technical Folder ------------------*/
@@ -23,10 +22,10 @@ import ReactHouse from './components/Houses/ReactHouse';
 import SecretCave from './components/Houses/SecretCave';
 
 /*------------------ Towns Folder ------------------*/
-import HTMLTown from './components/Towns/HTMLTown';
-import CSSTown from './components/Towns/CSSTown';
-import JavascriptTown from './components/Towns/JavascriptTown';
-import ReactTown from './components/Towns/ReactTown';
+import HTMLTown from './Features/World/HTMLTown/index';
+import CSSTown from './Features/World/CSSTown/index';
+import JavascriptTown from './Features/World/JavascriptTown/index';
+import ReactTown from './Features/World/ReactTown/index';
 import WillBucks from './components/Towns/WillBucks';
 
 
@@ -56,7 +55,6 @@ const App = () => (
       <Route exact path="/SecretCave" component={SecretCave} />
 
       {/* ------------------ Town Folder ------------------ */}
-      <Route exact path="/World" component={World} />
       <Route exact path="/CSSTown" component={CSSTown} />
       <Route exact path="/HTMLTown" component={HTMLTown} />
       <Route exact path="/JavascriptTown" component={JavascriptTown} />

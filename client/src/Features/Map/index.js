@@ -12,7 +12,7 @@ function getTileSprite(type) {
             return 'rock'
         case 7: 
             return 'tree'
-        case 9: 
+        case 10: 
             return 'NPC'
         default:
             return;
@@ -44,8 +44,8 @@ function Map(props) {
                 position: 'relative',
                 top: '0px',
                 left: '0px',
-                width: '1000px',
-                height: '800px',
+                width: '1920px',
+                height: '1080px',
                 backgroundColor: 'transparent',
                 border: '4px solid white',
             }}
