@@ -11,6 +11,8 @@ import willBucksLogo from "../../SVG/willBucksLogo.png";
 
 
 
+
+
 class WorldMap extends React.Component {
     state = {
         abilities: []
