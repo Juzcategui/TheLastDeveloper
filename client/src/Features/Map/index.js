@@ -12,8 +12,8 @@ function getTileSprite(type) {
             return 'rock'
         case 7: 
             return 'tree'
-        case 10: 
-            return 'NPC'
+        case 9: 
+            return 'NPCOldMan'
         default:
             return;
     }
