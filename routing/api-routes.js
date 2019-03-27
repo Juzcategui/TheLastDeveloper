@@ -51,7 +51,7 @@ module.exports = function (app) {
             });
     });
     app.get("/api/gamedb/:id", function (req, res) {
-        Gamedatabase.find({
+        Gamedatabase.findOne({
             npcName: req.params.id
         })
             .then(function (data) {
