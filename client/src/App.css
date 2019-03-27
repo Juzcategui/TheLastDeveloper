@@ -50,6 +50,12 @@
   padding: 5px;
 }
 
+#signInBtnStyle,
+#registerBtnStyle{
+  margin: 2px 5px;
+  color: white;
+}
+
 
 .homeInput {
   width: 90%;
