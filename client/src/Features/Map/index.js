@@ -8,14 +8,15 @@ function getTileSprite(type) {
     switch(type) {
         case 0:
             return 'grass'
-        case 5:
+        case 1:
             return 'rock'
-        case 7: 
-            return 'tree'
-        case 10: 
-            return 'NPC'
+        case 8: 
+            return 'worldMapPortal'
+        case 10:
+            return 'NPCOldMan'
         default:
             return;
+        
     }
 }
 
@@ -44,8 +45,8 @@ function Map(props) {
                 position: 'relative',
                 top: '0px',
                 left: '0px',
-                width: '1920px',
-                height: '1080px',
+                width: '1280px',
+                height: '720px',
                 backgroundColor: 'transparent',
                 border: '4px solid white',
             }}

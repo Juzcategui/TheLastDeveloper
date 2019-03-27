@@ -18,8 +18,8 @@ function ReactTown(props) {
         <div
         style={{
             position: 'relative',
-            width: '1920px',
-            height: '1080px',
+            width: '1280px',
+            height: '720px',
             margin: '20px auto',
             backgroundImage: `url('${worldBG}')`
         }}>

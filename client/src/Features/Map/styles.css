@@ -15,11 +15,11 @@
     background-image: url('/Tiles/Rocks.png');
 }
 
-.tree {
-    background-image: url('/Tiles/Tree1.png');
+.worldMapPortal {
+    background-image: url('../../SVG/portal.png');
 }
 
-.NPC {
+.NPCOldMan {
     background-image: url('../NPCs/NPC_Sprite_Stand.png');
     background-position: 0 40
 }
