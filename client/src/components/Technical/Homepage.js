@@ -52,13 +52,11 @@ class Homepage extends React.Component {
                     </div>
 
                 
-                <div>
+                <div className="container">
                     <div id="signIn">
                         <button type="button" id="signInBtnStyle" className="btn btn-primary" onClick={this.handleLogin}>
                             Log in
                         </button>
-                    </div>
-                    <div>
                         <h5 id="registerBtnStyle">Need an Account?
                     <button type="button" className="btn btn-primary">
                             Register
