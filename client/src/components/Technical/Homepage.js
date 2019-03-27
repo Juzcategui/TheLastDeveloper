@@ -21,7 +21,6 @@ class Homepage extends React.Component {
         event.preventDefault();
         $.post('/api/authenticate', { username: this.state.username, password: this.state.password })
             .then((data) => {
-                console.log(data)
                 sessionStorage.setItem('userId', data.data.id);
                 this.props.history.push("/WorldMap")
             }).catch(err => {

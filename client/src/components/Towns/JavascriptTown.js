@@ -7,7 +7,7 @@ import portal from "../../SVG/portal.gif"
 
 class JavascriptTown extends React.Component {
     state = {
-        npcName: ''
+        abilities: []
     }
 
     render() {
@@ -15,12 +15,12 @@ class JavascriptTown extends React.Component {
 
             <div>
                 <img className="BG" src={JSBG} alt="JSBG" />
-                <h1 id="JSTitle">Javascript Junkies</h1>
+                <h1 className="TownTitles">Javascript Junkies</h1>
                 <Link to="/JavascriptHouse">
-                    <img id="JS"src={portal} alt="portal"></img>
+                    <img id="JS" src={portal} alt="portal"></img>
                 </Link>
                 <Link to="/WorldMap">
-                    <img id="JSWorld"src={portal} alt="portal"></img>
+                    <img id="JSWorld" src={portal} alt="portal"></img>
                 </Link>
 
                 <img id="JSSprite1" src="https://media2.giphy.com/media/11SkwxAbmyArra/giphy.gif" onclick=""></img>
@@ -28,7 +28,7 @@ class JavascriptTown extends React.Component {
                 <img id="JSSprite3" src="https://media2.giphy.com/media/11SkwxAbmyArra/giphy.gif" onclick=""></img>
                 <img id="JSSprite4" src="https://media2.giphy.com/media/11SkwxAbmyArra/giphy.gif" onclick=""></img>
                 <img id="JSSprite5" src="https://media2.giphy.com/media/11SkwxAbmyArra/giphy.gif" onclick=""></img>
-            
+
             </div>
         )
     }

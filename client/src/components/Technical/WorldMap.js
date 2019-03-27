@@ -13,7 +13,7 @@ import willBucksLogo from "../../SVG/willBucksLogo.png";
 
 class WorldMap extends React.Component {
     state = {
-        npcName: ''
+        abilities: []
     }
 
     render() {
@@ -29,12 +29,12 @@ class WorldMap extends React.Component {
 
                 {/* <h3 className="ReactWorldTitle">Rivers of React</h3> */}
                 <Link to="/ReactTown">
-                <img id="RiversOfReact" src={ReactSVG} alt="ReactSVG"></img>
+                    <img id="RiversOfReact" src={ReactSVG} alt="ReactSVG"></img>
                 </Link>
 
                 {/* <h3 className="HTMLWorldTitle">House of HTML</h3> */}
                 <Link to="/HTMLTown">
-                <img id="HouseOfHTML" src={HTMLSVG} alt="HTMLSVG"></img>
+                    <img id="HouseOfHTML" src={HTMLSVG} alt="HTMLSVG"></img>
                 </Link>
 
                 {/* <h3 className="CSSWorldTitle">CSS Cult</h3> */}

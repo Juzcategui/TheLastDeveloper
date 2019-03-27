@@ -13,7 +13,7 @@ class OuterTown extends React.Component {
         return (
 
             <div>
-                <h1 id="OuterTownTitle">Outer Town</h1>
+                <h1 className="ForestTitles">Outer Town</h1>
                 <img className="BG" src={OuterTownBG} alt="OuterTown" />
 
                     <div id='DialogContainer'>

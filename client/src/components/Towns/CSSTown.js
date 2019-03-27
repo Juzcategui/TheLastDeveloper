@@ -6,7 +6,7 @@ import portal from "../../SVG/portal.gif"
 
 class CSSTown extends React.Component {
     state = {
-        npcName: ''
+        abilities: []
     }
 
     render() {
@@ -15,7 +15,7 @@ class CSSTown extends React.Component {
             <div>
                 <div>
                     <img className="BG" src={CSSBG} alt="CSSBG" />
-                    <h1 id="CSSTitle">CSS CULT</h1>
+                    <h1 className="CSSTownTitle">CSS CULT</h1>
                 </div>
 
                 {/* Character filler sprite */}
@@ -29,11 +29,11 @@ class CSSTown extends React.Component {
                 {/* ------------------------------------ */}
 
                 <Link to="/CSSHouse">
-                    <img id="CSS"src={portal} alt="portal"></img>
+                    <img id="CSS" src={portal} alt="portal"></img>
                 </Link>
                 <br />
                 <Link to="/WorldMap">
-                    <img id="CSSWorld"src={portal} alt="portal"></img>
+                    <img id="CSSWorld" src={portal} alt="portal"></img>
                 </Link>
 
             </div>

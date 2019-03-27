@@ -15,12 +15,12 @@ class SecretCave extends React.Component {
 
             <div>
                 <img className="BG" src={cave} alt="cave"></img>
-                <h1 id="REACTTitle">Cody's Super Secret Can't let the Bad Guys Know Hidden Cave</h1>
+                <h1 className="HouseTitles">Cody's Super Secret Can't let the Bad Guys Know Hidden Cave</h1>
 
                 <img id="Cody" src={Cody} alt="Cody"></img>
                 <div id='DialogContainer'>
                     <div id="characterName">
-                        <p className="namePlate">Cody the Conqueror</p>
+                        <p className="namePlate">Charismatic Cody</p>
                     </div>
 
                     <div id="textBox">
