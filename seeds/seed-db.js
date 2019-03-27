@@ -121,7 +121,7 @@ const gamedb = [
         passedTrialDialogue: []
     },
 
-    // Reach town NPC
+    // React town NPC
     {
         npcName: "Erwins",
         dialogue: ["You know what is awful? Jquery is awful. React is so much better. Hmph. It uses a virtual dom and gets rid of 'spaghetti code.' It's great!"],
