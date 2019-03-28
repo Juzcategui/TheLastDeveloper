@@ -255,7 +255,7 @@ const gamedb = [
     {
         npcName: "Harrison",
         dialogue: ["What does HTML mean again..? I forgot.. Hmm.. Hopper..Hipper..Hold on. *drinks coffee* Hyper Text Markup Language, that's it!"],
-        position: [0, 0],
+        position: "160,120",
         beatTrial: [],
         map: "HTML",
         passedTrialDialogue: []

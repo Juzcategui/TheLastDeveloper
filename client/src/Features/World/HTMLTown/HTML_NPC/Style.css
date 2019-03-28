@@ -1,0 +1,49 @@
+.Harrison {
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    background-Image: url('./Sprites/Harrison.png');
+    background-Position: 0px 80px;
+    width: 40px;
+    height: 40px;
+}
+
+.Leonardo {
+    position: absolute;
+    top: 120px;
+    left: 1040px;
+    /* background-Image: url('./Sprites/Paige.png'); */
+    background-Position: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.Raphael {
+    position: absolute;
+    top: 120px;
+    left: 1040px;
+    /* background-Image: url('./Sprites/Paige.png'); */
+    background-Position: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.Michaelangelo {
+    position: absolute;
+    top: 360px;
+    left: 600px;
+    /* background-Image: url('./Sprites/Paige.png'); */
+    background-Position: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.Mark {
+    position: absolute;
+    top: 360px;
+    left: 600px;
+    background-Image: url('./Sprites/Mark.png');
+    background-Position: 0px 120px;
+    width: 40px;
+    height: 40px;
+}
