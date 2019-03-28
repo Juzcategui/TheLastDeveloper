@@ -94,10 +94,10 @@ function getTilePosition() {
   console.log(`I'm an actionable tile at position ${NPCPos}`)
   console.log(`im on ${map} map`)
 
-  //   Axios.get(findOne where Position === NPCPos)
-  //     .then (
-  //       render NPC dialog box to page
-  //     )
+    // Axios.get(findOne where Position === NPCPos)
+    //   .then (
+    //     render NPC dialog box to page
+    //   )
 
 }
 
