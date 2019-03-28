@@ -17,6 +17,7 @@ function getTileSprite(type) {
         case 10:
             return 'NPCOldMan'
 
+
         // CSS Town 
         case 20:
             return 'cssHousePortal'

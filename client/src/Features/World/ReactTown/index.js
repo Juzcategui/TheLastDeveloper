@@ -11,6 +11,7 @@ import store from '../../../config/store'
 function ReactTown(props) {
     store.dispatch({ type: 'ADD_TILES', payload: {
         tiles: ReactTiles,
+        name: "React Town"
     }})
     
     return (
@@ -23,7 +24,7 @@ function ReactTown(props) {
             margin: '20px auto',
             backgroundImage: `url('${worldBG}')`
         }}>
-        <Map tiles={ReactTiles}/>
+        <Map tiles={ReactTiles} name="React Town"/>
         <Player />
 
             
