@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import '../../App.css'
 import { Link } from "react-router-dom";
 import * as $ from 'axios';
+import LordOfTheRings from "../../Audio/LordOfTheRings.mp3"
+import stars from "../../Backgrounds/stars.jpg"
 
 class Intro extends React.Component {
     state = {
@@ -9,15 +11,19 @@ class Intro extends React.Component {
         dialogue: []
     }
 
+    onLoad (){
+    window.onload = function() {
+        document.getElementById("LordOfTheRings").play();
+    }
+    }   
+
     render() {
         return (
             <div>
+            <img className="BG" src={stars} alt="stars" />
+                
+            <audio src={LordOfTheRings} autoPlay/>
 
-<audio autoplay>
-  <source src="http://www.karottes.net/Star%20Wars/sounds/song.ogg" type="audio/ogg"/>
-      <source src="http://www.karottes.net/Star%20Wars/sounds/song.mp3" type="audio/mp3"/>
-            Your web browser is outdated or don't support OGG and MP3 codecs. 
-        </audio>
                 <div class="fade"></div>
 
                 <section class="star-wars">
@@ -28,7 +34,7 @@ class Intro extends React.Component {
                             <p>The Last Developer</p>
                             <br></br>
                             <br></br>
-                            <h1>From the developers of Trivia Bros, Sozial, Run-Escape, & MediApp</h1>
+                            <h1>From the developers of Trivia Bros, Sozial, Run-Escape, PoetryGenius, & MediApp</h1>
                             <br></br>
                             <br></br>
                             <br></br>
