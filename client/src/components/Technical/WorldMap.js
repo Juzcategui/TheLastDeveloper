@@ -8,21 +8,69 @@ import JSSVG from "../../SVG/js.png";
 import mongoSVG from "../../SVG/mongo.png";
 import hideOut from "../../SVG/Hideout.png";
 import willBucksLogo from "../../SVG/willBucksLogo.png";
-
+import * as $ from 'axios';
 
 
 
 
 class WorldMap extends React.Component {
     state = {
-        abilities: []
+        abilities: [],
+        numAbilities: null
+    }
+
+
+    componentDidMount() {
+        const userId = sessionStorage.getItem("userId");
+        $.get(`/api/user/${userId}`).then(userDB => {
+            console.log(userDB)
+            this.setState({
+                numAbilities: userDB.data.trialsPassed,
+                abilities: userDB.data.abilities
+
+            })
+        });
+    }
+
+    handleClose() {
+        this.setState({ show: false });
+    }
+
+    handleShow() {
+        this.setState({ show: true });
     }
 
     render() {
         return (
             <div>
-                <h1 id="WorldMapTitle">WORLD MAP</h1>
                 <img className="BG" src={worldMap} alt="WorldMap" />
+                <h1 id="WorldMapTitle">WORLD MAP</h1>
+                <h4 id="abilities" data-toggle="modal"
+                    data-target="#abilityModal" >Abilities</h4>
+
+
+                <div className="modal fade" id="abilityModal" tabindex="-1" role="dialog" >
+                    <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" >Ability List</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div className="modal-body scrollList">
+                                {this.state.numAbilities === 0 ? "Complete trials to unlock abilities!" :
+                                    this.state.abilities.map((data, i) => (
+                                        <li key={i}>
+                                            {data.body}
+                                        </li>))}
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 {/* <h3 className="JSWorldTitle">Javascript Junkies</h3> */}
                 <Link to="/JavascriptTown">

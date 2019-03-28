@@ -12,13 +12,15 @@ class ReactHouse extends React.Component {
         npcName: 'Gabe the React Rabid',
         scroll: "React",
         passedTrial: false,
+        completedOnce: false,
         dialogue: [],
         abilityDialogue: [],
         passedDialogue: [],
         dialogueCount: 0,
         isCorrect: false,
         answers: ["javascript", "component"],
-        currentAnswer: ''
+        currentAnswer: '',
+        trialsPassed: 0
     }
 
     handleChange = (event) => {
@@ -33,7 +35,7 @@ class ReactHouse extends React.Component {
             this.setState({
                 isCorrect: true
             });
-        } else if (isCorrect && currentAnswer.trim() !== answers[dialogueCount - 1]) {
+        } else if (isCorrect && currentAnswer !== answers[dialogueCount - 1]) {
             this.setState({
                 isCorrect: false
             })
@@ -48,7 +50,9 @@ class ReactHouse extends React.Component {
                     dialogue: gameDB.data.dialogue,
                     passedDialogue: gameDB.data.passedTrialDialogue,
                     abilityDialogue: gameDB.data.beatTrial,
-                    passedTrial: userDB.data.progress[3].passed
+                    passedTrial: userDB.data.progress[3].passed,
+                    completedOnce: userDB.data.progress[3].passed,
+                    trialsPassed: userDB.data.trialsPassed
                 })
             })
         });
@@ -67,6 +71,25 @@ class ReactHouse extends React.Component {
             currentAnswer: ""
         });
     };
+
+    abilityUnlock = (event) => {
+        event.preventDefault();
+        const userId = sessionStorage.getItem("userId");
+        const newSkill = "Skill one: placeholder description";
+        const classHouse = this.state.scroll;
+
+        if (this.state.completedOnce === true) {
+            window.history.back()
+        }
+        else {
+            $.post(`/api/skill`, { body: newSkill, userId: userId }).then(() => {
+                $.put(`/api/user`, { classHouse: classHouse, trialsPassed: this.state.trialsPassed, userId: userId }).then(() => {
+                    window.history.back()
+                })
+            })
+        }
+    }
+
 
     resetTrial = (event) => {
         event.preventDefault();
@@ -102,19 +125,23 @@ class ReactHouse extends React.Component {
                                     ?
                                     <div id="textBox">
                                         <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                                        <input name="currentAnswer" onChange={this.handleChange} value={this.state.currentAnswer}></input>
-                                        <button disabled={!this.state.isCorrect} onClick={this.state.isCorrect ? this.nextDialogue : undefined} className={`btn btn-primary btn-sm confirm ${!this.state.isCorrect && "disabled"}`}>Confirm</button>
+                                        <form onSubmit={this.state.isCorrect ? this.nextDialogue : undefined}>
+                                            <input name="currentAnswer" onChange={this.handleChange} value={this.state.currentAnswer}></input>
+                                            <button disabled={!this.state.isCorrect} type="submit" className={`btn btn-primary btn-sm confirm ${!this.state.isCorrect && "disabled"}`}>Confirm</button>
+                                        </form>
                                     </div>
                                     :
                                     this.state.dialogueCount === 3
                                         ?
                                         <div id="textBox">
                                             <h4>{this.state.abilityDialogue[0]}</h4>
+                                            <button onClick={this.abilityUnlock} className="btn btn-primary btn-sm confirm">End Trial</button>
                                         </div>
+
                                         :
                                         <div id="textBox">
                                             <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                                            <button onClick={this.nextDialogue} className="btn btn-primary btn-sm confirm">Confirm</button>
+                                            <button onClick={this.nextDialogue} className="btn btn-primary btn-sm confirm">Start Trial</button>
                                         </div>
                         }
                     </div>

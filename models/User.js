@@ -40,10 +40,12 @@ var UserSchema = new Schema({
         type: Number,
         default: 0
     },
-    abilities: {
-        type: Array,
-        default: []
-    }
+    abilities: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Skill"
+        }
+    ]
 });
 
 /**
