@@ -1,21 +1,20 @@
 import React from 'react';
-import NPCSprite from './NPC_Sprite_Stand.png';
+import './NPCStyle.css';
 
-function NPC(props) {
+
+
+class NPC extends React.Component {
+
+  render() {
     return (
-        <div
-            style={{
-                position: 'absolute',
-                top: '30px',
-                left: '50px',
-                backgroundImage: `url('${NPCSprite}')`,
-                backgroundPosition: '0 0',
-                width: '66px',
-                height: '66px',
-            }}
-
-        />
+        <div>
+        <div className="Paige"></div>
+        <div className="Paige2"></div>
+        </div>
+        
+    
     )
+}
 }
 
 export default NPC
