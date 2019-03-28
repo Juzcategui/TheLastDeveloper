@@ -4,23 +4,28 @@
 #homePageStyle {
   border-style: solid;
   border-color: lightslategrey;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 30%;
+  left: 30%;
   padding: 50px;
   height: 450px;
   width: 40%;
   background:rgba(255,255,255,0.9);
 }
 
-#backImg {
+#titleBlock{
+  position: fixed;
+  top: 18%;
+  left: 50%;
+  }
+
+/* #backImg {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
-}
+} */
 
 #signIn, #register {
   text-align: center;
@@ -65,9 +70,6 @@
 }
 
 .gameTitle {
-  position: absolute;
-  top: 20%;
-  left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Press Start 2P', cursive;
   font-size: 48px;
@@ -77,9 +79,6 @@
 
 .gameMotto{
   color: white;
-  position: absolute;
-  top: 27.5%;
-  left: 50%;
   width: 1200px;
   transform: translate(-50%, -50%);
   font-family: 'Press Start 2P', cursive;
@@ -441,16 +440,16 @@ left: 50%;
   height: 100px;
 }
 #RiversOfReact {
+  top: 47%;
+  left: 88%;
+  width: 70px;
+  height: 90px;
+}
+#HouseOfHTML {
   top: 18%;
   left: 27%;
   width: 90px;
   height: 100px;
-}
-#HouseOfHTML {
-  top: 45%;
-  left: 88%;
-  width: 70px;
-  height: 90px;
 }
 #CSSCult {
   top: 65%;
@@ -633,3 +632,5 @@ left: 50%;
   .confirm{
     margin-bottom:5px;
   }
+
+  
