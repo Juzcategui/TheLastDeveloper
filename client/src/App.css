@@ -1,3 +1,30 @@
+/*typewriter */
+
+
+.typewriter h4 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space:nowrap;/* Keeps the content on a single line */
+  /* overflow-wrap: break-word; */
+  margin:0 auto;/* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
 /* ---------------- Log in / register styling ---------------- */
 
 
@@ -117,13 +144,15 @@ width: 73%;
 }
 
 #characterName,
-#textBox {
+#textBox 
+{
   background:rgba(255,255,255,0.8);
   border-radius: 5px;
   border-style: solid;
   border-color: lightslategrey;
   padding-top: 10px;
 }
+
 
 #characterName {
   margin-bottom: 10px;
