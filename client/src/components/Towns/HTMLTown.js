@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import JSBG from '../../Backgrounds/PewterCity.png'
+import HTMLBG from "../../Backgrounds/VermillionCity.png"
 import portal from "../../SVG/portal.gif"
 
 
@@ -13,28 +13,21 @@ class HTMLTown extends React.Component {
         return (
 
             <div>
-                <div>
-                    <img className="BG" src={JSBG} alt="CSSBG" />
-                    <h1 className="TownTitles">HOUSE OF HTML</h1>
-                </div>
 
-                {/* Character filler sprite */}
-
-                <img id="HTMLSprite1" src="http://i.imgur.com/0kvtMLE.gif" alt="HTMlSprite1" />
-                <img id="HTMLSprite2" src="http://i.imgur.com/0kvtMLE.gif" alt="HTMlSprite2" />
-                <img id="HTMLSprite3" src="http://i.imgur.com/0kvtMLE.gif" alt="HTMlSprite3" />
-                <img id="HTMLSprite4" src="http://i.imgur.com/0kvtMLE.gif" alt="HTMlSprite4" />
-                <img id="HTMLSprite5" src="http://i.imgur.com/0kvtMLE.gif" alt="HTMlSprite5" />
-
-                {/* ------------------------------------ */}
-
+                <img className="BG" src={HTMLBG} alt="HTMLBG" />
+                <h1 className="TownTitles">RIVER OF REACT</h1>
                 <Link to="/HTMLHouse">
                     <img id="HTML" src={portal} alt="portal"></img>
                 </Link>
-                <br />
                 <Link to="/WorldMap">
                     <img id="HTMLWorld" src={portal} alt="portal"></img>
                 </Link>
+
+                <img id="REACTSprite1" src="https://clipartmagic.com/wp-content/uploads/2018/01/gif-clipart-shark-clipart-gif-animation-5.jpg" onclick=""></img>
+                <img id="REACTSprite2" src="https://clipartmagic.com/wp-content/uploads/2018/01/gif-clipart-shark-clipart-gif-animation-5.jpg" onclick=""></img>
+                <img id="REACTSprite3" src="https://clipartmagic.com/wp-content/uploads/2018/01/gif-clipart-shark-clipart-gif-animation-5.jpg" onclick=""></img>
+                <img id="REACTSprite4" src="https://clipartmagic.com/wp-content/uploads/2018/01/gif-clipart-shark-clipart-gif-animation-5.jpg" onclick=""></img>
+                <img id="REACTSprite5" src="https://clipartmagic.com/wp-content/uploads/2018/01/gif-clipart-shark-clipart-gif-animation-5.jpg" onclick=""></img>
 
             </div>
         )

@@ -64,10 +64,10 @@ function observeTile(oldPos, newPos) {
   const y = newPos[1] / SPRITE_SIZE;
   const x = newPos[0] / SPRITE_SIZE;
   const nextTile = tiles[y][x];
-   if(nextTile === 10) {
+  if (nextTile === 10) {
     return nextTile === 10
   }
-  }
+}
 
 
 function dispatchMove(direction, newPos) {
@@ -92,17 +92,31 @@ function getTilePosition() {
   console.log(`I'm an actionable tile at position ${NPCPos}`)
   console.log(`im on ${map} map`)
 
-//   Axios.get(findOne where Position === NPCPos)
-//     .then (
-//       render NPC dialog box to page
-//     )
+  //   Axios.get(findOne where Position === NPCPos)
+  //     .then (
+  //       render NPC dialog box to page
+  //     )
 
+}
+
+function changeDirection(direction, newPos) {
+  const walkIndex = getWalkIndex();
+  store.dispatch({
+    type: "MOVE_PLAYER",
+    payload: {
+      position: newPos,
+      direction,
+      walkIndex,
+      spriteLocation: getSpriteLocation(direction, walkIndex)
+    }
+  });
 }
 //checks to see if you can move. If you're not moving off edge of map and the tile is 'passable'(<1)
 //you can move (run dispatchMove)
 function attemptMove(direction) {
   const oldPos = store.getState().player.position;
   const newPos = getNewPosition(oldPos, direction);
+  changeDirection(direction, oldPos)
 
   if (observeBoundaries(oldPos, newPos) && observeGeometry(oldPos, newPos))
     dispatchMove(direction, newPos);
@@ -116,9 +130,9 @@ function attemptAction() {
   console.log(observeTile(oldPos, newPos), oldPos, newPos);
   console.log(direction)
 
-  if (observeTile(oldPos, newPos)) 
-  
-  getTilePosition();
+  if (observeTile(oldPos, newPos))
+
+    getTilePosition();
 }
 //determines what happens depending on which key press.
 export function handleKeyDown(e) {

@@ -166,15 +166,24 @@ const gamedb = [
         position: [0, 0],
         beatTrial: [],
         passedTrialDialogue: []
-    }, {
+    },
+    {
         npcName: "Patrick",
         dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
         position: [0, 0],
         beatTrial: [],
         passedTrialDialogue: []
-    }, {
+    },
+    {
         npcName: "Camila",
         dialogue: ["Have you tried turning it off and on again? "],
+        position: [0, 0],
+        beatTrial: [],
+        passedTrialDialogue: []
+    },
+    {
+        npcName: "Son the Homeless",
+        dialogue: ["Gabe disowned me for using jQuery... I should have read his documentation... "],
         position: [0, 0],
         beatTrial: [],
         passedTrialDialogue: []
