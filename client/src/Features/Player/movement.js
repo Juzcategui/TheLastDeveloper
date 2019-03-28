@@ -82,6 +82,8 @@ function dispatchMove(direction, newPos) {
     }
   });
 }
+
+
 //get's the position of the actionable tile in front of you.
 function getTilePosition() {
   const currentPos = store.getState().player.position;
