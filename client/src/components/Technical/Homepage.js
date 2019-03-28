@@ -38,10 +38,13 @@ class Homepage extends React.Component {
     render() {
         return (
             <div id="homeBackground">
-                <img className="BG" src={codeGIF} alt="LoginPage" />
+            <img className="BG" src={codeGIF} alt="LoginPage" />
+
+            <div id="titleBlock" class="container">
                 <h1 className="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
                 <h2 className="gameMotto">Sometimes You Will Have to Code with Your Fists</h2>
 
+                </div>
                 <div id="homePageStyle" class="container">
                 <h3 id="loginTitle">Log In to Your Account</h3>
                     <div id="homeInput">
@@ -56,9 +59,6 @@ class Homepage extends React.Component {
                     </div>
 
                     </div>
-
-                
-                <div className="container">
                     <div id="signIn">
                         <button type="button" id="signInBtnStyle" className="btn btn-primary" onClick={this.handleLogin}>
                             Log in
@@ -69,8 +69,6 @@ class Homepage extends React.Component {
                         </button>
                         </h5>
                     </div>
-
-                </div>
                 </div>
 
             </div>
