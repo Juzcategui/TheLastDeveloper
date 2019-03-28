@@ -18,6 +18,10 @@ var GamedatabaseSchema = new Schema({
         type: Array,
         trim: true
     },
+    map: {
+        type: String,
+        trim: true
+    },
     passedTrialDialogue: {
         type: Array,
         trim: true
