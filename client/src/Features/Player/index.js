@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import walkSprite from './walkSprite.png';
+import walkSprite from './Alan_B.png';
 import { handleKeyDown } from './movement';
 
 class Player extends React.Component {
@@ -21,9 +21,13 @@ class Player extends React.Component {
                     top: this.props.position[1],
                     left: this.props.position[0],
                     backgroundImage: `url('${walkSprite}')`,
-                    backgroundPosition: '0 0',
+                    backgroundPosition: this.props.spriteLocation,
                     width: '40px',
                     height: '40px',
+                    transitionProperty: 'left, right, top, bottom',
+                    transitionDuration: '0.2s'
+
+                    
                 }}
     
             />
@@ -39,5 +43,5 @@ function mapStateToProps(state) {
         ...state.player,
     }
 }
-
+//connects our player function to the React data store, and will map the redux state to the react state.
 export default connect(mapStateToProps)(Player);

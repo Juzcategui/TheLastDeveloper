@@ -412,9 +412,17 @@ left: 50%;
  /* ---------------- World Map styling ---------------- */
  #WorldMapTitle {
   font-family: 'Press Start 2P', cursive;
-  float: right;
+  position:absolute;
+  left: 0%;
   padding: 10px 10px;
 }
+#abilities {
+  font-family: 'Press Start 2P', cursive;
+  position:absolute;
+  right: 0%;
+  padding: 10px 10px;
+}
+
 #JavascriptJunkies,
 #RiversOfReact,
 #HouseOfHTML,
