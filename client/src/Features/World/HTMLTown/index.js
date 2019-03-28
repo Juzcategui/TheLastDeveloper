@@ -11,6 +11,7 @@ import store from '../../../config/store'
 function HTMLTown(props) {
     store.dispatch({ type: 'ADD_TILES', payload: {
         tiles: HTMLTiles,
+        name: "HTML Town"
     }})
     
     return (
@@ -23,7 +24,7 @@ function HTMLTown(props) {
             margin: '20px auto',
             backgroundImage: `url('${worldBG}')`
         }}>
-        <Map tiles={HTMLTiles}/>
+        <Map tiles={HTMLTiles} name="HTML Town"/>
         <Player />
 
             
