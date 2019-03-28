@@ -3,6 +3,7 @@ import Map from '../../Map'
 import Player from '../../Player/';
 import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/VermillionCity.png'
+import NPC from '../../NPCs'
 
 import { HTMLTiles } from './HTMLTiles'
 import store from '../../../config/store'
@@ -30,6 +31,7 @@ function HTMLTown(props) {
             }}>
             <Map tiles={HTMLTiles} name="HTML Town" />
             <Player />
+            <NPC />
 
 
         </div>
