@@ -15,7 +15,7 @@ function getTileSprite(type) {
         case 8:
             return 'worldMapPortal'
         case 10:
-            return 'NPCOldMan'
+            return 'actionTile'
 
 
         // CSS Town 

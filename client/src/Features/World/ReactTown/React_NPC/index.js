@@ -1,9 +1,9 @@
 import React from 'react';
-import './NPCStyle.css';
+import './style.css'
 
 
 
-class NPC extends React.Component {
+class ReactNPC extends React.Component {
 
   render() {
     return (
@@ -17,4 +17,4 @@ class NPC extends React.Component {
 }
 }
 
-export default NPC
+export default ReactNPC
