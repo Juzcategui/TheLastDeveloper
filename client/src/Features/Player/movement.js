@@ -1,6 +1,8 @@
 import store from "../../config/store";
 import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from "../../config/constants";
+import Axios from "axios";
 
+//calculates the 'forward' or next position if you were to take one step forward in your current direction.
 function getNewPosition(oldPos, direction) {
   switch (direction) {
     case "WEST":
@@ -18,7 +20,8 @@ function getNewPosition(oldPos, direction) {
       return;
   }
 }
-
+//calculates where the sprite ANIMATION is at in its cycle through the walk index animation. AKA, what index
+//of the background image is it at.
 function getSpriteLocation(direction, walkIndex) {
   switch (direction) {
     case "SOUTH":
@@ -33,12 +36,12 @@ function getSpriteLocation(direction, walkIndex) {
       return;
   }
 }
-
+//returns what the walkIndex is and what it will be at the next move.
 function getWalkIndex() {
   const walkIndex = store.getState().player.walkIndex;
   return walkIndex >= 8 ? 0 : walkIndex + 1;
 }
-//X and Y axis checks//
+//X and Y axis checks to make sure you're not at edge of map//
 function observeBoundaries(oldPos, newPos) {
   return (
     newPos[0] >= 0 &&
@@ -55,12 +58,14 @@ function observeGeometry(oldPos, newPos) {
   return nextTile < 1;
 }
 
-function observeNPC(oldPos, newPos) {
+function observeTile(oldPos, newPos) {
   const tiles = store.getState().map.tiles;
   const y = newPos[1] / SPRITE_SIZE;
   const x = newPos[0] / SPRITE_SIZE;
   const nextTile = tiles[y][x];
-  return nextTile === 10;
+   if(nextTile === 10) {
+    return nextTile === 10
+  }
   }
 
 
@@ -76,11 +81,24 @@ function dispatchMove(direction, newPos) {
     }
   });
 }
+//get's the position of the actionable tile in front of you.
+function getTilePosition() {
+  const currentPos = store.getState().player.position;
+  const heading = store.getState().player.direction;
+  const map = store.getState().map.name;
 
-function talkNPC(direction, newPos) {
-  console.log("Hark, the ride through the mist of dawn!");
+  const NPCPos = getNewPosition(currentPos, heading)
+  console.log(`I'm an actionable tile at position ${NPCPos}`)
+  console.log(`im on ${map} map`)
+
+//   Axios.get(findOne where Position === NPCPos)
+//     .then (
+//       render NPC dialog box to page
+//     )
+
 }
-
+//checks to see if you can move. If you're not moving off edge of map and the tile is 'passable'(<1)
+//you can move (run dispatchMove)
 function attemptMove(direction) {
   const oldPos = store.getState().player.position;
   const newPos = getNewPosition(oldPos, direction);
@@ -88,16 +106,20 @@ function attemptMove(direction) {
   if (observeBoundaries(oldPos, newPos) && observeGeometry(oldPos, newPos))
     dispatchMove(direction, newPos);
 }
-
-function attemptTalkNPC() {
+//checks to see if the tile in front of you is an actionable tile. If it is, it queries for it's 
+//exact position.
+function attemptAction() {
   const { position: oldPos, direction } = store.getState().player;
   const newPos = getNewPosition(oldPos, direction);
 
-  console.log(observeNPC(oldPos, newPos), oldPos, newPos);
+  console.log(observeTile(oldPos, newPos), oldPos, newPos);
+  console.log(direction)
 
-  if (observeNPC(oldPos, newPos)) talkNPC();
+  if (observeTile(oldPos, newPos)) 
+  
+  getTilePosition();
 }
-
+//determines what happens depending on which key press.
 export function handleKeyDown(e) {
   e.preventDefault();
 
@@ -115,7 +137,7 @@ export function handleKeyDown(e) {
       return attemptMove("SOUTH");
 
     case 32:
-      return attemptTalkNPC();
+      return attemptAction();
 
     default:
       console.log(e.keyCode);
