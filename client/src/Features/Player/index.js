@@ -24,6 +24,10 @@ class Player extends React.Component {
                     backgroundPosition: this.props.spriteLocation,
                     width: '40px',
                     height: '40px',
+                    transitionProperty: 'left, right, top, bottom',
+                    transitionDuration: '0.2s'
+
+                    
                 }}
     
             />
