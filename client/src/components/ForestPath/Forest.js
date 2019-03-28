@@ -27,7 +27,9 @@ class Forest extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                    <button className="btn btn-secondary"><Link to="/WorldMap">World Map</Link></button>
+                    <Link to="/WorldMap">
+                        <button className="btn btn-secondary">World Map</button>
+                    </Link>
                 </div>
 
             </div>

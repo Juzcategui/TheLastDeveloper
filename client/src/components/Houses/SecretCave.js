@@ -30,10 +30,12 @@ class SecretCave extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                    <button className="btn btn-success"><Link to="/WorldMap">World Map</Link></button>
+                    <Link to="/WorldMap">
+                        <button className="btn btn-success">World Map</button>
+                    </Link>
                 </div>
 
-            </div>
+            </div >
         )
     }
 

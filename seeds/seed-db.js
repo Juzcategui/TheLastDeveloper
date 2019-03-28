@@ -16,7 +16,7 @@ const gamedb = [
             "The character '/' is used to indicate an end tag",
             "CSS wouldn't have a purpose without us"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
@@ -28,7 +28,7 @@ const gamedb = [
             "The 'color' property can be used to change the font color",
             "HTML would be plain and boring without our style"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
@@ -40,7 +40,7 @@ const gamedb = [
             "Javascript functions should generally be designed to perform one task",
             "Without us, web pages would just be text with zero functionality"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
@@ -50,144 +50,150 @@ const gamedb = [
             "Expressions can be used in Javascript XML by wrapping them in curly {} braces",
             "React is built with components, which are Javascript functions",
             "React elements are immutable - they cannot be changed unless the page is re-rendered",
-            "Thou shall not speak of Jquery ever. Ever. Just don't do it"],
+            "Thou shall not speak of jQuery ever. Ever. Just don't do it"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     // Master NPC in each towm
     {
         npcName: "Vu the Javascript Jaeger",
-        dialogue: ["I am the master of the House of Javascript. Are you willing to take on my trial?",],
+        dialogue: ["I am the Javascript master. Are you willing to take on my trial?",
+            "What declaration is used to create a constant variable?",
+            "What operation is used when you want to compare type and value?"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: (placeholder)! "],
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
         npcName: "Gabe the React Rabid",
-        dialogue: ["I am the master of the House of React. Are you willing to take on my trial?",
+        dialogue: ["I am the React master. Are you willing to take on my trial?",
             "React is used as a library primarily for which language?",
             "What is the building block for a React application?"],
         position: [0, 0],
-        correctAnswer: ["That's correct! Not bad."],
+        beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: (placeholder)! I will take it back if you ever use jQuery though."],
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
         npcName: "Adam the CSS Connoisseur",
-        dialogue: ["I am the master of the House of CSS. Are you willing to take on my trial?",],
+        dialogue: ["I am the CSS master. Are you willing to take on my trial?",
+            "What does the C in CSS stand for?",
+            "What property is declared to change the font color?"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: ["YOU DID IT! Here is your new ability: (placeholder)! Ugh. You are so fabulous. I just can't. Get out of here before I lose it. "],
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
         npcName: "Jorge the HTML Hotshot",
-        dialogue: ["I am the master of the House of HTML. Are you willing to take on my trial?",],
+        dialogue: ["I am the HTML master. Are you willing to take on my trial?",
+            "What does HTML stand for?",
+            "What is the correct syntax for a paragraph tag?"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: (placeholder)! Maybe one day, you'll be a hotshot like me. "],
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
     },
     // Javascript town NPC
     {
-        npcName: "Peter J",
+        npcName: "Pedro",
         dialogue: ["Aaron, what are you doing?! That's not the right declaration to create a constant variable. Why are you using var?? Const is used when you don't want the variable to be redefined!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Aaron",
         dialogue: ["I know what I'm doing. Don't make me bully you. By the way, did you know that the operator '===' denotes strict equality? "],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Garrett",
         dialogue: ["You're going to challenge Mongod? You are a brave one. You should pass all four trials before you take him on!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Mia",
         dialogue: ["You look like you could use a pick-me-up. Head over to Willbucks! They have great coffee."],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Alexander",
         dialogue: ["Wash your hair lately?"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
 
     // React town NPC
     {
         npcName: "Erwins",
-        dialogue: ["You know what is awful? Jquery is awful. React is so much better. Hmph. It uses a virtual dom and gets rid of 'spaghetti code.' It's great!"],
+        dialogue: ["You know what is awful? jQuery is awful. React is so much better. Hmph. It uses a virtual dom and gets rid of 'spaghetti code.' Javascript is the main language used with React. It's great!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Paige",
         dialogue: ["I'm so tired. My neighbor's devil dogs woke me up so early today! *Yawn*. The only thing I remember from studying last night was that almost everything in a React application is a component."],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Craigster",
         dialogue: ["If there was one instrument I could know how to play, it would be the bagpipes!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Patrick",
         dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Camila",
         dialogue: ["Have you tried turning it off and on again? "],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
 
     // CSS town NPC
     {
         npcName: "Barry",
-        dialogue: ["No more tall boys for me. I am exhausted. Cascading down the town's hill was tiring. Do you know what else cascades? CSS!"],
+        dialogue: ["No more tall boys for me. I am exhausted. Cascading down the town's hill was tiring. Do you know what else cascades? CSS or Cascading Style Sheets!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Lin",
         dialogue: ["I was looking for my grandma's missing flip flop yesterday but instead I found a treasure chest! ...Unfortunately, it was empty.. *sad face* I brought it home to style it. I added a border, color, and adjusted the width."],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Martin",
         dialogue: ["I found an awesome flip flop today! I wonder who it belongs to?"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Tony",
         dialogue: ["I keep hearing about this My Sequel server... but I feel left out because I haven't seen the first one!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Jenny",
         dialogue: ["I'm a fantastic pseudocoder. Jealous?"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
 
@@ -197,33 +203,33 @@ const gamedb = [
         npcName: "Harrison",
         dialogue: ["What does HTML mean again..? I forgot.. Hmm.. Hopper..Hipper..Hold on. *drinks coffee* Hyper Text Markup Language, that's it!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Mark",
         dialogue: ["I can complete assigned exercises just fine, but when I'm cut loose to create things on my own, I have no idea what to do! I do know some HTML fundamentals though. To display basic text on an HTML page, you can use a paragraph tag. The paragraph tag is denoted by '<p>'!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Leonardo",
         dialogue: ["Every time you pass a trial, you learn a new ability. Train hard!"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Michaelangelo",
         dialogue: ["I could go for a slice of pizza. Or 12."],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Raphael",
         dialogue: ["*Silent brooding*"],
         position: [0, 0],
-        correctAnswer: [],
+        beatTrial: [],
         passedTrialDialogue: []
     },
 

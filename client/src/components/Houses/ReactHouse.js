@@ -13,9 +13,31 @@ class ReactHouse extends React.Component {
         scroll: "React",
         passedTrial: false,
         dialogue: [],
+        abilityDialogue: [],
         passedDialogue: [],
-        dialogueCount: 0
+        dialogueCount: 0,
+        isCorrect: false,
+        answers: ["javascript", "component"],
+        currentAnswer: ''
+    }
 
+    handleChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value.toLowerCase()
+        })
+    }
+
+    componentDidUpdate() {
+        const { isCorrect, currentAnswer, answers, dialogueCount } = this.state;
+        if (!isCorrect && currentAnswer === answers[dialogueCount - 1]) {
+            this.setState({
+                isCorrect: true
+            });
+        } else if (isCorrect && currentAnswer.trim() !== answers[dialogueCount - 1]) {
+            this.setState({
+                isCorrect: false
+            })
+        }
     }
 
     componentDidMount() {
@@ -25,11 +47,11 @@ class ReactHouse extends React.Component {
                 this.setState({
                     dialogue: gameDB.data.dialogue,
                     passedDialogue: gameDB.data.passedTrialDialogue,
+                    abilityDialogue: gameDB.data.beatTrial,
                     passedTrial: userDB.data.progress[3].passed
                 })
             })
         });
-
     }
 
     scrollClick = (event) => {
@@ -41,7 +63,8 @@ class ReactHouse extends React.Component {
     nextDialogue = (event) => {
         event.preventDefault();
         this.setState({
-            dialogueCount: this.state.dialogueCount + 1
+            dialogueCount: this.state.dialogueCount + 1,
+            currentAnswer: ""
         });
     };
 
@@ -79,14 +102,20 @@ class ReactHouse extends React.Component {
                                     ?
                                     <div id="textBox">
                                         <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                                        <input></input>
-                                        <button onClick={this.nextDialogue} className="btn btn-primary btn-sm confirm">Confirm</button>
+                                        <input name="currentAnswer" onChange={this.handleChange} value={this.state.currentAnswer}></input>
+                                        <button disabled={!this.state.isCorrect} onClick={this.state.isCorrect ? this.nextDialogue : undefined} className={`btn btn-primary btn-sm confirm ${!this.state.isCorrect && "disabled"}`}>Confirm</button>
                                     </div>
                                     :
-                                    <div id="textBox">
-                                        <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                                        <button onClick={this.nextDialogue} className="btn btn-primary btn-sm confirm">Confirm</button>
-                                    </div>
+                                    this.state.dialogueCount === 3
+                                        ?
+                                        <div id="textBox">
+                                            <h4>{this.state.abilityDialogue[0]}</h4>
+                                        </div>
+                                        :
+                                        <div id="textBox">
+                                            <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
+                                            <button onClick={this.nextDialogue} className="btn btn-primary btn-sm confirm">Confirm</button>
+                                        </div>
                         }
                     </div>
 

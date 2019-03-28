@@ -14,7 +14,7 @@ var GamedatabaseSchema = new Schema({
         type: Array,
         trim: true
     },
-    correctAnswer: {
+    beatTrial: {
         type: Array,
         trim: true
     },

@@ -17,6 +17,12 @@ class Homepage extends React.Component {
         })
     }
 
+    handlePWChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
     handleLogin = (event) => {
         event.preventDefault();
         $.post('/api/authenticate', { username: this.state.username, password: this.state.password })
@@ -41,12 +47,12 @@ class Homepage extends React.Component {
                     <div id="homeInput">
                     <div className="input-group-prepend homeInput">
                         <span className="input-group-text" id="basic-addon1"> <i className="fas fa-user-circle"></i> </span>
-                        <input onChange={this.handleChange} name="username" type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                        <input value={this.state.username} onChange={this.handleChange} name="username" type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                     </div>
 
                     <div className="input-group-prepend homeInput">
                         <span className="input-group-text" id="basic-addon1"><i className="fas fa-key"></i></span>
-                        <input onChange={this.handleChange} name="password" type="password" className="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" />
+                        <input onChange={this.handlePWChange} name="password" type="password" className="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" />
                     </div>
 
                     </div>
