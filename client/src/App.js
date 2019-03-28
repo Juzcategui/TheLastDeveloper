@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 /*------------------ Technical Folder ------------------*/
 import Homepage from './components/Technical/Homepage';
 import Register from './components/Technical/Register';
+import Intro from './components/Technical/Intro';
 import WorldMap from './components/Technical/WorldMap';
 import Scroll from './components/Technical/Scroll';
 
@@ -39,6 +40,7 @@ const App = () => (
 
       {/* ------------------ Technical Folder ------------------ */}
       <Route exact path="/" component={Homepage} />
+      <Route exact path="/Intro" component={Intro} />
       <Route exact path="/Register" component={Register} />
       <Route exact path="/WorldMap" component={WorldMap} />
       <Route exact path="/Scroll" component={Scroll} />

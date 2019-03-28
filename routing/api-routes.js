@@ -40,8 +40,8 @@ module.exports = function (app) {
             password: req.body.password
         };
 
-        User.create(userData).then(function () {
-            res.json({ success: true });
+        User.create(userData).then(function (data) {
+            res.json(data);
         })
             .catch(function (err) {
                 res.status(400).json(err);

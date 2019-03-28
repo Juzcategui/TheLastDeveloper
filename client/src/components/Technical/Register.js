@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import '../../App.css'
 import { Link } from "react-router-dom";
+import * as $ from 'axios';
+import codeGIF from "../../Backgrounds/code.gif"
 
 class Register extends React.Component {
     state = {
         reguser: '',
-        regpw: '',
-        username: ''
+        regpw: ''
     }
 
     handleChange = (event) => {
@@ -15,31 +16,63 @@ class Register extends React.Component {
         })
     }
 
+    handlePWChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    handleRegister = (event) => {
+        event.preventDefault();
+        $.post('/api/signup', { username: this.state.reguser, password: this.state.regpw })
+            .then((data) => {
+                sessionStorage.setItem('userId', data.data._id);
+                this.props.history.push("/Intro")
+            }).catch(err => {
+                console.log(err);
+            });
+
+    }
+
     render() {
         return (
-            <div >
-                <div id="homePageStyle">
+            <div id="homeBackground">
+                <img className="BG" src={codeGIF} alt="LoginPage" />
 
-                    <div className="input-group-prepend homeInput">
-                        <span className="input-group-text" id="basic-addon1"> <i className="fas fa-user-circle"></i> </span>
-                        <input onChange={this.handleChange} name="username" type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                <div id="titleBlock" class="container">
+                    <h1 className="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
+                    <h2 className="gameMotto">Sometimes You Have to Code with Your Fists</h2>
+
+                </div>
+                <div id="homePageStyle" class="container">
+                    <h3 id="loginTitle">Register New Account</h3>
+                    <div id="homeInput">
+                        <div className="input-group-prepend homeInput">
+                            <span className="input-group-text" id="basic-addon1"> <i className="fas fa-user-circle"></i> </span>
+                            <input value={this.state.username} onChange={this.handleChange} name="reguser" type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                        </div>
+
+                        <div className="input-group-prepend homeInput">
+                            <span className="input-group-text" id="basic-addon1"><i className="fas fa-key"></i></span>
+                            <input onChange={this.handlePWChange} name="regpw" type="password" className="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" />
+                        </div>
+
                     </div>
-
-                    <div className="input-group-prepend homeInput">
-                        <span className="input-group-text" id="basic-addon1"><i className="fas fa-key"></i></span>
-                        <input onChange={this.handleChange} name="password" type="password" className="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" />
-                    </div>
-
                     <div id="signIn">
-                        <button type="button" id="signInBtnStyle" className="btn btn-dark">
-                            Submit
-                        </button>
+                        <button type="button" id="signInBtnStyle" className="btn btn-primary" onClick={this.handleRegister}>
+                            Register
+                       </button>
+                        <br /><br />
+                        <Link to="/">
+                            <p>Back to Login</p>
+                        </Link>
                     </div>
                 </div>
-                <Link to="/">HomePage</Link>
             </div>
-                );
-            }
-        }
-        
+
+
+
+        );
+    }
+}
 export default Register;

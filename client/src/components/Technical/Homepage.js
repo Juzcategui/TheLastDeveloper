@@ -42,7 +42,7 @@ class Homepage extends React.Component {
 
                 <div id="titleBlock" class="container">
                     <h1 className="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
-                    <h2 className="gameMotto">Sometimes You Will Have to Code with Your Fists</h2>
+                    <h2 className="gameMotto">Sometimes You Have to Code with Your Fists</h2>
 
                 </div>
                 <div id="homePageStyle" class="container">
@@ -64,9 +64,11 @@ class Homepage extends React.Component {
                             Log in
                        </button>
                         <h5 id="registerBtnStyle">Need an Account?
-                   <button type="button" className="btn btn-primary regBtn">
-                                Register
-                       </button>
+                        <Link to="/Register">
+                                <button type="button" className="btn btn-primary regBtn">
+                                    Register
+                                </button>
+                            </Link>
                         </h5>
                     </div>
                 </div>
