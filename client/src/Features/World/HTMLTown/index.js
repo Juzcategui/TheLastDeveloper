@@ -2,10 +2,13 @@ import React from 'react';
 import Map from '../../Map'
 import Player from '../../Player/';
 import { Link } from "react-router-dom";
-import worldBG from '../../../Backgrounds/PewterCity.png'
+import worldBG from '../../../Backgrounds/PewterCity.png';
+import NPC from '../../NPCs';
 
 import { HTMLTiles } from './HTMLTiles'
 import store from '../../../config/store'
+
+import './HTMLTown.css'
 
 
 function HTMLTown(props) {
@@ -24,8 +27,12 @@ function HTMLTown(props) {
             margin: '20px auto',
             backgroundImage: `url('${worldBG}')`
         }}>
+    
         <Map tiles={HTMLTiles} name="HTML Town"/>
         <Player />
+        <NPC />
+        
+        
 
             
         </div>
