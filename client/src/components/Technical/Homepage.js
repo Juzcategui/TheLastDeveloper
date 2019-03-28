@@ -64,6 +64,7 @@ class Homepage extends React.Component {
                             Log in
                         </button>
                         <h5 id="registerBtnStyle">Need an Account?
+                        <br/>
                     <button type="button" className="btn btn-primary">
                             Register
                         </button>
