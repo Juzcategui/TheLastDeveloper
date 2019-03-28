@@ -115,7 +115,7 @@ class ReactHouse extends React.Component {
                         </div>
                         {
                             this.state.passedTrial === true ?
-                                <div id="textBox">
+                                <div key={4} id="textBox">
                                     <h4>{this.state.passedDialogue[this.state.dialogueCount]}</h4>
                                     <button onClick={this.resetTrial} className="btn btn-primary btn-sm confirm">Retake Trial</button>
                                 </div>
@@ -123,7 +123,7 @@ class ReactHouse extends React.Component {
                                 :
                                 (this.state.dialogueCount === 1 || this.state.dialogueCount === 2)
                                     ?
-                                    <div id="textBox">
+                                    <div key={this.state.dialogueCount} id="textBox" >
                                         <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
                                         <form onSubmit={this.state.isCorrect ? this.nextDialogue : undefined}>
                                             <input name="currentAnswer" onChange={this.handleChange} value={this.state.currentAnswer}></input>
@@ -133,13 +133,13 @@ class ReactHouse extends React.Component {
                                     :
                                     this.state.dialogueCount === 3
                                         ?
-                                        <div id="textBox">
+                                        <div key={this.state.dialogueCount} id="textBox">
                                             <h4>{this.state.abilityDialogue[0]}</h4>
                                             <button onClick={this.abilityUnlock} className="btn btn-primary btn-sm confirm">End Trial</button>
                                         </div>
 
                                         :
-                                        <div id="textBox">
+                                        <div key={this.state.dialogueCount} id="textBox">
                                             <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
                                             <button onClick={this.nextDialogue} className="btn btn-primary btn-sm confirm">Start Trial</button>
                                         </div>
