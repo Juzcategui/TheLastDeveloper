@@ -92,6 +92,24 @@ const gamedb = [
         beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: (placeholder)! Maybe one day, you'll be a hotshot like me. "],
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
     },
+
+    //Willbucks
+    {
+        npcName: "Will",
+        dialogue: ["Hey, I'm Will! Welcome to Willbucks! You look tired - you must be coding too much! Want some coffee?"],
+        position: [0, 0],
+        beatTrial: ["Thanks! This will help my competitive barista career take off!"],
+        passedTrialDialogue: ["Okay, come again soon!"]
+    },
+    {
+        npcName: "Peter",
+        dialogue: ["One day, I'll take Will's job..."],
+        position: [0, 0],
+        beatTrial: [""],
+        passedTrialDialogue: []
+    },
+
+
     // Javascript town NPC
     {
         npcName: "Pedro",
