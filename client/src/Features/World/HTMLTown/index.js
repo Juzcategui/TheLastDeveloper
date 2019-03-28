@@ -8,8 +8,6 @@ import NPC from '../../NPCs'
 import { HTMLTiles } from './HTMLTiles'
 import store from '../../../config/store'
 
-import './HTMLTown.css'
-
 
 function HTMLTown(props) {
     store.dispatch({
