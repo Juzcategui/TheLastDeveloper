@@ -30,8 +30,11 @@ class OuterForest extends React.Component {
                 </div>
 
                 <div id="actionBox">
-                <button className="btn btn-success"><Link to="/Forest">Continue to forest</Link></button>
-                    <button className="btn btn-secondary"><Link to="/WorldMap">World Map</Link></button>
+                    <Link to="/Forest">
+                        <button className="btn btn-success">Continue to forest</button></Link>
+                    <Link to="/WorldMap">
+                        <button className="btn btn-secondary">World Map</button>
+                    </Link>
                 </div>
 
             </div>
