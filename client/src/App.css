@@ -1,5 +1,5 @@
 /* ---------------- Log in / register styling ---------------- */
-
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 #homePageStyle {
   border-style: solid;
