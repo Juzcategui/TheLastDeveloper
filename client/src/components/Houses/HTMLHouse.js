@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
 import HTMLHouseImg from "../../Backgrounds/HTML BeachHouse.jpg";
 import Jorge from "../../Sprites/Jorge.png";
 import imgscroll from "../../Backgrounds/scroll.png";
@@ -48,7 +47,6 @@ class HTMLHouse extends React.Component {
       </div>
     );
   }
-=======
 import HTMLHouseImg from "../../Backgrounds/HTMLHouse.jpg"
 import Jorge from "../../Sprites/Jorge.png"
 import imgscroll from "../../Backgrounds/scroll.png"
@@ -175,7 +173,6 @@ class HTMLHouse extends React.Component {
         )
     }
 
->>>>>>> b0f79c9e0d48af39d8aa3acf2b112874e3d5aad1
 }
 
 export default HTMLHouse;
