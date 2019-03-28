@@ -168,14 +168,14 @@ const gamedb = [
         passedTrialDialogue: []
     },
     {
-        npcName: "Patrick",
+        npcName: "Camila",
         dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
         position: [0, 0],
         beatTrial: [],
         passedTrialDialogue: []
     },
     {
-        npcName: "Camila",
+        npcName: "Nathan",
         dialogue: ["Have you tried turning it off and on again? "],
         position: [0, 0],
         beatTrial: [],
