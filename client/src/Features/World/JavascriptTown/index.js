@@ -6,7 +6,7 @@ import worldBG from '../../../Backgrounds/SaffronCity.png'
 import JavascriptNPC from "./Javascript_NPC"
 import { JavascriptTiles } from './JavascriptTiles'
 import store from '../../../config/store'
-
+import WelcomeToMyWorld from '../../../Audio/WelcomeToMyWorld.mp3'
 
 function JavascriptTown(props) {
     store.dispatch({
@@ -28,18 +28,18 @@ function JavascriptTown(props) {
     return (
 
         <div
-            style={{
-                position: 'relative',
-                width: '1280px',
-                height: '720px',
-                margin: '20px auto',
-                backgroundImage: `url('${worldBG}')`
-            }}>
-            <Map tiles={JavascriptTiles} name="Javascript Town" />
-            <Player />
-            <JavascriptNPC />
-
-
+        style={{
+            position: 'relative',
+            width: '1280px',
+            height: '720px',
+            margin: '20px auto',
+            backgroundImage: `url('${worldBG}')`
+        }}>
+        <Map tiles={JavascriptTiles} name="Javascript Town"/>
+        <Player />
+        <JavascriptNPC />
+        <audio src={WelcomeToMyWorld} autoPlay loop />
+            
         </div>
     )
 }

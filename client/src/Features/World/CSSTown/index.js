@@ -7,7 +7,7 @@ import './CSSTownStyle.css'
 import CSSNPC from './CSS_NPC'
 import { CSSTiles } from './CSSTiles'
 import store from '../../../config/store'
-
+import Anville from '../../../Audio/Anville.mp3'
 
 function CSSTown(props) {
     store.dispatch({
@@ -27,18 +27,18 @@ function CSSTown(props) {
     })
 
     return (
-        <div
-            style={{
-                position: 'relative',
-                width: '1280px',
-                height: '720px',
-                margin: '20px auto',
-                backgroundImage: `url('${worldBG}')`
-            }}>
-            <Map tiles={CSSTiles} name="CSS Town" />
-            <Player />
-            <CSSNPC />
-
+        <div 
+        style={{
+            position: 'relative',
+            width: '1280px',
+            height: '720px',
+            margin: '20px auto',
+            backgroundImage: `url('${worldBG}')`
+        }}>
+        <Map tiles={CSSTiles} name="CSS Town"/>
+        <Player />
+        <CSSNPC />
+        <audio src={Anville} autoPlay loop />
         </div>
     )
 }

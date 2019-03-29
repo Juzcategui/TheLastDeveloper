@@ -8,6 +8,7 @@ import JSSVG from "../../SVG/js.png";
 import mongoSVG from "../../SVG/mongo.png";
 import hideOut from "../../SVG/Hideout.png";
 import willBucksLogo from "../../SVG/willBucksLogo.png";
+import CygnusGarden from "../../Audio/CygnusGarden.mp3"
 import * as $ from 'axios';
 
 
@@ -43,6 +44,7 @@ class WorldMap extends React.Component {
     render() {
         return (
             <div>
+                <audio src={CygnusGarden} autoPlay loop/>
                 <img className="BG" src={worldMap} alt="WorldMap" />
                 <h1 id="WorldMapTitle">WORLD MAP</h1>
                 <h4 id="abilities" data-toggle="modal"
