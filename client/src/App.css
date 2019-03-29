@@ -33,14 +33,17 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 #homePageStyle {
   border-style: solid;
   border-color: lightslategrey;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 30%;
+  left: 30%;
   padding: 50px;
   height: 450px;
   width: 40%;
   background:rgba(255,255,255,0.9);
+}
+
+.regBtn{
+  margin-left:10px;
 }
 
 #titleBlock{
@@ -78,7 +81,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 #registerBtnStyle{
   top: 50%;
-  left:33%;
+  left:25%;
   text-align: center;
   position: absolute;
   padding-top: 80px;
@@ -109,13 +112,10 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 .gameMotto{
   color: white;
-  position: absolute;
-  top: 27.5%;
-  left: 50%;
   width: 1200px;
   transform: translate(-50%, -50%);
   font-family: 'Press Start 2P', cursive;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -196,7 +196,7 @@ width: 73%;
 
 /* ----------------------JS---------------------------------- */
 #Vu{
-  bottom: 0%;
+    top: 18.5%;
     left: 50%;
     position: absolute;  
 }
@@ -259,7 +259,7 @@ left: 54%;
 
 /* ---------------------------REACT--------------------------- */
 #Gabe{
-  bottom: 0%;
+  top: 18.5%;
   left: 50%;
   position: absolute;
 }
@@ -322,7 +322,7 @@ left: 80%;
 
 /* ---------------- HTML Town/House styling ---------------- */
 #Jorge{
-  bottom: 0%;
+  top: 18.5%;
   left: 50%;
   position: absolute;
 }
@@ -377,7 +377,7 @@ left: 75%;
 
 /* ---------------- CSS Town/House styling ---------------- */
 #adam{
-  bottom: 0%;
+  top: 18.5%;
   left: 50%;
   position: absolute;
 }
@@ -447,9 +447,17 @@ left: 50%;
  /* ---------------- World Map styling ---------------- */
  #WorldMapTitle {
   font-family: 'Press Start 2P', cursive;
-  float: right;
+  position:absolute;
+  left: 0%;
   padding: 10px 10px;
 }
+#abilities {
+  font-family: 'Press Start 2P', cursive;
+  position:absolute;
+  right: 0%;
+  padding: 10px 10px;
+}
+
 #JavascriptJunkies,
 #RiversOfReact,
 #HouseOfHTML,
@@ -467,7 +475,7 @@ left: 50%;
   height: 90px;
 }
 #RiversOfReact {
-  top: 45%;
+  top: 47%;
   left: 88%;
   width: 70px;
   height: 90px;
@@ -545,7 +553,7 @@ left: 50%;
 }
 
 #Will{
-  bottom: 0%;
+    top: 12.5%;
     left: 60%;
     position: absolute;
     height: 600px;
@@ -563,7 +571,7 @@ left: 50%;
 
 /* --------------------------Secret Lair------------------- */
  #Cody{
-  bottom: 0%;
+    top: 18.5%;
     left: 50%;
     position: absolute;
   }
@@ -699,7 +707,7 @@ left: 50%;
     position: relative;
     top: 9999px;
     transform-origin: 50% 100%;
-    animation: crawl 10s linear;
+    animation: crawl 75s linear;
   }
   
   .crawl > .title {
@@ -718,9 +726,7 @@ left: 50%;
       transform: rotateX(20deg)  translateZ(0);
     }
     100% { 
-      top: -9000px;
-      transform: rotateX(25deg) translateZ(-3600px);
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
     }
   }
-
-  
