@@ -4,7 +4,7 @@ import Player from '../../Player/';
 import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/PewterCity.png'
 import ReactNPC from './React_NPC';
-
+import WaltzForZizi from '../../../Audio/WaltzForZizi.mp3'
 import { ReactTiles } from './ReactTiles'
 import store from '../../../config/store'
 
@@ -30,7 +30,7 @@ function ReactTown(props) {
             <Map tiles={ReactTiles} name="React Town" />
             <Player />
             <ReactNPC />
-
+            <audio src={WaltzForZizi} autoPlay loop />
 
         </div>
     )

@@ -7,7 +7,7 @@ import './CSSTownStyle.css'
 import CSSNPC from './CSS_NPC'
 import { CSSTiles } from './CSSTiles'
 import store from '../../../config/store'
-
+import BesaidIsland from '../../../Audio/BesaidIsland.mp3'
 
 function CSSTown(props) {
     store.dispatch({ type: 'ADD_TILES', payload: {
@@ -27,7 +27,7 @@ function CSSTown(props) {
         <Map tiles={CSSTiles} name="CSS Town"/>
         <Player />
         <CSSNPC />
-            
+        <audio src={BesaidIsland} autoPlay loop />
         </div>
     )
 }
