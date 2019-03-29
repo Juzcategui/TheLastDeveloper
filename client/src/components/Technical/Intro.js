@@ -28,7 +28,7 @@ class Intro extends React.Component {
                             <p>The Last Developer</p>
                             <br></br>
                             <br></br>
-                            <h1>From the developers of Trivia Bros, Sozial, Run-Escape, PoetryGenius, & MediApp</h1>
+                            <h1>From the developers of Super Trivia Bros., Sozial, Run-Escape, PoetryGenius, & MediApp</h1>
                             <br></br>
                             <br></br>
                             <br></br>
