@@ -3,17 +3,28 @@ import Map from '../../Map'
 import Player from '../../Player/';
 import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/SaffronCity.png'
-
+import JavascriptNPC from "./Javascript_NPC"
 import { JavascriptTiles } from './JavascriptTiles'
 import store from '../../../config/store'
-
+import WelcomeToMyWorld from '../../../Audio/WelcomeToMyWorld.mp3'
 
 function JavascriptTown(props) {
-    store.dispatch({ type: 'ADD_TILES', payload: {
-        tiles: JavascriptTiles,
-        name: "Javascript Town"
-    }})
-    
+    store.dispatch({
+        type: 'ADD_TILES', payload: {
+            tiles: JavascriptTiles,
+            name: "Javascript Town"
+        }
+    })
+
+    store.dispatch({
+        type: 'MOVE_PLAYER',
+        payload: {
+            position: [80, 520],
+            spriteLocation: '0px 80px',
+            walkIndex: 0
+        }
+    })
+
     return (
 
         <div
@@ -26,7 +37,8 @@ function JavascriptTown(props) {
         }}>
         <Map tiles={JavascriptTiles} name="Javascript Town"/>
         <Player />
-
+        <JavascriptNPC />
+        <audio src={WelcomeToMyWorld} autoPlay loop />
             
         </div>
     )

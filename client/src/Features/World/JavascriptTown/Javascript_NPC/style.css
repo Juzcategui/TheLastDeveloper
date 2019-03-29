@@ -1,0 +1,69 @@
+.Pedro {
+    position: absolute;
+    top: 80px;
+    left: 520px;
+    background-Image: url('./Sprites/Peter.png');
+    background-Position: 0px 120px;
+    width: 40px;
+    height: 40px;
+}
+
+.Aaron {
+    position: absolute;
+    top: 80px;
+    left: 440px;
+    background-Image: url('./Sprites/Aaron.png');
+    background-Position: 0px 80px;
+    width: 40px;
+    height: 40px;
+}
+
+.Garrett {
+    position: absolute;
+    top: 600px;
+    left: 160px;
+    background-Image: url('./Sprites/Garrett.png');
+    background-Position: 0px 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.Emily {
+    position: absolute;
+    top: 320px;
+    left: 760px;
+    background-Image: url('./Sprites/Emily.png');
+    background-Position: 0px 80px;
+    width: 40px;
+    height: 40px;
+}
+
+.Alexander {
+    position: absolute;
+    top: 120px;
+    left: 920px;
+    background-Image: url('./Sprites/Alexander.png');
+    background-Position: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.Vu {
+    position: absolute;
+    top: 400px;
+    left: 640px;
+    background-Image: url('./Sprites/Vu.png');
+    background-Position: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.JavascriptGuard {
+    position: absolute;
+    top: 600px;
+    left: 520px;
+    background-Image: url('./Sprites/JavascriptGuard.png');
+    background-Position: 0px 120px;
+    width: 40px;
+    height: 40px;
+}

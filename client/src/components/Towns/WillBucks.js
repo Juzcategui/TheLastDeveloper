@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import willBucks from "../../Backgrounds/WillBucks.jpg"
 import Will from "../../Sprites/WillBucks.PNG"
 import * as $ from 'axios';
+import CarelessWhisper from '../../Audio/CarelessWhisper.mp3'
 
 
 
@@ -51,6 +52,7 @@ class WillBucks extends React.Component {
         return (
 
             <div>
+                <audio src={CarelessWhisper} autoPlay loop />
                 <img className="BG" src={willBucks} alt="WillBucks"></img>
 
                 <h1 className="HouseTitles">Welcome to WillBucks!</h1>

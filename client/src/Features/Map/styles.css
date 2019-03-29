@@ -12,7 +12,7 @@
 }
 
 .rock {
-    background-image: url('/Tiles/Rocks.png');
+    /* background-image: url('/Tiles/Rocks.png'); */
 }
 
 .worldMapPortal,
@@ -20,10 +20,9 @@
 .htmlHousePortal,
 .jsHousePortal,
 .reactHousePortal {
-    background-image: url('../../SVG/portal.png');
+    /* background-image: url('../../SVG/portal.png'); */
 }
 
 .actionTile {
-    background-image: url('../Player/A1.png');
     background-position: 0px 120px;
 }

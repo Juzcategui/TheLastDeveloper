@@ -5,8 +5,6 @@ import Gabe from "../../Sprites/Gabe.png"
 import imgscroll from "../../Backgrounds/scroll.png"
 import * as $ from 'axios';
 
-
-
 class ReactHouse extends React.Component {
     state = {
         npcName: 'Gabe the React Rabid',
