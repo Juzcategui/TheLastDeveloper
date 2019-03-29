@@ -11,7 +11,7 @@ var GamedatabaseSchema = new Schema({
         trim: true
     },
     position: {
-        type: Array,
+        type: String,
         trim: true
     },
     beatTrial: {
