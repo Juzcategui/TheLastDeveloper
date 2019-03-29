@@ -1,7 +1,7 @@
 .Harrison {
     position: absolute;
     top: 360px;
-    left: 600px;
+    left: 560px;
     background-Image: url('./Sprites/Harrison.png');
     background-Position: 0px 120px;
     width: 40px;
@@ -43,7 +43,7 @@
     top: 440px;
     left: 1040px;
     background-Image: url('./Sprites/Raphael.png');
-    background-Position: 0px 80px;
+    background-Position: 0px 120px;
     width: 40px;
     height: 40px;
 }
