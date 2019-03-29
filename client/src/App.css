@@ -1,43 +1,22 @@
 /*typewriter */
 
 
-
-/* #textBox {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-#textBox:after {
-  content: "";
-  right: 0;
-  top: 10px;
-  height: 30px;
-  position: absolute;
-  border-right: .15em solid orange; 
-  animation: blink-caret .5s step-end infinite;
-} */
-
 .typewriter h4 {
-  /* overflow: hidden; Ensures the content is not revealed until the animation */
-  white-space: normal;/* Keeps the content on a single line */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space:nowrap;/* Keeps the content on a single line */
   /* overflow-wrap: break-word; */
   margin:0 auto;/* Gives that scrolling effect as the typing happens */
   letter-spacing: .1em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end);
-  position: relative;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from {
-    width: 100000%;
-    left: 100%;
-  }
-  to {
-    width: 100%;
-    left: 0;
-  }
+  from { width: 0 }
+  to { width: 100% }
 }
 
 /* The typewriter cursor effect */
@@ -46,10 +25,10 @@
   50% { border-color: orange }
 }
 
-
 /* ---------------- Log in / register styling ---------------- */
 html, body {margin: 0; height: 100%; overflow: hidden}
 
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 #homePageStyle {
   border-style: solid;
@@ -217,7 +196,7 @@ width: 73%;
 
 /* ----------------------JS---------------------------------- */
 #Vu{
-    top: 18.5%;
+    bottom: 0%;
     left: 50%;
     position: absolute;  
 }
@@ -280,7 +259,7 @@ left: 54%;
 
 /* ---------------------------REACT--------------------------- */
 #Gabe{
-  top: 18.5%;
+  bottom: 0%;
   left: 50%;
   position: absolute;
 }
@@ -343,7 +322,7 @@ left: 80%;
 
 /* ---------------- HTML Town/House styling ---------------- */
 #Jorge{
-  top: 18.5%;
+  bottom: 0%;
   left: 50%;
   position: absolute;
 }
@@ -398,7 +377,7 @@ left: 75%;
 
 /* ---------------- CSS Town/House styling ---------------- */
 #adam{
-  top: 18.5%;
+  bottom: 0%;
   left: 50%;
   position: absolute;
 }
@@ -574,7 +553,7 @@ left: 50%;
 }
 
 #Will{
-    top: 12.5%;
+  bottom: 0%;
     left: 60%;
     position: absolute;
     height: 600px;
@@ -592,7 +571,7 @@ left: 50%;
 
 /* --------------------------Secret Lair------------------- */
  #Cody{
-    top: 18.5%;
+  bottom: 0%;
     left: 50%;
     position: absolute;
   }

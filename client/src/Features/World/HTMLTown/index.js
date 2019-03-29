@@ -29,10 +29,6 @@ function HTMLTown(props) {
     return (
 
         <div
-<<<<<<< HEAD
-=======
-
->>>>>>> 7084b0c1c0a8eee514bd8ee488b9bf794443138a
             style={{
                 position: 'relative',
                 width: '1280px',
