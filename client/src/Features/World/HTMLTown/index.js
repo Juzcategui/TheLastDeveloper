@@ -1,7 +1,6 @@
 import React from 'react';
 import Map from '../../Map'
 import Player from '../../Player/';
-import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/VermillionCity.png'
 import HTMLNPC from './HTML_NPC'
 import RedRedWine from "../../../Audio/RedRedWine.mp3"
@@ -32,11 +31,7 @@ function HTMLTown(props) {
             <Map tiles={HTMLTiles} name="HTML Town" />
             <Player />
             <HTMLNPC />
-<<<<<<< HEAD
-            
-=======
             <audio src={RedRedWine} autoPlay/>
->>>>>>> 4cd8b32204e0045c39faaeed392378f3c175033a
 
 
         </div>
