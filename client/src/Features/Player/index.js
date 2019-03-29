@@ -2,15 +2,20 @@ import React from 'react';
 import { connect } from 'react-redux';
 import walkSprite from './Alan_B.png';
 import { handleKeyDown } from './movement';
+import { withRouter } from "react-router-dom";
 
 class Player extends React.Component {
 
-    componentDidMount() {
-        window.addEventListener('keydown', handleKeyDown);
-    } 
+    handleKeyDown = (e) => {
+        handleKeyDown(e, this.props.history);
+    };
 
-    componentWillUnmount () {
-        window.removeEventListener('keydown', handleKeyDown);
+    componentDidMount() {
+        window.addEventListener('keydown', this.handleKeyDown);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('keydown', this.handleKeyDown);
     }
 
     render() {
@@ -26,10 +31,8 @@ class Player extends React.Component {
                     height: '40px',
                     transitionProperty: 'left, right, top, bottom',
                     transitionDuration: '0.2s'
-
-                    
                 }}
-    
+
             />
         )
     }
@@ -40,8 +43,8 @@ class Player extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        ...state.player,
+        ...state.player
     }
 }
 //connects our player function to the React data store, and will map the redux state to the react state.
-export default connect(mapStateToProps)(Player);
+export default withRouter(connect(mapStateToProps)(Player));
