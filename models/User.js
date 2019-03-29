@@ -40,6 +40,10 @@ var UserSchema = new Schema({
         type: Number,
         default: 0
     },
+    introPassed: {
+        type: Boolean,
+        default: false
+    },
     abilities: [
         {
             type: Schema.Types.ObjectId,

@@ -131,7 +131,7 @@ class JavascriptHouse extends React.Component {
                                         ?
                                         <div id="textBox">
                                             <h4>{this.state.abilityDialogue[0]}</h4>
-                                            <button onClick={this.abilityUnlock} className="btn btn-primary btn-sm confirm">End Trial</button>
+                                            <button onClick={this.abilityUnlock} className="btn btn-primary btn-sm confirm">Learn New Syntax</button>
                                         </div>
                                         :
                                         <div id="textBox">
