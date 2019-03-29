@@ -17,6 +17,15 @@ function ReactTown(props) {
         }
     })
 
+    store.dispatch({
+        type: 'MOVE_PLAYER',
+        payload: {
+            position: [1200, 440],
+            spriteLocation: '0px 120px',
+            walkIndex: 0
+        }
+    })
+
     return (
 
         <div

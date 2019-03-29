@@ -1,7 +1,6 @@
 import React from 'react';
 import Map from '../../Map'
 import Player from '../../Player/';
-import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/VermillionCity.png'
 import HTMLNPC from './HTML_NPC'
 import RedRedWine from "../../../Audio/RedRedWine.mp3"
@@ -18,10 +17,19 @@ function HTMLTown(props) {
         }
     })
 
+    store.dispatch({
+        type: 'MOVE_PLAYER',
+        payload: {
+            position: [1160, 200],
+            spriteLocation: '0px 120px',
+            walkIndex: 0
+        }
+    })
+
     return (
 
         <div
-        
+
             style={{
                 position: 'relative',
                 width: '1280px',
@@ -32,7 +40,7 @@ function HTMLTown(props) {
             <Map tiles={HTMLTiles} name="HTML Town" />
             <Player />
             <HTMLNPC />
-            <audio src={RedRedWine} autoPlay/>
+            <audio src={RedRedWine} autoPlay />
 
 
         </div>
