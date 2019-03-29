@@ -38,7 +38,7 @@ class Intro extends React.Component {
                         <br></br>
                         <p>Existed a unified land - A land of knowledge, community, and collaboration. Everything was open sourced, and information was willingly shared for the benefit of all. But while all the developers and their communities flourished, a great darkness was brooding down below....</p>
                         <br></br>
-                        <p>Feasting on syntax errors for it's own devious intentions, the darkness began to infect the minds of the developers, making them lazy and growing in power from their redundant code. As more and more developers fell prey to the darkness, it used all of their horrific and error filled code to manifest itself into an abomination the likes of which the land had never seen. An endless void consuming all in its path: MongoD.</p>
+                        <p>Feasting on syntax errors for it's own devious intentions, the darkness began to infect the minds of the developers, making them lazy and growing in power from their redundant code. As more and more developers fell prey to the darkness, it used all of their horrific and error filled code to manifest itself into an abomination the likes of which the land had never seen. An endless void consuming all in its path: MonGOD.</p>
                         <br></br>
                         <p>With the citizens of the kingdom in this weakened state, MonGod saw the perfect opportunity to strike. It unleashed a virus to the global scope of the land, splintering the people and their knowledge. HTML, Javascript, React, and CSS now existed in isolation.</p>
                         <br></br>
