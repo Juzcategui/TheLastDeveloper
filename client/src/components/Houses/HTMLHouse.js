@@ -1,17 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-import HTMLHouseImg from "../../Backgrounds/HTML BeachHouse.jpg";
+import HTMLHouseImg from "../../Backgrounds/HTMLHouse.jpg";
 import Jorge from "../../Sprites/Jorge.png";
 import imgscroll from "../../Backgrounds/scroll.png";
 import * as $ from "axios";
-=======
-import HTMLHouseImg from "../../Backgrounds/HTMLHouse.jpg"
-import Jorge from "../../Sprites/Jorge.png"
-import imgscroll from "../../Backgrounds/scroll.png"
-import * as $ from 'axios';
-import RedRedWine from "../../Audio/RedRedWine.mp3"
->>>>>>> 6b6ddc6819b352a05b1bc5dfd29a5db1359335d0
+import RedRedWine from "../../Audio/RedRedWine.mp3";
 
 class HTMLHouse extends React.Component {
   state = {
@@ -97,7 +90,6 @@ class HTMLHouse extends React.Component {
         });
       });
     }
-<<<<<<< HEAD
   };
 
   resetTrial = event => {
@@ -180,7 +172,7 @@ class HTMLHouse extends React.Component {
               </div>
             )}
           </div>
-
+          <audio src={RedRedWine} autoPlay />
           <div id="actionBox">
             <Link to="/HTMLTown">
               <button className="btn btn-success">Back</button>
@@ -190,73 +182,6 @@ class HTMLHouse extends React.Component {
       )
     );
   }
-=======
-
-    resetTrial = (event) => {
-        event.preventDefault();
-        this.setState({
-            passedTrial: false
-        });
-    };
-
-
-    render() {
-        return (
-            
-            this.state.dialogue.length > 0 && (
-                <div>
-                    <img className="BG" src={HTMLHouseImg} alt="HTMLHouse" />
-                    <h1 className="HouseTitles">HTML House</h1>
-                    <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />
-                    <img id="Jorge" src={Jorge} alt="Jorge"></img>
-
-                    <div id='DialogContainer'>
-
-                        <div id="characterName">
-                            <p className="namePlate">Jorge the HTML Hotshot</p>
-                        </div>
-                        {
-                            this.state.passedTrial === true ?
-                                <div id="textBox">
-                                    <h4>{this.state.passedDialogue[this.state.dialogueCount]}</h4>
-                                    <button onClick={this.resetTrial} className="btn btn-primary btn-sm confirm">Retake Trial</button>
-                                </div>
-
-                                :
-                                (this.state.dialogueCount === 1 || this.state.dialogueCount === 2)
-                                    ?
-                                    <div id="textBox">
-                                        <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                                        <form onSubmit={this.state.isCorrect ? this.nextDialogue : undefined}>
-                                            <input name="currentAnswer" onChange={this.handleChange} value={this.state.currentAnswer}></input>
-                                            <button disabled={!this.state.isCorrect} type="submit" className={`btn btn-primary btn-sm confirm ${!this.state.isCorrect && "disabled"}`}>Confirm</button>
-                                        </form>
-                                    </div>
-                                    :
-                                    this.state.dialogueCount === 3
-                                        ?
-                                        <div id="textBox">
-                                            <h4>{this.state.abilityDialogue[0]}</h4>
-                                            <button onClick={this.abilityUnlock} className="btn btn-primary btn-sm confirm">End Trial</button>
-                                        </div>
-                                        :
-                                        <div id="textBox">
-                                            <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                                            <button onClick={this.nextDialogue} className="btn btn-primary btn-sm confirm">Confirm</button>
-                                        </div>
-                        }
-                    </div>
-                    <audio src={RedRedWine} autoPlay/>
-                    <div id="actionBox">
-                        <Link to="/HTMLTown">
-                            <button className="btn btn-success">Back</button>
-                        </Link>
-                    </div>
-                </div>
-            ))
-    }
-
->>>>>>> 6b6ddc6819b352a05b1bc5dfd29a5db1359335d0
 }
 
 export default HTMLHouse;

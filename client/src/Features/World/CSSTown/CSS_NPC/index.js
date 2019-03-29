@@ -1,25 +1,20 @@
-import React from 'react';
-import './style.css'
-
-
+import React from "react";
+import "./style.css";
 
 class CSSNPC extends React.Component {
-
   render() {
     return (
       <div>
-        <div className="Barry"></div>
-        <div className="Lin"></div>
-        <div className="Martin"></div>
-        <div className="Tony"></div>
-        <div className="Jenny"></div>
-        <div className="Adam"></div>
-        <div className="CSSGuard"></div>
+        <div className="Barry" />
+        <div className="Lin" />
+        <div className="Martin" />
+        <div className="Tony" />
+        <div className="Jenny" />
+        <div className="Adam" />
+        <div className="CSSGuard" />
       </div>
-
-
-    )
+    );
   }
 }
 
-export default CSSNPC
+export default CSSNPC;
