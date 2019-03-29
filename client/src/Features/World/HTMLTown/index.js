@@ -1,7 +1,6 @@
 import React from 'react';
 import Map from '../../Map'
 import Player from '../../Player/';
-import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/VermillionCity.png'
 import HTMLNPC from './HTML_NPC'
 import RedRedWine from "../../../Audio/RedRedWine.mp3"
