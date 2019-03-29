@@ -76,12 +76,12 @@ class CSSHouse extends React.Component {
         const classHouse = this.state.scroll;
 
         if (this.state.completedOnce === true) {
-            window.history.back()
+            this.props.history.push("/CSSTown")
         }
         else {
             $.post(`/api/skill`, { body: newSkill, userId: userId }).then(() => {
                 $.put(`/api/user`, { classHouse: classHouse, trialsPassed: this.state.trialsPassed, userId: userId }).then(() => {
-                    window.history.back()
+                    this.props.history.push("/CSSTown")
                 })
             })
         }

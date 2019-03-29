@@ -12,7 +12,7 @@ class Player extends React.Component {
 
     componentDidMount() {
         window.addEventListener('keydown', this.handleKeyDown);
-    } 
+    }
 
     componentWillUnmount() {
         window.removeEventListener('keydown', this.handleKeyDown);

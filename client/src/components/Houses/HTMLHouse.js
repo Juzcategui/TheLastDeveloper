@@ -128,49 +128,49 @@ class HTMLHouse extends React.Component {
               </div>
             ) : this.state.dialogueCount === 1 ||
               this.state.dialogueCount === 2 ? (
-              <div id="textBox">
-                <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                <form
-                  onSubmit={
-                    this.state.isCorrect ? this.nextDialogue : undefined
-                  }
-                >
-                  <input
-                    name="currentAnswer"
-                    onChange={this.handleChange}
-                    value={this.state.currentAnswer}
-                  />
-                  <button
-                    disabled={!this.state.isCorrect}
-                    type="submit"
-                    className={`btn btn-primary btn-sm confirm ${!this.state
-                      .isCorrect && "disabled"}`}
-                  >
-                    Confirm
+                  <div id="textBox">
+                    <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
+                    <form
+                      onSubmit={
+                        this.state.isCorrect ? this.nextDialogue : undefined
+                      }
+                    >
+                      <input
+                        name="currentAnswer"
+                        onChange={this.handleChange}
+                        value={this.state.currentAnswer}
+                      />
+                      <button
+                        disabled={!this.state.isCorrect}
+                        type="submit"
+                        className={`btn btn-primary btn-sm confirm ${!this.state
+                          .isCorrect && "disabled"}`}
+                      >
+                        Confirm
                   </button>
-                </form>
-              </div>
-            ) : this.state.dialogueCount === 3 ? (
-              <div id="textBox">
-                <h4>{this.state.abilityDialogue[0]}</h4>
-                <button
-                  onClick={this.abilityUnlock}
-                  className="btn btn-primary btn-sm confirm"
-                >
-                  End Trial
+                    </form>
+                  </div>
+                ) : this.state.dialogueCount === 3 ? (
+                  <div id="textBox">
+                    <h4>{this.state.abilityDialogue[0]}</h4>
+                    <button
+                      onClick={this.abilityUnlock}
+                      className="btn btn-primary btn-sm confirm"
+                    >
+                      End Trial
                 </button>
-              </div>
-            ) : (
-              <div id="textBox">
-                <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                <button
-                  onClick={this.nextDialogue}
-                  className="btn btn-primary btn-sm confirm"
-                >
-                  Confirm
+                  </div>
+                ) : (
+                    <div id="textBox">
+                      <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
+                      <button
+                        onClick={this.nextDialogue}
+                        className="btn btn-primary btn-sm confirm"
+                      >
+                        Confirm
                 </button>
-              </div>
-            )}
+                    </div>
+                  )}
           </div>
           <audio src={RedRedWine} autoPlay />
           <div id="actionBox">

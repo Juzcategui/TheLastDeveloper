@@ -2,6 +2,8 @@ import React from 'react';
 import store from '../../config/store';
 import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from "../../config/constants";
 import * as $ from 'axios';
+import DialogueBox from '../Dialogue/DialogueBox';
+import { PromiseProvider } from 'mongoose';
 
 //calculates the 'forward' or next position if you were to take one step forward in your current direction.
 function getNewPosition(oldPos, direction) {
@@ -71,6 +73,18 @@ function observeTile(oldPos, newPos) {
   else if (nextTile === 11) {
     return 11
   }
+  else if (nextTile === 12) {
+    return 12
+  }
+  else if (nextTile === 13) {
+    return 13
+  }
+  else if (nextTile === 14) {
+    return 14
+  }
+  else if (nextTile === 15) {
+    return 15
+  }
 }
 
 
@@ -97,9 +111,16 @@ function getTilePosition() {
   const NPCPos = getNewPosition(currentPos, heading)
   // console.log(`I'm an actionable tile at position ${NPCPos}`)
   // console.log(`im on ${map} map`)
-  NPCPos.toString();
-  $.get(`/api/npc/${NPCPos}`).then(data => {
-    console.log(data.data.dialogue)
+
+  $.get(`/api/npc/${NPCPos.toString()}`).then(data => {
+    console.log()
+    store.dispatch({
+      type: "TALK_NPC",
+      payload: {
+        dialogue: data.data.dialogue,
+        npcPos: NPCPos
+      }
+    });
   })
 
 }
@@ -141,8 +162,18 @@ function attemptAction(history) {
   }
   else if (observeTile(oldPos, newPos) === 11) {
     history.push("/WorldMap");
-    // leaveDia();
-    // console.log("I displayed");
+  }
+  else if (observeTile(oldPos, newPos) === 12) {
+    history.push("/ReactHouse");
+  }
+  else if (observeTile(oldPos, newPos) === 13) {
+    history.push("/CSSHouse");
+  }
+  else if (observeTile(oldPos, newPos) === 14) {
+    history.push("/HTMLHouse");
+  }
+  else if (observeTile(oldPos, newPos) === 15) {
+    history.push("/JavascriptHouse");
   }
 }
 //determines what happens depending on which key press.
