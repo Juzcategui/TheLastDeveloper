@@ -4,7 +4,7 @@ import Player from '../../Player/';
 import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/CeruleanCity.png'
 import './CSSTownStyle.css'
-
+import CSSNPC from './CSS_NPC'
 import { CSSTiles } from './CSSTiles'
 import store from '../../../config/store'
 
@@ -26,7 +26,7 @@ function CSSTown(props) {
         }}>
         <Map tiles={CSSTiles} name="CSS Town"/>
         <Player />
-
+        <CSSNPC />
             
         </div>
     )

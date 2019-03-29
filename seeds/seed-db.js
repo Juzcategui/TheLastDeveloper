@@ -145,7 +145,7 @@ const gamedb = [
         map: "Javascript",
         passedTrialDialogue: []
     }, {
-        npcName: "Mia",
+        npcName: "Emily",
         dialogue: ["You look like you could use a pick-me-up. Head over to Willbucks! They have great coffee."],
         position: ",",
         beatTrial: [],
@@ -159,6 +159,7 @@ const gamedb = [
         map: "Javascript",
         passedTrialDialogue: []
     },
+    
 
     // React town NPC
     {
@@ -208,7 +209,14 @@ const gamedb = [
         beatTrial: [],
         map: "React",
         passedTrialDialogue: []
+    }, {
+        npcName: "ReactGuard",
+        dialogue: ["Would you like to leave the town and explore?"],
+        position: "360,600",
+        beatTrial: [],
+        passedTrialDialogue: []
     },
+    
 
     // CSS town NPC
     {
@@ -247,6 +255,12 @@ const gamedb = [
         position: ",",
         beatTrial: [],
         map: "CSS",
+        passedTrialDialogue: []
+    }, {
+        npcName: "CSSGuard",
+        dialogue: ["Would you like to leave the town and explore?"],
+        position: "",
+        beatTrial: [],
         passedTrialDialogue: []
     },
 
