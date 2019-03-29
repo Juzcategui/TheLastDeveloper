@@ -3,23 +3,19 @@ import { connect } from 'react-redux';
 import Dialogue from "../../../Dialogue/DialogueBox";
 import './style.css'
 
-class ReactNPC extends React.Component {
+const ReactNPC = (props) => (
+  <div>
+    <div className="Erwins"></div>
+    <div className="Paige"></div>
+    <div className="Craigster"></div>
+    <div className="Camila"></div>
+    <div className="Nathan"></div>
+    <div className="Gabe"></div>
+    <div className="ReactGuard"></div>
+    {props.isShown && <Dialogue dialogue={props.dialogue} name={props.name} pos={props.npcPos} />}
+  </div>
+)
 
-  render() {
-    return (
-      <div>
-        <div className="Erwins"></div>
-        <div className="Paige"></div>
-        <div className="Craigster"></div>
-        <div className="Camila"></div>
-        <div className="Nathan"></div>
-        <div className="Gabe"></div>
-        <div className="ReactGuard"></div>
-        <Dialogue dialogue={this.props.dialogue} pos={this.props.npcPos} />
-      </div>
-    )
-  }
-}
 
 function mapStateToProps(state) {
   return {

@@ -1,6 +1,7 @@
 const initialState = {
     dialogue: "",
-    npcPos: ""
+    npcPos: [],
+    isShown: false
 };
 
 const dialogueReducer = (state = initialState, action) => {

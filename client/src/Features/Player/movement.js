@@ -99,6 +99,15 @@ function dispatchMove(direction, newPos) {
       spriteLocation: getSpriteLocation(direction, walkIndex)
     }
   });
+
+  store.dispatch({
+    type: "TALK_NPC",
+    payload: {
+      dialogue: "",
+      npcPos: [],
+      isShown: false
+    }
+  });
 }
 
 
@@ -118,7 +127,9 @@ function getTilePosition() {
       type: "TALK_NPC",
       payload: {
         dialogue: data.data.dialogue,
-        npcPos: NPCPos
+        name: data.data.npcName,
+        npcPos: NPCPos,
+        isShown: true
       }
     });
   })
