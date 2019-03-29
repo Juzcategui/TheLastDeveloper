@@ -20,7 +20,7 @@
 .htmlHousePortal,
 .jsHousePortal,
 .reactHousePortal {
-    background-image: url('../../SVG/portal.png');
+    /* background-image: url('../../SVG/portal.png'); */
 }
 
 .actionTile {
