@@ -11,18 +11,12 @@ class Intro extends React.Component {
         dialogue: []
     }
 
-    onLoad (){
-    window.onload = function() {
-        document.getElementById("LordOfTheRings").play();
-    }
-    }   
-
     render() {
         return (
             <div>
-            <img className="BG" src={stars} alt="stars" />
-                
             <audio src={LordOfTheRings} autoPlay/>
+
+            <img className="BG" src={stars} alt="stars" />
 
                 <div class="fade"></div>
 
