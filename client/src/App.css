@@ -196,7 +196,7 @@ width: 73%;
 
 /* ----------------------JS---------------------------------- */
 #Vu{
-    top: 18.5%;
+  bottom: 0%;
     left: 50%;
     position: absolute;  
 }
@@ -259,7 +259,7 @@ left: 54%;
 
 /* ---------------------------REACT--------------------------- */
 #Gabe{
-  top: 18.5%;
+  bottom: 0%;
   left: 50%;
   position: absolute;
 }
@@ -322,7 +322,7 @@ left: 80%;
 
 /* ---------------- HTML Town/House styling ---------------- */
 #Jorge{
-  top: 18.5%;
+  bottom: 0%;
   left: 50%;
   position: absolute;
 }
@@ -377,7 +377,7 @@ left: 75%;
 
 /* ---------------- CSS Town/House styling ---------------- */
 #adam{
-  top: 18.5%;
+  bottom: 0%;
   left: 50%;
   position: absolute;
 }
@@ -545,7 +545,7 @@ left: 50%;
 }
 
 #Will{
-    top: 12.5%;
+  bottom: 0%;
     left: 60%;
     position: absolute;
     height: 600px;
@@ -563,7 +563,7 @@ left: 50%;
 
 /* --------------------------Secret Lair------------------- */
  #Cody{
-    top: 18.5%;
+  bottom: 0%;
     left: 50%;
     position: absolute;
   }
@@ -699,7 +699,7 @@ left: 50%;
     position: relative;
     top: 9999px;
     transform-origin: 50% 100%;
-    animation: crawl 110s linear;
+    animation: crawl 10s linear;
   }
   
   .crawl > .title {
@@ -718,8 +718,8 @@ left: 50%;
       transform: rotateX(20deg)  translateZ(0);
     }
     100% { 
-      top: -6000px;
-      transform: rotateX(25deg) translateZ(-2500px);
+      top: -9000px;
+      transform: rotateX(25deg) translateZ(-3600px);
     }
   }
 
