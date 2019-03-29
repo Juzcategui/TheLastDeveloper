@@ -4,6 +4,7 @@ import HTMLHouseImg from "../../Backgrounds/HTMLHouse.jpg"
 import Jorge from "../../Sprites/Jorge.png"
 import imgscroll from "../../Backgrounds/scroll.png"
 import * as $ from 'axios';
+import RedRedWine from "../../Audio/RedRedWine.mp3"
 
 class HTMLHouse extends React.Component {
     state = {
@@ -98,6 +99,7 @@ class HTMLHouse extends React.Component {
 
     render() {
         return (
+            
             this.state.dialogue.length > 0 && (
                 <div>
                     <img className="BG" src={HTMLHouseImg} alt="HTMLHouse" />
@@ -141,7 +143,7 @@ class HTMLHouse extends React.Component {
                                         </div>
                         }
                     </div>
-
+                    <audio src={RedRedWine} autoPlay/>
                     <div id="actionBox">
                         <Link to="/HTMLTown">
                             <button className="btn btn-success">Back</button>

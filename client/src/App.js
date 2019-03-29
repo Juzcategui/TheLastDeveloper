@@ -10,6 +10,7 @@ import Intro from './components/Technical/Intro';
 import WorldMap from './components/Technical/WorldMap';
 import Scroll from './components/Technical/Scroll';
 
+
 /*------------------ Forest Path Folder ------------------*/
 import OuterTown from './components/ForestPath/OuterTown'
 import OuterForest from './components/ForestPath/OuterForest'
@@ -29,14 +30,11 @@ import JavascriptTown from './Features/World/JavascriptTown/index';
 import ReactTown from './Features/World/ReactTown/index';
 import WillBucks from './components/Towns/WillBucks';
 
-
-
 const App = () => (
 
   <BrowserRouter>
     <div>
       {/* ------------------ *** ------------------ */}
-
 
       {/* ------------------ Technical Folder ------------------ */}
       <Route exact path="/" component={Homepage} />

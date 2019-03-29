@@ -1,5 +1,34 @@
-/* ---------------- Log in / register styling ---------------- */
+/*typewriter */
 
+
+.typewriter h4 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space:nowrap;/* Keeps the content on a single line */
+  /* overflow-wrap: break-word; */
+  margin:0 auto;/* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* ---------------- Log in / register styling ---------------- */
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 #homePageStyle {
   border-style: solid;
@@ -117,13 +146,15 @@ width: 73%;
 }
 
 #characterName,
-#textBox {
+#textBox 
+{
   background:rgba(255,255,255,0.8);
   border-radius: 5px;
   border-style: solid;
   border-color: lightslategrey;
   padding-top: 10px;
 }
+
 
 #characterName {
   margin-bottom: 10px;
@@ -629,5 +660,67 @@ left: 50%;
     margin-bottom:5px;
   }
 
-  /* -------------------------------------------------------------- */
 
+
+  /* -----------------------INTRO---------------------------- */
+
+  body {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  .fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+  
+  .star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+  }
+  
+  .crawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 110s linear;
+  }
+  
+  .crawl > .title {
+    font-size: 190px;
+    text-align: center;
+  }
+  
+  .crawl > .title h1 {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+  }
+  
+  @keyframes crawl {
+    0% {
+      top: 0;
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    100% { 
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
+
+  
