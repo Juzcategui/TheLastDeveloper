@@ -78,12 +78,12 @@ class HTMLHouse extends React.Component {
         const classHouse = this.state.scroll;
 
         if (this.state.completedOnce === true) {
-            window.history.back()
+            this.props.history.push("/HTMLTown")
         }
         else {
             $.post(`/api/skill`, { body: newSkill, userId: userId }).then(() => {
                 $.put(`/api/user`, { classHouse: classHouse, trialsPassed: this.state.trialsPassed, userId: userId }).then(() => {
-                    window.history.back()
+                    this.props.history.push("/HTMLTown")
                 })
             })
         }
@@ -99,7 +99,7 @@ class HTMLHouse extends React.Component {
 
     render() {
         return (
-            
+
             this.state.dialogue.length > 0 && (
                 <div>
                     <img className="BG" src={HTMLHouseImg} alt="HTMLHouse" />
@@ -143,7 +143,7 @@ class HTMLHouse extends React.Component {
                                         </div>
                         }
                     </div>
-                    <audio src={RedRedWine} autoPlay/>
+                    <audio src={RedRedWine} autoPlay />
                     <div id="actionBox">
                         <Link to="/HTMLTown">
                             <button className="btn btn-success">Back</button>
