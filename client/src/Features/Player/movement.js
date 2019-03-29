@@ -99,10 +99,16 @@ function getTilePosition() {
   const NPCPos = getNewPosition(currentPos, heading)
   // console.log(`I'm an actionable tile at position ${NPCPos}`)
   // console.log(`im on ${map} map`)
-  NPCPos.toString();
-  
-  $.get(`/api/npc/${NPCPos}`).then(data => {
-    console.log(data.data.dialogue);
+
+  $.get(`/api/npc/${NPCPos.toString()}`).then(data => {
+    console.log()
+    store.dispatch({
+      type: "TALK_NPC",
+      payload: {
+        dialogue: data.data.dialogue,
+        npcPos: NPCPos
+      }
+    });
   })
 
 }
@@ -144,8 +150,6 @@ function attemptAction(history) {
   }
   else if (observeTile(oldPos, newPos) === 11) {
     history.push("/WorldMap");
-    // leaveDia();
-    // console.log("I displayed");
   }
 }
 //determines what happens depending on which key press.
