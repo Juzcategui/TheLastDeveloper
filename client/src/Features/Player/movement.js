@@ -1,7 +1,6 @@
 import store from "../../config/store";
 import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from "../../config/constants";
 import history from '../../components/Technical/History';
-import { push } from 'react-router-redux'
 import * as $ from 'axios';
 
 //calculates the 'forward' or next position if you were to take one step forward in your current direction.
