@@ -157,7 +157,7 @@ class HTMLHouse extends React.Component {
                       onClick={this.abilityUnlock}
                       className="btn btn-primary btn-sm confirm"
                     >
-                      End Trial
+                      Learn New Syntax
                 </button>
                   </div>
                 ) : (
