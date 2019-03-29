@@ -65,7 +65,7 @@ const gamedb = [
         dialogue: ["I am the Javascript master. Are you willing to take on my trial?",
             "What declaration is used to create a constant variable?",
             "What operation is used when you want to compare type and value?"],
-        position: ",",
+        position: "640,400",
         beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: (placeholder)! "],
         map: "Javascript",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
@@ -75,7 +75,7 @@ const gamedb = [
         dialogue: ["I am the React master. Are you willing to take on my trial?",
             "React is used as a library primarily for which language?",
             "What is the building block for a React application?"],
-        position: ",",
+        position: "440,120",
         beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: (placeholder)! I will take it back if you ever use jQuery though."],
         map: "React",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
@@ -85,7 +85,7 @@ const gamedb = [
         dialogue: ["I am the CSS master. Are you willing to take on my trial?",
             "What does the C in CSS stand for?",
             "What property is declared to change the font color?"],
-        position: ",",
+        position: "600,360",
         beatTrial: ["YOU DID IT! Here is your new ability: (placeholder)! Ugh. You are so fabulous. I just can't. Get out of here before I lose it. "],
         map: "CSS",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
@@ -95,7 +95,7 @@ const gamedb = [
         dialogue: ["I am the HTML master. Are you willing to take on my trial?",
             "What does HTML stand for?",
             "What is the correct syntax for a paragraph tag?"],
-        position: ",",
+        position: "520,480",
         beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: (placeholder)! Maybe one day, you'll be a hotshot like me. "],
         map: "HTML",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
@@ -124,7 +124,7 @@ const gamedb = [
     {
         npcName: "Peter",
         dialogue: ["Aaron, what are you doing?! That's not the right declaration to create a constant variable. Why are you using var?? Const is used when you don't want the variable to be redefined!"],
-        position: ",",
+        position: "520,80",
         beatTrial: [],
         map: "Javascript",
         passedTrialDialogue: []
@@ -132,7 +132,7 @@ const gamedb = [
     {
         npcName: "Aaron",
         dialogue: ["I know what I'm doing. Don't make me bully you. By the way, did you know that the operator '===' denotes strict equality? "],
-        position: ",",
+        position: "440,80",
         beatTrial: [],
         map: "Javascript",
         passedTrialDialogue: []
@@ -140,23 +140,29 @@ const gamedb = [
     {
         npcName: "Garrett",
         dialogue: ["You're going to challenge Mongod? You are a brave one. You should pass all four trials before you take him on!"],
-        position: ",",
+        position: "160,600",
         beatTrial: [],
         map: "Javascript",
         passedTrialDialogue: []
     }, {
         npcName: "Emily",
         dialogue: ["You look like you could use a pick-me-up. Head over to Willbucks! They have great coffee."],
-        position: ",",
+        position: "560,400",
         beatTrial: [],
         map: "Javascript",
         passedTrialDialogue: []
     }, {
         npcName: "Alexander",
         dialogue: ["Wash your hair lately?"],
-        position: ",",
+        position: "920,120",
         beatTrial: [],
         map: "Javascript",
+        passedTrialDialogue: []
+    }, {
+        npcName: "JavascriptGuard",
+        dialogue: ["Would you like to leave the town and explore?"],
+        position: "520,600",
+        beatTrial: [],
         passedTrialDialogue: []
     },
     
@@ -165,7 +171,7 @@ const gamedb = [
     {
         npcName: "Erwins",
         dialogue: ["You know what is awful? jQuery is awful. React is so much better. Hmph. It uses a virtual dom and gets rid of 'spaghetti code.' Javascript is the main language used with React. It's great!"],
-        position: ",",
+        position: "560,520",
         beatTrial: [],
         map: "React",
         passedTrialDialogue: []
@@ -173,7 +179,7 @@ const gamedb = [
     {
         npcName: "Paige",
         dialogue: ["I'm so tired. My neighbor's devil dogs woke me up so early today! *Yawn*. The only thing I remember from studying last night was that almost everything in a React application is a component."],
-        position: ",",
+        position: "920,120",
         beatTrial: [],
         map: "React",
         passedTrialDialogue: []
@@ -181,7 +187,7 @@ const gamedb = [
     {
         npcName: "Craigster",
         dialogue: ["If there was one instrument I could know how to play, it would be the bagpipes!"],
-        position: ",",
+        position: "1160,400",
         beatTrial: [],
         map: "React",
         passedTrialDialogue: []
@@ -189,7 +195,7 @@ const gamedb = [
     {
         npcName: "Camila",
         dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
-        position: ",",
+        position: "920,480",
         beatTrial: [],
         map: "React",
         passedTrialDialogue: []
@@ -197,7 +203,7 @@ const gamedb = [
     {
         npcName: "Nathan",
         dialogue: ["Have you tried turning it off and on again? "],
-        position: ",",
+        position: "200,160",
         beatTrial: [],
         map: "React",
         passedTrialDialogue: []
@@ -222,7 +228,7 @@ const gamedb = [
     {
         npcName: "Barry",
         dialogue: ["No more tall boys for me. I am exhausted. Cascading down the town's hill was tiring. Do you know what else cascades? CSS or Cascading Style Sheets!"],
-        position: ",",
+        position: "920,280",
         beatTrial: [],
         map: "CSS",
         passedTrialDialogue: []
@@ -230,7 +236,7 @@ const gamedb = [
     {
         npcName: "Lin",
         dialogue: ["I was looking for my grandma's missing flip flop yesterday but instead I found a treasure chest! ...Unfortunately, it was empty.. *sad face* I brought it home to style it. I added a border, color, and adjusted the width."],
-        position: ",",
+        position: "480,640",
         beatTrial: [],
         map: "CSS",
         passedTrialDialogue: []
@@ -238,28 +244,28 @@ const gamedb = [
     {
         npcName: "Martin",
         dialogue: ["I found an awesome flip flop today! I wonder who it belongs to?"],
-        position: ",",
+        position: "320,120",
         beatTrial: [],
         map: "CSS",
         passedTrialDialogue: []
     }, {
         npcName: "Tony",
         dialogue: ["I keep hearing about this My Sequel server... but I feel left out because I haven't seen the first one!"],
-        position: ",",
+        position: "1040,40",
         beatTrial: [],
         map: "CSS",
         passedTrialDialogue: []
     }, {
         npcName: "Jenny",
         dialogue: ["I'm a fantastic pseudocoder. Jealous?"],
-        position: ",",
+        position: "320,280",
         beatTrial: [],
         map: "CSS",
         passedTrialDialogue: []
     }, {
         npcName: "CSSGuard",
         dialogue: ["Would you like to leave the town and explore?"],
-        position: "",
+        position: "920,80",
         beatTrial: [],
         passedTrialDialogue: []
     },
@@ -269,7 +275,7 @@ const gamedb = [
     {
         npcName: "Harrison",
         dialogue: ["What does HTML mean again..? I forgot.. Hmm.. Hopper..Hipper..Hold on. *drinks coffee* Hyper Text Markup Language, that's it!"],
-        position: "160,120",
+        position: "600,360",
         beatTrial: [],
         map: "HTML",
         passedTrialDialogue: []
@@ -277,7 +283,7 @@ const gamedb = [
     {
         npcName: "Mark",
         dialogue: ["I can complete assigned exercises just fine, but when I'm cut loose to create things on my own, I have no idea what to do! I do know some HTML fundamentals though. To display basic text on an HTML page, you can use a paragraph tag. The paragraph tag is denoted by '<p>'!"],
-        position: "600,360",
+        position: "800,120",
         beatTrial: [],
         map: "HTML",
         passedTrialDialogue: []
@@ -285,23 +291,29 @@ const gamedb = [
     {
         npcName: "Leonardo",
         dialogue: ["Every time you pass a trial, you learn a new ability. Train hard!"],
-        position: ",",
+        position: "200,360",
         beatTrial: [],
         map: "HTML",
         passedTrialDialogue: []
     }, {
         npcName: "Michaelangelo",
         dialogue: ["I could go for a slice of pizza. Or 12."],
-        position: ",",
+        position: "240,120",
         beatTrial: [],
         map: "HTML",
         passedTrialDialogue: []
     }, {
         npcName: "Raphael",
         dialogue: ["*Silent brooding*"],
-        position: ",",
+        position: "1040,440",
         beatTrial: [],
         map: "HTML",
+        passedTrialDialogue: []
+    }, {
+        npcName: "HTMLGuard",
+        dialogue: ["Would you like to leave the town and explore?"],
+        position: "520,80",
+        beatTrial: [],
         passedTrialDialogue: []
     },
 
