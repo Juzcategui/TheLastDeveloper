@@ -179,7 +179,7 @@ const gamedb = [
     {
         npcName: "Paige",
         dialogue: ["I'm so tired. My neighbor's devil dogs woke me up so early today! *Yawn*. The only thing I remember from studying last night was that almost everything in a React application is a component."],
-        position: "920,120",
+        position: "960,120",
         beatTrial: [],
         map: "React",
         passedTrialDialogue: []
@@ -275,7 +275,7 @@ const gamedb = [
     {
         npcName: "Harrison",
         dialogue: ["What does HTML mean again..? I forgot.. Hmm.. Hopper..Hipper..Hold on. *drinks coffee* Hyper Text Markup Language, that's it!"],
-        position: "600,360",
+        position: "560,360",
         beatTrial: [],
         map: "HTML",
         passedTrialDialogue: []
