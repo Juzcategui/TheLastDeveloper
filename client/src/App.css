@@ -26,7 +26,7 @@
 }
 
 /* ---------------- Log in / register styling ---------------- */
-
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
@@ -703,7 +703,7 @@ left: 50%;
     position: relative;
     top: 9999px;
     transform-origin: 50% 100%;
-    animation: crawl 75s linear;
+    animation: crawl 110s linear;
   }
   
   .crawl > .title {

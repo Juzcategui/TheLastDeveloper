@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import '../../App.css'
 import { Link } from "react-router-dom";
 import * as $ from 'axios';
+import LordOfTheRings from "../../Audio/LordOfTheRings.mp3"
+import stars from "../../Backgrounds/stars.jpg"
 
 class Intro extends React.Component {
     state = {
@@ -12,12 +14,10 @@ class Intro extends React.Component {
     render() {
         return (
             <div>
+            <audio src={LordOfTheRings} autoPlay/>
 
-<audio autoplay>
-  <source src="http://www.karottes.net/Star%20Wars/sounds/song.ogg" type="audio/ogg"/>
-      <source src="http://www.karottes.net/Star%20Wars/sounds/song.mp3" type="audio/mp3"/>
-            Your web browser is outdated or don't support OGG and MP3 codecs. 
-        </audio>
+            <img className="BG" src={stars} alt="stars" />
+
                 <div class="fade"></div>
 
                 <section class="star-wars">
@@ -28,7 +28,7 @@ class Intro extends React.Component {
                             <p>The Last Developer</p>
                             <br></br>
                             <br></br>
-                            <h1>From the developers of Trivia Bros, Sozial, Run-Escape, & MediApp</h1>
+                            <h1>From the developers of Trivia Bros, Sozial, Run-Escape, PoetryGenius, & MediApp</h1>
                             <br></br>
                             <br></br>
                             <br></br>
@@ -38,7 +38,7 @@ class Intro extends React.Component {
                         <br></br>
                         <p>Existed a unified land - A land of knowledge, community, and collaboration. Everything was open sourced, and information was willingly shared for the benefit of all. But while all the developers and their communities flourished, a great darkness was brooding down below....</p>
                         <br></br>
-                        <p>Feasting on syntax errors for it's own devious intentions, the darkness began to infect the minds of the developers, making them lazy and growing in power from their redundant code. As more and more developers fell prey to the darkness, it used all of their horrific and error filled code to manifest itself into an abomination the likes of which the land had never seen. An endless void consuming all in its path: MongoD.</p>
+                        <p>Feasting on syntax errors for it's own devious intentions, the darkness began to infect the minds of the developers, making them lazy and growing in power from their redundant code. As more and more developers fell prey to the darkness, it used all of their horrific and error filled code to manifest itself into an abomination the likes of which the land had never seen. An endless void consuming all in its path: MonGOD.</p>
                         <br></br>
                         <p>With the citizens of the kingdom in this weakened state, MonGod saw the perfect opportunity to strike. It unleashed a virus to the global scope of the land, splintering the people and their knowledge. HTML, Javascript, React, and CSS now existed in isolation.</p>
                         <br></br>

@@ -12,7 +12,7 @@ function getTileSprite(type) {
             return 'grass'
         case 1:
             return 'rock'
-        case 8:
+        case 11:
             return 'worldMapPortal'
         case 10:
             return 'actionTile'
@@ -34,45 +34,45 @@ function getTileSprite(type) {
 
         // HTML Town
         case 30:
-        return 'htmlHousePortal'
+            return 'htmlHousePortal'
         case 31:
-        return 'htmlHarrison'
+            return 'htmlHarrison'
         case 32:
-        return 'htmlMark'
+            return 'htmlMark'
         case 33:
-        return 'htmlLeonardo'
+            return 'htmlLeonardo'
         case 34:
-        return 'htmlMichaelangelo'
+            return 'htmlMichaelangelo'
         case 35:
-        return 'htmlRaphael'
+            return 'htmlRaphael'
 
         // JS Town
         case 40:
-        return 'jsHousePortal'
+            return 'jsHousePortal'
         case 41:
-        return 'jsPeter'
+            return 'jsPeter'
         case 42:
-        return 'jsAaron'
+            return 'jsAaron'
         case 43:
-        return 'jsGarrett'
+            return 'jsGarrett'
         case 44:
-        return 'jsMia'
+            return 'jsMia'
         case 45:
-        return 'jsAlexander'
+            return 'jsAlexander'
 
         // React Town
         case 50:
-        return 'reactHousePortal'
+            return 'reactHousePortal'
         case 51:
-        return 'reactErwins'
+            return 'reactErwins'
         case 52:
-        return 'reactPaige'
+            return 'reactPaige'
         case 53:
-        return 'reactCraigster'
+            return 'reactCraigster'
         case 54:
-        return 'reactPatrick'
+            return 'reactPatrick'
         case 55:
-        return 'reactCamila'
+            return 'reactCamila'
 
         default:
             return;

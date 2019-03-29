@@ -3,7 +3,8 @@ import Map from '../../Map'
 import Player from '../../Player/';
 import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/VermillionCity.png'
-import NPC from '../../NPCs'
+import HTMLNPC from './HTML_NPC'
+import RedRedWine from "../../../Audio/RedRedWine.mp3"
 
 import { HTMLTiles } from './HTMLTiles'
 import store from '../../../config/store'
@@ -20,6 +21,7 @@ function HTMLTown(props) {
     return (
 
         <div
+        
             style={{
                 position: 'relative',
                 width: '1280px',
@@ -29,7 +31,8 @@ function HTMLTown(props) {
             }}>
             <Map tiles={HTMLTiles} name="HTML Town" />
             <Player />
-            <NPC />
+            <HTMLNPC />
+            <audio src={RedRedWine} autoPlay/>
 
 
         </div>
