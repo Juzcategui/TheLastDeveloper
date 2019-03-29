@@ -1,25 +1,27 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import Dialogue from "../../../Dialogue/DialogueBox";
 import './style.css'
 
 
-
-class HTMLNPC extends React.Component {
-
-  render() {
-    return (
-      <div>
-        <div className="Harrison"></div>
-        <div className="Mark"></div>
-        <div className="Leonardo"></div>
-        <div className="Michaelangelo"></div>
-        <div className="Raphael"></div>
-        <div className="Jorge"></div>
-        <div className="HTMLGuard"></div>
-      </div>
+const HTMLNPC = (props) => (
+  <div>
+    <div className="Harrison"></div>
+    <div className="Mark"></div>
+    <div className="Leonardo"></div>
+    <div className="Michaelangelo"></div>
+    <div className="Raphael"></div>
+    <div className="Jorge"></div>
+    <div className="HTMLGuard"></div>
+    {props.isShown && <Dialogue dialogue={props.dialogue} name={props.name} pos={props.npcPos} />}
+  </div>
+)
 
 
-    )
+function mapStateToProps(state) {
+  return {
+    ...state.dialogue
   }
 }
 
-export default HTMLNPC
+export default connect(mapStateToProps)(HTMLNPC);
