@@ -27,7 +27,7 @@ class Scroll extends React.Component {
                 <div>
                     <img className="BG" src={img} alt="img" />
                     <div className={"scrollInfo" + classID}>
-                        <h1 className="">{classID} Scroll</h1>
+                        <h1 className="">{classID} Documentation</h1>
                         <ul className="scrollList">
                             {this.state.dialogue.map((data, i) => (
                                 <li key={i}>

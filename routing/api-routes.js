@@ -17,6 +17,19 @@ module.exports = function (app) {
             });
     });
 
+    app.put('/api/intro', function (req, res) {
+        const userId = req.body.userId;
+        User.findOneAndUpdate({ _id: userId },
+            {
+                $set: { "introPassed": true }
+            })
+            .then(function (data) {
+                res.json({ success: true, data: data });
+            }).catch(function (err) {
+                res.json({ success: false, error: err });
+            });
+    });
+
     app.put('/api/user', function (req, res) {
         const userId = req.body.userId;
         const classHouse = req.body.classHouse;
