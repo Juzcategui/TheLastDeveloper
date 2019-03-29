@@ -14,7 +14,7 @@ class Player extends React.Component {
         window.addEventListener('keydown', this.handleKeyDown);
     } 
 
-    componentWillUnmount () {
+    componentWillUnmount() {
         window.removeEventListener('keydown', this.handleKeyDown);
     }
 
@@ -32,7 +32,7 @@ class Player extends React.Component {
                     transitionProperty: 'left, right, top, bottom',
                     transitionDuration: '0.2s'
                 }}
-    
+
             />
         )
     }
