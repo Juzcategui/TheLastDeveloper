@@ -21,7 +21,6 @@ function HTMLTown(props) {
     return (
 
         <div
-        
             style={{
                 position: 'relative',
                 width: '1280px',

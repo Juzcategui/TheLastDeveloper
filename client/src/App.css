@@ -707,7 +707,7 @@ left: 50%;
     position: relative;
     top: 9999px;
     transform-origin: 50% 100%;
-    animation: crawl 75s linear;
+    animation: crawl 10s linear;
   }
   
   .crawl > .title {
@@ -726,7 +726,7 @@ left: 50%;
       transform: rotateX(20deg)  translateZ(0);
     }
     100% { 
-      top: -6000px;
-      transform: rotateX(25deg) translateZ(-2500px);
+      top: -9000px;
+      transform: rotateX(25deg) translateZ(-3600px);
     }
   }
