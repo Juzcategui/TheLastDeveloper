@@ -14,13 +14,19 @@
   background:rgba(255,255,255,0.9);
 }
 
-#backImg {
+#titleBlock{
+  position: fixed;
+  top: 18%;
+  left: 50%;
+  }
+
+/* #backImg {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
-}
+} */
 
 #signIn, #register {
   text-align: center;
@@ -42,7 +48,7 @@
 }
 
 #registerBtnStyle{
-  top: 80%;
+  top: 50%;
   left:33%;
   text-align: center;
   position: absolute;
@@ -65,9 +71,6 @@
 }
 
 .gameTitle {
-  position: absolute;
-  top: 20%;
-  left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Press Start 2P', cursive;
   font-size: 48px;
@@ -429,14 +432,14 @@ left: 50%;
 #JavascriptJunkies {
   top: 66%;
   left: 68%;
-  width: 80px;
-  height: 100px;
+  width: 70px;
+  height: 90px;
 }
 #RiversOfReact {
   top: 18%;
   left: 27%;
-  width: 90px;
-  height: 100px;
+  width: 70px;
+  height: 90px;
 }
 #HouseOfHTML {
   top: 45%;
@@ -464,7 +467,7 @@ left: 50%;
 }
 #WillBucksWorldMap {
   top: 33%;
-  left: 44%;
+  left: 45.5%;
   width: 160px;
 }
 .JSWorldTitle,

@@ -61,7 +61,7 @@ const gamedb = [
         dialogue: ["I am the Javascript master. Are you willing to take on my trial?",
             "What declaration is used to create a constant variable?",
             "What operation is used when you want to compare type and value?"],
-        position: [0, 0],
+        position: "640,400",
         beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: (placeholder)! "],
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
@@ -70,7 +70,7 @@ const gamedb = [
         dialogue: ["I am the React master. Are you willing to take on my trial?",
             "React is used as a library primarily for which language?",
             "What is the building block for a React application?"],
-        position: [0, 0],
+        position: "440,120",
         beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: (placeholder)! I will take it back if you ever use jQuery though."],
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
@@ -88,7 +88,7 @@ const gamedb = [
         dialogue: ["I am the HTML master. Are you willing to take on my trial?",
             "What does HTML stand for?",
             "What is the correct syntax for a paragraph tag?"],
-        position: [0, 0],
+        position: "520,80",
         beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: (placeholder)! Maybe one day, you'll be a hotshot like me. "],
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
     },
@@ -114,71 +114,94 @@ const gamedb = [
     {
         npcName: "Pedro",
         dialogue: ["Aaron, what are you doing?! That's not the right declaration to create a constant variable. Why are you using var?? Const is used when you don't want the variable to be redefined!"],
-        position: [0, 0],
+        position: "520,80",
         beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Aaron",
         dialogue: ["I know what I'm doing. Don't make me bully you. By the way, did you know that the operator '===' denotes strict equality? "],
-        position: [0, 0],
+        position: "440,80",
         beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Garrett",
         dialogue: ["You're going to challenge Mongod? You are a brave one. You should pass all four trials before you take him on!"],
-        position: [0, 0],
+        position: "160,600",
         beatTrial: [],
         passedTrialDialogue: []
     }, {
-        npcName: "Mia",
+        npcName: "Emily",
         dialogue: ["You look like you could use a pick-me-up. Head over to Willbucks! They have great coffee."],
-        position: [0, 0],
+        position: "560,400",
         beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Alexander",
         dialogue: ["Wash your hair lately?"],
-        position: [0, 0],
+        position: "920,120",
+        beatTrial: [],
+        passedTrialDialogue: []
+    }, {
+        npcName: "JavascriptGuard",
+        dialogue: ["Would you like to leave the town and explore?"],
+        position: "520,600",
         beatTrial: [],
         passedTrialDialogue: []
     },
+    
 
     // React town NPC
     {
         npcName: "Erwins",
         dialogue: ["You know what is awful? jQuery is awful. React is so much better. Hmph. It uses a virtual dom and gets rid of 'spaghetti code.' Javascript is the main language used with React. It's great!"],
-        position: [0, 0],
+        position: "560,520",
         beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Paige",
         dialogue: ["I'm so tired. My neighbor's devil dogs woke me up so early today! *Yawn*. The only thing I remember from studying last night was that almost everything in a React application is a component."],
-        position: [0, 0],
+        position: "920,120",
         beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Craigster",
         dialogue: ["If there was one instrument I could know how to play, it would be the bagpipes!"],
-        position: [0, 0],
-        beatTrial: [],
-        passedTrialDialogue: []
-    }, {
-        npcName: "Patrick",
-        dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
-        position: [0, 0],
-        beatTrial: [],
-        passedTrialDialogue: []
-    }, {
-        npcName: "Camila",
-        dialogue: ["Have you tried turning it off and on again? "],
-        position: [0, 0],
+        position: "1160,400",
         beatTrial: [],
         passedTrialDialogue: []
     },
+    {
+        npcName: "Camila",
+        dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
+        position: "920,480",
+        beatTrial: [],
+        passedTrialDialogue: []
+    },
+    {
+        npcName: "Nathan",
+        dialogue: ["Have you tried turning it off and on again? "],
+        position: "200,160",
+        beatTrial: [],
+        passedTrialDialogue: []
+    },
+    {
+        npcName: "Son the Homeless",
+        dialogue: ["Gabe disowned me for using jQuery... I should have read his documentation... "],
+        position: [0, 0],
+        beatTrial: [],
+        passedTrialDialogue: []
+    }, {
+        npcName: "ReactGuard",
+        dialogue: ["Would you like to leave the town and explore?"],
+        position: "360,600",
+        beatTrial: [],
+        passedTrialDialogue: []
+    },
+    
 
     // CSS town NPC
     {
@@ -213,6 +236,12 @@ const gamedb = [
         position: [0, 0],
         beatTrial: [],
         passedTrialDialogue: []
+    }, {
+        npcName: "CSSGuard",
+        dialogue: ["Would you like to leave the town and explore?"],
+        position: "",
+        beatTrial: [],
+        passedTrialDialogue: []
     },
 
 
@@ -220,33 +249,39 @@ const gamedb = [
     {
         npcName: "Harrison",
         dialogue: ["What does HTML mean again..? I forgot.. Hmm.. Hopper..Hipper..Hold on. *drinks coffee* Hyper Text Markup Language, that's it!"],
-        position: [0, 0],
+        position: "600,360",
         beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Mark",
         dialogue: ["I can complete assigned exercises just fine, but when I'm cut loose to create things on my own, I have no idea what to do! I do know some HTML fundamentals though. To display basic text on an HTML page, you can use a paragraph tag. The paragraph tag is denoted by '<p>'!"],
-        position: [0, 0],
+        position: "800,120",
         beatTrial: [],
         passedTrialDialogue: []
     },
     {
         npcName: "Leonardo",
         dialogue: ["Every time you pass a trial, you learn a new ability. Train hard!"],
-        position: [0, 0],
+        position: "200,360",
         beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Michaelangelo",
         dialogue: ["I could go for a slice of pizza. Or 12."],
-        position: [0, 0],
+        position: "240,120",
         beatTrial: [],
         passedTrialDialogue: []
     }, {
         npcName: "Raphael",
         dialogue: ["*Silent brooding*"],
-        position: [0, 0],
+        position: "1040,440",
+        beatTrial: [],
+        passedTrialDialogue: []
+    }, {
+        npcName: "HTMLGuard",
+        dialogue: ["Would you like to leave the town and explore?"],
+        position: "520,80",
         beatTrial: [],
         passedTrialDialogue: []
     },

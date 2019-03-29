@@ -1,0 +1,69 @@
+.Erwins {
+    position: absolute;
+    top: 520px;
+    left: 560px;
+    background-Image: url('./Sprites/Erwins.png');
+    background-Position: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.Paige {
+    position: absolute;
+    top: 120px;
+    left: 920px;
+    background-Image: url('./Sprites/Paige.png');
+    background-Position: 0px 80px;
+    width: 40px;
+    height: 40px;
+}
+
+.Craigster {
+    position: absolute;
+    top: 400px;
+    left: 1160px;
+    background-Image: url('./Sprites/Craigster.png');
+    background-Position: 0px 120px;
+    width: 40px;
+    height: 40px;
+}
+
+.Camila {
+    position: absolute;
+    top: 480px;
+    left: 920px;
+    background-Image: url('./Sprites/Camila.png');
+    background-Position: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.Nathan {
+    position: absolute;
+    top: 160px;
+    left: 200px;
+    background-Image: url('./Sprites/Nathan.png');
+    background-Position: 0px 80px;
+    width: 40px;
+    height: 40px;
+}
+
+.Gabe {
+    position: absolute;
+    top: 120px;
+    left: 440px;
+    background-Image: url('./Sprites/Gabe.png');
+    background-Position: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.ReactGuard {
+    position: absolute;
+    top: 600px;
+    left: 360px;
+    background-Image: url('./Sprites/ReactGuard.png');
+    background-Position: 0px 120px;
+    width: 40px;
+    height: 40px;
+}
