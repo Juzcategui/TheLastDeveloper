@@ -91,6 +91,17 @@ module.exports = function (app) {
             });
     });
 
+    app.get("/api/npc/:id", function (req, res) {
+        Gamedatabase.findOne({
+            position: req.params.id
+        })
+            .then(function (data) {
+                res.json(data);
+            })
+            .catch(function (err) {
+                res.json(err);
+            });
+    });
 
     app.post('/api/skill', function (req, res) {
         const userId = req.body.userId;

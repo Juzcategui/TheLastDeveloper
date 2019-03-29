@@ -1,6 +1,8 @@
 import store from "../../config/store";
 import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from "../../config/constants";
-import Axios from "axios";
+import history from '../../components/Technical/History';
+import { push } from 'react-router-redux'
+import * as $ from 'axios';
 
 //calculates the 'forward' or next position if you were to take one step forward in your current direction.
 function getNewPosition(oldPos, direction) {
@@ -67,6 +69,9 @@ function observeTile(oldPos, newPos) {
   if (nextTile === 10) {
     return nextTile === 10
   }
+  else if (nextTile === 11) {
+    return 11
+  }
 }
 
 
@@ -91,13 +96,12 @@ function getTilePosition() {
   const map = store.getState().map.name;
 
   const NPCPos = getNewPosition(currentPos, heading)
-  console.log(`I'm an actionable tile at position ${NPCPos}`)
-  console.log(`im on ${map} map`)
-
-    // Axios.get(findOne where Position === NPCPos)
-    //   .then (
-    //     render NPC dialog box to page
-    //   )
+  // console.log(`I'm an actionable tile at position ${NPCPos}`)
+  // console.log(`im on ${map} map`)
+  NPCPos.toString();
+  $.get(`/api/npc/${NPCPos}`).then(data => {
+    console.log(data.data.dialogue)
+  })
 
 }
 
@@ -132,9 +136,12 @@ function attemptAction() {
   console.log(observeTile(oldPos, newPos), oldPos, newPos);
   console.log(direction)
 
-  if (observeTile(oldPos, newPos))
-
+  if (observeTile(oldPos, newPos) === true) {
     getTilePosition();
+  }
+  else if (observeTile(oldPos, newPos) === 11) {
+    alert("this needs to go to world")
+  }
 }
 //determines what happens depending on which key press.
 export function handleKeyDown(e) {
