@@ -44,7 +44,18 @@ class Intro extends React.Component {
                         <br></br>
                         <p>Only King Jacob, master of all four elements, could stop the ruthless MonGod. But when the world needed him most, he vanished...</p>
                         <br></br>
-                        <p>Now the final protector of the realm seeks out the last known existing descendant to the royal bloodline, Alan Breck. He is one of the few people remaining that is resistant to MonGod's influence. Cody tells him that his mission, should he accept it, is to gather information within the scrolls spread amongts the different lands and unite them in order to seal away MonGod for good and restore rightful order to the plane. You are the land's last hope.</p>
+                        <p>Now the final protector of the realm seeks out the last known existing descendant to the royal bloodline, Alan Breck. He is one of the few people remaining that is resistant to MonGod's influence. Cody tells him that his mission, should he accept it, is to gather information within the scrolls spread amongts the different lands and unite them in order to seal away MonGod for good and restore rightful order to the plane.</p>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <p>You are the world's last hope...</p>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
 
                     </div>
 
