@@ -101,7 +101,7 @@ const gamedb = [
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
     },
 
-    //Willbucks
+    //Willbucks / Cody
     {
         npcName: "Will",
         dialogue: ["Hey, I'm Will! Welcome to Willbucks! You look tired - you must be coding too much! Want some coffee?"],
@@ -118,7 +118,17 @@ const gamedb = [
         map: "",
         passedTrialDialogue: []
     },
-
+    {
+        npcName: "Cody",
+        dialogue: ["You SHALL NOT - Oh. Nevermind, you're not a bad guy. Come in, Alan.",
+            "How is your training going? MonGod is ruthless and merciless. You need to be prepared.",
+            "Remember to read the documentation. I believe in you.",
+            "This journey will be difficult but know that you cannot know victory without first experiencing defeat."],
+        position: ",",
+        beatTrial: [""],
+        map: "",
+        passedTrialDialogue: []
+    },
 
     // Javascript town NPC
     {
@@ -165,7 +175,7 @@ const gamedb = [
         beatTrial: [],
         passedTrialDialogue: []
     },
-    
+
 
     // React town NPC
     {
@@ -222,7 +232,7 @@ const gamedb = [
         beatTrial: [],
         passedTrialDialogue: []
     },
-    
+
 
     // CSS town NPC
     {
