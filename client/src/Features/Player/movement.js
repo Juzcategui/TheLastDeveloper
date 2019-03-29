@@ -43,7 +43,7 @@ function getSpriteLocation(direction, walkIndex) {
 //returns what the walkIndex is and what it will be at the next move.
 function getWalkIndex() {
   const walkIndex = store.getState().player.walkIndex;
-  return walkIndex >= 8 ? 0 : walkIndex + 1;
+  return walkIndex >= 4 ? 0 : walkIndex + 1;
 }
 //X and Y axis checks to make sure you're not at edge of map//
 function observeBoundaries(oldPos, newPos) {
@@ -99,6 +99,15 @@ function dispatchMove(direction, newPos) {
       spriteLocation: getSpriteLocation(direction, walkIndex)
     }
   });
+
+  store.dispatch({
+    type: "TALK_NPC",
+    payload: {
+      dialogue: "",
+      npcPos: [],
+      isShown: false
+    }
+  });
 }
 
 
@@ -118,7 +127,9 @@ function getTilePosition() {
       type: "TALK_NPC",
       payload: {
         dialogue: data.data.dialogue,
-        npcPos: NPCPos
+        name: data.data.npcName,
+        npcPos: NPCPos,
+        isShown: true
       }
     });
   })

@@ -5,3 +5,9 @@
     width: 160px;
     height: 80px;
 }
+
+#avatar{
+    bottom: 0%;
+    left: 70%;
+    position: absolute;
+  }
