@@ -49,7 +49,7 @@ class WorldMap extends React.Component {
                     data-target="#abilityModal" >Abilities</h4>
 
 
-                <div className="modal fade" id="abilityModal" tabindex="-1" role="dialog" >
+                <div className="modal fade" id="abilityModal" tabIndex="-1" role="dialog" >
                     <div className="modal-dialog" role="document">
                         <div className="modal-content">
                             <div className="modal-header">

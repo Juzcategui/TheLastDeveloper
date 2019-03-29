@@ -1,7 +1,6 @@
+import React from 'react';
 import store from "../../config/store";
 import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from "../../config/constants";
-import history from '../../components/Technical/History';
-import { push } from 'react-router-redux'
 import * as $ from 'axios';
 
 //calculates the 'forward' or next position if you were to take one step forward in your current direction.
@@ -127,9 +126,10 @@ function attemptMove(direction) {
   if (observeBoundaries(oldPos, newPos) && observeGeometry(oldPos, newPos))
     dispatchMove(direction, newPos);
 }
+
 //checks to see if the tile in front of you is an actionable tile. If it is, it queries for it's 
 //exact position.
-function attemptAction() {
+function attemptAction(history) {
   const { position: oldPos, direction } = store.getState().player;
   const newPos = getNewPosition(oldPos, direction);
 
@@ -140,11 +140,13 @@ function attemptAction() {
     getTilePosition();
   }
   else if (observeTile(oldPos, newPos) === 11) {
-    alert("this needs to go to world")
+    history.push("/WorldMap");
+    // leaveDia();
+    // console.log("I displayed");
   }
 }
 //determines what happens depending on which key press.
-export function handleKeyDown(e) {
+export function handleKeyDown(e, history) {
   e.preventDefault();
 
   switch (e.keyCode) {
@@ -161,7 +163,7 @@ export function handleKeyDown(e) {
       return attemptMove("SOUTH");
 
     case 32:
-      return attemptAction();
+      return attemptAction(history);
 
     default:
       console.log(e.keyCode);
