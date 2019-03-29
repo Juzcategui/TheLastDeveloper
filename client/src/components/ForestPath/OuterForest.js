@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import OuterForestBG from '../../Backgrounds/OuterForest.jpg'
 
 
-
 class OuterForest extends React.Component {
     state = {
         npcName: ''
