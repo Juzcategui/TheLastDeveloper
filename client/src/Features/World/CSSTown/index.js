@@ -14,6 +14,15 @@ function CSSTown(props) {
         tiles: CSSTiles,
         name: "CSS Town"
     }})
+
+    store.dispatch({ 
+        type: 'MOVE_PLAYER', 
+        payload: {
+            position: [40,200],
+            spriteLocation: '0px 80px',
+            walkIndex: 0
+        }
+    })
     
     return (
         <div 

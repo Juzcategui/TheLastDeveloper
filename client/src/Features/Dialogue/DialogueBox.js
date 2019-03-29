@@ -9,8 +9,12 @@ class DialogueBox extends React.Component {
 
     render () {
         return (
-            <div className="DiaBox">
-                <p>{this.dialogue}</p>
+            <div className="DiaBox" style={{
+                                    position: 'relative',
+                                    width: '160px',
+                                    height: '80px',
+            }}>
+                <p>{this.props.dialogue}</p>
 
             </div>
                 

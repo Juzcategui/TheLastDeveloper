@@ -2,6 +2,8 @@ import React from 'react';
 import store from '../../config/store';
 import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from "../../config/constants";
 import * as $ from 'axios';
+import DialogueBox from '../Dialogue/DialogueBox';
+import { PromiseProvider } from 'mongoose';
 
 //calculates the 'forward' or next position if you were to take one step forward in your current direction.
 function getNewPosition(oldPos, direction) {
@@ -98,8 +100,9 @@ function getTilePosition() {
   // console.log(`I'm an actionable tile at position ${NPCPos}`)
   // console.log(`im on ${map} map`)
   NPCPos.toString();
+  
   $.get(`/api/npc/${NPCPos}`).then(data => {
-    console.log(data.data.dialogue)
+    console.log(data.data.dialogue);
   })
 
 }
