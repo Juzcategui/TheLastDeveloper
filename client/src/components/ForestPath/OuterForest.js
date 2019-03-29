@@ -13,7 +13,7 @@ class OuterForest extends React.Component {
         return (
 
             <div>
-                <h1 className="ForestTitles">Outer Forest</h1>
+                <h1 className="ForestTitles">Inner Forest</h1>
                 <img className="BG" src={OuterForestBG} alt="OuterForest" />
 
 
