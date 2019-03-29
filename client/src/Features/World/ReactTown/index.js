@@ -4,7 +4,7 @@ import Player from '../../Player/';
 import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/PewterCity.png'
 import ReactNPC from './React_NPC';
-
+import WaltzForZizi from '../../../Audio/WaltzForZizi.mp3'
 import { ReactTiles } from './ReactTiles'
 import store from '../../../config/store'
 
@@ -14,6 +14,15 @@ function ReactTown(props) {
         type: 'ADD_TILES', payload: {
             tiles: ReactTiles,
             name: "React Town"
+        }
+    })
+
+    store.dispatch({
+        type: 'MOVE_PLAYER',
+        payload: {
+            position: [1200, 440],
+            spriteLocation: '0px 120px',
+            walkIndex: 0
         }
     })
 
@@ -30,7 +39,7 @@ function ReactTown(props) {
             <Map tiles={ReactTiles} name="React Town" />
             <Player />
             <ReactNPC />
-
+            <audio src={WaltzForZizi} autoPlay loop />
 
         </div>
     )
