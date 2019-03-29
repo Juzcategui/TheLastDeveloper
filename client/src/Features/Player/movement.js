@@ -73,6 +73,18 @@ function observeTile(oldPos, newPos) {
   else if (nextTile === 11) {
     return 11
   }
+  else if (nextTile === 12) {
+    return 12
+  }
+  else if (nextTile === 13) {
+    return 13
+  }
+  else if (nextTile === 14) {
+    return 14
+  }
+  else if (nextTile === 15) {
+    return 15
+  }
 }
 
 
@@ -150,6 +162,18 @@ function attemptAction(history) {
   }
   else if (observeTile(oldPos, newPos) === 11) {
     history.push("/WorldMap");
+  }
+  else if (observeTile(oldPos, newPos) === 12) {
+    history.push("/ReactHouse");
+  }
+  else if (observeTile(oldPos, newPos) === 13) {
+    history.push("/CSSHouse");
+  }
+  else if (observeTile(oldPos, newPos) === 14) {
+    history.push("/HTMLHouse");
+  }
+  else if (observeTile(oldPos, newPos) === 15) {
+    history.push("/JavascriptHouse");
   }
 }
 //determines what happens depending on which key press.

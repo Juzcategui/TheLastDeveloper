@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../../App.css'
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import * as $ from 'axios';
 import LordOfTheRings from "../../Audio/LordOfTheRings.mp3"
 import stars from "../../Backgrounds/stars.jpg"
@@ -8,12 +8,24 @@ import stars from "../../Backgrounds/stars.jpg"
 class Intro extends React.Component {
     state = {
         npcName: 'Intro',
-        dialogue: []
+        dialogue: [],
+        redirect: false,
     }
 
-    render() {
+    componentDidMount() {
+        this.id = setTimeout(() => this.setState({ redirect: true }), 11000)
+      }
+    
+      componentWillUnmount() {
+        clearTimeout(this.id)
+      }
+
+render (){
         return (
-            <div>
+            this.state.redirect
+            ? <Redirect to="/SecretCave" />
+            :<div>
+                
             <audio src={LordOfTheRings} autoPlay/>
 
             <img className="BG" src={stars} alt="stars" />
@@ -28,7 +40,7 @@ class Intro extends React.Component {
                             <p>The Last Developer</p>
                             <br></br>
                             <br></br>
-                            <h1>From the developers of Trivia Bros, Sozial, Run-Escape, PoetryGenius, & MediApp</h1>
+                            <h1>From the developers of Super Trivia Bros., Sozial, Run-Escape, PoetryGenius, & MediApp</h1>
                             <br></br>
                             <br></br>
                             <br></br>
@@ -63,7 +75,7 @@ class Intro extends React.Component {
             </div>
         )
     }
-
 }
+
 
 export default Intro;

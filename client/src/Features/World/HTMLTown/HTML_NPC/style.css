@@ -1,0 +1,69 @@
+.Harrison {
+    position: absolute;
+    top: 360px;
+    left: 560px;
+    background-Image: url('./Sprites/Harrison.png');
+    background-Position: 0px 120px;
+    width: 40px;
+    height: 40px;
+}
+
+.Mark {
+    position: absolute;
+    top: 120px;
+    left: 800px;
+    background-Image: url('./Sprites/Mark.png');
+    background-Position: 0px 120px;
+    width: 40px;
+    height: 40px;
+}
+
+.Leonardo {
+    position: absolute;
+    top: 360px;
+    left: 200px;
+    background-Image: url('./Sprites/Leonardo.png');
+    background-Position: 0px 80px;
+    width: 40px;
+    height: 40px;
+}
+
+.Michaelangelo {
+    position: absolute;
+    top: 120px;
+    left: 240px;
+    background-Image: url('./Sprites/Michelangelo.png');
+    background-Position: 0px 80px;
+    width: 40px;
+    height: 40px;
+}
+
+.Raphael {
+    position: absolute;
+    top: 440px;
+    left: 1040px;
+    background-Image: url('./Sprites/Raphael.png');
+    background-Position: 0px 120px;
+    width: 40px;
+    height: 40px;
+}
+
+.Jorge {
+    position: absolute;
+    top: 480px;
+    left: 520px;
+    background-Image: url('./Sprites/Jorge.png');
+    background-Position: 0px 80px;
+    width: 40px;
+    height: 40px;
+}
+
+.HTMLGuard {
+    position: absolute;
+    top: 80px;
+    left: 520px;
+    background-Image: url('./Sprites/HTMLGuard.png');
+    background-Position: 0px 120px;
+    width: 40px;
+    height: 40px;
+}
