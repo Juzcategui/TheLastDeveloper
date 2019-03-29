@@ -143,6 +143,7 @@ class HTMLHouse extends React.Component {
                                         </div>
                         }
                     </div>
+                    <audio src={RedRedWine} autoPlay/>
                     <div id="actionBox">
                         <Link to="/HTMLTown">
                             <button className="btn btn-success">Back</button>

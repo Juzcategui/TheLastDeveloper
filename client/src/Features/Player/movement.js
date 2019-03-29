@@ -1,6 +1,10 @@
 import React from 'react';
 import store from "../../config/store";
 import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from "../../config/constants";
+<<<<<<< HEAD
+=======
+import history from '../../components/Technical/History';
+>>>>>>> 4cd8b32204e0045c39faaeed392378f3c175033a
 import * as $ from 'axios';
 
 //calculates the 'forward' or next position if you were to take one step forward in your current direction.
