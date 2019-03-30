@@ -15,7 +15,7 @@ class Intro extends React.Component {
 
     componentDidMount() {
         this.id = setTimeout(
-            () => this.setState({ redirect: true }), 121000)
+            () => this.setState({ redirect: true }), 119000)
     }
 
     componentWillUnmount() {
