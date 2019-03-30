@@ -20,15 +20,14 @@ const DialogueBox = props => (
                 borderRadius: 5,
                 fontSize: 30,
                 width: 1000,
-                padding: 10,
                 opacity: 0.8,
                 borderWidth: 5,
                 borderStyle: "solid",
             }}
         >
 
-            <p>{props.name}</p>
-            <span>{props.dialogue}</span>
+            <p className="nameTag">{props.name}</p>
+            <p style={{ padding: 8, }}>{props.dialogue}</p>
         </p>
 
     </section >
