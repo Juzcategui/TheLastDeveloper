@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
-import AoT from "../../Audio/AoT.mp3"
+import Sephiroth from '../../Audio/Sephiroth.mp3'
 
 class Forest extends React.Component {
     state = {
@@ -56,11 +56,13 @@ class Forest extends React.Component {
 
     render() {
         return (
+          
             <div className="wrapper">
-                <audio src={AoT} autoPlay loop />
                 <h1 className="ForestTitles">MonGod's Dom</h1>
                 <img id="monGod" src={monGod} alt="monGod" />
                 <div class="sliding-background"></div>
+                <audio src={Sephiroth} autoPlay loop />
+
                 <img className="BG" src={ForestBG} alt="Forest" />
 
 
