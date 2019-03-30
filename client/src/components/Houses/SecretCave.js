@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import cave from "../../Backgrounds/SnowMountain.jpg"
 import Cody from "../../Sprites/Cody.png"
 import * as $ from 'axios';
-
+import ManCave from '../../Audio/ManCave.mp3'
 
 class SecretCave extends React.Component {
     state = {
@@ -46,7 +46,7 @@ class SecretCave extends React.Component {
         return (
 
             <div>
-                {/* <audio src={ManCave} autoPlay loop /> */}
+                <audio src={ManCave} autoPlay loop />
                 <img className="BG" src={cave} alt="cave"></img>
                 <h1 className="HouseTitles">Cody's Super Secret Can't let the Bad Guys Know Hidden Cave</h1>
 

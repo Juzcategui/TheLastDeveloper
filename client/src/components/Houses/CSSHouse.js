@@ -4,6 +4,7 @@ import CSSHouseImg from "../../Backgrounds/CSSHouse.jpg"
 import Adam from "../../Sprites/Adam.png"
 import imgscroll from "../../Backgrounds/scroll.png"
 import * as $ from 'axios';
+import FFVII from '../../Audio/FFVII.mp3'
 
 class CSSHouse extends React.Component {
     state = {
@@ -98,7 +99,7 @@ class CSSHouse extends React.Component {
         return (
             this.state.dialogue.length > 0 && (
                 <div>
-
+                    <audio src={FFVII} autoPlay loop />
                     <img className="BG" src={CSSHouseImg} alt="CSSHouse" />
                     <h1 className="HouseTitles">CSS House</h1>
                     <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />

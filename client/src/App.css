@@ -169,6 +169,98 @@ width: 73%;
     border-style: solid;
     border-color: lightslategrey;
     padding: 10px;
+    opacity:.85;
+    height:185px;
+  }
+
+
+  #skillHeader 
+  {
+    font-family: 'Press Start 2P', cursive;
+    position:absolute;
+    left:28%;
+    top:1%;
+    color:cadetblue;
+  }
+
+  #skillBox 
+  {
+    position:absolute;
+    left:10%;
+    bottom:20%;
+    background:rgba(255,255,255,0.8);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightslategrey;
+    height:250px;
+    width:80%;
+    opacity:.85;
+  }
+
+  .skillOne,
+  .skillTwo,
+  .skillThree,
+  .skillFour{
+    font-size:30px;
+    font-family: 'Press Start 2P', cursive;
+    position:absolute;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .skillOne{
+    left:2%;
+    bottom:45%;
+  }
+  .skillTwo{
+    left:40%;
+    bottom:45%;
+  }
+  .skillThree{
+    left:2%;
+    bottom:12%;
+  }
+  .skillFour{
+    left:40%;
+    bottom:12%;
+  }
+
+  .skillUse{
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.2;
+    padding:9px;
+    font-size:32px;
+    color:cadetblue;
+  }
+
+  .mongodUse{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size:34px;
+    font-weight:bold;
+    line-height: 1.2;
+    padding:9px;
+    color:firebrick;
+    text-transform: uppercase;
+  }
+
+  .battleButton{
+    position:absolute;
+    left:40%;
+    top:78%;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .confirmButton{
+    position:absolute;
+    left:40%;
+    top:40%;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .challengeButton{
+    position:absolute;
+    left:40%;
+    top:63%;
+    font-family: 'Press Start 2P', cursive;
   }
 
 #characterName {
@@ -687,12 +779,12 @@ left: 50%;
 
   /* -----------------------INTRO---------------------------- */
 
-  body {
+  /* body {
     width: 100%;
     height: 100%;
     background: #000;
     overflow: hidden;
-  }
+  } */
   
   .fade {
     position: relative;
@@ -722,7 +814,7 @@ left: 50%;
     position: relative;
     top: 9999px;
     transform-origin: 50% 100%;
-    animation: crawl 10s linear;
+    animation: crawl 150s linear;
   }
   
   .crawl > .title {
@@ -745,3 +837,107 @@ left: 50%;
       transform: rotateX(25deg) translateZ(-3600px);
     }
   }
+
+  .wrapper {
+    overflow: hidden;
+  }
+
+  #monGod {
+    position: absolute;
+    left: 29%;
+    bottom: 5%;
+    z-index: -1;
+  }
+  
+  .sliding-background {
+    background: url("../src//Backgrounds//SmokeLayer.png") repeat-x;
+    height: 1100px;
+    width: 5076px;
+    animation: slide 30s linear infinite;
+    opacity: 0.4;
+    background-size: cover;
+  }
+  
+  @keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
+
+  .text-blur-out {
+    -webkit-animation: text-blur-out 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
+            animation: text-blur-out 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
+  }
+
+  @-webkit-keyframes text-blur-out {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+  @keyframes text-blur-out {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+
+  .text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.7s both;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.7s both;
+  }
+
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .elementToFadeInAndOut {
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.visibleToggle{
+  visibility:hidden;
+}

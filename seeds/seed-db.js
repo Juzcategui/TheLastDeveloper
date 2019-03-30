@@ -124,7 +124,7 @@ const gamedb = [
             "Everything has changed. I feel it in the water, the Earth. I smell it in the syntax.",
             "Much that once was is lost, and very few remember it. Worst of all, our King is nowhere to be found. But there is still hope. You.",
             "You carry the royal blood Alan, and have the ability to resist MonGod's dark influence. It is up to you to travel to each of the realms and obtain the knowledge of their masters.",
-            "The journey will be long and fraught with peril - but I believe in you. With discipline and determination, you will be able to master the four disciplines and seal away MonGod once and for all."],
+            "The journey will be long and fraught with peril - but I believe in you. With determination and perseverance, you will be able to master the four disciplines and seal away MonGod once and for all."],
         position: ",",
         beatTrial: ["You SHALL NOT - Oh. Nevermind, you're not a bad guy. Come in, Alan.",
             "How is your training going? MonGod is ruthless and merciless. You need to be prepared.",

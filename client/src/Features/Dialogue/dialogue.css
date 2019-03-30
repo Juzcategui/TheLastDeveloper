@@ -11,3 +11,9 @@
     left: 70%;
     position: absolute;
   }
+
+  .nameTag{
+      background:rgba(95,158,160,0.7);
+      font-weight:bolder;
+      padding:5px;
+  }
