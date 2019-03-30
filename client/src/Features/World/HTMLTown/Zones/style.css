@@ -1,0 +1,13 @@
+.boatIsland {
+    position: absolute;
+    top: 625px;
+    left: 895px;
+    background-image: url('../HTML_NPC/Sprites/Boat.png');
+    background-position: center;
+    width: 64px;
+    height: 60px;
+}
+
+.theHomeless {
+
+}

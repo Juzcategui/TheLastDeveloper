@@ -43,7 +43,7 @@ function getSpriteLocation(direction, walkIndex) {
 //returns what the walkIndex is and what it will be at the next move.
 function getWalkIndex() {
   const walkIndex = store.getState().player.walkIndex;
-  return walkIndex >= 4 ? 0 : walkIndex + 1;
+  return walkIndex >= 3 ? 0 : walkIndex + 1;
 }
 //X and Y axis checks to make sure you're not at edge of map//
 function observeBoundaries(oldPos, newPos) {
@@ -84,6 +84,12 @@ function observeTile(oldPos, newPos) {
   }
   else if (nextTile === 15) {
     return 15
+  }
+  else if (nextTile === 16) {
+    return 16
+  }
+  else if (nextTile === 17) {
+    return 17
   }
 }
 
@@ -137,7 +143,7 @@ function getTilePosition() {
 }
 
 function changeDirection(direction, newPos) {
-  const walkIndex = getWalkIndex();
+  const walkIndex = (getWalkIndex() - 1);
   store.dispatch({
     type: "MOVE_PLAYER",
     payload: {
@@ -185,6 +191,12 @@ function attemptAction(history) {
   }
   else if (observeTile(oldPos, newPos) === 15) {
     history.push("/JavascriptHouse");
+  }
+  else if (observeTile(oldPos, newPos) === 16) {
+    history.push("/Island");
+  }
+  else if (observeTile(oldPos, newPos) === 17) {
+    history.push("/HTMLTown");
   }
 }
 //determines what happens depending on which key press.
