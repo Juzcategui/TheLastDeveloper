@@ -16,6 +16,7 @@ import OuterTown from './components/ForestPath/OuterTown'
 import Final from './components/ForestPath/Final'
 import OuterForest from './components/ForestPath/OuterForest'
 import Forest from './components/ForestPath/Forest';
+import Lamontopia from './components/ForestPath/JL';
 
 /*------------------ Houses Folder ------------------*/
 import HTMLHouse from './components/Houses/HTMLHouse';
@@ -49,6 +50,7 @@ const App = () => (
       <Route exact path="/Final" component={Final} />
       <Route exact path="/OuterForest" component={OuterForest} />
       <Route exact path="/Forest" component={Forest} />
+      <Route exact path="/Lamontopia" component={Lamontopia} />
 
       {/* ------------------ Houses Folder ------------------ */}
       <Route exact path="/HTMLHouse" component={HTMLHouse} />

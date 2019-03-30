@@ -256,14 +256,14 @@ const gamedb = [
         passedTrialDialogue: []
     },
     {
-        npcName: "Martin",
+        npcName: "Manny",
         dialogue: ["I found an awesome flip flop today! I wonder who it belongs to?"],
         position: "320,120",
         beatTrial: [],
         map: "CSS",
         passedTrialDialogue: []
     }, {
-        npcName: "Tony",
+        npcName: "Tim",
         dialogue: ["I keep hearing about this My Sequel server... but I feel left out because I haven't seen the first one!"],
         position: "1040,40",
         beatTrial: [],
@@ -310,7 +310,7 @@ const gamedb = [
         map: "HTML",
         passedTrialDialogue: []
     }, {
-        npcName: "Michaelangelo",
+        npcName: "Michelangelo",
         dialogue: ["I could go for a slice of pizza. Or 12."],
         position: "240,120",
         beatTrial: [],
