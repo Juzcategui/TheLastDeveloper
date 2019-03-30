@@ -13,6 +13,7 @@ import Scroll from './components/Technical/Scroll';
 
 /*------------------ Forest Path Folder ------------------*/
 import OuterTown from './components/ForestPath/OuterTown'
+import Final from './components/ForestPath/Final'
 import OuterForest from './components/ForestPath/OuterForest'
 import Forest from './components/ForestPath/Forest';
 
@@ -45,6 +46,7 @@ const App = () => (
 
       {/* ------------------ Forest Path Folder ------------------ */}
       <Route exact path="/OuterTown" component={OuterTown} />
+      <Route exact path="/Final" component={Final} />
       <Route exact path="/OuterForest" component={OuterForest} />
       <Route exact path="/Forest" component={Forest} />
 
