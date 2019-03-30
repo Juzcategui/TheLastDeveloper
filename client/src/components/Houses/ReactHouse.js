@@ -4,6 +4,7 @@ import REACTHouse from "../../Backgrounds/REACTHouse.jpeg"
 import Gabe from "../../Sprites/Gabe.png"
 import imgscroll from "../../Backgrounds/scroll.png"
 import * as $ from 'axios';
+import MyHero from '../../Audio/MyHero.mp3'
 
 class ReactHouse extends React.Component {
     state = {
@@ -101,6 +102,7 @@ class ReactHouse extends React.Component {
         return (
             this.state.dialogue.length > 0 && (
                 <div>
+                    <audio src={MyHero} autoPlay loop />
                     <img className="BG" src={REACTHouse} alt="ReactHouse" />
                     <h1 className="HouseTitles">React House</h1>
                     <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />

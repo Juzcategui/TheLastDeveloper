@@ -4,6 +4,7 @@ import JSHouse from "../../Backgrounds/JSHouse.jpg"
 import Vu from "../../Sprites/Vu.png"
 import imgscroll from "../../Backgrounds/scroll.png"
 import * as $ from 'axios';
+import NGNL from '../../Audio/NGNL.mp3'
 
 class JavascriptHouse extends React.Component {
     state = {
@@ -99,6 +100,7 @@ class JavascriptHouse extends React.Component {
         return (
             this.state.dialogue.length > 0 && (
                 <div>
+                    <audio src={NGNL} autoPlay loop />
                     <img className="BG" src={JSHouse} alt="JSHouse" />
                     <h1 className="HouseTitles">Javascript House</h1>
                     <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import cave from "../../Backgrounds/SnowMountain.jpg"
 import Cody from "../../Sprites/Cody.png"
 import * as $ from 'axios';
-
+import ManCave from '../../Audio/ManCave.mp3'
 
 class SecretCave extends React.Component {
     state = {
