@@ -18,19 +18,16 @@ class OuterForest extends React.Component {
 
                 <div id='DialogContainer'>
 
-                    <div id="characterName">
-                        <p>Insert character name here</p>
-                    </div>
 
                     <div id="textBox">
-                        <h3>Get ready for a beatdown...</h3>
-                        <p>Lil boi</p>
+                        <h4>It grows quiet. The birds are no longer singing and the air has become stagnant and eerie. Something is near...</h4>
+                        <Link to="/Forest">
+                            <button className="btn btn-success confirm">Dive In</button></Link>
                     </div>
                 </div>
 
                 <div id="actionBox">
-                    <Link to="/Forest">
-                        <button className="btn btn-success">Continue to forest</button></Link>
+
                     <Link to="/WorldMap">
                         <button className="btn btn-secondary">World Map</button>
                     </Link>

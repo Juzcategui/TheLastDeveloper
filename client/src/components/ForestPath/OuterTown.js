@@ -19,20 +19,17 @@ class OuterTown extends React.Component {
 
                 <div id='DialogContainer'>
 
-                    <div id="characterName">
-                        <p>Insert character name here</p>
-                    </div>
 
                     <div id="textBox">
-                        <h3>Theres something that smells nearby, but you realized it was just you.</h3>
-                        <p>Ya piece of garbage</p>
+                        <h4>For a place where an evil entity resides, it doesn't seem far off from an ordinary forest. Explore deeper?</h4>
+                        <Link to="/OuterForest">
+                            <button className="btn btn-success confirm">Explore deeper</button>
+                        </Link>
                     </div>
                 </div>
 
                 <div id="actionBox">
-                    <Link to="/OuterForest">
-                        <button className="btn btn-success">Continue to forest</button>
-                    </Link>
+
                     <Link to="/WorldMap">
                         <button className="btn btn-secondary">World Map</button>
                     </Link>

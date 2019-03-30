@@ -18,12 +18,11 @@ class Forest extends React.Component {
                 <div id='DialogContainer'>
 
                     <div id="characterName">
-                        <p>Insert character name here</p>
+                        <p>MonGod</p>
                     </div>
 
                     <div id="textBox">
-                        <h3>You be lookin like a snacc</h3>
-                        <p>The snacc that smiles back ;)</p>
+                        <h4>HAHA. Alan, you fool. Instead of hiding, you came straight to me?! You will fall just like your former!</h4>
                     </div>
                 </div>
 
