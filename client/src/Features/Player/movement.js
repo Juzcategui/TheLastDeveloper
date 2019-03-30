@@ -137,7 +137,7 @@ function getTilePosition() {
 }
 
 function changeDirection(direction, newPos) {
-  const walkIndex = getWalkIndex();
+  const walkIndex = (getWalkIndex() -1);
   store.dispatch({
     type: "MOVE_PLAYER",
     payload: {
