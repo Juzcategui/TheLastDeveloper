@@ -154,6 +154,22 @@ width: 73%;
   padding-top: 10px;
 }
 
+#finalContainer {
+  bottom: 3%;
+  position: absolute;
+  left:5%;
+  width: 90%;
+  }
+  
+
+  #finalBox 
+  {
+    background:rgba(255,255,255,0.8);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightslategrey;
+    padding: 10px;
+  }
 
 #characterName {
   margin-bottom: 10px;
