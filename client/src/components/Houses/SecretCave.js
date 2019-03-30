@@ -12,7 +12,8 @@ class SecretCave extends React.Component {
         introDialogue: [],
         dialogue: [],
         dialogueCount: 0,
-        introDialogueCount: 0
+        introDialogueCount: 0,
+        fourAbilities: false
     }
 
     componentDidMount() {
@@ -22,7 +23,8 @@ class SecretCave extends React.Component {
                 this.setState({
                     introDialogue: gameDB.data.dialogue,
                     dialogue: gameDB.data.beatTrial,
-                    introPassed: userDB.data.introPassed
+                    introPassed: userDB.data.introPassed,
+                    fourAbilities: userDB.data.trialsPassed === 4
                 });
             });
         });
@@ -44,7 +46,7 @@ class SecretCave extends React.Component {
         return (
 
             <div>
-                <audio src={ManCave} autoPlay loop />
+                {/* <audio src={ManCave} autoPlay loop /> */}
                 <img className="BG" src={cave} alt="cave"></img>
                 <h1 className="HouseTitles">Cody's Super Secret Can't let the Bad Guys Know Hidden Cave</h1>
 
@@ -53,16 +55,23 @@ class SecretCave extends React.Component {
                     <div id="characterName">
                         <p className="namePlate">Cognoscente Cody</p>
                     </div>
-                    {this.state.introPassed === true ?
-                        this.state.dialogueCount === 3 ?
+                    {this.state.introPassed === true
+                        ?
+                        this.state.fourAbilities === true
+                            ?
                             <div id="textBox">
-                                <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
+                                <h4>"You've completed all four trials? You're ready. Head over to the forest to the north to challenge MonGod."</h4>
                             </div>
                             :
-                            <div id="textBox">
-                                <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                                <button onClick={this.nextDialogue} type="button" className="btn btn-primary btn-sm confirm">Next</button>
-                            </div>
+                            this.state.dialogueCount === 3 ?
+                                <div id="textBox">
+                                    <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
+                                </div>
+                                :
+                                <div id="textBox">
+                                    <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
+                                    <button onClick={this.nextDialogue} type="button" className="btn btn-primary btn-sm confirm">Next</button>
+                                </div>
                         :
                         this.state.introDialogueCount === 4 ?
                             <div id="textBox">
