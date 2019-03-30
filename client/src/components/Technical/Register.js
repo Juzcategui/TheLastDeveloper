@@ -46,7 +46,7 @@ class Register extends React.Component {
                 </div>
                 <div id="homePageStyle" class="container">
                     <h3 id="loginTitle">Register New Account</h3>
-                    <div id="homeInput">
+                    <form onSubmit={this.handleRegister} id="homeInput">
                         <div className="input-group-prepend homeInput">
                             <span className="input-group-text" id="basic-addon1"> <i className="fas fa-user-circle"></i> </span>
                             <input value={this.state.username} onChange={this.handleChange} name="reguser" type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
@@ -57,16 +57,17 @@ class Register extends React.Component {
                             <input onChange={this.handlePWChange} name="regpw" type="password" className="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" />
                         </div>
 
-                    </div>
-                    <div id="signIn">
-                        <button type="button" id="signInBtnStyle" className="btn btn-primary" onClick={this.handleRegister}>
-                            Register
+
+                        <div id="signIn">
+                            <button type="submit" id="signInBtnStyle" className="btn btn-primary" >
+                                Register
                        </button>
-                        <br /><br />
-                        <Link to="/">
-                            <p>Back to Login</p>
-                        </Link>
-                    </div>
+                            <br /><br />
+                            <Link to="/">
+                                <p>Back to Login</p>
+                            </Link>
+                        </div>
+                    </form>
                 </div>
             </div>
 
