@@ -779,12 +779,9 @@ left: 50%;
 
   /* -----------------------INTRO---------------------------- */
 
-  /* body {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    overflow: hidden;
-  } */
+.introButton{
+  margin:5px;
+}
   
   .fade {
     position: relative;
@@ -976,6 +973,16 @@ left: 50%;
   }
 }
 
+.fadeToBlack {
+  background: black;
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+@keyframes fadeinout {
+0% { opacity: 1; }
+100% { opacity: 0; }
+}
 
 .visibleToggle{
   visibility:hidden;
