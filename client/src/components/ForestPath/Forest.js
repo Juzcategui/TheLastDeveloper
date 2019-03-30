@@ -13,11 +13,18 @@ class Forest extends React.Component {
             "Mongod uses .destroy()! Alan has fallen and can't get up. Our hero is trouble!"],
         playerDialogue: "",
         battleStarted: false,
+        confirmedClick: false
     }
 
     startBattle = () => {
         this.setState({
             battleStarted: true
+        })
+    }
+
+    confirmSkill = () => {
+        this.setState({
+            confirmedClick: true,
         })
     }
 
@@ -27,6 +34,7 @@ class Forest extends React.Component {
         }
         this.setState({
             playerDialogue: "",
+            confirmedClick: false,
             battleCount: this.state.battleCount + 1
         })
     }
@@ -56,7 +64,7 @@ class Forest extends React.Component {
 
     render() {
         return (
-          
+
             <div className="wrapper">
                 <h1 className="ForestTitles">MonGod's Dom</h1>
                 <img id="monGod" src={monGod} alt="monGod" />
@@ -86,9 +94,10 @@ class Forest extends React.Component {
                             </div>
                             :
                             <div id="skillBox">
-                                <h1 className="skillUse">{this.state.playerDialogue}</h1>
-                                <h3 className="mongodUse">{this.state.mongodDialogue[this.state.battleCount]}</h3>
-                                <button onClick={this.continueBattle} className="btn btn-danger confirm btn-lg battleButton">Welp</button>
+                                <h1 className={`skillUse ${this.state.confirmedClick && "visibleToggle"}`}>{this.state.playerDialogue}</h1>
+                                <button onClick={this.confirmSkill} className={`btn btn-info confirm btn-lg confirmButton ${this.state.confirmedClick && "visibleToggle"}`}>Confirm</button>
+                                <h3 className={`mongodUse ${!this.state.confirmedClick && "visibleToggle"}`}>{this.state.mongodDialogue[this.state.battleCount]}</h3>
+                                <button onClick={this.continueBattle} className={`"btn btn-danger confirm btn-lg battleButton ${!this.state.confirmedClick && "visibleToggle"}`}>Welp</button>
                             </div>
 
                     }
