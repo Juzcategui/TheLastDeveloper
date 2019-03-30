@@ -66,7 +66,7 @@ class Forest extends React.Component {
     }
 
     render() {
-        const { battleCount, mongodDialogue, playerDialogue, confirmedClick, buttonDiag } = this.state;
+        const { battleCount, playerDialogue, confirmedClick, buttonDiag } = this.state;
         return (
 
             <div className="wrapper">
