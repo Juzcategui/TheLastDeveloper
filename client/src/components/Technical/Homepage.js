@@ -47,7 +47,7 @@ class Homepage extends React.Component {
                 </div>
                 <div id="homePageStyle" class="container">
                     <h3 id="loginTitle">Log In to Your Account</h3>
-                    <div id="homeInput">
+                    <form onSubmit={this.handleLogin} id="homeInput">
                         <div className="input-group-prepend homeInput">
                             <span className="input-group-text" id="basic-addon1"> <i className="fas fa-user-circle"></i> </span>
                             <input value={this.state.username} onChange={this.handleChange} name="username" type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
@@ -58,19 +58,20 @@ class Homepage extends React.Component {
                             <input onChange={this.handlePWChange} name="password" type="password" className="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" />
                         </div>
 
-                    </div>
-                    <div id="signIn">
-                        <button type="button" id="signInBtnStyle" className="btn btn-primary" onClick={this.handleLogin}>
-                            Log in
+
+                        <div id="signIn">
+                            <button type="submit" id="signInBtnStyle" className="btn btn-primary" >
+                                Log in
                        </button>
-                        <h5 id="registerBtnStyle">Need an Account?
+                            <h5 id="registerBtnStyle">Need an Account?
                         <Link to="/Register">
-                                <button type="button" className="btn btn-primary regBtn">
-                                    Register
+                                    <button type="button" className="btn btn-primary regBtn">
+                                        Register
                                 </button>
-                            </Link>
-                        </h5>
-                    </div>
+                                </Link>
+                            </h5>
+                        </div>
+                    </form>
                 </div>
             </div>
 
