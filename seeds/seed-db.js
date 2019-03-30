@@ -167,7 +167,7 @@ const gamedb = [
         passedTrialDialogue: []
     }, {
         npcName: "Alexander",
-        dialogue: ["Wash your hair lately?"],
+        dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
         position: "920,120",
         beatTrial: [],
         map: "Javascript",
@@ -208,7 +208,7 @@ const gamedb = [
     },
     {
         npcName: "Camila",
-        dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
+        dialogue: ["♪ Havana, ooh na na ♪ Opps, sorry. I was just singing a song I wrote. Think anyone will like it?"],
         position: "920,480",
         beatTrial: [],
         map: "React",
