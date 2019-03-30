@@ -167,7 +167,7 @@ const gamedb = [
         passedTrialDialogue: []
     }, {
         npcName: "Alexander",
-        dialogue: ["Wash your hair lately?"],
+        dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
         position: "920,120",
         beatTrial: [],
         map: "Javascript",
@@ -208,7 +208,7 @@ const gamedb = [
     },
     {
         npcName: "Camila",
-        dialogue: ["@&#(! I hate bugs! Just when you think you're in the clear, one comes out of nowhere. They ruin everything!"],
+        dialogue: ["♪ Havana, ooh na na ♪ Opps, sorry. I was just singing a song I wrote. Think anyone will like it?"],
         position: "920,480",
         beatTrial: [],
         map: "React",
@@ -256,14 +256,14 @@ const gamedb = [
         passedTrialDialogue: []
     },
     {
-        npcName: "Martin",
+        npcName: "Manny",
         dialogue: ["I found an awesome flip flop today! I wonder who it belongs to?"],
         position: "320,120",
         beatTrial: [],
         map: "CSS",
         passedTrialDialogue: []
     }, {
-        npcName: "Tony",
+        npcName: "Tim",
         dialogue: ["I keep hearing about this My Sequel server... but I feel left out because I haven't seen the first one!"],
         position: "1040,40",
         beatTrial: [],
@@ -310,7 +310,7 @@ const gamedb = [
         map: "HTML",
         passedTrialDialogue: []
     }, {
-        npcName: "Michaelangelo",
+        npcName: "Michelangelo",
         dialogue: ["I could go for a slice of pizza. Or 12."],
         position: "240,120",
         beatTrial: [],

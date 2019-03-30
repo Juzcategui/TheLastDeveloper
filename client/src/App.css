@@ -779,12 +779,9 @@ left: 50%;
 
   /* -----------------------INTRO---------------------------- */
 
-  /* body {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    overflow: hidden;
-  } */
+.introButton{
+  margin:5px;
+}
   
   .fade {
     position: relative;
@@ -867,31 +864,6 @@ left: 50%;
     }
   }
 
-  .text-blur-out {
-    -webkit-animation: text-blur-out 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
-            animation: text-blur-out 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
-  }
-
-  @-webkit-keyframes text-blur-out {
-    0% {
-      -webkit-filter: blur(0.01);
-              filter: blur(0.01);
-    }
-    100% {
-      -webkit-filter: blur(12px) opacity(0%);
-              filter: blur(12px) opacity(0%);
-    }
-  }
-  @keyframes text-blur-out {
-    0% {
-      -webkit-filter: blur(0.01);
-              filter: blur(0.01);
-    }
-    100% {
-      -webkit-filter: blur(12px) opacity(0%);
-              filter: blur(12px) opacity(0%);
-    }
-  }
 
   .text-focus-in {
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.7s both;
@@ -936,6 +908,80 @@ left: 50%;
 @keyframes fadeinout {
   0%,100% { opacity: 1; }
   50% { opacity: 0; }
+}
+
+
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 0.2s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+	        animation: shake-horizontal 0.2s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+}
+
+ @-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
+.fadeToBlack {
+  background: black;
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+@keyframes fadeinout {
+0% { opacity: 1; }
+100% { opacity: 0; }
 }
 
 .visibleToggle{
