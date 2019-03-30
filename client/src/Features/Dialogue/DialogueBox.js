@@ -3,7 +3,7 @@ import "./dialogue.css";
 
 const DialogueBox = props => (
   <section>
-    <img id="avatar" src={require(`../../Sprites/${props.name}.png`)} />
+    <img id="avatar" src={`../avatars/${props.name}.png`} />
     <p
       className="DiaBox"
       style={{

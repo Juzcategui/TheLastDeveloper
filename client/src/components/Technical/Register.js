@@ -59,7 +59,7 @@ class Register extends React.Component {
 
 
                         <div id="signIn">
-                            <button type="submit" id="signInBtnStyle" className="btn btn-primary" >
+                            <button type="submit" className="btn btn-primary signInBtnStyle" >
                                 Register
                        </button>
                             <br /><br />

@@ -43,6 +43,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 .regBtn{
   margin-left:10px;
+  font-weight:bold;
 }
 
 #titleBlock{
@@ -72,19 +73,15 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   padding-bottom: 50px;
 }
 
-#signInBtnStyle{
+.signInBtnStyle{
   color: white;
   width: 75%;
-  margin-bottom: 30px;
+  font-size:20px;
+  font-weight:bolder;
+  margin-bottom: 20px;
+  
 }
 
-#registerBtnStyle{
-  top: 50%;
-  left:25%;
-  text-align: center;
-  position: absolute;
-  padding-top: 80px;
-}
 
 #signInBtnStyle,
 #registerBtnStyle{
@@ -200,7 +197,8 @@ width: 73%;
   .skillOne,
   .skillTwo,
   .skillThree,
-  .skillFour{
+  .skillFour,
+  .docButton{
     font-size:30px;
     font-family: 'Press Start 2P', cursive;
     position:absolute;
@@ -986,4 +984,297 @@ left: 50%;
 
 .visibleToggle{
   visibility:hidden;
+}
+
+.loginErr{
+  color:red;
+  margin-bottom:25px;
+}
+
+
+.finalDialogue{
+  color:cadetblue;
+}
+
+  .text-focus-in {
+    -webkit-animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  .text-focus-in2{
+    -webkit-animation: text-focus-in 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.docDiv {
+ 
+  position:absolute;
+  left:10%;
+  bottom:15%;
+  background:rgba(255,255,255,0.8);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightslategrey;
+  height:120px;
+  width:80%;
+  opacity:.85;
+  margin-bottom:20px
+  }
+
+  .docButton{
+    font-size:88px;
+  }
+
+  .flicker-out-1 {
+    -webkit-animation: flicker-out-1 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+            animation: flicker-out-1 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  }
+
+
+@-webkit-keyframes flicker-out-1 {
+  0% {
+    opacity: 1;
+  }
+  13.9% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  14.9% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  15% {
+    opacity: 1;
+  }
+  22.9% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  24.9% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  25% {
+    opacity: 1;
+  }
+  34.9% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  39.9% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  40% {
+    opacity: 1;
+  }
+  42.9% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  44.9% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  54.9% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  69.4% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  69.5% {
+    opacity: 1;
+  }
+  69.9% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  79.4% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  79.9% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  89.8% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  89.9% {
+    opacity: 1;
+    box-shadow: none;
+  }
+  90% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes flicker-out-1 {
+  0% {
+    opacity: 1;
+  }
+  13.9% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  14.9% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  15% {
+    opacity: 1;
+  }
+  22.9% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  24.9% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  25% {
+    opacity: 1;
+  }
+  34.9% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  39.9% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  40% {
+    opacity: 1;
+  }
+  42.9% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  44.9% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  54.9% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  69.4% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  69.5% {
+    opacity: 1;
+  }
+  69.9% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  79.4% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  79.9% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  89.8% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  89.9% {
+    opacity: 1;
+    box-shadow: none;
+  }
+  90% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  100% {
+    opacity: 0;
+  }
 }
