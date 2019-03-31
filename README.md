@@ -7,3 +7,4 @@
 * [Heroku](https://heroku.com/) - Cloud Platorm Service
 * [MLab](https://mlab.com/) - Heroku Database Source
 * [W3Schools](https://www.w3schools.com/) - Instructional Information Source
+* [Animista](http://animista.net//) - Library for CSS Animations

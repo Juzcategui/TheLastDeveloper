@@ -18,21 +18,21 @@
     height: 40px;
 }
 
-.Martin {
+.Manny {
     position: absolute;
     top: 120px;
     left: 320px;
-    background-Image: url('./Sprites/Martin.png');
+    background-Image: url('./Sprites/Manny.png');
     background-Position: 0px 80px;
     width: 40px;
     height: 40px;
 }
 
-.Tony {
+.Tim {
     position: absolute;
     top: 40px;
     left: 1040px;
-    background-Image: url('./Sprites/Tony.png');
+    background-Image: url('./Sprites/Tim.png');
     background-Position: 0px 0px;
     width: 40px;
     height: 40px;
@@ -67,3 +67,4 @@
     width: 40px;
     height: 40px;
 }
+

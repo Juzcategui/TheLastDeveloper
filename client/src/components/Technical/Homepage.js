@@ -9,7 +9,8 @@ import typing from "../../Audio/Typing.mp3"
 class Homepage extends React.Component {
     state = {
         username: '',
-        password: ''
+        password: '',
+        loginErr: false
     }
 
     handleChange = (event) => {
@@ -32,6 +33,9 @@ class Homepage extends React.Component {
                 this.props.history.push("/WorldMap")
             }).catch(err => {
                 console.log(err);
+                this.setState({
+                    loginErr: true
+                })
             });
 
     }
@@ -62,15 +66,17 @@ class Homepage extends React.Component {
 
 
                         <div id="signIn">
-                            <button type="submit" id="signInBtnStyle" className="btn btn-primary" >
+                            <button type="submit" className="btn btn-primary signInBtnStyle" >
                                 Log in
                        </button>
-                            <h5 id="registerBtnStyle">Need an Account?
+                            <div className={`loginErr ${!this.state.loginErr && "visibleToggle"}`}>Incorrect Username or Password</div>
+                            <h5>Need an Account?
                         <Link to="/Register">
                                     <button type="button" className="btn btn-primary regBtn">
                                         Register
                                 </button>
                                 </Link>
+
                             </h5>
                         </div>
                     </form>

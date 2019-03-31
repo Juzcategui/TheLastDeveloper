@@ -16,6 +16,8 @@ function getTileSprite(type) {
             return 'worldMapPortal'
         case 10:
             return 'actionTile'
+        case 12: 
+            return 'islandPort'
 
 
         // CSS Town 

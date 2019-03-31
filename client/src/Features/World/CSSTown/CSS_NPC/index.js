@@ -7,8 +7,8 @@ const CSSNPC = (props) => (
   <div>
     <div className="Barry" />
     <div className="Lin" />
-    <div className="Martin" />
-    <div className="Tony" />
+    <div className="Manny" />
+    <div className="Tim" />
     <div className="Jenny" />
     <div className="Adam" />
     <div className="CSSGuard" />

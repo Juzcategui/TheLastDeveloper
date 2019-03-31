@@ -122,9 +122,9 @@ const gamedb = [
         npcName: "Cody",
         dialogue: ["Alan, I've finally found you. The knowledge of the people has been fractured and they have forgotten what it means to work together.",
             "Everything has changed. I feel it in the water, the Earth. I smell it in the syntax.",
-            "Much that once was is lost, and very few remember it. Worst of all, our King is nowhere to be found. But there is still hope. You.",
+            "We can't concern ourselves with what was. We must act on what is. Our King is nowhere to be found, but there is still hope. You.",
             "You carry the royal blood Alan, and have the ability to resist MonGod's dark influence. It is up to you to travel to each of the realms and obtain the knowledge of their masters.",
-            "The journey will be long and fraught with peril - but I believe in you. With determination and perseverance, you will be able to master the four disciplines and seal away MonGod once and for all."],
+            "The journey will be long and fraught with peril - but I believe in you. With determination and perseverance, you will be able to master the four disciplines and seal MonGod away once and for all."],
         position: ",",
         beatTrial: ["You SHALL NOT - Oh. Nevermind, you're not a bad guy. Come in, Alan.",
             "How is your training going? MonGod is ruthless and merciless. You need to be prepared.",
@@ -256,14 +256,14 @@ const gamedb = [
         passedTrialDialogue: []
     },
     {
-        npcName: "Martin",
+        npcName: "Manny",
         dialogue: ["I found an awesome flip flop today! I wonder who it belongs to?"],
         position: "320,120",
         beatTrial: [],
         map: "CSS",
         passedTrialDialogue: []
     }, {
-        npcName: "Tony",
+        npcName: "Tim",
         dialogue: ["I keep hearing about this My Sequel server... but I feel left out because I haven't seen the first one!"],
         position: "1040,40",
         beatTrial: [],
@@ -310,7 +310,7 @@ const gamedb = [
         map: "HTML",
         passedTrialDialogue: []
     }, {
-        npcName: "Michaelangelo",
+        npcName: "Michelangelo",
         dialogue: ["I could go for a slice of pizza. Or 12."],
         position: "240,120",
         beatTrial: [],
