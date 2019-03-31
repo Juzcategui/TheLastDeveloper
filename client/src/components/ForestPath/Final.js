@@ -50,15 +50,14 @@ class Final extends React.Component {
                     <button key={`${this.state.dialogueCount}`} className="btn btn-secondary btn-lg finalBoxDialogue text-focus-in" onClick={this.nextDialogue}>{this.state.buttonDiag[this.state.dialogueCount]}</button>
                 </div>
                 :
-                <div className={`wrapper text-focus-in`}>
-                    <img className="BG" src={ForestBG} alt="Forest" />
+                <div className={`wrapper fade-in`}>
                     <img id="monGod" className={`${this.state.mongodDefeated && "flicker-out-1"}`} src={monGod} alt="monGod" />
+                    <img className="BG" src={ForestBG} alt="Forest" />
                     <div class="sliding-background"></div>
                     <div className={`docDiv ${this.state.mongodDefeated && "visibleToggle"}`}>
                         <button type="button" onClick={this.readDocs} className="docButton text-focus-in2">The Documentation</button>
                     </div>
                 </div>
-
         )
     }
 
