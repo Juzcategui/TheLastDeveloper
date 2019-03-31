@@ -7,9 +7,9 @@ class Final extends React.Component {
     state = {
         dialogueCount: 0,
         dialogue: ["Alan, remember your training...",
-                "Did you forget?",
-                "This is your destiny...",
-                "Get up. The world is counting on you!"],
+            "Did you forget?",
+            "This is your destiny...",
+            "Get up. The world is counting on you!"],
         resumeBattle: false,
         mongodDefeated: false,
         buttonDiag: ["Push Through", "Push Through", "Push Through", "Dive In",]
