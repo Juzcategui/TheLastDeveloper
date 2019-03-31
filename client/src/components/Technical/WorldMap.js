@@ -63,7 +63,7 @@ class WorldMap extends React.Component {
                             <div className="modal-body scrollList">
                                 {this.state.numAbilities === 0 ? "Complete trials to unlock abilities!" :
                                     this.state.abilities.map((data, i) => (
-                                        <li key={i}>
+                                        <li key={i} className={`ability${i}`}>
                                             {data.body}
                                         </li>))}
                             </div>

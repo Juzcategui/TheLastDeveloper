@@ -682,6 +682,12 @@ left: 50%;
     position: absolute;
   }
 
+  .replayIntro{
+    top: 17%;
+    right:3%;
+    color:white;
+    position: absolute;
+  }
 
 /* ---------------- House Font styling ---------------- */
 .HouseTitles,
@@ -708,8 +714,14 @@ left: 50%;
     border-radius: 5px;
   }
 
+  .modal-title{
+    font-family: 'Press Start 2P', cursive;
+  }
   .scrollList {
     list-style-type: none;
+    color:darkgreen;
+    font-size:12px;
+    font-family: 'Press Start 2P', cursive;
   }
 
   li{

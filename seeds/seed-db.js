@@ -159,7 +159,7 @@ const gamedb = [
         map: "Javascript",
         passedTrialDialogue: []
     }, {
-        npcName: "Emily",
+        npcName: "Olivia",
         dialogue: ["You look like you could use a pick-me-up. Head over to Willbucks! They have great coffee."],
         position: "760,320",
         beatTrial: [],
