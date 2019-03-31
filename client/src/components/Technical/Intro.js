@@ -56,8 +56,7 @@ class Intro extends React.Component {
 
                             <p>Long ago ..</p>
                             <br></br>
-                            <p>Existed a unified land - a land of knowledge, community, and collaboration. Everything was open sourced, and information was willingly shared for the benefit of all. But while all the developers and their communities flourished, a great darkness was brooding down below....</p>
-                            <br></br>
+                            <p>Existed a unified land - a land of knowledge, community, and collaboration. Everything was open sourced, and information was willingly shared for the benefit of all. But while all the developers and their communities flourished, a great darkness was brooding below....</p>
                             <br></br>
                             <br></br>
                             <p>Feasting on syntax errors for its own devious intentions, the darkness began to infect the minds of the developers, making them lazy and growing in power from their redundant code. As more and more developers fell prey to the darkness, it used all of their horrific and error filled code to manifest itself into an abomination the likes of which the land had never seen. An endless void consuming all in its path: MonGod.</p>
@@ -67,10 +66,9 @@ class Intro extends React.Component {
                             <br></br>
                             <p>Only King Jacob, master of all four elements, could stop the ruthless MonGod. But when the world needed him most, he vanished...</p>
                             <br></br>
-                            <p>Now the final protector of the realm, the Prophet, seeks out the last known existing descendant to the royal bloodline, Alan Breck. He is one of the few people remaining that is resistant to MonGod's influence. the Prophet tells him that his mission, should he accept it, is to gather information within the four realms of the world and unite them in order to seal away MonGod for good.</p>
+                            <p>Now the final protector of the realm, the Prophet, seeks out the last known existing descendant to the royal bloodline, Alan Breck. He is one of the few people remaining that is resistant to MonGod's influence. Cody tells him that his mission, should he accept it, is to gather information within the four realms of the world and unite them in order to seal away MonGod for good.</p>
                             <br></br>
                             <p>You are the world's last hope...</p>
-                            <br></br>
                             <br></br>
                             <br></br>
                             <br></br>
