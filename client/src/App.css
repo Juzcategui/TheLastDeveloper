@@ -175,7 +175,7 @@ width: 73%;
   {
     font-family: 'Press Start 2P', cursive;
     position:absolute;
-    left:28%;
+    left:23%;
     top:1%;
     color:navy;
   }
@@ -199,7 +199,7 @@ width: 73%;
   .skillThree,
   .skillFour,
   .docButton{
-    font-size:30px;
+    font-size:29px;
     font-family: 'Press Start 2P', cursive;
     position:absolute;
     background-color: transparent;
@@ -225,24 +225,24 @@ width: 73%;
   .skillUse{
     font-family: 'Press Start 2P', cursive;
     line-height: 1.2;
-    padding:9px;
-    font-size:32px;
+    padding:8px;
+    font-size:29px;
     color:cadetblue;
   }
 
   .mongodUse{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size:34px;
+    font-size:30px;
     font-weight:bold;
     line-height: 1.2;
-    padding:9px;
+    padding:8px;
     color:firebrick;
     text-transform: uppercase;
   }
 
   .battleButton{
     position:absolute;
-    left:40%;
+    left:78%;
     top:78%;
     font-family: 'Press Start 2P', cursive;
   }
@@ -862,37 +862,6 @@ left: 50%;
     }
   }
 
-
-  .text-focus-in {
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.7s both;
-            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.7s both;
-  }
-
-  @-webkit-keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  @keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-
   .elementToFadeInAndOut {
     -webkit-animation: fadeinout 4s linear forwards;
     animation: fadeinout 4s linear forwards;
@@ -1009,11 +978,6 @@ left: 50%;
 }
 
   .text-focus-in {
-    -webkit-animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-            animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  }
-
-  .text-focus-in2{
     -webkit-animation: text-focus-in 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             animation: text-focus-in 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }
@@ -1047,19 +1011,19 @@ left: 50%;
  
   position:absolute;
   left:10%;
-  bottom:15%;
+  bottom:7%;
   background:rgba(255,255,255,0.8);
   border-radius: 5px;
   border-style: solid;
   border-color: lightslategrey;
-  height:120px;
+  height:100px;
   width:80%;
   opacity:.85;
   margin-bottom:20px
   }
 
   .docButton{
-    font-size:88px;
+    font-size:70px;
   }
 
   .flicker-out-1 {
@@ -1544,5 +1508,27 @@ left: 50%;
   100% {
     opacity: 1;
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.fade-in {
+	-webkit-animation: fade-in 5s ease-in both;
+	        animation: fade-in 5s ease-in both;
+}
+
+ @-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
