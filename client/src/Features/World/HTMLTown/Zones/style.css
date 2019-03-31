@@ -8,6 +8,12 @@
     height: 60px;
 }
 
-.theHomeless {
-
+.Son {
+    position: absolute;
+    top: 160px;
+    left: 640px;
+    background-Image: url('../HTML_NPC/Sprites/Son.png');
+    background-Position: 0px 0px;
+    width: 40px;
+    height: 40px;
 }
