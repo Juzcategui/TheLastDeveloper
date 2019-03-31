@@ -13,10 +13,6 @@ class Intro extends React.Component {
         redirect: false,
     }
 
-    skipIntro = (event) => {
-        event.preventDefault();
-        this.props.history.push("/SecretCave")
-    }
 
     componentDidMount() {
         this.id = setTimeout(
@@ -33,9 +29,9 @@ class Intro extends React.Component {
                 ? <Redirect to="/SecretCave" />
                 : <div>
                     <img className="BG" src={stars} alt="stars" />
-                    <form>
-                        <button type="button" onClick={this.skipIntro} className="btn btn-dark introButton">Skip Intro</button>
-                    </form>
+                    <Link to="/SecretCave">
+                        <button type="button" className="btn btn-dark introButton">Skip Intro</button>
+                    </Link>
                     <audio src={LordOfTheRings} autoPlay />
                     <audio src={IntroLore} autoPlay />
 

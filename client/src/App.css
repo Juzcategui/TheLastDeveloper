@@ -682,6 +682,12 @@ left: 50%;
     position: absolute;
   }
 
+  .replayIntro{
+    top: 17%;
+    right:3%;
+    color:white;
+    position: absolute;
+  }
 
 /* ---------------- House Font styling ---------------- */
 .HouseTitles,
