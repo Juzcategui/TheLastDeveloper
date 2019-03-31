@@ -3,7 +3,8 @@ import { Link, Redirect } from "react-router-dom";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
 import Sephiroth from '../../Audio/Sephiroth.mp3'
-import mongodDialogue from "../../Audio/MonGod.mp3"
+import mongodVoice from "../../Audio/MonGod.mp3"
+import { mongo } from "mongoose";
 
 class Forest extends React.Component {
     state = {
@@ -81,7 +82,7 @@ class Forest extends React.Component {
     }
 
     render() {
-        const { battleCount, playerDialogue, confirmedClick, buttonDiag } = this.state;
+        const { battleCount, mongodDialogue, playerDialogue, confirmedClick, buttonDiag } = this.state;
         return (
 
             <div className={`wrapper ${this.state.destroyUsed && "fadeToBlack"}`}>
@@ -89,7 +90,7 @@ class Forest extends React.Component {
                 <img className={`${confirmedClick && "shake-horizontal"}`} id="monGod" src={monGod} alt="monGod" />
                 <div class="sliding-background"></div>
                 <audio src={Sephiroth} autoPlay loop />
-                <audio src={mongodDialogue} autoPlay />
+                <audio src={mongodVoice} autoPlay />
                 <img className="BG" src={ForestBG} alt="Forest" />
 
 
