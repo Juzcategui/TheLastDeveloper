@@ -74,7 +74,7 @@ class ReactHouse extends React.Component {
     abilityUnlock = (event) => {
         event.preventDefault();
         const userId = sessionStorage.getItem("userId");
-        const newSkill = "Short Circuit - It either works or it doesn't";
+        const newSkill = "Short Circuit: It either works or it doesn't";
         const classHouse = this.state.scroll;
 
         if (this.state.completedOnce === true) {
