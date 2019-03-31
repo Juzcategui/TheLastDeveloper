@@ -74,7 +74,7 @@ class JavascriptHouse extends React.Component {
     abilityUnlock = (event) => {
         event.preventDefault();
         const userId = sessionStorage.getItem("userId");
-        const newSkill = "Skill three: placeholder description";
+        const newSkill = "Five Minute Stretch Break: Restores inner focus";
         const classHouse = this.state.scroll;
 
         if (this.state.completedOnce === true) {
