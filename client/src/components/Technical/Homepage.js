@@ -3,6 +3,7 @@ import '../../App.css'
 import { Link } from "react-router-dom";
 import * as $ from 'axios';
 import codeGIF from "../../Backgrounds/code.gif"
+import typing from "../../Audio/Typing.mp3"
 
 
 class Homepage extends React.Component {
@@ -39,6 +40,7 @@ class Homepage extends React.Component {
         return (
             <div id="homeBackground">
                 <img className="BG" src={codeGIF} alt="LoginPage" />
+                <audio src={typing} autoPlay/>
 
                 <div id="titleBlock" class="container">
                     <h1 className="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
