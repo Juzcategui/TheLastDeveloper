@@ -66,7 +66,7 @@ const gamedb = [
             "What declaration is used to create a constant variable?",
             "What operation is used when you want to compare type and value?"],
         position: "640,400",
-        beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: (placeholder)! "],
+        beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: Five Minute Stretch Break! "],
         map: "Javascript",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
@@ -76,7 +76,7 @@ const gamedb = [
             "React is used as a library primarily for which language?",
             "What is the building block for a React application?"],
         position: "440,120",
-        beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: (placeholder)! I will take it back if you ever use jQuery though."],
+        beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: Short Circuit! I will take it back if you ever use jQuery though."],
         map: "React",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
@@ -86,7 +86,7 @@ const gamedb = [
             "What does the C in CSS stand for?",
             "What property is declared to change the font color?"],
         position: "600,360",
-        beatTrial: ["YOU DID IT! Here is your new ability: (placeholder)! Ugh. You are so fabulous. I just can't. Get out of here before I lose it. "],
+        beatTrial: ["YOU DID IT! Here is your new ability: Pseudocode! Ugh. You are so fabulous. I just can't. Get out of here before I lose it. "],
         map: "CSS",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
@@ -96,7 +96,7 @@ const gamedb = [
             "What does HTML stand for?",
             "What is the correct syntax for a paragraph tag?"],
         position: "520,480",
-        beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: (placeholder)! Maybe one day, you'll be a hotshot like me. "],
+        beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: Fist to Five! Maybe one day, you'll be a hotshot like me. "],
         map: "HTML",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
     },

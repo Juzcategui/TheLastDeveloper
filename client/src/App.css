@@ -47,9 +47,10 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 #titleBlock{
-  position: fixed;
-  top: 18%;
+  position: absolute;
+  top: 12%;
   left: 50%;
+  text-align:center;
   }
 
 /* #backImg {
@@ -225,17 +226,17 @@ width: 73%;
   .skillUse{
     font-family: 'Press Start 2P', cursive;
     line-height: 1.2;
-    padding:8px;
+    padding:9px;
     font-size:29px;
     color:cadetblue;
   }
 
   .mongodUse{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size:30px;
+    font-size:29px;
     font-weight:bold;
     line-height: 1.2;
-    padding:8px;
+    padding:9px;
     color:firebrick;
     text-transform: uppercase;
   }

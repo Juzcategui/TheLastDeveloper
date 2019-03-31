@@ -43,7 +43,6 @@ class Forest extends React.Component {
             })
         }
 
-        // , () => { setTimeout(() => { this.props.history.push('/Final') }, 6000) }
         this.setState({
             playerDialogue: "",
             confirmedClick: false,
@@ -82,7 +81,7 @@ class Forest extends React.Component {
     }
 
     render() {
-        const { battleCount, mongodDialogue, playerDialogue, confirmedClick, buttonDiag } = this.state;
+        const { mongodDialogue, battleCount, playerDialogue, confirmedClick, buttonDiag } = this.state;
         return (
 
             <div className={`wrapper ${this.state.destroyUsed && "fadeToBlack"}`}>

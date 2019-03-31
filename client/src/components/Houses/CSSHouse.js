@@ -73,7 +73,7 @@ class CSSHouse extends React.Component {
     abilityUnlock = (event) => {
         event.preventDefault();
         const userId = sessionStorage.getItem("userId");
-        const newSkill = "Skill two: placeholder description";
+        const newSkill = "Pseudocode: Does it do something? Well yes, but actually no ";
         const classHouse = this.state.scroll;
 
         if (this.state.completedOnce === true) {

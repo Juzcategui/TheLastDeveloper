@@ -74,11 +74,11 @@ class HTMLHouse extends React.Component {
   abilityUnlock = event => {
     event.preventDefault();
     const userId = sessionStorage.getItem("userId");
-    const newSkill = "Skill four: placeholder description";
+    const newSkill = "Fist to Five: Inflicts varying damage, sometimes none at all ";
     const classHouse = this.state.scroll;
 
     if (this.state.completedOnce === true) {
-      window.history.back();
+      this.props.history.push("/HTMLTown");
     } else {
       $.post(`/api/skill`, { body: newSkill, userId: userId }).then(() => {
         $.put(`/api/user`, {
@@ -86,7 +86,7 @@ class HTMLHouse extends React.Component {
           trialsPassed: this.state.trialsPassed,
           userId: userId
         }).then(() => {
-          window.history.back();
+          this.props.history.push("/HTMLTown");
         });
       });
     }
