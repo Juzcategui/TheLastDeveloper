@@ -70,8 +70,8 @@
 
 .boat {
     position: absolute;
-    top: 320px;
-    left: 960px;
+    top: 360px;
+    left: 420px;
     background-image: url('./Sprites/Boat.png');
     background-position: center;
     width: 64px;

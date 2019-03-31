@@ -3,7 +3,12 @@ import { Link, Redirect } from "react-router-dom";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
 import Sephiroth from '../../Audio/Sephiroth.mp3'
+<<<<<<< HEAD
 
+=======
+import mongodVoice from "../../Audio/MonGod.mp3"
+import { mongo } from "mongoose";
+>>>>>>> ee11cd5b18a0d7f7254959be2f0b82e8d30072bb
 
 class Forest extends React.Component {
     state = {
@@ -42,7 +47,6 @@ class Forest extends React.Component {
             })
         }
 
-        // , () => { setTimeout(() => { this.props.history.push('/Final') }, 6000) }
         this.setState({
             playerDialogue: "",
             confirmedClick: false,
@@ -81,7 +85,11 @@ class Forest extends React.Component {
     }
 
     render() {
+<<<<<<< HEAD
         const { battleCount, mongodDialogue, playerDialogue, confirmedClick, buttonDiag } = this.state;
+=======
+        const { mongodDialogue, battleCount, playerDialogue, confirmedClick, buttonDiag } = this.state;
+>>>>>>> ee11cd5b18a0d7f7254959be2f0b82e8d30072bb
         return (
 
             <div className={`wrapper ${this.state.destroyUsed && "fadeToBlack"}`}>
@@ -89,6 +97,10 @@ class Forest extends React.Component {
                 <img className={`${confirmedClick && "shake-horizontal"}`} id="monGod" src={monGod} alt="monGod" />
                 <div class="sliding-background"></div>
                 <audio src={Sephiroth} autoPlay loop />
+<<<<<<< HEAD
+=======
+                <audio src={mongodVoice} autoPlay />
+>>>>>>> ee11cd5b18a0d7f7254959be2f0b82e8d30072bb
                 <img className="BG" src={ForestBG} alt="Forest" />
 
 
