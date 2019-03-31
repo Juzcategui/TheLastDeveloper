@@ -223,9 +223,9 @@ const gamedb = [
         passedTrialDialogue: []
     },
     {
-        npcName: "Son the Homeless",
+        npcName: "Son",
         dialogue: ["Gabe disowned me for using jQuery... I should have read his documentation... "],
-        position: ",",
+        position: "640,160",
         beatTrial: [],
         map: "React",
         passedTrialDialogue: []
