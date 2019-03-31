@@ -60,7 +60,7 @@ class SecretCave extends React.Component {
                         this.state.fourAbilities === true
                             ?
                             <div id="textBox">
-                                <h4>"You've completed all four trials? You're ready. Head over to the forest to the north to challenge MonGod."</h4>
+                                <h4>You've completed all four trials? You're ready. Head over to the forest to the north to challenge MonGod.</h4>
                             </div>
                             :
                             this.state.dialogueCount === 3 ?

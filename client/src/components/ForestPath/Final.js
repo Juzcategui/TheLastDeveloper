@@ -17,7 +17,7 @@ class Final extends React.Component {
     }
 
     nextDialogue = (event) => {
-
+        event.preventDefault()
         if (this.state.dialogueCount === 3) {
             this.setState({
                 resumeBattle: true
@@ -45,9 +45,9 @@ class Final extends React.Component {
 
         return (
             !this.state.resumeBattle ?
-                <div>
-                    <h1 className="finalDialogue">{this.state.dialogue[this.state.dialogueCount]}</h1>
-                    <button onClick={this.nextDialogue}>{this.state.buttonDiag[this.state.dialogueCount]}</button>
+                <div className="finalDialogue">
+                    <h1 key={this.state.dialogueCount + 3} className="finalDial text-flicker-in-glow" >{this.state.dialogue[this.state.dialogueCount]}</h1>
+                    <button key={`${this.state.dialogueCount}`} className="btn btn-secondary btn-lg finalBoxDialogue text-focus-in" onClick={this.nextDialogue}>{this.state.buttonDiag[this.state.dialogueCount]}</button>
                 </div>
                 :
                 <div className={`wrapper text-focus-in`}>
