@@ -19,7 +19,7 @@ const ReactNPC = (props) => (
 
 function mapStateToProps(state) {
   return {
-    ...state.dialogue
+      ...state.dialogue
   }
 }
 

@@ -9,7 +9,7 @@ class Forest extends React.Component {
     state = {
         battleCount: 0,
         mongodDialogue: ["MonGod uses Zoombeam! Alan is trapped in the vim - escape is now disabled!",
-            "Mongod uses drop tree branch if exists! Obviously, it exists in a forest. Alan suffers a concussion!",
+            "Mongod uses drop tree branch if exists! Branches exist in a forest..so Alan suffers a concussion!",
             "Mongod uses npm run seed! He's storing energy for his next attack!",
             "Mongod uses .remove()! Alan has fallen and can't get up. Our hero is trouble!"],
         playerDialogue: "",
@@ -107,9 +107,9 @@ class Forest extends React.Component {
                             <div id="skillBox">
                                 <h1 id="skillHeader">Choose an Attack</h1>
                                 <button name="fist" onClick={this.useAbility} className="btn-lg skillOne">Fist to Five</button>
-                                <button name="break" onClick={this.useAbility} className="btn-lg skillTwo">Five Minute Stretch Break</button>
+                                <button name="circuit" onClick={this.useAbility} className="btn-lg skillTwo">Short Circuit</button>
                                 <button name="pseudo" onClick={this.useAbility} className="btn-lg skillThree">Pseudocode</button>
-                                <button name="circuit" onClick={this.useAbility} className="btn-lg skillFour">Short Circuit</button>
+                                <button name="break" onClick={this.useAbility} className="btn-lg skillFour">5 Min. Stretch Break</button>
                             </div>
                             : this.state.destroyUsed === true ?
                                 <div></div>
