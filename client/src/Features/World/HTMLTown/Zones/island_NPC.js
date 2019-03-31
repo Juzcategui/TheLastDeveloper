@@ -6,7 +6,7 @@ import './style.css'
 
 const islandNPC = (props) => (
   <div>
-    <div className="theHomeless"></div>
+    <div className="Son"></div>
     <div className="boatIsland"></div>
     {props.isShown && <Dialogue dialogue={props.dialogue} name={props.name} pos={props.npcPos} />}
   </div>
