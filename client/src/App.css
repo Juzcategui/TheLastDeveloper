@@ -947,8 +947,14 @@ left: 50%;
   animation: fadeinout 4s linear forwards;
 }
 
+.fadeToBlackEnd {
+  background: black;
+  -webkit-animation: fadeinout 8s linear forwards;
+  animation: fadeinout 8s linear forwards;
+}
+
 @keyframes fadeinout {
-0% { opacity: 1; }
+0%,40% { opacity: 1; }
 100% { opacity: 0; }
 }
 

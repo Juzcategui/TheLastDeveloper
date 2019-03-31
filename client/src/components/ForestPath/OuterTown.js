@@ -23,7 +23,7 @@ class OuterTown extends React.Component {
                     <div id="textBox">
                         <h4>For a place where an evil entity resides, it doesn't seem far off from an ordinary forest. Explore deeper?</h4>
                         <Link to="/OuterForest">
-                            <button className="btn btn-success confirm">Explore deeper</button>
+                            <button className="btn btn-success confirm">Confirm</button>
                         </Link>
                     </div>
                 </div>
