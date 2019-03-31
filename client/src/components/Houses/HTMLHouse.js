@@ -4,7 +4,7 @@ import HTMLHouseImg from "../../Backgrounds/HTMLHouse.jpg";
 import Jorge from "../../Sprites/Jorge.png";
 import imgscroll from "../../Backgrounds/scroll.png";
 import * as $ from "axios";
-import RunEscape from '../../Audio/RunEscape.mp3'
+import StarwolfTheme from '../../Audio/StarwolfTheme.mp3'
 
 class HTMLHouse extends React.Component {
   state = {
@@ -103,7 +103,7 @@ class HTMLHouse extends React.Component {
     return (
       this.state.dialogue.length > 0 && (
         <div>
-          <audio src={RunEscape} autoPlay loop />
+          <audio src={StarwolfTheme} autoPlay loop />
           <img className="BG" src={HTMLHouseImg} alt="HTMLHouse" />
           <h1 className="HouseTitles">HTML House</h1>
           <img
