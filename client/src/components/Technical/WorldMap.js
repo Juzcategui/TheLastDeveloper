@@ -96,7 +96,7 @@ class WorldMap extends React.Component {
 
                 {/* <h3 className="ForestWorldTitle">Forest</h3> */}
                 <Link to="/OuterTown">
-                    <img id="ForestWorldMap" src={mongoSVG} alt="mongoSVG"></img>
+                    <img className={`skillUse ${confirmedClick && "visibleToggle"}`} id="ForestWorldMap" src={mongoSVG} alt="mongoSVG"></img>
                 </Link>
 
                 {/* <h3 className="SecretCaveWorldTitle">???</h3> */}
