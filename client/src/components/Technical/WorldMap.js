@@ -44,7 +44,7 @@ class WorldMap extends React.Component {
     render() {
         return (
             <div>
-                <audio src={CygnusGarden} autoPlay loop/>
+                <audio src={CygnusGarden} autoPlay loop />
                 <img className="BG" src={worldMap} alt="WorldMap" />
                 <h1 id="WorldMapTitle">WORLD MAP</h1>
                 <h4 id="abilities" data-toggle="modal"
@@ -96,7 +96,7 @@ class WorldMap extends React.Component {
 
                 {/* <h3 className="ForestWorldTitle">Forest</h3> */}
                 <Link to="/OuterTown">
-                    <img id="ForestWorldMap" src={mongoSVG} alt="mongoSVG"></img>
+                    <img className={`${this.state.numAbilities < 4 && "visibleToggle"}`} id="ForestWorldMap" src={mongoSVG} alt="mongoSVG"></img>
                 </Link>
 
                 {/* <h3 className="SecretCaveWorldTitle">???</h3> */}
