@@ -1,17 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import walkSprite from './Alan_B.png';
+import walkSprite from './ab.png';
 import { handleKeyDown } from './movement';
 import { withRouter } from "react-router-dom";
 
+var isDown = false;
+
 class Player extends React.Component {
+
 
     handleKeyDown = (e) => {
         handleKeyDown(e, this.props.history);
     };
 
+
     componentDidMount() {
         window.addEventListener('keydown', this.handleKeyDown);
+
+        window.addEventListener('keyup', function () {
+            isDown = false;
+        });
     }
 
     componentWillUnmount() {
@@ -30,7 +38,7 @@ class Player extends React.Component {
                     width: '40px',
                     height: '40px',
                     transitionProperty: 'left, right, top, bottom',
-                    transitionDuration: '.3s'
+                    transitionDuration: '.5s',
                 }}
 
             />
