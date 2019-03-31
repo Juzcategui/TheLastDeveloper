@@ -12,7 +12,7 @@ class Final extends React.Component {
             "Get up. The world is counting on you!"],
         resumeBattle: false,
         mongodDefeated: false,
-        buttonDiag: ["Push Through", "Push Through", "Push Through", "Dive In",]
+        buttonDiag: [".Reconnect()", "Gather Data", "Push Through", "Dive In",]
 
     }
 

@@ -22,14 +22,14 @@ class OuterForest extends React.Component {
                     <div id="textBox">
                         <h4>It grows quiet. The birds are no longer singing and the air has become stagnant and eerie. Something is near...</h4>
                         <Link to="/Forest">
-                            <button className="btn btn-success confirm">Dive In</button></Link>
+                            <button className="btn btn-success confirm">Keep going</button></Link>
                     </div>
                 </div>
 
                 <div id="actionBox">
 
-                    <Link to="/WorldMap">
-                        <button className="btn btn-secondary">World Map</button>
+                    <Link to="/OuterTown">
+                        <button className="btn btn-secondary">Go back</button>
                     </Link>
                 </div>
 
