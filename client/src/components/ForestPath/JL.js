@@ -22,7 +22,7 @@ class JL extends React.Component {
 
     render() {
         return (
-            <div>suh dude</div>
+            <img className="BG" src={finalforest} alt="finalforest" />
         )
     }
 
