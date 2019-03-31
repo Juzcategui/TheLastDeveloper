@@ -67,3 +67,13 @@
     width: 40px;
     height: 40px;
 }
+
+.boat {
+    position: absolute;
+    top: 320px;
+    left: 960px;
+    background-image: url('./Sprites/Boat.png');
+    background-position: center;
+    width: 64px;
+    height: 60px;
+}

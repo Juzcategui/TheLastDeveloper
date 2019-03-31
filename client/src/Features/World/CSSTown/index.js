@@ -25,7 +25,6 @@ function CSSTown(props) {
             walkIndex: 0
         }
     })
-
     return (
         <div 
         style={{
