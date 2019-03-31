@@ -8,7 +8,7 @@ class JL extends React.Component {
     state = {
         npcName: "Jacob",
         dialogue: ["Alan, we meet at last. I've anticipated the day you defeated Mongod for many moons. I had set off to seal MonGod away but his power was far greater than I imagined. We may well have been doomed without you.",
-            "I see your travels have taught you much - you have truly grown into an incredible developer. Though your journey is not yet complete, you must master more methods to become a fully realized developer.",
+            "I see your travels have taught you much - you have truly grown into an incredible developer. Though your journey is not yet complete. You must master more methods to become a fully realized developer.",
             "Never forget to continue honing your skills through study of the documentation. The world is ever-changing, and evils such as MonGod will always be looking for a way in.",
             "There is an endless amount of knowledge out there for you to gain that you can learn from other realms. Because together, we will always be stronger.",
             "Your victory today will be remembered for ages. Now - let's head home shall we?"],
