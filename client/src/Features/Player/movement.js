@@ -159,10 +159,10 @@ function changeDirection(direction, newPos) {
 function attemptMove(direction) {
   const oldPos = store.getState().player.position;
   const newPos = getNewPosition(oldPos, direction);
-  changeDirection(direction, oldPos)
+  changeDirection(direction, oldPos);
 
   if (observeBoundaries(oldPos, newPos) && observeGeometry(oldPos, newPos))
-    dispatchMove(direction, newPos);
+    dispatchMove(direction, newPos)
 }
 
 //checks to see if the tile in front of you is an actionable tile. If it is, it queries for it's 
