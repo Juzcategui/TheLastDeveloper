@@ -13,7 +13,7 @@ class Credits extends React.Component {
 
     componentDidMount() {
         this.id = setTimeout(
-            () => this.setState({ redirect: true }), 119000)
+            () => this.setState({ redirect: true }), 150000)
     }
 
     componentWillUnmount() {
@@ -35,7 +35,7 @@ class Credits extends React.Component {
 
                     <div class="fade"></div>
 
-                    <section class="star-wars">
+                    <section class="credits">
 
                         <div class="outroCrawl">
 
@@ -43,6 +43,7 @@ class Credits extends React.Component {
                                 <p>The Last Developer</p>
                                 <br></br>
                                 <h1>Developed by:</h1>
+                                <br></br>
                                 <h1>Adam Garner</h1>
                                 <h1>Gabe Baek</h1>
                                 <h1>Jorge Uzcategui</h1>
@@ -52,97 +53,96 @@ class Credits extends React.Component {
 
                             <br></br>
                             <br></br>
-                            <br></br>
-                            <br></br>
-                            <p> Credits </p>
+                            <p><u>Credits</u></p>
                             <br></br>
                             <p>Personalities By:</p>
                             <br></br>
+                            <h1>Aaron B. as AARON</h1>
                             <br></br>
-                            <p>Aaron B. as AARON</p>
+                            <h1>Alan Breck as HIMSELF </h1>
                             <br></br>
-                            <p>Barry R. as BARRY</p>
+                            <h1>Barry R. as BARRY</h1>
                             <br></br>
-                            <p>Harrison T. as HARRISON</p>
+                            <h1>Harrison T. as HARRISON</h1>
                             <br></br>
-                            <p>Lin H. as LIN</p>
+                            <h1>Lin H. as LIN</h1>
                             <br></br>
-                            <p>Manny C. as MANNY</p>
+                            <h1>Manny C. as MANNY</h1>
                             <br></br>
-                            <p>Mark H. as MARK </p>
+                            <h1>Mark H. as MARK </h1>
                             <br></br>
-                            <p>Nathan S. as NATHAN</p>
+                            <h1>Nathan S. as NATHAN</h1>
                             <br></br>
-                            <p>Paige M. as PAIGE</p>
+                            <h1>Paige M. as PAIGE</h1>
                             <br></br>
-                            <p>Tim C. as TIM</p>
+                            <h1>Tim C. as TIM</h1>
                             <br></br>
-                            <p>Erwins S. as ERWINS</p>
+                            <h1>Erwins S. as ERWINS</h1>
                             <br></br>
-                            <p>Peter J. as PETER</p>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <h5>Special Appearances by:</h5>
-                            <br></br>
-                            <p>Cody G. as THE PROPHET C</p>
-                            <br></br>
-                            <p>Jacob L. as King Jacob</p>
-                            <br></br>
-                            <p>Will M. as WILLBUCKS CEO/COO/CFO</p>
+                            <h1>Peter J. as PETER</h1>
                             <br></br>
                             <br></br>
-                            <h4>MUSIC</h4>
-                            <p>Intro Theme - Lord of the Rings: The Fellowship of the ring OST</p>
+                            <p>Special Appearances by:</p>
                             <br></br>
-                            <p>Careless Whisper - George Michael</p>
+                            <h1>Cody G. as THE PROPHET C</h1>
                             <br></br>
-                            <p>Cygnus Garden - MapleStory Orchestra Live in Budapest</p>
+                            <h1>Jacob L. as King Jacob</h1>
                             <br></br>
-                            <p>Those Who Fight(Let the Battles Begin) - Final Fantasy VII</p>
-                            <br></br>
-                            <p>My Hero is Our Hero - My Hero Academia OST</p>
-                            <br></br>
-                            <p>All of You is All of Me - No Game No Life OST</p>
-                            <br></br>
-                            <p>Red Red Wine - UB40</p>
-                            <br></br>
-                            <p>Sephiroth's Theme - Final Fantasy VII</p>
-                            <br></br>
-                            <p>Starwolf Theme - Starfox 64</p>
-                            <br></br>
-                            <p>Waltz for Zizi - Cowboy BeBop OST</p>
-                            <br></br>
-                            <p>Welcome to My World - Made in Abyss OST</p>
+                            <h1>Will M. as WILLBUCKS CEO/COO/CFO</h1>
                             <br></br>
                             <br></br>
-                            <h4>Images:</h4>
+                            <p>MUSIC</p>
                             <br></br>
-                            <p>Sprites created using Game Character Hub</p>
+                            <h1>Intro Theme - Lord of the Rings: The Fellowship of the ring OST</h1>
                             <br></br>
-                            <p>Avatars created with Anime Character Maker 2.2</p>
+                            <h1>Careless Whisper - George Michael</h1>
                             <br></br>
-                            <p>Sprite Map background images borrowed from Nintendo Pokemon Game Series</p>
+                            <h1>Cygnus Garden - MapleStory Orchestra Live in Budapest</h1>
                             <br></br>
-                            <p>Various art and images from DeviantArt</p>
+                            <h1>Those Who Fight(Let the Battles Begin) - Final Fantasy VII</h1>
                             <br></br>
-                            <p>Willbucks Logo from Starbucks</p>
+                            <h1>My Hero is Our Hero - My Hero Academia OST</h1>
                             <br></br>
-                            <p>World Map background borrowed from Secret of Mana</p>
+                            <h1>All of You is All of Me - No Game No Life OST</h1>
+                            <br></br>
+                            <h1>Red Red Wine - UB40</h1>
+                            <br></br>
+                            <h1>Sephiroth's Theme - Final Fantasy VII</h1>
+                            <br></br>
+                            <h1>Starwolf Theme - Starfox 64</h1>
+                            <br></br>
+                            <h1>Waltz for Zizi - Cowboy BeBop OST</h1>
+                            <br></br>
+                            <h1>Welcome to My World - Made in Abyss OST</h1>
+                            <br></br>
+                            <br></br>
+                            <p>Images:</p>
+                            <br></br>
+                            <h1>Sprites created using Game Character Hub</h1>
+                            <br></br>
+                            <h1>Avatars created with Anime Character Maker 2.2</h1>
+                            <br></br>
+                            <h1>Sprite Map background images borrowed from Nintendo Pokemon Game Series</h1>
+                            <br></br>
+                            <h1>Various art and images from DeviantArt</h1>
+                            <br></br>
+                            <h1>Willbucks Logo from Starbucks</h1>
+                            <br></br>
+                            <h1>World Map background borrowed from Secret of Mana</h1>
                             <br></br>
                             <br></br>
                             <br></br>
-                            <h4>Special Thanks To:</h4>
+                            <p><u>Special Thanks To:</u></p>
                             <br></br>
                             <br></br>
-                            <p>Jacob Lamont, Cody Goss, Will Miller, Peter Colella, Arturo Salmeron, and Conner Scofield</p>
+                            <h1>Jacob Lamont, Cody Goss, Will Miller, Peter Colella, Arturo Salmeron, and Conner Scofield</h1>
                             <br></br>
-                            <p>Career Services and Student Success Team</p>
+                            <h1>Career Services and Student Success Team</h1>
                             <br></br>
-                            <p>Trilogy Education and Georgia Tech Bootcamps</p>
+                            <h1>Trilogy Education and Georgia Tech Bootcamps</h1>
                             <br></br>
-                            <p>And all of Full Stack Web Development Coding Cohort 15</p>
-                            <br></br>
+                            <h1>And all of Full Stack Web Development Coding Cohort 15</h1>
+                            <br></br>   
 
                             
 
