@@ -46,12 +46,18 @@ class SecretCave extends React.Component {
         return (
 
             <div>
+
                 <audio src={ManCave} autoPlay loop />
                 <img className="BG" src={cave} alt="cave"></img>
                 <h1 className="HouseTitles">Cody's Super Secret Can't let the Bad Guys Know Hidden Cave</h1>
 
+                <Link to="/Intro">
+                    <button type="button" className="btn btn-warning replayIntro">Replay Intro</button>
+                </Link>
+
                 <img id="Cody" src={Cody} alt="Cody"></img>
                 <div id='DialogContainer'>
+
                     <div id="characterName">
                         <p className="namePlate">Cognoscente Cody</p>
                     </div>

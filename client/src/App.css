@@ -700,6 +700,12 @@ left: 50%;
     padding: 10px;
   }
 
+  .replayIntro{
+    top: 17%;
+    right:3%;
+    color:white;
+    position: absolute;
+  }
 
 /* ---------------- House Font styling ---------------- */
 .HouseTitles,
@@ -726,8 +732,14 @@ left: 50%;
     border-radius: 5px;
   }
 
+  .modal-title{
+    font-family: 'Press Start 2P', cursive;
+  }
   .scrollList {
     list-style-type: none;
+    color:darkgreen;
+    font-size:12px;
+    font-family: 'Press Start 2P', cursive;
   }
 
   li{
@@ -965,8 +977,14 @@ left: 50%;
   animation: fadeinout 4s linear forwards;
 }
 
+.fadeToBlackEnd {
+  background: black;
+  -webkit-animation: fadeinout 8s linear forwards;
+  animation: fadeinout 8s linear forwards;
+}
+
 @keyframes fadeinout {
-0% { opacity: 1; }
+0%,40% { opacity: 1; }
 100% { opacity: 0; }
 }
 

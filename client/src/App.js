@@ -9,6 +9,7 @@ import Register from './components/Technical/Register';
 import Intro from './components/Technical/Intro';
 import WorldMap from './components/Technical/WorldMap';
 import Scroll from './components/Technical/Scroll';
+import Credits from './components/Technical/Credits';
 
 
 /*------------------ Forest Path Folder ------------------*/
@@ -45,6 +46,7 @@ const App = () => (
       <Route exact path="/Register" component={Register} />
       <Route exact path="/WorldMap" component={WorldMap} />
       <Route exact path="/Scroll" component={Scroll} />
+      <Route exact path="/Credits" component={Credits} />
 
       {/* ------------------ Forest Path Folder ------------------ */}
       <Route exact path="/OuterTown" component={OuterTown} />
