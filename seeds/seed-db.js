@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const db = require('../models');
-
+mongoose.Promise = global.Promise;
 
 mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/thelastdeveloper", { useNewUrlParser: true });
@@ -18,6 +18,7 @@ const gamedb = [
         position: ",",
         beatTrial: [],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -31,6 +32,7 @@ const gamedb = [
         position: ",",
         beatTrial: [],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -44,6 +46,7 @@ const gamedb = [
         position: ",",
         beatTrial: [],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -57,6 +60,7 @@ const gamedb = [
         position: ",",
         beatTrial: [],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     // Master NPC in each towm
@@ -112,6 +116,7 @@ const gamedb = [
         position: ",",
         beatTrial: ["Thanks! This will help my competitive barista career take off!"],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: ["Okay, come again soon!"]
     },
     {
@@ -120,6 +125,7 @@ const gamedb = [
         position: ",",
         beatTrial: [""],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -135,6 +141,7 @@ const gamedb = [
             "Remember to read the documentation. I believe in you.",
             "This journey will be difficult but know that you cannot know victory without first experiencing defeat."],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
 
@@ -145,6 +152,7 @@ const gamedb = [
         position: "520,80",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -153,6 +161,7 @@ const gamedb = [
         position: "440,80",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -161,6 +170,7 @@ const gamedb = [
         position: "160,600",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Olivia",
@@ -168,6 +178,7 @@ const gamedb = [
         position: "760,320",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Alexander",
@@ -175,13 +186,15 @@ const gamedb = [
         position: "920,120",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "JavascriptGuard",
-        travelDialogue: ["Would you like to leave the town and explore?"],
+        dialogue: "",
         position: "520,600",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: ["Would you like to leave the town and explore?"],
         passedTrialDialogue: []
     },
 
@@ -193,6 +206,7 @@ const gamedb = [
         position: "560,520",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -201,6 +215,7 @@ const gamedb = [
         position: "960,120",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -209,6 +224,7 @@ const gamedb = [
         position: "1160,400",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -217,6 +233,7 @@ const gamedb = [
         position: "920,480",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -225,6 +242,7 @@ const gamedb = [
         position: "200,160",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -233,13 +251,15 @@ const gamedb = [
         position: "640,160",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "ReactGuard",
-        travelDialogue: ["Would you like to leave the town and explore?"],
+        dialogue: '',
         position: "360,600",
         beatTrial: [],
         map: "React",
+        travelDialogue: ["Would you like to leave the town and explore?"],
         passedTrialDialogue: []
     },
 
@@ -251,6 +271,7 @@ const gamedb = [
         position: "920,280",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -259,6 +280,7 @@ const gamedb = [
         position: "480,640",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -267,6 +289,7 @@ const gamedb = [
         position: "320,120",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Tim",
@@ -274,6 +297,7 @@ const gamedb = [
         position: "1040,40",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Jenny",
@@ -281,13 +305,15 @@ const gamedb = [
         position: "320,280",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "CSSGuard",
-        travelDialogue: ["Would you like to leave the town and explore?"],
+        dialogue: '',
         position: "920,80",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: ["Would you like to leave the town and explore?"],
         passedTrialDialogue: []
     },
 
@@ -299,6 +325,7 @@ const gamedb = [
         position: "560,360",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -307,6 +334,7 @@ const gamedb = [
         position: "800,120",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -315,6 +343,7 @@ const gamedb = [
         position: "200,360",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Michelangelo",
@@ -322,6 +351,7 @@ const gamedb = [
         position: "240,120",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Raphael",
@@ -329,13 +359,15 @@ const gamedb = [
         position: "1040,440",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "HTMLGuard",
-        travelDialogue: ["Would you like to leave the town and explore?"],
+        dialogue: "",
         position: "520,80",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: ["Would you like to leave the town and explore?"],
         passedTrialDialogue: []
     },
 
