@@ -44,7 +44,7 @@ class Homepage extends React.Component {
         return (
             <div id="homeBackground">
                 <img className="BG" src={codeGIF} alt="LoginPage" />
-                <audio src={typing} autoPlay />
+                <audio src={typing} autoPlay loop/>
 
                 <div id="titleBlock" className="container">
                     <h1 className="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
