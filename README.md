@@ -39,6 +39,7 @@ Working web browser
 -Starfox
 -Cowboy BeBop
 -Made In Abyss
+-DeviantArt
 
 ## Contributing
 
