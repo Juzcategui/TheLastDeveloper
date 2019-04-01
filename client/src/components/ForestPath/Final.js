@@ -1,6 +1,8 @@
 import React from "react";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
+import AOL from '../../Audio/AOL.mp3'
+import DeathNoise from '../../Audio/DeathNoise.mp3'
 
 class Final extends React.Component {
     state = {
@@ -13,8 +15,8 @@ class Final extends React.Component {
         afterClick: false,
         confirmedClick: false,
         mongodDefeated: false,
-        buttonDiag: [".Reconnect()", "Gather Data", "Push Through", "Dive In",]
-
+        buttonDiag: [".Reconnect()", "Gather Data", "Push Through", "Dive In",],
+        play: false
     }
 
     nextDialogue = (event) => {
@@ -44,13 +46,18 @@ class Final extends React.Component {
 
     readDocs = (event) => {
         this.setState({
-            mongodDefeated: true
+            mongodDefeated: true,
+            play: true
         })
     }
 
 
+
+    mongodAudio = new Audio(DeathNoise)
+
     componentDidUpdate() {
         if (this.state.mongodDefeated === true) {
+            this.state.play ? this.mongodAudio.play() : this.audio.pause();
             setTimeout(() => { this.props.history.push('/Lamontopia') }, 8000);
         }
     }
@@ -60,6 +67,7 @@ class Final extends React.Component {
         return (
             !this.state.resumeBattle ?
                 <div className="finalDialogue">
+                <audio src={AOL} autoPlay />
                     <h1 key={this.state.dialogueCount + 3} className="finalDial text-flicker-in-glow" >{this.state.dialogue[this.state.dialogueCount]}</h1>
                     <button key={`${this.state.dialogueCount}`} className="btn btn-secondary btn-lg finalBoxDialogue text-focus-in" onClick={this.nextDialogue}>{this.state.buttonDiag[this.state.dialogueCount]}</button>
                 </div>
