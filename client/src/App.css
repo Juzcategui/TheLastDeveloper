@@ -763,6 +763,9 @@ left: 50%;
   }
   .scrollList {
     list-style-type: none;
+  }
+  .abilityList {
+    list-style-type: none;
     color:darkgreen;
     font-size:12px;
     font-family: 'Press Start 2P', cursive;
