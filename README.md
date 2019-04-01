@@ -40,6 +40,7 @@ Working web browser
 -Cowboy BeBop
 -Made In Abyss
 -DeviantArt
+-Starbucks
 
 ## Contributing
 
