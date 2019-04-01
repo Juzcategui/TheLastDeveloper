@@ -9,7 +9,7 @@ class Final extends React.Component {
             "Did you forget?",
             "This is your destiny...",
             "Get up. The world is counting on you!"],
-        resumeBattle: true,
+        resumeBattle: false,
         afterClick: false,
         confirmedClick: false,
         mongodDefeated: false,
