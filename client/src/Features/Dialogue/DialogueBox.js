@@ -1,9 +1,11 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import "./dialogue.css";
+import store from '../../config/store';
 
 
 class DialogueBox extends React.Component {
+
 
   travelTo = (event) => {
     event.preventDefault();
