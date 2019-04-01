@@ -26,9 +26,6 @@ class Credits extends React.Component {
                 ? <Redirect to="/worldMap" />
                 : <div>
                     {/* <img className="BG" src={stars} alt="stars" /> */}
-                    <Link to="/worldMap">
-                        <button type="button" className="btn btn-dark introButton">Skip Credits</button>
-                    </Link>
                     {/* <audio src={IntroLore} autoPlay /> */}
 
                     {/* <img className="BG" src={stars} alt="stars" /> */}
@@ -142,11 +139,11 @@ class Credits extends React.Component {
                             <h1>Trilogy Education and Georgia Tech Bootcamps</h1>
                             <br></br>
                             <h1>And all of Full Stack Web Development Coding Cohort 15</h1>
-                            <br></br>   
+                            <br></br>
 
-                            
 
-                            
+
+
 
 
                         </div>
