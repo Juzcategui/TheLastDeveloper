@@ -47,12 +47,21 @@ class JL extends React.Component {
         <img id="kingJacob" src={kingJacob} alt="kingJacob" />
         <div id="DialogContainer">
           {this.state.dialogueCount === 4 ? (
+            <div>
+            <div id ="characterName">
+            <p className="namePlate"><h1>King Jacob</h1>Master of the i++ Elements</p>
+            </div>
             <div id="textBox">
               <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-              <br />
+              
               <br />
             </div>
+            </div>
           ) : (
+            <div>
+            <div id ="characterName">
+            <p className="namePlate"><h1>King Jacob</h1>Master of the i++ Elements</p>
+            </div>
             <div id="textBox">
               <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
               <button
@@ -62,6 +71,7 @@ class JL extends React.Component {
               >
                 Next
               </button>
+            </div>
             </div>
           )}
         </div>
