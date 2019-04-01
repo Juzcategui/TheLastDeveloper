@@ -1,6 +1,7 @@
 import React from "react";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
+import AOL from '../../Audio/AOL.mp3'
 
 class Final extends React.Component {
     state = {
@@ -60,6 +61,7 @@ class Final extends React.Component {
         return (
             !this.state.resumeBattle ?
                 <div className="finalDialogue">
+                <audio src={AOL} autoPlay />
                     <h1 key={this.state.dialogueCount + 3} className="finalDial text-flicker-in-glow" >{this.state.dialogue[this.state.dialogueCount]}</h1>
                     <button key={`${this.state.dialogueCount}`} className="btn btn-secondary btn-lg finalBoxDialogue text-focus-in" onClick={this.nextDialogue}>{this.state.buttonDiag[this.state.dialogueCount]}</button>
                 </div>
