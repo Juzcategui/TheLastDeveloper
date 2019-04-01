@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import OuterForestBG from '../../Backgrounds/OuterForest.jpg'
-
+import Spooky from '../../Audio/Spooky.mp3'
 
 class OuterForest extends React.Component {
     state = {
@@ -12,6 +12,7 @@ class OuterForest extends React.Component {
         return (
 
             <div>
+                <audio src={Spooky} autoPlay loop />
                 <h1 className="ForestTitles">Inner Forest</h1>
                 <img className="BG" src={OuterForestBG} alt="OuterForest" />
 
