@@ -1,7 +1,7 @@
 {
   "name": "theLastDeveloper",
   "version": "1.0.0",
-  "description": "",
+  "description": "Interactive RPG Game to learn basics of coding",
   "main": "server.js",
   "dependencies": {
     "axios": "^0.16.2",
@@ -26,7 +26,9 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node seeds/seed-db.js",
-    "install": "cd client && npm install"
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
