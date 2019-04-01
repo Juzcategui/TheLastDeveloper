@@ -1,10 +1,8 @@
 import React from "react";
-import { Link, Redirect } from "react-router-dom";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
 import Sephiroth from '../../Audio/Sephiroth.mp3'
 import mongodVoice from "../../Audio/MonGod2.mp3"
-import { mongo } from "mongoose";
 
 class Forest extends React.Component {
     state = {
@@ -114,11 +112,11 @@ class Forest extends React.Component {
                             : this.state.destroyUsed === true ?
                                 <div></div>
                                 :
-                                <div id="skillBox">
+                                <div id="skillBoxFeedback">
                                     <h1 className={`skillUse ${confirmedClick && "visibleToggle"}`}>{playerDialogue}</h1>
                                     <button onClick={this.confirmSkill} className={`btn btn-info confirm btn-lg confirmButton ${confirmedClick && "visibleToggle"}`}>Confirm</button>
 
-                                    <h3 className={`mongodUse ${!confirmedClick && "visibleToggle"}`}>{mongodDialogue[battleCount]}</h3>
+                                    <h3 className={`mongodUseSkill ${!confirmedClick && "visibleToggle"}`}>{mongodDialogue[battleCount]}</h3>
                                     <button onClick={this.continueBattle} className={`"btn btn-danger confirm btn-lg battleButton ${!confirmedClick && "visibleToggle"} ${this.state.destroyUsed && "disabled"}`}>
                                         {buttonDiag[battleCount]}</button>
                                 </div>

@@ -7,7 +7,8 @@ import codeGIF from "../../Backgrounds/code.gif"
 class Register extends React.Component {
     state = {
         reguser: '',
-        regpw: ''
+        regpw: '',
+        regError: false
     }
 
     handleChange = (event) => {
@@ -30,6 +31,9 @@ class Register extends React.Component {
                 this.props.history.push("/Intro")
             }).catch(err => {
                 console.log(err);
+                this.setState({
+                    regError: true
+                })
             });
 
     }
@@ -49,7 +53,7 @@ class Register extends React.Component {
                     <form onSubmit={this.handleRegister} id="homeInput">
                         <div className="input-group-prepend homeInput">
                             <span className="input-group-text" id="basic-addon1"> <i className="fas fa-user-circle"></i> </span>
-                            <input value={this.state.username} onChange={this.handleChange} name="reguser" type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                            <input value={this.state.reguser} onChange={this.handleChange} name="reguser" type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                         </div>
 
                         <div className="input-group-prepend homeInput">
@@ -62,7 +66,8 @@ class Register extends React.Component {
                             <button type="submit" className="btn btn-primary signInBtnStyle" >
                                 Register
                        </button>
-                            <br /><br />
+                            <br />
+                            <div className={`loginErr ${!this.state.regError && "errToggle"}`}>Registration error - try again</div>
                             <Link to="/">
                                 <p>Back to Login</p>
                             </Link>

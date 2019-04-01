@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const db = require('../models');
-
+mongoose.Promise = global.Promise;
 
 mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/thelastdeveloper", { useNewUrlParser: true });
@@ -18,6 +18,7 @@ const gamedb = [
         position: ",",
         beatTrial: [],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -31,6 +32,7 @@ const gamedb = [
         position: ",",
         beatTrial: [],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -44,6 +46,7 @@ const gamedb = [
         position: ",",
         beatTrial: [],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -57,50 +60,51 @@ const gamedb = [
         position: ",",
         beatTrial: [],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     // Master NPC in each towm
     {
         npcName: "Vu the Javascript Jaeger",
-        dialogue: ["I am the Javascript master. Are you willing to take on my trial?",
+        dialogue: ["Welcome. I am Vu, the Javascript master. Functionality is my forte. Are you willing to take on my trial?",
             "What declaration is used to create a constant variable?",
             "What operation is used when you want to compare type and value?"],
         position: "640,400",
         beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: Five Minute Stretch Break! "],
-        map: "Javascript",
+        map: "JavascriptHouse",
         travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
         npcName: "Gabe the React Rabid",
-        dialogue: ["I am the React master. Are you willing to take on my trial?",
+        dialogue: ["Hello there! I am Gabe, the React master. I am adept at building efficient user interfaces. Are you willing to take on my trial?",
             "React is used as a library primarily for which language?",
             "What is the building block for a React application?"],
         position: "440,120",
         beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: Short Circuit! I will take it back if you ever use jQuery though."],
-        map: "React",
+        map: "ReactHouse",
         travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
         npcName: "Adam the CSS Connoisseur",
-        dialogue: ["I am the CSS master. Are you willing to take on my trial?",
+        dialogue: ["How's it going? I am Adam, the CSS master. Styling is my specialty. Are you willing to take on my trial?",
             "What does the C in CSS stand for?",
             "What property is declared to change the font color?"],
         position: "600,360",
         beatTrial: ["YOU DID IT! Here is your new ability: Pseudocode! Ugh. You are so fabulous. I just can't. Get out of here before I lose it. "],
-        map: "CSS",
+        map: "CSSHouse",
         travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
         npcName: "Jorge the HTML Hotshot",
-        dialogue: ["I am the HTML master. Are you willing to take on my trial?",
+        dialogue: ["Nice to meet you. I am Jorge, the HTML master. Creating content is my gift. Are you willing to take on my trial?",
             "What does HTML stand for?",
             "What is the correct syntax for a paragraph tag?"],
         position: "520,480",
         beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: Fist to Five! Maybe one day, you'll be a hotshot like me. "],
-        map: "HTML",
+        map: "HTMLHouse",
         travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
     },
@@ -112,6 +116,7 @@ const gamedb = [
         position: ",",
         beatTrial: ["Thanks! This will help my competitive barista career take off!"],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: ["Okay, come again soon!"]
     },
     {
@@ -120,6 +125,7 @@ const gamedb = [
         position: ",",
         beatTrial: [""],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -135,6 +141,7 @@ const gamedb = [
             "Remember to read the documentation. I believe in you.",
             "This journey will be difficult but know that you cannot know victory without first experiencing defeat."],
         map: "",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
 
@@ -145,6 +152,7 @@ const gamedb = [
         position: "520,80",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -153,6 +161,7 @@ const gamedb = [
         position: "440,80",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -161,6 +170,7 @@ const gamedb = [
         position: "160,600",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Olivia",
@@ -168,6 +178,7 @@ const gamedb = [
         position: "760,320",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Alexander",
@@ -175,13 +186,15 @@ const gamedb = [
         position: "920,120",
         beatTrial: [],
         map: "Javascript",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
-        npcName: "JavascriptGuard",
-        travelDialogue: ["Would you like to leave the town and explore?"],
+        npcName: "Javascript Town Guard",
+        dialogue: "",
         position: "520,600",
         beatTrial: [],
-        map: "Javascript",
+        map: "WorldMap",
+        travelDialogue: ["Would you like to leave the town and explore?"],
         passedTrialDialogue: []
     },
 
@@ -193,6 +206,7 @@ const gamedb = [
         position: "560,520",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -201,6 +215,7 @@ const gamedb = [
         position: "960,120",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -209,6 +224,7 @@ const gamedb = [
         position: "1160,400",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -217,6 +233,7 @@ const gamedb = [
         position: "920,480",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -225,6 +242,7 @@ const gamedb = [
         position: "200,160",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -233,13 +251,15 @@ const gamedb = [
         position: "640,160",
         beatTrial: [],
         map: "React",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
-        npcName: "ReactGuard",
-        travelDialogue: ["Would you like to leave the town and explore?"],
+        npcName: "React Town Guard",
+        dialogue: '',
         position: "360,600",
         beatTrial: [],
-        map: "React",
+        map: "WorldMap",
+        travelDialogue: ["Would you like to leave the town and explore?"],
         passedTrialDialogue: []
     },
 
@@ -251,6 +271,7 @@ const gamedb = [
         position: "920,280",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -259,6 +280,7 @@ const gamedb = [
         position: "480,640",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -267,6 +289,7 @@ const gamedb = [
         position: "320,120",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Tim",
@@ -274,6 +297,7 @@ const gamedb = [
         position: "1040,40",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Jenny",
@@ -281,13 +305,15 @@ const gamedb = [
         position: "320,280",
         beatTrial: [],
         map: "CSS",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
-        npcName: "CSSGuard",
-        travelDialogue: ["Would you like to leave the town and explore?"],
+        npcName: "CSS Town Guard",
+        dialogue: '',
         position: "920,80",
         beatTrial: [],
-        map: "CSS",
+        map: "WorldMap",
+        travelDialogue: ["Would you like to leave the town and explore?"],
         passedTrialDialogue: []
     },
 
@@ -299,6 +325,7 @@ const gamedb = [
         position: "560,360",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -307,6 +334,7 @@ const gamedb = [
         position: "800,120",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     },
     {
@@ -315,6 +343,7 @@ const gamedb = [
         position: "200,360",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Michelangelo",
@@ -322,6 +351,7 @@ const gamedb = [
         position: "240,120",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
         npcName: "Raphael",
@@ -329,13 +359,15 @@ const gamedb = [
         position: "1040,440",
         beatTrial: [],
         map: "HTML",
+        travelDialogue: '',
         passedTrialDialogue: []
     }, {
-        npcName: "HTMLGuard",
-        travelDialogue: ["Would you like to leave the town and explore?"],
-        position: "520,80",
+        npcName: "HTML Town Guard",
+        dialogue: "",
+        position: "1200,160",
         beatTrial: [],
-        map: "HTML",
+        map: "WorldMap",
+        travelDialogue: ["Would you like to leave the town and explore?"],
         passedTrialDialogue: []
     },
 
@@ -345,11 +377,11 @@ db.Gamedatabase.deleteMany({})
     .then(() => db.Gamedatabase.collection.insertMany(gamedb))
     .then(data => {
         console.log(data.insertedCount + " records inserted!");
-        mongoose.connection.close();
+        process.exit(0);
     })
     .catch(err => {
         console.error(err);
-        mongoose.connection.close();
+        process.exit(1);
     });
 
 

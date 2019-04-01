@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import '../../App.css'
 import { Link, Redirect } from "react-router-dom";
-import * as $ from 'axios';
 import IntroLore from "../../Audio/IntroMASTERmp3.mp3"
 import stars from "../../Backgrounds/stars.jpg"
 

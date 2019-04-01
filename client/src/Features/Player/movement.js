@@ -91,6 +91,9 @@ function observeTile(oldPos, newPos) {
   else if (nextTile === 17) {
     return 17
   }
+  else if (nextTile === 18) {
+    return 18
+  }
 }
 
 
@@ -205,17 +208,18 @@ function attemptAction(history) {
   if (observeTile(oldPos, newPos) === true) {
     getTilePosition();
   }
-  else if (observeTile(oldPos, newPos) === 12 || observeTile(oldPos, newPos) === 13 || observeTile(oldPos, newPos) === 14 || observeTile(oldPos, newPos) === 15) {
+  else if (observeTile(oldPos, newPos) === 11 || observeTile(oldPos, newPos) === 12 || observeTile(oldPos, newPos) === 13 ||
+    observeTile(oldPos, newPos) === 14 || observeTile(oldPos, newPos) === 15) {
     getTravelDialogue()
-  }
-  else if (observeTile(oldPos, newPos) === 11) {
-    history.push("/WorldMap");
   }
   else if (observeTile(oldPos, newPos) === 16) {
     history.push("/Island");
   }
   else if (observeTile(oldPos, newPos) === 17) {
     history.push("/HTMLTown");
+  }
+  else if (observeTile(oldPos, newPos) === 18) {
+    window.open("https://super-trivia-bros.herokuapp.com/");
   }
 }
 //determines what happens depending on which key press.
@@ -234,7 +238,7 @@ export function handleKeyDown(e, history) {
 
     case 40:
       return attemptMove("SOUTH");
-    
+
     case 32:
       return attemptAction(history);
 

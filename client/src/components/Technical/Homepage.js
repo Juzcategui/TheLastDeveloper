@@ -44,7 +44,7 @@ class Homepage extends React.Component {
         return (
             <div id="homeBackground">
                 <img className="BG" src={codeGIF} alt="LoginPage" />
-                <audio src={typing} autoPlay/>
+                <audio src={typing} autoPlay />
 
                 <div id="titleBlock" class="container">
                     <h1 className="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
@@ -69,7 +69,7 @@ class Homepage extends React.Component {
                             <button type="submit" className="btn btn-primary signInBtnStyle" >
                                 Log in
                        </button>
-                            <div className={`loginErr ${!this.state.loginErr && "visibleToggle"}`}>Incorrect Username or Password</div>
+                            <div className={`loginErr ${!this.state.loginErr && "errToggle"}`}>Incorrect Username or Password</div>
                             <h5>Need an Account?
                         <Link to="/Register">
                                     <button type="button" className="btn btn-primary regBtn">

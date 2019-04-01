@@ -15,13 +15,7 @@
     /* background-image: url('/Tiles/Rocks.png'); */
 }
 
-.worldMapPortal,
-.cssHousePortal,
-.htmlHousePortal,
-.jsHousePortal,
-.reactHousePortal {
-    /* background-image: url('../../SVG/portal.png'); */
-}
+
 
 .actionTile {
     background-position: 0px 120px;

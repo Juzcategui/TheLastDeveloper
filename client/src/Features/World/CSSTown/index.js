@@ -1,7 +1,6 @@
 import React from 'react';
 import Map from '../../Map'
 import Player from '../../Player/';
-import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/CeruleanCity.png'
 import './CSSTownStyle.css'
 import CSSNPC from './CSS_NPC'
@@ -25,19 +24,30 @@ function CSSTown(props) {
             walkIndex: 0
         }
     })
+
+    store.dispatch({
+        type: "TALK_NPC",
+        payload: {
+            dialogue: "",
+            npcPos: [],
+            isShown: false,
+            isTravel: false
+        }
+    });
+
     return (
-        <div 
-        style={{
-            position: 'relative',
-            width: '1280px',
-            height: '720px',
-            margin: '20px auto',
-            backgroundImage: `url('${worldBG}')`
-        }}>
-        <Map tiles={CSSTiles} name="CSS Town"/>
-        <Player />
-        <CSSNPC />
-        <audio src={Anville} autoPlay loop />
+        <div
+            style={{
+                position: 'relative',
+                width: '1280px',
+                height: '720px',
+                margin: '20px auto',
+                backgroundImage: `url('${worldBG}')`
+            }}>
+            <Map tiles={CSSTiles} name="CSS Town" />
+            <Player />
+            <CSSNPC />
+            <audio src={Anville} autoPlay loop />
         </div>
     )
 }

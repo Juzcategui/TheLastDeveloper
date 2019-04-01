@@ -1,7 +1,6 @@
 import React from 'react';
 import Map from '../../Map'
 import Player from '../../Player/';
-import { Link } from "react-router-dom";
 import worldBG from '../../../Backgrounds/PewterCity.png'
 import ReactNPC from './React_NPC';
 import WaltzForZizi from '../../../Audio/WaltzForZizi.mp3'
@@ -25,6 +24,16 @@ function ReactTown(props) {
             walkIndex: 0
         }
     })
+
+    store.dispatch({
+        type: "TALK_NPC",
+        payload: {
+            dialogue: "",
+            npcPos: [],
+            isShown: false,
+            isTravel: false
+        }
+    });
 
     return (
 

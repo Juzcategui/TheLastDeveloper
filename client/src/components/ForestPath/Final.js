@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
 

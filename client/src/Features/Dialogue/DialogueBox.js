@@ -1,6 +1,5 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { connect } from 'react-redux';
 import "./dialogue.css";
 import store from '../../config/store';
 
@@ -10,9 +9,7 @@ class DialogueBox extends React.Component {
 
   travelTo = (event) => {
     event.preventDefault();
-    const mapName = store.getState().dialogue.mapName
-    this.props.history.push(`/${mapName}House`)
-               
+    this.props.history.push(`/${this.props.mapName}`)
   };
 
   render() {
@@ -23,7 +20,6 @@ class DialogueBox extends React.Component {
       <section>
         <img id="avatar" src={`../avatars/${newName}.png`} />
         <div
-          className="DiaBox"
           style={{
             // left: props.pos[0],
             // top: props.pos[1],
@@ -44,7 +40,7 @@ class DialogueBox extends React.Component {
           <div className="nameTag">{this.props.name}</div>
           <div style={{ padding: 8 }}>{this.props.dialogue}</div>
 
-          <button onClick={this.travelTo} className={`${!this.props.isTravel && "visibleToggle"}`}>{this.props.mapName}</button>
+          <button onClick={this.travelTo} className={`${!this.props.isTravel && "hideToggle"}`}>{this.props.mapName}</button>
         </div>
       </section>
     )
