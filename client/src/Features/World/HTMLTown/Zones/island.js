@@ -5,6 +5,7 @@ import islandBG from '../../../../Backgrounds/island_1.png';
 import IslandNPC from './island_NPC';
 import { IslandTiles } from './islandTiles'
 import store from '../../../../config/store'
+import MaskOff from '../../../../Audio/MaskOff.mp3'
 
 
 function Island(props) {
@@ -41,7 +42,7 @@ function Island(props) {
             <Map tiles={IslandTiles} name="island" />
             <Player />
             <IslandNPC />
-
+            <audio src={MaskOff} autoPlay loop />
         </div>
     )
 }
