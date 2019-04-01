@@ -14,7 +14,8 @@ const HTMLNPC = (props) => (
     <div className="Jorge"></div>
     <div className="HTMLGuard"></div>
     <div className="boat"></div>
-    {props.isShown && <Dialogue dialogue={props.dialogue} name={props.name} pos={props.npcPos} />}
+    {props.isShown && <Dialogue dialogue={props.dialogue} name={props.name} pos={props.npcPos}
+      isTravel={props.isTravel} mapName={props.mapName} />}
   </div>
 )
 

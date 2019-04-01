@@ -12,7 +12,8 @@ const CSSNPC = (props) => (
     <div className="Jenny" />
     <div className="Adam" />
     <div className="CSSGuard" />
-    {props.isShown && <Dialogue dialogue={props.dialogue} name={props.name} pos={props.npcPos} />}
+    {props.isShown && <Dialogue dialogue={props.dialogue} name={props.name} pos={props.npcPos}
+      isTravel={props.isTravel} mapName={props.mapName} />}
   </div>
 )
 
