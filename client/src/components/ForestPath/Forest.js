@@ -114,9 +114,11 @@ class Forest extends React.Component {
                                 :
                                 <div id="skillBoxFeedback">
                                     <h1 className={`skillUse ${confirmedClick && "visibleToggle"}`}>{playerDialogue}</h1>
+                                    <br className={`skillUse ${confirmedClick && "visibleToggle"}`} />
                                     <button onClick={this.confirmSkill} className={`btn btn-info confirm btn-lg confirmButton ${confirmedClick && "visibleToggle"}`}>Confirm</button>
 
                                     <h3 className={`mongodUseSkill ${!confirmedClick && "visibleToggle"}`}>{mongodDialogue[battleCount]}</h3>
+                                    <br className={`mongodUseSkill ${!confirmedClick && "visibleToggle"}`} />
                                     <button onClick={this.continueBattle} className={`"btn btn-danger confirm btn-lg battleButton ${!confirmedClick && "visibleToggle"} ${this.state.destroyUsed && "disabled"}`}>
                                         {buttonDiag[battleCount]}</button>
                                 </div>
