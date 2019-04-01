@@ -2,6 +2,7 @@ import React from "react";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
 import AOL from '../../Audio/AOL.mp3'
+import DeathNoise from '../../Audio/DeathNoise.mp3'
 
 class Final extends React.Component {
     state = {
@@ -14,8 +15,8 @@ class Final extends React.Component {
         afterClick: false,
         confirmedClick: false,
         mongodDefeated: false,
-        buttonDiag: [".Reconnect()", "Gather Data", "Push Through", "Dive In",]
-
+        buttonDiag: [".Reconnect()", "Gather Data", "Push Through", "Dive In",],
+        play: false
     }
 
     nextDialogue = (event) => {
@@ -45,13 +46,18 @@ class Final extends React.Component {
 
     readDocs = (event) => {
         this.setState({
-            mongodDefeated: true
+            mongodDefeated: true,
+            play: true
         })
     }
 
 
+
+    mongodAudio = new Audio(DeathNoise)
+
     componentDidUpdate() {
         if (this.state.mongodDefeated === true) {
+            this.state.play ? this.mongodAudio.play() : this.audio.pause();
             setTimeout(() => { this.props.history.push('/Lamontopia') }, 8000);
         }
     }
