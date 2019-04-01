@@ -106,11 +106,7 @@ class HTMLHouse extends React.Component {
           <audio src={StarwolfTheme} autoPlay loop />
           <img className="BG" src={HTMLHouseImg} alt="HTMLHouse" />
           <h1 className="HouseTitles">HTML House</h1>
-          <img
-            className="houseScroll"
-            onClick={this.scrollClick}
-            src={imgscroll}
-          />
+          <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />
           <img id="Jorge" src={Jorge} alt="Jorge" />
 
           <div id="DialogContainer">
@@ -120,56 +116,40 @@ class HTMLHouse extends React.Component {
             {this.state.passedTrial === true ? (
               <div id="textBox">
                 <h4>{this.state.passedDialogue[this.state.dialogueCount]}</h4>
-                <button
-                  onClick={this.resetTrial}
-                  className="btn btn-primary btn-sm confirm"
-                >
+                <button onClick={this.resetTrial} className="btn btn-primary btn-sm confirm">
                   Retake Trial
-                </button>
+                 </button>
               </div>
-            ) : this.state.dialogueCount === 1 ||
-              this.state.dialogueCount === 2 ? (
+            )
+              :
+              this.state.dialogueCount === 1 || this.state.dialogueCount === 2
+                ? (
                   <div id="textBox">
                     <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                    <form
-                      onSubmit={
-                        this.state.isCorrect ? this.nextDialogue : undefined
-                      }
-                    >
-                      <input
-                        name="currentAnswer"
-                        onChange={this.handleChange}
-                        value={this.state.currentAnswer}
-                      />
-                      <button
-                        disabled={!this.state.isCorrect}
-                        type="submit"
-                        className={`btn btn-primary btn-sm confirm ${!this.state
-                          .isCorrect && "disabled"}`}
-                      >
+                    <form autocomplete="off"
+                      onSubmit={this.state.isCorrect ? this.nextDialogue : undefined}>
+                      <input name="currentAnswer" onChange={this.handleChange} value={this.state.currentAnswer} />
+                      <button disabled={!this.state.isCorrect} type="submit"
+                        className={`btn btn-primary btn-sm confirm ${!this.state.isCorrect && "disabled"}`}>
                         Confirm
-                  </button>
+                       </button>
                     </form>
                   </div>
-                ) : this.state.dialogueCount === 3 ? (
-                  <div id="textBox">
-                    <h4>{this.state.abilityDialogue[0]}</h4>
-                    <button
-                      onClick={this.abilityUnlock}
-                      className="btn btn-primary btn-sm confirm"
-                    >
-                      Learn New Syntax
-                </button>
-                  </div>
-                ) : (
+                )
+                : this.state.dialogueCount === 3
+                  ? (
+                    <div id="textBox">
+                      <h4>{this.state.abilityDialogue[0]}</h4>
+                      <button onClick={this.abilityUnlock} className="btn btn-primary btn-sm confirm">
+                        Learn New Syntax
+                     </button>
+                    </div>
+                  ) : (
                     <div id="textBox">
                       <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                      <button
-                        onClick={this.nextDialogue}
-                        className="btn btn-primary btn-sm confirm"
-                      >
+                      <button onClick={this.nextDialogue} className="btn btn-primary btn-sm confirm">
                         Confirm
-                </button>
+                      </button>
                     </div>
                   )}
           </div>

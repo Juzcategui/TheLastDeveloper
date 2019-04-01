@@ -123,7 +123,7 @@ class JavascriptHouse extends React.Component {
                                     ?
                                     <div id="textBox">
                                         <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-                                        <form onSubmit={this.state.isCorrect ? this.nextDialogue : undefined}>
+                                        <form autocomplete="off" onSubmit={this.state.isCorrect ? this.nextDialogue : undefined}>
                                             <input name="currentAnswer" onChange={this.handleChange} value={this.state.currentAnswer}></input>
                                             <button disabled={!this.state.isCorrect} type="submit" className={`btn btn-primary btn-sm confirm ${!this.state.isCorrect && "disabled"}`}>Confirm</button>
                                         </form>
