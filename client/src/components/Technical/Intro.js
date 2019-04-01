@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import '../../App.css'
 import { Link, Redirect } from "react-router-dom";
 import * as $ from 'axios';
-import LordOfTheRings from "../../Audio/LordOfTheRings.mp3"
-import IntroLore from "../../Audio/IntroLore.mp3"
+import IntroLore from "../../Audio/IntroMASTERmp3.mp3"
 import stars from "../../Backgrounds/stars.jpg"
 
 class Intro extends React.Component {
@@ -32,7 +31,6 @@ class Intro extends React.Component {
                     <Link to="/SecretCave">
                         <button type="button" className="btn btn-dark introButton">Skip Intro</button>
                     </Link>
-                    <audio src={LordOfTheRings} autoPlay />
                     <audio src={IntroLore} autoPlay />
 
                     <img className="BG" src={stars} alt="stars" />

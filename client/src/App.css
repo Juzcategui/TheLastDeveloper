@@ -675,11 +675,29 @@ left: 50%;
   transform: rotate(-16deg);
 }
 
-/* --------------------------Secret Lair------------------- */
- #Cody{
+/* --------------------------Secret Lair/Final Forest------------------- */
+ #Cody, #kingJacob{
   bottom: 0%;
     left: 50%;
     position: absolute;
+  }
+
+  .btn-credits {
+    position: relative;
+    float: left;
+    font-size: 72px;
+    padding: 100px;
+  }
+
+  #jlBox {
+    background:rgba(255,255,255,0.8);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightslategrey;
+    position: absolute;
+    bottom: 3%;
+    right: 80%;
+    padding: 10px;
   }
 
   .replayIntro{

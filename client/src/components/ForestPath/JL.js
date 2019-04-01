@@ -46,9 +46,7 @@ class JL extends React.Component {
 
                 <img id="kingJacob" src={kingJacob} alt="kingJacob"></img>
                 <div id='DialogContainer'>
-                    <div id="characterName">
-                        <p className="namePlate">King Jacob</p>
-                    </div>
+                  
 
                     {this.state.dialogueCount === 4
                         ?
