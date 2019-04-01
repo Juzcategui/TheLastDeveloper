@@ -39,15 +39,13 @@ class JL extends React.Component {
 
                 <img id="kingJacob" src={kingJacob} alt="kingJacob"></img>
                 <div id='DialogContainer'>
-                    <div id="characterName">
-                        <p className="namePlate">King Jacob</p>
-                    </div>
+                  
 
                     {this.state.dialogueCount === 5
                     ?
-                    <div id="actionBox">
-                        <Link to="/WorldMap">
-                            <button className="btn btn-success">World Map</button>
+                    <div id="jlBox">
+                        <Link to="/Credits">
+                            <button className="btn btn-success btn-credits">Credits</button>
                         </Link>
                     </div>
                     :

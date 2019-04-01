@@ -3,7 +3,7 @@ import { Link, Redirect } from "react-router-dom";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
 import Sephiroth from '../../Audio/Sephiroth.mp3'
-import mongodVoice from "../../Audio/MonGod.mp3"
+import mongodVoice from "../../Audio/MonGod2.mp3"
 import { mongo } from "mongoose";
 
 class Forest extends React.Component {

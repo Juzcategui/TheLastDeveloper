@@ -215,7 +215,7 @@ export function handleKeyDown(e, history) {
 
     case 40:
       return attemptMove("SOUTH");
-
+    
     case 32:
       return attemptAction(history);
 
