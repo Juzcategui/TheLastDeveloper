@@ -25,21 +25,31 @@ function JavascriptTown(props) {
         }
     })
 
+    store.dispatch({
+        type: "TALK_NPC",
+        payload: {
+            dialogue: "",
+            npcPos: [],
+            isShown: false,
+            isTravel: false
+        }
+    });
+
     return (
 
         <div
-        style={{
-            position: 'relative',
-            width: '1280px',
-            height: '720px',
-            margin: '20px auto',
-            backgroundImage: `url('${worldBG}')`
-        }}>
-        <Map tiles={JavascriptTiles} name="Javascript Town"/>
-        <Player />
-        <JavascriptNPC />
-        <audio src={WelcomeToMyWorld} autoPlay loop />
-            
+            style={{
+                position: 'relative',
+                width: '1280px',
+                height: '720px',
+                margin: '20px auto',
+                backgroundImage: `url('${worldBG}')`
+            }}>
+            <Map tiles={JavascriptTiles} name="Javascript Town" />
+            <Player />
+            <JavascriptNPC />
+            <audio src={WelcomeToMyWorld} autoPlay loop />
+
         </div>
     )
 }

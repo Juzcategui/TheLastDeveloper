@@ -26,6 +26,16 @@ function ReactTown(props) {
         }
     })
 
+    store.dispatch({
+        type: "TALK_NPC",
+        payload: {
+            dialogue: "",
+            npcPos: [],
+            isShown: false,
+            isTravel: false
+        }
+    });
+
     return (
 
         <div

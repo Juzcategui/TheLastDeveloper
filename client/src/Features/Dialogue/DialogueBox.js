@@ -1,6 +1,5 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { connect } from 'react-redux';
 import "./dialogue.css";
 
 
@@ -8,7 +7,7 @@ class DialogueBox extends React.Component {
 
   travelTo = (event) => {
     event.preventDefault();
-    alert("test")
+    this.props.history.push(`/${this.props.mapName}`)
   };
 
   render() {
@@ -50,4 +49,4 @@ class DialogueBox extends React.Component {
 
 
 //connects our player function to the React data store, and will map the redux state to the react state.
-export default DialogueBox;
+export default withRouter(DialogueBox);
