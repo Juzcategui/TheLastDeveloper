@@ -204,6 +204,7 @@ width: 73%;
     border-radius: 5px;
     border-style: solid;
     border-color: lightslategrey;
+  
     opacity:.85;
   }
 
@@ -235,13 +236,6 @@ width: 73%;
     bottom:12%;
   }
 
-  .skillUse{
-    font-family: 'Press Start 2P', cursive;
-    line-height: 1.2;
-    margin:20px;
-    font-size:40px;
-    color:cadetblue;
-  }
 
   .mongodUse{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -256,10 +250,18 @@ width: 73%;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size:50px;
     font-weight:bold;
-    line-height: 1.2;
-    margin:15px;
+    line-height: 1.4;
+    margin:10px;
     color:firebrick;
     text-transform: uppercase;
+  }
+
+  .skillUse{
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.2;
+    margin:20px;
+    font-size:38px;
+    color:cadetblue;
   }
 
   .battleButton{

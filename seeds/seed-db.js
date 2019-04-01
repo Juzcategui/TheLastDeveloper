@@ -72,7 +72,7 @@ const gamedb = [
         position: "640,400",
         beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: Five Minute Stretch Break! "],
         map: "JavascriptHouse",
-        travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
+        travelDialogue: "I am the master of this town. Are you ready to showcase your talent?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
@@ -83,7 +83,7 @@ const gamedb = [
         position: "440,120",
         beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: Short Circuit! I will take it back if you ever use jQuery though."],
         map: "ReactHouse",
-        travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
+        travelDialogue: "I am the master of this town. Are you ready to showcase your talent?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
@@ -94,7 +94,7 @@ const gamedb = [
         position: "600,360",
         beatTrial: ["YOU DID IT! Here is your new ability: Pseudocode! Ugh. You are so fabulous. I just can't. Get out of here before I lose it. "],
         map: "CSSHouse",
-        travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
+        travelDialogue: "I am the master of this town. Are you ready to showcase your talent?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
@@ -105,7 +105,7 @@ const gamedb = [
         position: "520,480",
         beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: Fist to Five! Maybe one day, you'll be a hotshot like me. "],
         map: "HTMLHouse",
-        travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
+        travelDialogue: "I am the master of this town. Are you ready to showcase your talent?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
     },
 
@@ -285,7 +285,7 @@ const gamedb = [
     },
     {
         npcName: "Manny",
-        dialogue: ["I found an awesome flip flop today! I wonder who it belongs to?"],
+        dialogue: ["Do any good reading lately? I found a good book just sitting at Wilbucks. I think I found it for a reason."],
         position: "320,120",
         beatTrial: [],
         map: "CSS",
@@ -301,7 +301,7 @@ const gamedb = [
         passedTrialDialogue: []
     }, {
         npcName: "Jenny",
-        dialogue: ["I'm a fantastic pseudocoder. Jealous?"],
+        dialogue: ["I'm a fantastic pseudocoder. Jealous? By the way, I found an awesome flip flop today! I wonder who it belongs to?"],
         position: "320,280",
         beatTrial: [],
         map: "CSS",
@@ -313,7 +313,7 @@ const gamedb = [
         position: "920,80",
         beatTrial: [],
         map: "WorldMap",
-        travelDialogue: ["Would you like to leave the town and explore?"],
+        travelDialogue: ["Would you like to leave the town and explore? By the way, did you see the cave?"],
         passedTrialDialogue: []
     },
 

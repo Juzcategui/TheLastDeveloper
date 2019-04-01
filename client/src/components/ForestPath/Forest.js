@@ -85,7 +85,7 @@ class Forest extends React.Component {
             <div className={`wrapper ${this.state.destroyUsed && "fadeToBlack"}`}>
                 <h1 className="ForestTitles">MonGod's Dom</h1>
                 <img className={`${confirmedClick && "shake-horizontal"}`} id="monGod" src={monGod} alt="monGod" />
-                <div class="sliding-background"></div>
+                <div className="sliding-background"></div>
                 <audio src={Sephiroth} autoPlay loop />
                 <audio src={mongodVoice} autoPlay />
                 <img className="BG" src={ForestBG} alt="Forest" />
@@ -114,9 +114,11 @@ class Forest extends React.Component {
                                 :
                                 <div id="skillBoxFeedback">
                                     <h1 className={`skillUse ${confirmedClick && "visibleToggle"}`}>{playerDialogue}</h1>
+                                    <br className={`skillUse ${confirmedClick && "visibleToggle"}`} />
                                     <button onClick={this.confirmSkill} className={`btn btn-info confirm btn-lg confirmButton ${confirmedClick && "visibleToggle"}`}>Confirm</button>
 
                                     <h3 className={`mongodUseSkill ${!confirmedClick && "visibleToggle"}`}>{mongodDialogue[battleCount]}</h3>
+                                    <br className={`mongodUseSkill ${!confirmedClick && "visibleToggle"}`} />
                                     <button onClick={this.continueBattle} className={`"btn btn-danger confirm btn-lg battleButton ${!confirmedClick && "visibleToggle"} ${this.state.destroyUsed && "disabled"}`}>
                                         {buttonDiag[battleCount]}</button>
                                 </div>

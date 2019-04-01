@@ -1,9 +1,7 @@
-import React from 'react';
 import store from '../../config/store';
 import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from "../../config/constants";
 import * as $ from 'axios';
-import DialogueBox from '../Dialogue/DialogueBox';
-import { PromiseProvider } from 'mongoose';
+
 
 //calculates the 'forward' or next position if you were to take one step forward in your current direction.
 function getNewPosition(oldPos, direction) {
@@ -126,7 +124,7 @@ function dispatchMove(direction, newPos) {
 function getTilePosition() {
   const currentPos = store.getState().player.position;
   const heading = store.getState().player.direction;
-  const map = store.getState().map.name;
+  // const map = store.getState().map.name;
 
   const NPCPos = getNewPosition(currentPos, heading)
   // console.log(`I'm an actionable tile at position ${NPCPos}`)
@@ -150,7 +148,7 @@ function getTilePosition() {
 function getTravelDialogue() {
   const currentPos = store.getState().player.position;
   const heading = store.getState().player.direction;
-  const map = store.getState().map.name;
+  // const map = store.getState().map.name;
 
   const NPCPos = getNewPosition(currentPos, heading)
   // console.log(`I'm an actionable tile at position ${NPCPos}`)
@@ -228,15 +226,19 @@ export function handleKeyDown(e, history) {
 
   switch (e.keyCode) {
     case 37:
+    case 65:
       return attemptMove("WEST");
 
     case 38:
+    case 87:
       return attemptMove("NORTH");
 
     case 39:
+    case 68:
       return attemptMove("EAST");
 
     case 40:
+    case 83:
       return attemptMove("SOUTH");
 
     case 32:

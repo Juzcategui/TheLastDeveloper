@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import '../../App.css'
 import { Link } from "react-router-dom";
 import * as $ from 'axios';
@@ -46,12 +46,12 @@ class Homepage extends React.Component {
                 <img className="BG" src={codeGIF} alt="LoginPage" />
                 <audio src={typing} autoPlay />
 
-                <div id="titleBlock" class="container">
+                <div id="titleBlock" className="container">
                     <h1 className="gameTitle"><span id="word1">The </span><span id="word2">LAST </span><span id="word3">Developer</span></h1>
                     <h2 className="gameMotto">Sometimes You Have to Code with Your Fists</h2>
 
                 </div>
-                <div id="homePageStyle" class="container">
+                <div id="homePageStyle" className="container">
                     <h3 id="loginTitle">Log In to Your Account</h3>
                     <form onSubmit={this.handleLogin} id="homeInput">
                         <div className="input-group-prepend homeInput">

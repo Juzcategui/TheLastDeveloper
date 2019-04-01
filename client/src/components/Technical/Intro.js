@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import '../../App.css'
 import { Link, Redirect } from "react-router-dom";
 import IntroLore from "../../Audio/IntroMASTERmp3.mp3"
@@ -34,13 +34,13 @@ class Intro extends React.Component {
 
                     <img className="BG" src={stars} alt="stars" />
 
-                    <div class="fade"></div>
+                    <div className="fade"></div>
 
-                    <section class="star-wars">
+                    <section className="star-wars">
 
-                        <div class="crawl">
+                        <div className="crawl">
 
-                            <div class="title">
+                            <div className="title">
                                 <p>The Last Developer</p>
                                 <br></br>
                                 <h1>From the developers of Super Trivia Bros., Sozial, Run-Escape, PoetryGenius, & MediApp</h1>

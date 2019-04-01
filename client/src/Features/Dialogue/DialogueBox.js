@@ -18,7 +18,7 @@ class DialogueBox extends React.Component {
 
     return (
       <section>
-        <img id="avatar" src={`../avatars/${newName}.png`} />
+        <img id="avatar" src={`../avatars/${newName}.png`} alt="avatar" />
         <div
           style={{
             // left: props.pos[0],
@@ -40,7 +40,8 @@ class DialogueBox extends React.Component {
           <div className="nameTag">{this.props.name}</div>
           <div style={{ padding: 8 }}>{this.props.dialogue}</div>
 
-          <button onClick={this.travelTo} className={`${!this.props.isTravel && "hideToggle"}`}>{this.props.mapName}</button>
+          <button onClick={this.travelTo} className={`leaveButton btn btn-light btn-lg ${!this.props.isTravel && "hideToggle"}`}>
+            ✔️</button>
         </div>
       </section>
     )
