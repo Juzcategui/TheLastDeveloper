@@ -68,6 +68,7 @@ const gamedb = [
         position: "640,400",
         beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: Five Minute Stretch Break! "],
         map: "Javascript",
+        travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
@@ -78,6 +79,7 @@ const gamedb = [
         position: "440,120",
         beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: Short Circuit! I will take it back if you ever use jQuery though."],
         map: "React",
+        travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
@@ -88,6 +90,7 @@ const gamedb = [
         position: "600,360",
         beatTrial: ["YOU DID IT! Here is your new ability: Pseudocode! Ugh. You are so fabulous. I just can't. Get out of here before I lose it. "],
         map: "CSS",
+        travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
     },
     {
@@ -98,6 +101,7 @@ const gamedb = [
         position: "520,480",
         beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: Fist to Five! Maybe one day, you'll be a hotshot like me. "],
         map: "HTML",
+        travelDialogue: "I am the master of this town. Are you ready to showcase your knowledge?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
     },
 
@@ -174,9 +178,10 @@ const gamedb = [
         passedTrialDialogue: []
     }, {
         npcName: "JavascriptGuard",
-        dialogue: ["Would you like to leave the town and explore?"],
+        travelDialogue: ["Would you like to leave the town and explore?"],
         position: "520,600",
         beatTrial: [],
+        map: "Javascript",
         passedTrialDialogue: []
     },
 
@@ -231,9 +236,10 @@ const gamedb = [
         passedTrialDialogue: []
     }, {
         npcName: "ReactGuard",
-        dialogue: ["Would you like to leave the town and explore?"],
+        travelDialogue: ["Would you like to leave the town and explore?"],
         position: "360,600",
         beatTrial: [],
+        map: "React",
         passedTrialDialogue: []
     },
 
@@ -278,9 +284,10 @@ const gamedb = [
         passedTrialDialogue: []
     }, {
         npcName: "CSSGuard",
-        dialogue: ["Would you like to leave the town and explore?"],
+        travelDialogue: ["Would you like to leave the town and explore?"],
         position: "920,80",
         beatTrial: [],
+        map: "CSS",
         passedTrialDialogue: []
     },
 
@@ -325,9 +332,10 @@ const gamedb = [
         passedTrialDialogue: []
     }, {
         npcName: "HTMLGuard",
-        dialogue: ["Would you like to leave the town and explore?"],
+        travelDialogue: ["Would you like to leave the town and explore?"],
         position: "520,80",
         beatTrial: [],
+        map: "HTML",
         passedTrialDialogue: []
     },
 

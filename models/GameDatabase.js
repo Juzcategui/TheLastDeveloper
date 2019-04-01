@@ -18,6 +18,11 @@ var GamedatabaseSchema = new Schema({
         type: Array,
         trim: true
     },
+    travelDialogue: {
+        type: String,
+        trim: true,
+        default: ""
+    },
     map: {
         type: String,
         trim: true

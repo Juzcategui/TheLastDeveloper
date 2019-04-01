@@ -111,9 +111,11 @@ function dispatchMove(direction, newPos) {
     payload: {
       dialogue: "",
       npcPos: [],
-      isShown: false
+      isShown: false,
+      isTravel: false
     }
   });
+
 }
 
 
@@ -128,7 +130,6 @@ function getTilePosition() {
   // console.log(`im on ${map} map`)
 
   $.get(`/api/npc/${NPCPos.toString()}`).then(data => {
-    console.log()
     store.dispatch({
       type: "TALK_NPC",
       payload: {
@@ -136,6 +137,32 @@ function getTilePosition() {
         name: data.data.npcName,
         npcPos: NPCPos,
         isShown: true
+      }
+    });
+  })
+
+}
+
+function getTravelDialogue() {
+  const currentPos = store.getState().player.position;
+  const heading = store.getState().player.direction;
+  const map = store.getState().map.name;
+
+  const NPCPos = getNewPosition(currentPos, heading)
+  // console.log(`I'm an actionable tile at position ${NPCPos}`)
+  // console.log(`im on ${map} map`)
+
+  $.get(`/api/npc/${NPCPos.toString()}`).then(data => {
+    console.log(data)
+    store.dispatch({
+      type: "TALK_NPC",
+      payload: {
+        dialogue: data.data.travelDialogue,
+        name: data.data.npcName,
+        npcPos: NPCPos,
+        mapName: data.data.map,
+        isShown: true,
+        isTravel: true
       }
     });
   })
@@ -177,20 +204,11 @@ function attemptAction(history) {
   if (observeTile(oldPos, newPos) === true) {
     getTilePosition();
   }
+  else if (observeTile(oldPos, newPos) === 12 || observeTile(oldPos, newPos) === 13 || observeTile(oldPos, newPos) === 14 || observeTile(oldPos, newPos) === 15) {
+    getTravelDialogue()
+  }
   else if (observeTile(oldPos, newPos) === 11) {
     history.push("/WorldMap");
-  }
-  else if (observeTile(oldPos, newPos) === 12) {
-    history.push("/ReactHouse");
-  }
-  else if (observeTile(oldPos, newPos) === 13) {
-    history.push("/CSSHouse");
-  }
-  else if (observeTile(oldPos, newPos) === 14) {
-    history.push("/HTMLHouse");
-  }
-  else if (observeTile(oldPos, newPos) === 15) {
-    history.push("/JavascriptHouse");
   }
   else if (observeTile(oldPos, newPos) === 16) {
     history.push("/Island");
