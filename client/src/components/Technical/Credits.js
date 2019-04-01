@@ -27,13 +27,7 @@ class Credits extends React.Component {
                 ? <Redirect to="/worldMap" />
                 : <div>
                     <audio src={AprilShowers} autoPlay loop />
-                    {/* <img className="BG" src={stars} alt="stars" /> */}
-                    <Link to="/worldMap">
-                        <button type="button" className="btn btn-dark introButton">Skip Credits</button>
-                    </Link>
-                    {/* <audio src={IntroLore} autoPlay /> */}
-
-                    {/* <img className="BG" src={stars} alt="stars" /> */}
+               
 
                     <div class="fade"></div>
 
@@ -65,6 +59,8 @@ class Credits extends React.Component {
                             <br></br>
                             <h1>Barry R. as BARRY</h1>
                             <br></br>
+                            <h1>Camila Cabello as HERSELF</h1>
+                            <br></br>
                             <h1>Harrison T. as HARRISON</h1>
                             <br></br>
                             <h1>Lin H. as LIN</h1>
@@ -92,6 +88,8 @@ class Credits extends React.Component {
                             <br></br>
                             <h1>Will M. as WILLBUCKS CEO/COO/CFO</h1>
                             <br></br>
+                            <h1>Leonardo, Raphael, and Michelangelo as THEMSELVES</h1>
+                            <br></br>
                             <br></br>
                             <p>MUSIC</p>
                             <br></br>
@@ -117,6 +115,8 @@ class Credits extends React.Component {
                             <br></br>
                             <h1>Welcome to My World - Made in Abyss OST</h1>
                             <br></br>
+                            <h1>Recording @ ListenUp Audiobooks ATL</h1>
+                            <br></br>
                             <br></br>
                             <p>Images:</p>
                             <br></br>
@@ -126,7 +126,7 @@ class Credits extends React.Component {
                             <br></br>
                             <h1>Sprite Map background images borrowed from Nintendo Pokemon Game Series</h1>
                             <br></br>
-                            <h1>Various art and images from DeviantArt</h1>
+                            <h1>Various art and images from DeviantArt and TMNT</h1>
                             <br></br>
                             <h1>Willbucks Logo from Starbucks</h1>
                             <br></br>
