@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import '../../App.css'
 import { Link, Redirect } from "react-router-dom";
 import * as $ from 'axios';
+import AprilShowers from '../../Audio/AprilShowers.mp3'
 
 class Credits extends React.Component {
     state = {
@@ -25,6 +26,8 @@ class Credits extends React.Component {
             this.state.redirect
                 ? <Redirect to="/worldMap" />
                 : <div>
+                    <audio src={AprilShowers} autoPlay loop />
+               
 
                     <div class="fade"></div>
 
@@ -141,11 +144,11 @@ class Credits extends React.Component {
                             <h1>Trilogy Education and Georgia Tech Bootcamps</h1>
                             <br></br>
                             <h1>And all of Full Stack Web Development Coding Cohort 15</h1>
-                            <br></br>   
+                            <br></br>
 
-                            
 
-                            
+
+
 
 
                         </div>
