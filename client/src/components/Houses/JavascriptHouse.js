@@ -103,7 +103,7 @@ class JavascriptHouse extends React.Component {
                     <audio src={NGNL} autoPlay loop />
                     <img className="BG" src={JSHouse} alt="JSHouse" />
                     <h1 className="HouseTitles">Javascript House</h1>
-                    <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />
+                    <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} alt="scroll" />
                     <img id="Vu" src={Vu} alt="Vu"></img>
 
                     <div id='DialogContainer'>

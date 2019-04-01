@@ -106,7 +106,7 @@ class HTMLHouse extends React.Component {
           <audio src={StarwolfTheme} autoPlay loop />
           <img className="BG" src={HTMLHouseImg} alt="HTMLHouse" />
           <h1 className="HouseTitles">HTML House</h1>
-          <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />
+          <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} alt="scroll" />
           <img id="Jorge" src={Jorge} alt="Jorge" />
 
           <div id="DialogContainer">

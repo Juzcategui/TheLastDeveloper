@@ -52,7 +52,7 @@ class Final extends React.Component {
                 <div className={`wrapper fade-in`}>
                     <img id="monGod" className={`${this.state.mongodDefeated && "flicker-out-1"}`} src={monGod} alt="monGod" />
                     <img className="BG" src={ForestBG} alt="Forest" />
-                    <div class="sliding-background"></div>
+                    <div className="sliding-background"></div>
                     <div className={`docDiv ${this.state.mongodDefeated && "visibleToggle"}`}>
                         <button type="button" onClick={this.readDocs} className="docButton text-focus-in2">The Documentation</button>
                     </div>

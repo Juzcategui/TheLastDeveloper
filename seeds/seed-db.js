@@ -285,7 +285,7 @@ const gamedb = [
     },
     {
         npcName: "Manny",
-        dialogue: ["I found an awesome flip flop today! I wonder who it belongs to?"],
+        dialogue: ["Do any good reading lately? I found a good book just sitting at Wilbucks. I think I found it for a reason."],
         position: "320,120",
         beatTrial: [],
         map: "CSS",
@@ -301,7 +301,7 @@ const gamedb = [
         passedTrialDialogue: []
     }, {
         npcName: "Jenny",
-        dialogue: ["I'm a fantastic pseudocoder. Jealous?"],
+        dialogue: ["I'm a fantastic pseudocoder. Jealous? By the way, I found an awesome flip flop today! I wonder who it belongs to?"],
         position: "320,280",
         beatTrial: [],
         map: "CSS",
@@ -313,7 +313,7 @@ const gamedb = [
         position: "920,80",
         beatTrial: [],
         map: "WorldMap",
-        travelDialogue: ["Would you like to leave the town and explore?"],
+        travelDialogue: ["Would you like to leave the town and explore? By the way, did you see the cave?"],
         passedTrialDialogue: []
     },
 

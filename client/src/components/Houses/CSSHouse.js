@@ -102,7 +102,7 @@ class CSSHouse extends React.Component {
                     <audio src={FFVII} autoPlay loop />
                     <img className="BG" src={CSSHouseImg} alt="CSSHouse" />
                     <h1 className="HouseTitles">CSS House</h1>
-                    <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} />
+                    <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} alt="scroll" />
                     <img id="adam" src={Adam} alt="Adam"></img>
                     <div id='DialogContainer'>
 
