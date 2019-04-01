@@ -14,7 +14,8 @@ const JavascriptNPC = (props) => (
     <div className="Alexander"></div>
     <div className="Vu"></div>
     <div className="JavascriptGuard"></div>
-    {props.isShown && <Dialogue dialogue={props.dialogue} name={props.name} pos={props.npcPos} />}
+    {props.isShown && <Dialogue dialogue={props.dialogue} name={props.name} pos={props.npcPos}
+      isTravel={props.isTravel} mapName={props.mapName} />}
   </div>
 )
 

@@ -17,3 +17,7 @@
       font-weight:bolder;
       padding:5px;
   }
+
+  .visibleToggle{
+    visibility:hidden;
+  }

@@ -10,9 +10,10 @@ class Player extends React.Component {
 
 
     handleKeyDown = (e) => {
+        if (isDown) return;
+        isDown = true;
         handleKeyDown(e, this.props.history);
     };
-
 
     componentDidMount() {
         window.addEventListener('keydown', this.handleKeyDown);
@@ -38,7 +39,7 @@ class Player extends React.Component {
                     width: '40px',
                     height: '40px',
                     transitionProperty: 'left, right, top, bottom',
-                    transitionDuration: '.5s',
+                    transitionDuration: '.4s'
                 }}
 
             />
