@@ -153,7 +153,7 @@ width: 73%;
 }
 
 #finalContainer {
-  bottom: 3%;
+  bottom: 1.5%;
   position: absolute;
   left:5%;
   width: 90%;
@@ -168,7 +168,7 @@ width: 73%;
     border-color: lightslategrey;
     padding: 10px;
     opacity:.85;
-    height:185px;
+    height:190px;
   }
 
 
@@ -191,6 +191,20 @@ width: 73%;
     border-style: solid;
     border-color: lightslategrey;
     height:250px;
+    width:80%;
+    opacity:.85;
+  }
+
+  #skillBoxFeedback
+  {
+    position:absolute;
+    left:10%;
+    bottom:20%;
+    background:rgba(255,255,255,0.8);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightslategrey;
+    height:200px;
     width:80%;
     opacity:.85;
   }
@@ -226,32 +240,43 @@ width: 73%;
   .skillUse{
     font-family: 'Press Start 2P', cursive;
     line-height: 1.2;
-    padding:9px;
-    font-size:29px;
+    margin:20px;
+    font-size:40px;
     color:cadetblue;
   }
 
   .mongodUse{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size:29px;
+    font-size:40px;
     font-weight:bold;
     line-height: 1.2;
-    padding:9px;
+    color:firebrick;
+    text-transform: uppercase;
+  }
+
+  .mongodUseSkill{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size:50px;
+    font-weight:bold;
+    line-height: 1.2;
+    margin:15px;
     color:firebrick;
     text-transform: uppercase;
   }
 
   .battleButton{
     position:absolute;
-    left:78%;
-    top:78%;
-    font-family: 'Press Start 2P', cursive;
+    bottom:5%;
+    right:5%;
+    font-size:30px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
 
   .confirmButton{
     position:absolute;
-    left:40%;
-    top:40%;
+    bottom:5%;
+    right:5%;
+    font-size:25px;
     font-family: 'Press Start 2P', cursive;
   }
 
@@ -259,6 +284,7 @@ width: 73%;
     position:absolute;
     left:40%;
     top:63%;
+    margin:5px;
     font-family: 'Press Start 2P', cursive;
   }
 
@@ -989,8 +1015,13 @@ left: 50%;
 }
 
 .visibleToggle{
+  display:none;
+}
+
+.errToggle{
   visibility:hidden;
 }
+
 
 .loginErr{
   color:red;
