@@ -282,6 +282,15 @@ width: 73%;
 
   .challengeButton{
     position:absolute;
+    left:35%;
+    top:63%;
+    margin:5px;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  
+  .finalButton{
+    position:absolute;
     left:40%;
     top:63%;
     margin:5px;
@@ -762,6 +771,9 @@ left: 50%;
     font-family: 'Press Start 2P', cursive;
   }
   .scrollList {
+    list-style-type: none;
+  }
+  .abilityList {
     list-style-type: none;
     color:darkgreen;
     font-size:12px;

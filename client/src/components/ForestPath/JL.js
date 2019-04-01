@@ -39,7 +39,7 @@ class JL extends React.Component {
 
     render() {
         return (
-            <div className={`fade-in ${this.state.dialogueComplete && "fadeToBlackEnd"}`}>
+            <div className={`${this.state.dialogueComplete && "fadeToBlackEnd"}`}>
                 <img className="BG" src={finalforest} alt="finalForest"></img>
                 <h1 className="HouseTitles">The Regrowth</h1>
 
