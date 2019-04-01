@@ -3,7 +3,7 @@ const db = require('../models');
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/thelastdeveloper", { useNewUrlParser: true });
+    process.env.MONGODB_URI || "mongodb://localhost/thelastdeveloper");
 
 const gamedb = [
     // Scrolls in the houses
@@ -377,11 +377,11 @@ db.Gamedatabase.deleteMany({})
     .then(() => db.Gamedatabase.collection.insertMany(gamedb))
     .then(data => {
         console.log(data.insertedCount + " records inserted!");
-        mongoose.connection.close();
+        process.exit(0);
     })
     .catch(err => {
         console.error(err);
-        mongoose.connection.close();
+        process.exit(1);
     });
 
 
