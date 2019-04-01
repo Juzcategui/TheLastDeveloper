@@ -60,7 +60,7 @@ class WorldMap extends React.Component {
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div className="modal-body scrollList">
+                            <div className="modal-body abilityList">
                                 {this.state.numAbilities === 0 ? "Complete trials to unlock abilities!" :
                                     this.state.abilities.map((data, i) => (
                                         <li key={i} className={`ability${i}`}>

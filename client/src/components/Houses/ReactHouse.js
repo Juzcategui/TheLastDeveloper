@@ -104,7 +104,7 @@ class ReactHouse extends React.Component {
                 <div>
                     <audio src={MyHero} autoPlay loop />
                     <img className="BG" src={REACTHouse} alt="ReactHouse" />
-                    <h1 className="HouseTitles">React House</h1>
+                    <h1 className="HouseTitles">React Residence</h1>
                     <img className="houseScroll" onClick={this.scrollClick} src={imgscroll} alt="scroll" />
                     <img id="Gabe" src={Gabe} alt="Gabe"></img>
 

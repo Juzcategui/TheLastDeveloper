@@ -204,8 +204,7 @@ width: 73%;
     border-radius: 5px;
     border-style: solid;
     border-color: lightslategrey;
-    height:200px;
-    width:80%;
+  
     opacity:.85;
   }
 
@@ -237,13 +236,6 @@ width: 73%;
     bottom:12%;
   }
 
-  .skillUse{
-    font-family: 'Press Start 2P', cursive;
-    line-height: 1.2;
-    margin:20px;
-    font-size:40px;
-    color:cadetblue;
-  }
 
   .mongodUse{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -258,10 +250,18 @@ width: 73%;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size:50px;
     font-weight:bold;
-    line-height: 1.2;
-    margin:15px;
+    line-height: 1.4;
+    margin:10px;
     color:firebrick;
     text-transform: uppercase;
+  }
+
+  .skillUse{
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.2;
+    margin:20px;
+    font-size:38px;
+    color:cadetblue;
   }
 
   .battleButton{
@@ -281,6 +281,15 @@ width: 73%;
   }
 
   .challengeButton{
+    position:absolute;
+    left:35%;
+    top:63%;
+    margin:5px;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  
+  .finalButton{
     position:absolute;
     left:40%;
     top:63%;
@@ -763,6 +772,9 @@ left: 50%;
   }
   .scrollList {
     list-style-type: none;
+  }
+  .abilityList {
+    list-style-type: none;
     color:darkgreen;
     font-size:12px;
     font-family: 'Press Start 2P', cursive;
@@ -861,6 +873,8 @@ left: 50%;
     perspective: 400px;
     text-align: justify;
   }
+
+  
   
   .crawl {
     position: relative;
@@ -872,7 +886,9 @@ left: 50%;
   .crawl > .title {
     font-size: 190px;
     text-align: center;
+    line-height: .9;
   }
+
   
   .crawl > .title h1 {
     margin: 0 0 100px;
@@ -887,6 +903,35 @@ left: 50%;
     100% { 
       top: -9000px;
       transform: rotateX(25deg) translateZ(-3600px);
+    }
+  }
+
+  /* -----------------------OUTRO CREDITS--------------------- */
+  .credits {
+    color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 350%;
+    font-weight: 600;
+    letter-spacing: 6px;
+  }
+  
+  .outroCrawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 150s linear;
+    text-align: center;
+  }
+
+  .outroCrawl > .title {
+    line-height: .9  }
+
+  @keyframes outroCrawl {
+    0% {
+      top: 0;
+    }
+    100% { 
+      top: -11000px;
     }
   }
 

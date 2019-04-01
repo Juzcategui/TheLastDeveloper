@@ -39,7 +39,7 @@ class Player extends React.Component {
                     width: '40px',
                     height: '40px',
                     transitionProperty: 'left, right, top, bottom',
-                    transitionDuration: '.4s'
+                    transitionDuration: '.35s'
                 }}
 
             />

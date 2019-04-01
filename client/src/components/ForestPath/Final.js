@@ -10,6 +10,8 @@ class Final extends React.Component {
             "This is your destiny...",
             "Get up. The world is counting on you!"],
         resumeBattle: false,
+        afterClick: false,
+        confirmedClick: false,
         mongodDefeated: false,
         buttonDiag: [".Reconnect()", "Gather Data", "Push Through", "Dive In",]
 
@@ -24,6 +26,19 @@ class Final extends React.Component {
         }
         this.setState({
             dialogueCount: this.state.dialogueCount + 1
+        })
+    }
+
+    confirmClick = (event) => {
+        event.preventDefault();
+        this.setState({
+            confirmedClick: true,
+        })
+    }
+
+    finalStart = (event) => {
+        this.setState({
+            afterClick: true
         })
     }
 
@@ -49,14 +64,34 @@ class Final extends React.Component {
                     <button key={`${this.state.dialogueCount}`} className="btn btn-secondary btn-lg finalBoxDialogue text-focus-in" onClick={this.nextDialogue}>{this.state.buttonDiag[this.state.dialogueCount]}</button>
                 </div>
                 :
-                <div className={`wrapper fade-in`}>
-                    <img id="monGod" className={`${this.state.mongodDefeated && "flicker-out-1"}`} src={monGod} alt="monGod" />
-                    <img className="BG" src={ForestBG} alt="Forest" />
-                    <div className="sliding-background"></div>
-                    <div className={`docDiv ${this.state.mongodDefeated && "visibleToggle"}`}>
-                        <button type="button" onClick={this.readDocs} className="docButton text-focus-in2">The Documentation</button>
+                !this.state.afterClick
+                    ?
+
+                    <div className={`wrapper fade-in`}>
+                        <img id="monGod" className={`${this.state.mongodDefeated && "flicker-out-1"}`} src={monGod} alt="monGod" />
+                        <img className="BG" src={ForestBG} alt="Forest" />
+                        <div className="sliding-background"></div>
+                        <div id='finalContainer'>
+                            <div id="finalBox">
+                                <h2 className={`mongodUse ${this.state.confirmedClick && "visibleToggle"}`}>What? How is this possible? You shouldn't have been able to get up from that attack!</h2>
+                                <button onClick={this.confirmClick}
+                                    className={`btn btn-danger confirm btn-lg finalButton ${this.state.confirmedClick && "visibleToggle"}`}>Trump Card</button>
+
+                                <h2 className={`mongodUse ${!this.state.confirmedClick && "visibleToggle"}`}>Wait, how were you able to obtain that? That's my only weakness!</h2>
+                                <button onClick={this.finalStart}
+                                    className={`btn btn-danger confirm btn-lg finalButton ${!this.state.confirmedClick && "visibleToggle"}`}>Finish Mongod</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    :
+                    <div className={`wrapper`}>
+                        <img id="monGod" className={`${this.state.mongodDefeated && "flicker-out-1"}`} src={monGod} alt="monGod" />
+                        <img className="BG" src={ForestBG} alt="Forest" />
+                        <div className="sliding-background"></div>
+                        <div className={`docDiv ${this.state.mongodDefeated && "visibleToggle"}`}>
+                            <button type="button" onClick={this.readDocs} className="docButton text-focus-in2">The Documentation</button>
+                        </div>
+                    </div>
         )
     }
 
