@@ -207,11 +207,9 @@ function attemptAction(history) {
   if (observeTile(oldPos, newPos) === true) {
     getTilePosition();
   }
-  else if (observeTile(oldPos, newPos) === 12 || observeTile(oldPos, newPos) === 13 || observeTile(oldPos, newPos) === 14 || observeTile(oldPos, newPos) === 15) {
+  else if (observeTile(oldPos, newPos) === 11 || observeTile(oldPos, newPos) === 12 || observeTile(oldPos, newPos) === 13 ||
+    observeTile(oldPos, newPos) === 14 || observeTile(oldPos, newPos) === 15) {
     getTravelDialogue()
-  }
-  else if (observeTile(oldPos, newPos) === 11) {
-    history.push("/WorldMap");
   }
   else if (observeTile(oldPos, newPos) === 16) {
     history.push("/Island");

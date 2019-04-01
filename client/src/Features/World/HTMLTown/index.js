@@ -20,11 +20,21 @@ function HTMLTown(props) {
     store.dispatch({
         type: 'MOVE_PLAYER',
         payload: {
-            position: [1160, 200],
-            spriteLocation: '0px 120px',
+            position: [480, 40],
+            spriteLocation: '0px 0px',
             walkIndex: 0
         }
     })
+
+    store.dispatch({
+        type: "TALK_NPC",
+        payload: {
+            dialogue: "",
+            npcPos: [],
+            isShown: false,
+            isTravel: false
+        }
+    });
 
     return (
 

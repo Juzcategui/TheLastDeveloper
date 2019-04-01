@@ -60,10 +60,10 @@
 
 .HTMLGuard {
     position: absolute;
-    top: 80px;
-    left: 520px;
+    top: 160px;
+    left: 1200px;
     background-Image: url('./Sprites/HTMLGuard.png');
-    background-Position: 0px 120px;
+    background-Position: 0px 0px;
     width: 40px;
     height: 40px;
 }
