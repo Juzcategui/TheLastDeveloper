@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import finalforest from "../../Backgrounds/finalforest.png"
 import kingJacob from '../../Sprites/Jacob.png'
 
@@ -40,13 +39,13 @@ class JL extends React.Component {
 
     render() {
         return (
-            <div className={`${this.state.dialogueComplete && "fadeToBlackEnd"}`}>
+            <div className={`fade-in ${this.state.dialogueComplete && "fadeToBlackEnd"}`}>
                 <img className="BG" src={finalforest} alt="finalForest"></img>
                 <h1 className="HouseTitles">The Regrowth</h1>
 
                 <img id="kingJacob" src={kingJacob} alt="kingJacob"></img>
                 <div id='DialogContainer'>
-                  
+
 
                     {this.state.dialogueCount === 4
                         ?

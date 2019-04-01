@@ -18,7 +18,6 @@ class DialogueBox extends React.Component {
       <section>
         <img id="avatar" src={`../avatars/${newName}.png`} />
         <div
-          className="DiaBox"
           style={{
             // left: props.pos[0],
             // top: props.pos[1],
