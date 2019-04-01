@@ -2,7 +2,7 @@ import React from "react";
 import ForestBG from '../../Backgrounds/Forest.jpg'
 import monGod from "../../Sprites/MonGod.png"
 import Sephiroth from '../../Audio/Sephiroth.mp3'
-import mongodVoice from "../../Audio/MonGod2.mp3"
+import mongodVoice from "../../Audio/MonGod3.mp3"
 
 class Forest extends React.Component {
     state = {
