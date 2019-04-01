@@ -880,11 +880,22 @@ left: 50%;
     transform-origin: 50% 100%;
     animation: crawl 150s linear;
   }
+
+  .outroCrawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 150s linear;
+    text-align: center;
+  }
+  
   
   .crawl > .title {
     font-size: 190px;
     text-align: center;
+    line-height: .9;
   }
+
   
   .crawl > .title h1 {
     margin: 0 0 100px;

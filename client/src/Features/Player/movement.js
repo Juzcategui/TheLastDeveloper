@@ -137,7 +137,8 @@ function getTilePosition() {
         dialogue: data.data.dialogue,
         name: data.data.npcName,
         npcPos: NPCPos,
-        isShown: true
+        isShown: true,
+        isTravel: false
       }
     });
   })
