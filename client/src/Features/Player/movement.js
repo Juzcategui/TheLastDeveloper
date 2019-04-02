@@ -92,6 +92,12 @@ function observeTile(oldPos, newPos) {
   else if (nextTile === 18) {
     return 18
   }
+  else if (nextTile === 19) {
+    return 19
+  }
+  else if (nextTile === 20) {
+    return 20
+  }
 }
 
 
@@ -218,6 +224,12 @@ function attemptAction(history) {
   }
   else if (observeTile(oldPos, newPos) === 18) {
     window.open("https://super-trivia-bros.herokuapp.com/");
+  }
+  else if (observeTile(oldPos, newPos) === 19) {
+    history.push("/Cave");
+  }
+  else if (observeTile(oldPos, newPos) === 20) {
+    history.push("/CSSTown");
   }
 }
 //determines what happens depending on which key press.

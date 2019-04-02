@@ -33,6 +33,7 @@ import JavascriptTown from './Features/World/JavascriptTown/index';
 import ReactTown from './Features/World/ReactTown/index';
 import WillBucks from './components/Towns/WillBucks';
 import Island from './Features/World/HTMLTown/Zones/island';
+import Cave from './Features/World/CSSTown/Zones/cave';
 
 const App = () => (
 
@@ -69,6 +70,7 @@ const App = () => (
       <Route exact path="/ReactTown" component={ReactTown} />
       <Route exact path="/WillBucks" component={WillBucks} />
       <Route exact path="/Island" component={Island} />
+      <Route exact path="/Cave" component={Cave} />
 
     </div>
   </BrowserRouter>

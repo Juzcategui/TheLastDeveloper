@@ -315,7 +315,29 @@ const gamedb = [
         map: "WorldMap",
         travelDialogue: ["Would you like to leave the town and explore? By the way, did you see the cave?"],
         passedTrialDialogue: []
+    }, {
+        npcName: "Dilapidated Sign",
+        dialogue: ["If something works, then someone first had to figure out HOW it will work. Always remember to check the documentation of any framework you use."],
+        position: "400,280",
+        beatTrial: [],
+        map: "CSS",
+        passedTrialDialogue: []
+    }, {
+        npcName: "Rickety Sign",
+        dialogue: ["Check out W3 Schools and MDN whenever you're wondering how to style an element or use a method."],
+        position: "800,400",
+        beatTrial: [],
+        map: "CSS",
+        passedTrialDialogue: []
+    }, {
+        npcName: "graffiti covered sign",
+        dialogue: ["Whatever was written here seems to have been covered with a burrito in permanent marker. Guess someone was hungry..."],
+        position: "120,480",
+        beatTrial: [],
+        map: "CSS",
+        passedTrialDialogue: []
     },
+    
 
 
     // HTML town NPC

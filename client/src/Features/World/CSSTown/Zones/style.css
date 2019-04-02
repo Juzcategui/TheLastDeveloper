@@ -1,0 +1,29 @@
+.signPost1{
+    position: absolute;
+    top: 280px;
+    left: 400px;
+    background-image: url('../CSS_NPC/Sprites/signPostCave.png');
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+.signPost2{
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    background-image: url('../CSS_NPC/Sprites/signPostCave.png');
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+.signPost3{
+    position: absolute;
+    top: 480px;
+    left: 120px;
+    background-image: url('../CSS_NPC/Sprites/signPostCave.png');
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
