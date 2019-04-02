@@ -12,12 +12,15 @@ function getTileSprite(type) {
             return 'grass'
         case 1:
             return 'rock'
+        case 8: 
+            return 'sign'
         case 11:
             return 'worldMapPortal'
         case 10:
             return 'actionTile'
         case 12:
             return 'islandPort'
+        
 
         default:
             return;
