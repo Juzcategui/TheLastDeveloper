@@ -49,7 +49,7 @@ function HTMLTown(props) {
             <Map tiles={HTMLTiles} name="HTML Town" />
             <Player />
             <HTMLNPC />
-            <audio src={RedRedWine} autoPlay />
+            <audio src={RedRedWine} autoPlay loop />
 
 
         </div>
