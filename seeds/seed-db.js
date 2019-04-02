@@ -70,7 +70,7 @@ const gamedb = [
             "What declaration is used to create a constant variable?",
             "What operation is used when you want to compare type and value?"],
         position: "640,400",
-        beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: Five Minute Stretch Break! "],
+        beatTrial: ["Impressive, young buck. I am amazed at how far you've gotten. Here is your new ability: Five Minute Stretch Break! It's incredible what 5 minutes can do for the mind! "],
         map: "JavascriptHouse",
         travelDialogue: "I am the master of this town. Are you ready to showcase your talent?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
@@ -81,7 +81,7 @@ const gamedb = [
             "React is used as a library primarily for which language?",
             "What is the building block for a React application?"],
         position: "440,120",
-        beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: Short Circuit! I will take it back if you ever use jQuery though."],
+        beatTrial: ["Congratulations, you have passed my trial. Here is your new ability: Short Circuit! It works about.... 50% of the time. I will take it back if you ever use jQuery though."],
         map: "ReactHouse",
         travelDialogue: "I am the master of this town. Are you ready to showcase your talent?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
@@ -92,7 +92,7 @@ const gamedb = [
             "What does the C in CSS stand for?",
             "What property is declared to change the font color?"],
         position: "600,360",
-        beatTrial: ["YOU DID IT! Here is your new ability: Pseudocode! Ugh. You are so fabulous. I just can't. Get out of here before I lose it. "],
+        beatTrial: ["YOU DID IT! Here is your new ability: Pseudocode! I use it all the time when I'm planning out my designs. Ugh. You are so fabulous. I just can't. Get out of here before I lose it. "],
         map: "CSSHouse",
         travelDialogue: "I am the master of this town. Are you ready to showcase your talent?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."]
@@ -103,7 +103,7 @@ const gamedb = [
             "What does HTML stand for?",
             "What is the correct syntax for a paragraph tag?"],
         position: "520,480",
-        beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: Fist to Five! Maybe one day, you'll be a hotshot like me. "],
+        beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: Fist to Five! You can always open your first and reach out to others for help. Maybe one day, you'll be a hotshot like me. "],
         map: "HTMLHouse",
         travelDialogue: "I am the master of this town. Are you ready to showcase your talent?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
