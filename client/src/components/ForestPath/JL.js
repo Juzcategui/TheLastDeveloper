@@ -48,32 +48,32 @@ class JL extends React.Component {
         <div id="DialogContainer">
           {this.state.dialogueCount === 4 ? (
             <div>
-            <div id ="characterName">
-            <p className="namePlate"><h1>King Jacob</h1>Master of the i++ Elements</p>
-            </div>
-            <div id="textBox">
-              <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-              
-              <br />
-            </div>
+              <div id="characterName">
+                <p className="namePlate">King Jacob</p>
+              </div>
+              <div id="textBox">
+                <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
+
+                <br />
+              </div>
             </div>
           ) : (
-            <div>
-            <div id ="characterName">
-            <p className="namePlate"><h1>King Jacob</h1>Master of the i++ Elements</p>
-            </div>
-            <div id="textBox">
-              <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
-              <button
-                onClick={this.nextDialogue}
-                type="button"
-                className="btn btn-primary btn-sm confirm"
-              >
-                Next
+              <div>
+                <div id="characterName">
+                  <p className="namePlate"><h1>King Jacob</h1>Master of the i++ Elements</p>
+                </div>
+                <div id="textBox">
+                  <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
+                  <button
+                    onClick={this.nextDialogue}
+                    type="button"
+                    className="btn btn-primary btn-sm confirm"
+                  >
+                    Next
               </button>
-            </div>
-            </div>
-          )}
+                </div>
+              </div>
+            )}
         </div>
       </div>
     );

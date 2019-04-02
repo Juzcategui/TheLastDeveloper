@@ -1,20 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import '../../App.css'
-import { Link, Redirect } from "react-router-dom";
-import * as $ from 'axios';
+import { Redirect } from "react-router-dom";
 import AprilShowers from '../../Audio/AprilShowers.mp3'
 
 class Credits extends React.Component {
     state = {
-        npcName: 'Credits',
-        dialogue: [],
         redirect: false,
     }
 
 
     componentDidMount() {
         this.id = setTimeout(
-            () => this.setState({ redirect: true }), 150000)
+            () => this.setState({ redirect: true }), 147500)
     }
 
     componentWillUnmount() {
@@ -26,16 +23,16 @@ class Credits extends React.Component {
             this.state.redirect
                 ? <Redirect to="/worldMap" />
                 : <div>
-                    <audio src={AprilShowers} autoPlay loop />
-               
+                    <audio src={AprilShowers} autoPlay />
 
-                    <div class="fade"></div>
 
-                    <section class="credits">
+                    <div className="fade"></div>
 
-                        <div class="outroCrawl">
+                    <section className="credits">
 
-                            <div class="title">
+                        <div className="outroCrawl">
+
+                            <div className="title">
                                 <p>The Last Developer</p>
                                 <br></br>
                                 <h1>Developed by:</h1>
@@ -144,12 +141,11 @@ class Credits extends React.Component {
                             <h1>Trilogy Education and Georgia Tech Bootcamps</h1>
                             <br></br>
                             <h1>And all of Full Stack Web Development Coding Cohort 15</h1>
-                            <br></br>
-
-
-
-
-
+                            <br></br><br></br>
+                            <br></br><br></br>
+                            <br></br><br></br>
+                            <br></br><br></br>
+                            <h1>Thanks for playing!</h1>
 
                         </div>
 

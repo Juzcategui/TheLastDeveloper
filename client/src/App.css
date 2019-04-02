@@ -917,9 +917,9 @@ left: 50%;
   
   .outroCrawl {
     position: relative;
-    top: 9999px;
+    top: 8999px;
     transform-origin: 50% 100%;
-    animation: crawl 150s linear;
+    animation: outroCrawl 147s linear;
     text-align: center;
   }
 
@@ -927,11 +927,12 @@ left: 50%;
     line-height: .9  }
 
   @keyframes outroCrawl {
+    
     0% {
       top: 0;
     }
     100% { 
-      top: -11000px;
+      top: -9000px;
     }
   }
 
