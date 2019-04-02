@@ -103,7 +103,7 @@ const gamedb = [
             "What does HTML stand for?",
             "What is the correct syntax for a paragraph tag?"],
         position: "520,480",
-        beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: Fist to Five! You can always open your first and reach out to others for help. Maybe one day, you'll be a hotshot like me. "],
+        beatTrial: ["Okay okay, not bad. You've passed my trial. Here is your new ability: Fist to Five! You can always open your fist and reach out to others for help. Maybe one day, you'll be a hotshot like me. "],
         map: "HTMLHouse",
         travelDialogue: "I am the master of this town. Are you ready to showcase your talent?",
         passedTrialDialogue: ["I'm impressed! I see you've been studying; there's nothing more I can teach you. If you'd like to practice more, come visit me again."],
