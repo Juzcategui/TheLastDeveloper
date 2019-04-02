@@ -330,14 +330,14 @@ const gamedb = [
         map: "CSS",
         passedTrialDialogue: []
     }, {
-        npcName: "graffiti covered sign",
+        npcName: "Graffiti Covered Sign",
         dialogue: ["Whatever was written here seems to have been covered with a burrito in permanent marker. Guess someone was hungry..."],
         position: "120,480",
         beatTrial: [],
         map: "CSS",
         passedTrialDialogue: []
     },
-    
+
 
 
     // HTML town NPC
