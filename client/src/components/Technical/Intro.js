@@ -47,7 +47,7 @@ class Intro extends React.Component {
                                 <br></br>
                             </div>
 
-                            <p>Long ago ..</p>
+                            <p>Long ago ...</p>
                             <br></br>
                             <p>Existed a unified land - a land of knowledge, community, and collaboration. Everything was open sourced, and information was willingly shared for the benefit of all. But while all the developers and their communities flourished, a great darkness was brooding below....</p>
                             <br></br>

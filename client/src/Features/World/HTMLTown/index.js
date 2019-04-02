@@ -43,13 +43,13 @@ function HTMLTown(props) {
                 position: 'relative',
                 width: '1280px',
                 height: '720px',
-                margin: '20px auto',
+                margin: '1px auto',
                 backgroundImage: `url('${worldBG}')`
             }}>
             <Map tiles={HTMLTiles} name="HTML Town" />
             <Player />
             <HTMLNPC />
-            <audio src={RedRedWine} autoPlay />
+            <audio src={RedRedWine} autoPlay loop />
 
 
         </div>
