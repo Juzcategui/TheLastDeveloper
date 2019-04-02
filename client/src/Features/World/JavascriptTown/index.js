@@ -41,7 +41,7 @@ function JavascriptTown(props) {
                 position: 'relative',
                 width: '1280px',
                 height: '720px',
-                margin: '20px auto',
+                margin: '1px auto',
                 backgroundImage: `url('${worldBG}')`
             }}>
             <Map tiles={JavascriptTiles} name="Javascript Town" />

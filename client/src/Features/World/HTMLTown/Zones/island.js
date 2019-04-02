@@ -16,7 +16,7 @@ function Island(props) {
             name: "island"
         }
     })
- 
+
 
     store.dispatch({
         type: 'MOVE_PLAYER',
@@ -34,7 +34,7 @@ function Island(props) {
                 position: 'relative',
                 width: '1280px',
                 height: '720px',
-                margin: '40px auto',
+                margin: '1px auto',
                 backgroundImage: `url('${islandBG}')`,
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat'
