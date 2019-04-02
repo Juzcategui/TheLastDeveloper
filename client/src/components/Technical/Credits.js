@@ -11,7 +11,7 @@ class Credits extends React.Component {
 
     componentDidMount() {
         this.id = setTimeout(
-            () => this.setState({ redirect: true }), 147500)
+            () => this.setState({ redirect: true }), 137500)
     }
 
     componentWillUnmount() {
@@ -58,6 +58,8 @@ class Credits extends React.Component {
                             <br></br>
                             <h1>Camila Cabello as HERSELF</h1>
                             <br></br>
+                            <h1>Erwins S. as ERWINS</h1>
+                            <br></br>
                             <h1>Harrison T. as HARRISON</h1>
                             <br></br>
                             <h1>Lin H. as LIN</h1>
@@ -70,11 +72,20 @@ class Credits extends React.Component {
                             <br></br>
                             <h1>Paige M. as PAIGE</h1>
                             <br></br>
+                            <h1>Peter J. as PETER</h1>
+                            <br></br>
+                            <h1>Son B. as SON THE BANISHED</h1>
+                            <br></br>
                             <h1>Tim C. as TIM</h1>
                             <br></br>
-                            <h1>Erwins S. as ERWINS</h1>
                             <br></br>
-                            <h1>Peter J. as PETER</h1>
+                            <h1>Adam G. as THE CSS MASTER</h1>
+                            <br></br>
+                            <h1>Gabe B. as THE REACT MASTER</h1>
+                            <br></br>
+                            <h1>Jorge U. as THE HTML MASTER</h1>
+                            <br></br>
+                            <h1>Vu N. as THE JAVASCRIPT MASTER</h1>
                             <br></br>
                             <br></br>
                             <p>Special Appearances by:</p>
