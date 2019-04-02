@@ -81,7 +81,7 @@ class Credits extends React.Component {
                             <br></br>
                             <h1>Cody G. as THE PROPHET C</h1>
                             <br></br>
-                            <h1>Jacob L. as King Jacob</h1>
+                            <h1>Jacob L. as KING JACOB</h1>
                             <br></br>
                             <h1>Will M. as WILLBUCKS CEO/COO/CFO</h1>
                             <br></br>

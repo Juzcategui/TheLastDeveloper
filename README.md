@@ -20,7 +20,8 @@ Working web browser
 * [Heroku](https://heroku.com/) - Cloud Platorm Service
 * [MLab](https://mlab.com/) - Heroku Database Source
 * [W3Schools](https://www.w3schools.com/) - Instructional Information Source
-* [Animista](http://animista.net//) - Library for CSS Animations
+* [MDN](https://developer.mozilla.org/en-US/) - Instructional Information Source
+* [Animista](http://animista.net/) - Library for CSS Animations
 * Game Character Hub: Game For Creating Sprites
 * Anime Character Creator: Avatar Creator
 
