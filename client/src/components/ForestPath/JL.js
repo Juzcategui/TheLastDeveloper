@@ -60,7 +60,7 @@ class JL extends React.Component {
           ) : (
               <div>
                 <div id="characterName">
-                  <p className="namePlate"><h1>King Jacob</h1>Master of the i++ Elements</p>
+                  <p className="namePlate">King Jacob</p>
                 </div>
                 <div id="textBox">
                   <h4>{this.state.dialogue[this.state.dialogueCount]}</h4>
