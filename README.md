@@ -43,6 +43,10 @@ Working web browser
 -DeviantArt
 -Starbucks
 
+## Shoutout To
+* https://thedangercrew.com/ Drew Conley and the Danger Crew team for their help with movement.
+*React University and their RPG Game in React tutorial.https://www.youtube.com/watch?v=QZcNGfcn-oo
+
 ## Contributing
 
 (https://github.com/gbaek3/theLastDeveloper)
